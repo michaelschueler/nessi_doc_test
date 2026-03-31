@@ -1,0 +1,667 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classfourier_1_1adft__func" kind="class" language="C++" prot="public">
+    <compoundname>fourier::adft_func</compoundname>
+    <includes refid="fourier_8hpp" local="no">fourier.hpp</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classfourier_1_1adft__func_a5d55f32e3bf489a93e25471ac5deeae7_1a5d55f32e3bf489a93e25471ac5deeae7" prot="public" static="no">
+        <type>std::complex&lt; double &gt;</type>
+        <definition>typedef std::complex&lt;double&gt; fourier::adft_func::cplx</definition>
+        <argsstring></argsstring>
+        <name>cplx</name>
+        <qualifiedname>fourier::adft_func::cplx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/fourier.hpp" line="44" column="26" bodyfile="cntr/fourier.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classfourier_1_1adft__func_1a43e502cd383350da042b3af9dcb65e40" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* fourier::adft_func::a_</definition>
+        <argsstring></argsstring>
+        <name>a_</name>
+        <qualifiedname>fourier::adft_func::a_</qualifiedname>
+        <briefdescription>
+<para><bold> a[0..n-1], left endpoints </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/fourier.hpp" line="437" column="11" bodyfile="cntr/fourier.hpp" bodystart="437" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfourier_1_1adft__func_1a45057b96bb015fe953baeb10a14e3921" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* fourier::adft_func::b_</definition>
+        <argsstring></argsstring>
+        <name>b_</name>
+        <qualifiedname>fourier::adft_func::b_</qualifiedname>
+        <briefdescription>
+<para><bold> a[0..n-1], right endpoints </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/fourier.hpp" line="440" column="11" bodyfile="cntr/fourier.hpp" bodystart="440" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfourier_1_1adft__func_1acd691a5473f3ba080aeea4bb167a05c0" prot="private" static="no" mutable="no">
+        <type><ref refid="classfourier_1_1adft__func_a5d55f32e3bf489a93e25471ac5deeae7_1a5d55f32e3bf489a93e25471ac5deeae7" kindref="member">cplx</ref> *</type>
+        <definition>cplx* fourier::adft_func::data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <qualifiedname>fourier::adft_func::data_</qualifiedname>
+        <briefdescription>
+<para><bold> function data </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/fourier.hpp" line="422" column="9" bodyfile="cntr/fourier.hpp" bodystart="422" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfourier_1_1adft__func_1ab85c9538cd9049482c895ac6af62f68a" prot="private" static="no" mutable="no">
+        <type><ref refid="classfourier_1_1adft__func_a5d55f32e3bf489a93e25471ac5deeae7_1a5d55f32e3bf489a93e25471ac5deeae7" kindref="member">cplx</ref> **</type>
+        <definition>cplx** fourier::adft_func::f_</definition>
+        <argsstring></argsstring>
+        <name>f_</name>
+        <qualifiedname>fourier::adft_func::f_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/fourier.hpp" line="444" column="9" bodyfile="cntr/fourier.hpp" bodystart="444" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfourier_1_1adft__func_1ae3f1d1397e3446a20a664b4b52156e5a" prot="private" static="no" mutable="no">
+        <type>int *</type>
+        <definition>int* fourier::adft_func::len_</definition>
+        <argsstring></argsstring>
+        <name>len_</name>
+        <qualifiedname>fourier::adft_func::len_</qualifiedname>
+        <briefdescription>
+<para><bold> len[0..n-1] number of data points in interval </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/fourier.hpp" line="443" column="8" bodyfile="cntr/fourier.hpp" bodystart="443" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfourier_1_1adft__func_1afa25b814609160d5e6cc9248928caeeb" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int fourier::adft_func::n_</definition>
+        <argsstring></argsstring>
+        <name>n_</name>
+        <qualifiedname>fourier::adft_func::n_</qualifiedname>
+        <briefdescription>
+<para><bold> number of intervals </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/fourier.hpp" line="434" column="8" bodyfile="cntr/fourier.hpp" bodystart="434" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfourier_1_1adft__func_1ad8377d5bd799ce9233fea19cd12fad11" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int fourier::adft_func::nmax_</definition>
+        <argsstring></argsstring>
+        <name>nmax_</name>
+        <qualifiedname>fourier::adft_func::nmax_</qualifiedname>
+        <briefdescription>
+<para><bold> size of data block </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/fourier.hpp" line="431" column="8" bodyfile="cntr/fourier.hpp" bodystart="431" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfourier_1_1adft__func_1a26cea2244dfdc918712f985fe06cb443" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int fourier::adft_func::size_</definition>
+        <argsstring></argsstring>
+        <name>size_</name>
+        <qualifiedname>fourier::adft_func::size_</qualifiedname>
+        <briefdescription>
+<para><bold> size of data block </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/fourier.hpp" line="425" column="8" bodyfile="cntr/fourier.hpp" bodystart="425" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfourier_1_1adft__func_1a1b907fdb98431e465ae7d72dceacd445" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int fourier::adft_func::tot_</definition>
+        <argsstring></argsstring>
+        <name>tot_</name>
+        <qualifiedname>fourier::adft_func::tot_</qualifiedname>
+        <briefdescription>
+<para><bold> space currently used </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/fourier.hpp" line="428" column="8" bodyfile="cntr/fourier.hpp" bodystart="428" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classfourier_1_1adft__func_a5804f70c884edc580e7a9dceeb5f3361_1a5804f70c884edc580e7a9dceeb5f3361" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>fourier::adft_func::adft_func</definition>
+        <argsstring>()</argsstring>
+        <name>adft_func</name>
+        <qualifiedname>fourier::adft_func::adft_func</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/fourier.hpp" line="45" column="4" bodyfile="cntr/fourier.hpp" bodystart="45" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classfourier_1_1adft__func_aaa081b6da5008bdb6ab01c8ce025b19a_1aaa081b6da5008bdb6ab01c8ce025b19a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void fourier::adft_func::dft</definition>
+        <argsstring>(double w, cplx &amp;result, cplx &amp;err)</argsstring>
+        <name>dft</name>
+        <qualifiedname>fourier::adft_func::dft</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type><ref refid="classfourier_1_1adft__func_a5d55f32e3bf489a93e25471ac5deeae7_1a5d55f32e3bf489a93e25471ac5deeae7" kindref="member">cplx</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type><ref refid="classfourier_1_1adft__func_a5d55f32e3bf489a93e25471ac5deeae7_1a5d55f32e3bf489a93e25471ac5deeae7" kindref="member">cplx</ref> &amp;</type>
+          <declname>err</declname>
+        </param>
+        <briefdescription>
+<para><bold> Computes the cubically corrected DFT. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+Computes the cubically corrected DFT by integrating over the individual intervals.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>frequency <formula id="116">$\omega$</formula> in the Fourier integral </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value of the Fourier integral </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>err</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>estimate of the error  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/fourier.hpp" line="317" column="9" bodyfile="cntr/fourier.hpp" bodystart="317" bodyend="334"/>
+        <references refid="namespacefourier_a979b474be5e069de6384017d9e841650_1a979b474be5e069de6384017d9e841650" compoundref="fourier_8cpp" startline="283" endline="341">fourier::dft_cplx</references>
+        <referencedby refid="namespaceness2_a9ae52e2965c52a526b782e5afc35b0ab_1a9ae52e2965c52a526b782e5afc35b0ab" compoundref="ness2__equilibrium__decl_8hpp" startline="285" endline="317">ness2::compute_lesser</referencedby>
+        <referencedby refid="namespaceness2_ae4fd56058fa510f2f5fa1c8c49e4d6a8_1ae4fd56058fa510f2f5fa1c8c49e4d6a8" compoundref="ness2__equilibrium__decl_8hpp" startline="255" endline="281">ness2::green_equilibrium_ret_ness_adaptive</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classfourier_1_1adft__func_a352d3b8ba7b6c50c699a66b8903a8d0d_1a352d3b8ba7b6c50c699a66b8903a8d0d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class function</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void fourier::adft_func::sample</definition>
+        <argsstring>(double w, double a, double b, function &amp;fz, int n, int limit)</argsstring>
+        <name>sample</name>
+        <qualifiedname>fourier::adft_func::sample</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>function &amp;</type>
+          <declname>fz</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limit</declname>
+        </param>
+        <briefdescription>
+<para><bold> Fourier samples the given function to determine the individual intervals. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+Computes the Fourier integral for fixed frequency <formula id="116">$\omega$</formula>. The interval <formula id="123">$[a,b]$</formula> is iteratively split until the error of the Fourier integral over each subinterval is smaller or equal than the smallest error.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>frequency <formula id="116">$\omega$</formula> in the Fourier integral </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>lower interval bound </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>upper interval bound </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[template class function] scalar complex function </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of points in each interval </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>max number of intervals  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/fourier.hpp" line="366" column="9" bodyfile="cntr/fourier.hpp" bodystart="366" bodyend="418"/>
+        <references refid="namespacefourier_a979b474be5e069de6384017d9e841650_1a979b474be5e069de6384017d9e841650" compoundref="fourier_8cpp" startline="283" endline="341">fourier::dft_cplx</references>
+        <referencedby refid="namespaceness2_a9ae52e2965c52a526b782e5afc35b0ab_1a9ae52e2965c52a526b782e5afc35b0ab" compoundref="ness2__equilibrium__decl_8hpp" startline="285" endline="317">ness2::compute_lesser</referencedby>
+        <referencedby refid="namespaceness2_ae4fd56058fa510f2f5fa1c8c49e4d6a8_1ae4fd56058fa510f2f5fa1c8c49e4d6a8" compoundref="ness2__equilibrium__decl_8hpp" startline="255" endline="281">ness2::green_equilibrium_ret_ness_adaptive</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classfourier_1_1adft__func_1a92e468cbd66f339179e8b9cf38a82311" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>fourier::adft_func::adft_func</definition>
+        <argsstring>(const adft_func &amp;a)</argsstring>
+        <name>adft_func</name>
+        <qualifiedname>fourier::adft_func::adft_func</qualifiedname>
+        <param>
+          <type>const adft_func &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/fourier.hpp" line="100" column="4" bodyfile="cntr/fourier.hpp" bodystart="100" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classfourier_1_1adft__func_1a063390b146beca8b51ee503522f0cbc5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>fourier::adft_func::adft_func</definition>
+        <argsstring>(int size, int nmax)</argsstring>
+        <name>adft_func</name>
+        <qualifiedname>fourier::adft_func::adft_func</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nmax</declname>
+        </param>
+        <briefdescription>
+<para><bold> Initializes the <computeroutput><ref refid="classfourier_1_1adft__func" kindref="compound">adft_func</ref></computeroutput> class </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+Initializes the <computeroutput><ref refid="classfourier_1_1adft__func" kindref="compound">adft_func</ref></computeroutput> class for a given number of points <computeroutput>size</computeroutput> and max. numer of intervals <computeroutput>nmax</computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>number of points </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nmax</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>max. numer of intervals  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/fourier.hpp" line="74" column="4" bodyfile="cntr/fourier.hpp" bodystart="74" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classfourier_1_1adft__func_1aa614265b0fe0bb86d0dd55f9918e4c51" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class function</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void fourier::adft_func::init</definition>
+        <argsstring>(double a, double b, int n, function &amp;fz)</argsstring>
+        <name>init</name>
+        <qualifiedname>fourier::adft_func::init</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>function &amp;</type>
+          <declname>fz</declname>
+        </param>
+        <briefdescription>
+<para><bold> Initializes the internal interval data and function values. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+Initializes the internal interval data and function values on the internal grid.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>lower interval bound </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>upper interval bound </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of points in [a,b] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[template class function] scalar complex function  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/fourier.hpp" line="182" column="9" bodyfile="cntr/fourier.hpp" bodystart="182" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classfourier_1_1adft__func_1a29af90cf87a53f2ef5d93b152cc6d116" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classfourier_1_1adft__func_a5d55f32e3bf489a93e25471ac5deeae7_1a5d55f32e3bf489a93e25471ac5deeae7" kindref="member">cplx</ref> *</type>
+        <definition>cplx * fourier::adft_func::interval_data</definition>
+        <argsstring>(int i)</argsstring>
+        <name>interval_data</name>
+        <qualifiedname>fourier::adft_func::interval_data</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns the function values on the interval points. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+Returns a pointer to the function values in the interval <computeroutput>i</computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>index of interval </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/fourier.hpp" line="155" column="9" bodyfile="cntr/fourier.hpp" bodystart="155" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classfourier_1_1adft__func_1adcf803bc0f16ca334b8ae40aca396cdc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classfourier_1_1adft__func_a5804f70c884edc580e7a9dceeb5f3361_1a5804f70c884edc580e7a9dceeb5f3361" kindref="member">adft_func</ref> &amp;</type>
+        <definition>adft_func &amp; fourier::adft_func::operator=</definition>
+        <argsstring>(const adft_func &amp;a)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>fourier::adft_func::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classfourier_1_1adft__func_a5804f70c884edc580e7a9dceeb5f3361_1a5804f70c884edc580e7a9dceeb5f3361" kindref="member">adft_func</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/fourier.hpp" line="95" column="14" bodyfile="cntr/fourier.hpp" bodystart="95" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classfourier_1_1adft__func_1a83a2dcdd51f2cd90d8ca2ae754acd94b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void fourier::adft_func::resize</definition>
+        <argsstring>(int size, int nmax)</argsstring>
+        <name>resize</name>
+        <qualifiedname>fourier::adft_func::resize</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nmax</declname>
+        </param>
+        <briefdescription>
+<para><bold> Resizes the <computeroutput><ref refid="classfourier_1_1adft__func" kindref="compound">adft_func</ref></computeroutput> class. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+Resizes the <computeroutput><ref refid="classfourier_1_1adft__func" kindref="compound">adft_func</ref></computeroutput> class for a given number of points <computeroutput>size</computeroutput> and max. numer of intervals <computeroutput>nmax</computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>number of points </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nmax</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>max. numer of intervals  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/fourier.hpp" line="122" column="9" bodyfile="cntr/fourier.hpp" bodystart="122" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classfourier_1_1adft__func_1a4b0db5b5905867938076f6853c975a72" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class function</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void fourier::adft_func::split</definition>
+        <argsstring>(int interv, function &amp;fz)</argsstring>
+        <name>split</name>
+        <qualifiedname>fourier::adft_func::split</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>interv</declname>
+        </param>
+        <param>
+          <type>function &amp;</type>
+          <declname>fz</declname>
+        </param>
+        <briefdescription>
+<para><bold> Split interval interv by doubling points. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+Split interval interv by doubling points.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>interv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>index of interval </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fz</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[template class function] scalar complex function  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/fourier.hpp" line="222" column="9" bodyfile="cntr/fourier.hpp" bodystart="222" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="classfourier_1_1adft__func_1a9a7cd53029501c69b0e29138cc45671d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>fourier::adft_func::~adft_func</definition>
+        <argsstring>()</argsstring>
+        <name>~adft_func</name>
+        <qualifiedname>fourier::adft_func::~adft_func</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/fourier.hpp" line="87" column="4" bodyfile="cntr/fourier.hpp" bodystart="87" bodyend="93"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><bold> Class <computeroutput><ref refid="classfourier_1_1adft__func" kindref="compound">adft_func</ref></computeroutput> contains functions for computing accurate Fourier transforms by adaptive splitting of intervals. </bold> </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+Class <computeroutput><ref refid="classfourier_1_1adft__func" kindref="compound">adft_func</ref></computeroutput> contains functions for computing accurate Fourier transform by adaptive splitting of intervals. For computing the integral <formula id="122">$I(\omega) = \int^b_a dt\, e^{i \omega t} f(t)$</formula>, cubically corrected DFT (see dft_cplx) is used. From the error estimate of dft_cplx, the integration interval <formula id="123">$[a,b]$</formula> can be split further until the error is below a given threshold for all interval. </para>
+    </detaileddescription>
+    <location file="cntr/fourier.hpp" line="42" column="1" bodyfile="cntr/fourier.hpp" bodystart="42" bodyend="445"/>
+    <listofallmembers>
+      <member refid="classfourier_1_1adft__func_1a43e502cd383350da042b3af9dcb65e40" prot="private" virt="non-virtual"><scope>fourier::adft_func</scope><name>a_</name></member>
+      <member refid="classfourier_1_1adft__func_a5804f70c884edc580e7a9dceeb5f3361_1a5804f70c884edc580e7a9dceeb5f3361" prot="public" virt="non-virtual"><scope>fourier::adft_func</scope><name>adft_func</name></member>
+      <member refid="classfourier_1_1adft__func_1a063390b146beca8b51ee503522f0cbc5" prot="private" virt="non-virtual"><scope>fourier::adft_func</scope><name>adft_func</name></member>
+      <member refid="classfourier_1_1adft__func_1a92e468cbd66f339179e8b9cf38a82311" prot="private" virt="non-virtual"><scope>fourier::adft_func</scope><name>adft_func</name></member>
+      <member refid="classfourier_1_1adft__func_1a45057b96bb015fe953baeb10a14e3921" prot="private" virt="non-virtual"><scope>fourier::adft_func</scope><name>b_</name></member>
+      <member refid="classfourier_1_1adft__func_a5d55f32e3bf489a93e25471ac5deeae7_1a5d55f32e3bf489a93e25471ac5deeae7" prot="public" virt="non-virtual"><scope>fourier::adft_func</scope><name>cplx</name></member>
+      <member refid="classfourier_1_1adft__func_1acd691a5473f3ba080aeea4bb167a05c0" prot="private" virt="non-virtual"><scope>fourier::adft_func</scope><name>data_</name></member>
+      <member refid="classfourier_1_1adft__func_aaa081b6da5008bdb6ab01c8ce025b19a_1aaa081b6da5008bdb6ab01c8ce025b19a" prot="public" virt="non-virtual"><scope>fourier::adft_func</scope><name>dft</name></member>
+      <member refid="classfourier_1_1adft__func_1ab85c9538cd9049482c895ac6af62f68a" prot="private" virt="non-virtual"><scope>fourier::adft_func</scope><name>f_</name></member>
+      <member refid="classfourier_1_1adft__func_1aa614265b0fe0bb86d0dd55f9918e4c51" prot="private" virt="non-virtual"><scope>fourier::adft_func</scope><name>init</name></member>
+      <member refid="classfourier_1_1adft__func_1a29af90cf87a53f2ef5d93b152cc6d116" prot="private" virt="non-virtual"><scope>fourier::adft_func</scope><name>interval_data</name></member>
+      <member refid="classfourier_1_1adft__func_1ae3f1d1397e3446a20a664b4b52156e5a" prot="private" virt="non-virtual"><scope>fourier::adft_func</scope><name>len_</name></member>
+      <member refid="classfourier_1_1adft__func_1afa25b814609160d5e6cc9248928caeeb" prot="private" virt="non-virtual"><scope>fourier::adft_func</scope><name>n_</name></member>
+      <member refid="classfourier_1_1adft__func_1ad8377d5bd799ce9233fea19cd12fad11" prot="private" virt="non-virtual"><scope>fourier::adft_func</scope><name>nmax_</name></member>
+      <member refid="classfourier_1_1adft__func_1adcf803bc0f16ca334b8ae40aca396cdc" prot="private" virt="non-virtual"><scope>fourier::adft_func</scope><name>operator=</name></member>
+      <member refid="classfourier_1_1adft__func_1a83a2dcdd51f2cd90d8ca2ae754acd94b" prot="private" virt="non-virtual"><scope>fourier::adft_func</scope><name>resize</name></member>
+      <member refid="classfourier_1_1adft__func_a352d3b8ba7b6c50c699a66b8903a8d0d_1a352d3b8ba7b6c50c699a66b8903a8d0d" prot="public" virt="non-virtual"><scope>fourier::adft_func</scope><name>sample</name></member>
+      <member refid="classfourier_1_1adft__func_1a26cea2244dfdc918712f985fe06cb443" prot="private" virt="non-virtual"><scope>fourier::adft_func</scope><name>size_</name></member>
+      <member refid="classfourier_1_1adft__func_1a4b0db5b5905867938076f6853c975a72" prot="private" virt="non-virtual"><scope>fourier::adft_func</scope><name>split</name></member>
+      <member refid="classfourier_1_1adft__func_1a1b907fdb98431e465ae7d72dceacd445" prot="private" virt="non-virtual"><scope>fourier::adft_func</scope><name>tot_</name></member>
+      <member refid="classfourier_1_1adft__func_1a9a7cd53029501c69b0e29138cc45671d" prot="private" virt="non-virtual"><scope>fourier::adft_func</scope><name>~adft_func</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

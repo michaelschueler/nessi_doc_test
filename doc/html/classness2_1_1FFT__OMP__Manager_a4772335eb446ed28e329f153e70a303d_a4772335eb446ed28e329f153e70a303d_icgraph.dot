@@ -1,0 +1,14 @@
+digraph "ness2::FFT_OMP_Manager::FFT_OMP_Manager"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="ness2::FFT_OMP_Manager\l::FFT_OMP_Manager",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ness2::FFT_OMP_Manager\l::FFT_OMP_Manager",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classness2_1_1FFT__OMP__Manager_a0830523efce26886a693d493fdc13f87.html#a0830523efce26886a693d493fdc13f87",tooltip=" "];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="ness2::FFT_OMP_Manager\l::operator=",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classness2_1_1FFT__OMP__Manager_a36cc9d73253adaa09b43c0abbf66ac34.html#a36cc9d73253adaa09b43c0abbf66ac34",tooltip=" "];
+}

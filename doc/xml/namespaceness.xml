@@ -1,0 +1,1720 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespaceness" kind="namespace" language="C++">
+    <compoundname>ness</compoundname>
+    <innerclass refid="classness_1_1fft__solver" prot="public">ness::fft_solver</innerclass>
+    <innerclass refid="classness_1_1gauss" prot="private">ness::gauss</innerclass>
+    <innerclass refid="classness_1_1GF" prot="public">ness::GF</innerclass>
+    <innerclass refid="classness_1_1GF__pair" prot="public">ness::GF_pair</innerclass>
+    <innerclass refid="classness_1_1ohmic__sym" prot="private">ness::ohmic_sym</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespaceness_aa3a09e3b1af7702c47964f6f2fa9d09a_1aa3a09e3b1af7702c47964f6f2fa9d09a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@145031364342367136124362044230127214217042364315</name>
+        <qualifiedname>ness::@145031364342367136124362044230127214217042364315</qualifiedname>
+        <enumvalue id="namespaceness_aa3a09e3b1af7702c47964f6f2fa9d09a_1aa3a09e3b1af7702c47964f6f2fa9d09aafb9523a8c73d65ef1332f86a319c02a1" prot="public">
+          <name>fermion</name>
+          <initializer>= -1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceness_aa3a09e3b1af7702c47964f6f2fa9d09a_1aa3a09e3b1af7702c47964f6f2fa9d09aa7d4323c485010095bf321a4eb384a055" prot="public">
+          <name>boson</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para><bold> define fermion as sign -1 and boson as sign +1 </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_global_settings.hpp" line="22" column="1" bodyfile="cntr/ness_global_settings.hpp" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespaceness_aa79580a6fbe322d62634e8f2900bba9b_1aa79580a6fbe322d62634e8f2900bba9b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>@161150117131231243067200224176231160322210065025</name>
+        <qualifiedname>ness::@161150117131231243067200224176231160322210065025</qualifiedname>
+        <enumvalue id="namespaceness_aa79580a6fbe322d62634e8f2900bba9b_1aa79580a6fbe322d62634e8f2900bba9baadbc7f849f16dacf43dfc7c15c04e9f9" prot="public">
+          <name>time_gf</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceness_aa79580a6fbe322d62634e8f2900bba9b_1aa79580a6fbe322d62634e8f2900bba9ba97746b2088cce1ad3bc5308ef40f7d4f" prot="public">
+          <name>freq_gf</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="8" column="1" bodyfile="cntr/ness_GF_decl.hpp" bodystart="8" bodyend="8"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespaceness_a244be30cfc18ed5350dc3063666210a8_1a244be30cfc18ed5350dc3063666210a8" prot="public" static="no">
+        <type>MatrixXcd</type>
+        <definition>typedef MatrixXcd ness::cdmatrix</definition>
+        <argsstring></argsstring>
+        <name>cdmatrix</name>
+        <qualifiedname>ness::cdmatrix</qualifiedname>
+        <briefdescription>
+<para><bold> Own complex eigen matric type </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_global_settings.hpp" line="27" column="19" bodyfile="cntr/ness_global_settings.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceness_a6e7c10361110ce83366df7f9f5025134_1a6e7c10361110ce83366df7f9f5025134" prot="public" static="no">
+        <type>VectorXcd</type>
+        <definition>typedef VectorXcd ness::cdvector</definition>
+        <argsstring></argsstring>
+        <name>cdvector</name>
+        <qualifiedname>ness::cdvector</qualifiedname>
+        <briefdescription>
+<para><bold> Own complex eigen vector type </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_global_settings.hpp" line="29" column="19" bodyfile="cntr/ness_global_settings.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceness_a2686f449ce9d3426ec0a03f236fb04b8_1a2686f449ce9d3426ec0a03f236fb04b8" prot="public" static="no">
+        <type>std::complex&lt; double &gt;</type>
+        <definition>typedef std::complex&lt;double&gt; ness::cplx</definition>
+        <argsstring></argsstring>
+        <name>cplx</name>
+        <qualifiedname>ness::cplx</qualifiedname>
+        <briefdescription>
+<para><bold> Define complex data type </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_global_settings.hpp" line="19" column="22" bodyfile="cntr/ness_global_settings.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceness_a55b8d98c06c788acc2f99e620e1831d2_1a55b8d98c06c788acc2f99e620e1831d2" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref> &gt;</type>
+        <definition>typedef std::vector&lt;GF_pair&gt; ness::GF_pairs</definition>
+        <argsstring></argsstring>
+        <name>GF_pairs</name>
+        <qualifiedname>ness::GF_pairs</qualifiedname>
+        <briefdescription>
+<para><bold> Define a vector of <computeroutput><ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref></computeroutput> objects </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_pair_decl.hpp" line="67" column="21" bodyfile="cntr/ness_GF_pair_decl.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceness_abb301b93c8c70c914a5a2e27d1703253_1abb301b93c8c70c914a5a2e27d1703253" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp; &gt;</type>
+        <definition>typedef std::vector&lt;GF &amp; &gt; ness::GF_refs</definition>
+        <argsstring></argsstring>
+        <name>GF_refs</name>
+        <qualifiedname>ness::GF_refs</qualifiedname>
+        <briefdescription>
+<para><bold> Define a vector of references of Green&apos;s functions </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="92" column="21" bodyfile="cntr/ness_GF_decl.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceness_ae64c2fcd1cf8098b5a054339c74495ac_1ae64c2fcd1cf8098b5a054339c74495ac" prot="public" static="no">
+        <type>std::vector&lt; <ref refid="classness_1_1GF" kindref="compound">GF</ref> &gt;</type>
+        <definition>typedef std::vector&lt;GF&gt; ness::GFs</definition>
+        <argsstring></argsstring>
+        <name>GFs</name>
+        <qualifiedname>ness::GFs</qualifiedname>
+        <briefdescription>
+<para><bold> Define a vector of Green&apos;s functions </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="90" column="21" bodyfile="cntr/ness_GF_decl.hpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceness_a27f3aec273778be5638f2f0c78991baf_1a27f3aec273778be5638f2f0c78991baf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::appendData</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;data_vec, std::string fname, int prec)</argsstring>
+        <name>appendData</name>
+        <qualifiedname>ness::appendData</qualifiedname>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>data_vec</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>fname</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>prec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_utils_decl.hpp" line="45" column="6" declfile="cntr/ness_utils_decl.hpp" declline="45" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_aabb3d5e34abe1a1fb4b2fa7dcf4b0bf7_1aabb3d5e34abe1a1fb4b2fa7dcf4b0bf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::Bubble1_ness</definition>
+        <argsstring>(GF &amp;C, GF &amp;A, GF &amp;B)</argsstring>
+        <name>Bubble1_ness</name>
+        <qualifiedname>ness::Bubble1_ness</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_utils_decl.hpp" line="18" column="6" declfile="cntr/ness_utils_decl.hpp" declline="18" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_ad755a6549c2001d1f1e0e8ad2650980d_1ad755a6549c2001d1f1e0e8ad2650980d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::Bubble1_ness</definition>
+        <argsstring>(GF &amp;C, int c1, int c2, GF &amp;A, int a1, int a2, GF &amp;B, int b1, int b2)</argsstring>
+        <name>Bubble1_ness</name>
+        <qualifiedname>ness::Bubble1_ness</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c2</declname>
+        </param>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a2</declname>
+        </param>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_utils_decl.hpp" line="16" column="6" declfile="cntr/ness_utils_decl.hpp" declline="16" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_a8b52101ede2108b788adb10a94b6c613_1a8b52101ede2108b788adb10a94b6c613" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::Bubble1_ness</definition>
+        <argsstring>(GF_pair &amp;C, GF_pair &amp;A, GF_pair &amp;B)</argsstring>
+        <name>Bubble1_ness</name>
+        <qualifiedname>ness::Bubble1_ness</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref> &amp;</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type><ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_utils_decl.hpp" line="19" column="6" declfile="cntr/ness_utils_decl.hpp" declline="19" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_a150c9463fabbe7e04f01ad2d2ca8efce_1a150c9463fabbe7e04f01ad2d2ca8efce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::Bubble1_ness</definition>
+        <argsstring>(GF_pair &amp;C, int c1, int c2, GF_pair &amp;A, int a1, int a2, GF_pair &amp;B, int b1, int b2)</argsstring>
+        <name>Bubble1_ness</name>
+        <qualifiedname>ness::Bubble1_ness</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref> &amp;</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c2</declname>
+        </param>
+        <param>
+          <type><ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a2</declname>
+        </param>
+        <param>
+          <type><ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_utils_decl.hpp" line="17" column="6" declfile="cntr/ness_utils_decl.hpp" declline="17" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_aa7a26280076b4d1be4f146b50893b3dc_1aa7a26280076b4d1be4f146b50893b3dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::Bubble2_ness</definition>
+        <argsstring>(GF &amp;C, GF &amp;A, GF &amp;B)</argsstring>
+        <name>Bubble2_ness</name>
+        <qualifiedname>ness::Bubble2_ness</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_utils_decl.hpp" line="23" column="6" declfile="cntr/ness_utils_decl.hpp" declline="23" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_ae6c1001e5aed787336ee5b1c7b7c8991_1ae6c1001e5aed787336ee5b1c7b7c8991" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::Bubble2_ness</definition>
+        <argsstring>(GF &amp;C, int c1, int c2, GF &amp;A, int a1, int a2, GF &amp;B, int b1, int b2)</argsstring>
+        <name>Bubble2_ness</name>
+        <qualifiedname>ness::Bubble2_ness</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c2</declname>
+        </param>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a2</declname>
+        </param>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_utils_decl.hpp" line="21" column="6" declfile="cntr/ness_utils_decl.hpp" declline="21" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_a9a2ed476974eb13d785311e68b54bde9_1a9a2ed476974eb13d785311e68b54bde9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::Bubble2_ness</definition>
+        <argsstring>(GF_pair &amp;C, GF_pair &amp;A, GF_pair &amp;B)</argsstring>
+        <name>Bubble2_ness</name>
+        <qualifiedname>ness::Bubble2_ness</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref> &amp;</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type><ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_utils_decl.hpp" line="24" column="6" declfile="cntr/ness_utils_decl.hpp" declline="24" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_aaa4e238bfea8e680e189729e0a4c8aba_1aaa4e238bfea8e680e189729e0a4c8aba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::Bubble2_ness</definition>
+        <argsstring>(GF_pair &amp;C, int c1, int c2, GF_pair &amp;A, int a1, int a2, GF_pair &amp;B, int b1, int b2)</argsstring>
+        <name>Bubble2_ness</name>
+        <qualifiedname>ness::Bubble2_ness</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref> &amp;</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c2</declname>
+        </param>
+        <param>
+          <type><ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a2</declname>
+        </param>
+        <param>
+          <type><ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_utils_decl.hpp" line="22" column="6" declfile="cntr/ness_utils_decl.hpp" declline="22" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_a9a88e610266cd64e8143d38cce3dc03b_1a9a88e610266cd64e8143d38cce3dc03b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ness::dyson</definition>
+        <argsstring>(GF &amp;invg0, GF &amp;self, GF &amp;g)</argsstring>
+        <name>dyson</name>
+        <qualifiedname>ness::dyson</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>invg0</declname>
+        </param>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>self</declname>
+        </param>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_volterra_decl.hpp" line="14" column="7" declfile="cntr/ness_volterra_decl.hpp" declline="14" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_ac6bcc0a4974011381ae53d1f2175fb0f_1ac6bcc0a4974011381ae53d1f2175fb0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ness::dyson_from_inv</definition>
+        <argsstring>(GF &amp;g, GF &amp;self)</argsstring>
+        <name>dyson_from_inv</name>
+        <qualifiedname>ness::dyson_from_inv</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>self</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_volterra_decl.hpp" line="15" column="7" declfile="cntr/ness_volterra_decl.hpp" declline="15" declcolumn="7"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_a2ffd2c6672f907f0f094bd8efb8d3739_1a2ffd2c6672f907f0f094bd8efb8d3739" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::dyson_ness</definition>
+        <argsstring>(GF &amp;G, GF &amp;Sigma, const cdmatrix &amp;H, double eta)</argsstring>
+        <name>dyson_ness</name>
+        <qualifiedname>ness::dyson_ness</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>Sigma</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceness_a244be30cfc18ed5350dc3063666210a8_1a244be30cfc18ed5350dc3063666210a8" kindref="member">cdmatrix</ref> &amp;</type>
+          <declname>H</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>eta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_volterra_decl.hpp" line="10" column="8" declfile="cntr/ness_volterra_decl.hpp" declline="10" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_af65ba458a353faa71b10a71f5e8c6dbc_1af65ba458a353faa71b10a71f5e8c6dbc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::dyson_ness</definition>
+        <argsstring>(GF_pair &amp;G, GF_pair &amp;Sigma, const cdmatrix &amp;H, double eta)</argsstring>
+        <name>dyson_ness</name>
+        <qualifiedname>ness::dyson_ness</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref> &amp;</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type><ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref> &amp;</type>
+          <declname>Sigma</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceness_a244be30cfc18ed5350dc3063666210a8_1a244be30cfc18ed5350dc3063666210a8" kindref="member">cdmatrix</ref> &amp;</type>
+          <declname>H</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>eta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_volterra_decl.hpp" line="11" column="8" declfile="cntr/ness_volterra_decl.hpp" declline="11" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_a6709f15be529111f86f1c98765eee992_1a6709f15be529111f86f1c98765eee992" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::fgrid_from_tgrid</definition>
+        <argsstring>(double &amp;df, int &amp;nf, double &amp;dt, int &amp;nt)</argsstring>
+        <name>fgrid_from_tgrid</name>
+        <qualifiedname>ness::fgrid_from_tgrid</qualifiedname>
+        <param>
+          <type>double &amp;</type>
+          <declname>df</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>nf</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>dt</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>nt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_utils_decl.hpp" line="13" column="6" declfile="cntr/ness_utils_decl.hpp" declline="13" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_a36ace892aff06310583d7fa488378da1_1a36ace892aff06310583d7fa488378da1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::force_diag</definition>
+        <argsstring>(GF &amp;gf)</argsstring>
+        <name>force_diag</name>
+        <qualifiedname>ness::force_diag</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>gf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_utils_decl.hpp" line="33" column="6" declfile="cntr/ness_utils_decl.hpp" declline="33" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_a4cfefef5610ffaa7dd3d58f7a38e6a56_1a4cfefef5610ffaa7dd3d58f7a38e6a56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::force_FD</definition>
+        <argsstring>(GF &amp;gf, double temp)</argsstring>
+        <name>force_FD</name>
+        <qualifiedname>ness::force_FD</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>gf</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>temp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_utils_decl.hpp" line="29" column="6" declfile="cntr/ness_utils_decl.hpp" declline="29" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_aa46a4eba0dab79bcd6d5791b8c6d34c9_1aa46a4eba0dab79bcd6d5791b8c6d34c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::force_FD</definition>
+        <argsstring>(GF_pair &amp;gf, double temp)</argsstring>
+        <name>force_FD</name>
+        <qualifiedname>ness::force_FD</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref> &amp;</type>
+          <declname>gf</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>temp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_utils_decl.hpp" line="30" column="6" declfile="cntr/ness_utils_decl.hpp" declline="30" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_a79316e82df5763aba30bf47c6e8c174d_1a79316e82df5763aba30bf47c6e8c174d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::force_imag</definition>
+        <argsstring>(GF &amp;gf)</argsstring>
+        <name>force_imag</name>
+        <qualifiedname>ness::force_imag</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>gf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_utils_decl.hpp" line="32" column="6" declfile="cntr/ness_utils_decl.hpp" declline="32" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_aacdf11985b70f82c1926feb07cd067ba_1aacdf11985b70f82c1926feb07cd067ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::force_tFD</definition>
+        <argsstring>(fft_solver &amp;fft, GF &amp;gf, int nfreq, double temp)</argsstring>
+        <name>force_tFD</name>
+        <qualifiedname>ness::force_tFD</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1fft__solver" kindref="compound">fft_solver</ref> &amp;</type>
+          <declname>fft</declname>
+        </param>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>gf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nfreq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>temp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_utils_decl.hpp" line="47" column="6" declfile="cntr/ness_utils_decl.hpp" declline="47" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_a053d90dab2e7881487c7467ea98b672f_1a053d90dab2e7881487c7467ea98b672f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ness::GF2norm</definition>
+        <argsstring>(GF &amp;g1, GF &amp;g2)</argsstring>
+        <name>GF2norm</name>
+        <qualifiedname>ness::GF2norm</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>g1</declname>
+        </param>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>g2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_utils_decl.hpp" line="39" column="8" declfile="cntr/ness_utils_decl.hpp" declline="39" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_1abdb2dadf6fc3a2fc41de989c4c13b1b3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class dos_function</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ness::green_equilibrium_les_ness</definition>
+        <argsstring>(GF &amp;G, dos_function &amp;dos, double beta, double h, int limit, int nn, double mu)</argsstring>
+        <name>green_equilibrium_les_ness</name>
+        <qualifiedname>ness::green_equilibrium_les_ness</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>dos_function &amp;</type>
+          <declname>dos</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nn</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_equilibrium_decl.hpp" line="40" column="6" bodyfile="cntr/ness_equilibrium_decl.hpp" bodystart="40" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_1ad7e8298dc1ad6d95ec1c164063157d08" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class dos_function</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ness::green_equilibrium_les_ness</definition>
+        <argsstring>(GF_pair &amp;G, dos_function &amp;dos, double beta, double h, int limit, int nn, double mu)</argsstring>
+        <name>green_equilibrium_les_ness</name>
+        <qualifiedname>ness::green_equilibrium_les_ness</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref> &amp;</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>dos_function &amp;</type>
+          <declname>dos</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nn</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_equilibrium_decl.hpp" line="126" column="6" bodyfile="cntr/ness_equilibrium_decl.hpp" bodystart="126" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_ad2229c992cd91eb4b2404c11569994ef_1ad2229c992cd91eb4b2404c11569994ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class dos_function</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ness::green_equilibrium_ness</definition>
+        <argsstring>(GF &amp;G, dos_function &amp;dos, double beta, double h, int limit, int nn, double mu)</argsstring>
+        <name>green_equilibrium_ness</name>
+        <qualifiedname>ness::green_equilibrium_ness</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>dos_function &amp;</type>
+          <declname>dos</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nn</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+<para><bold> Equilibrium steady state propagator for the given density of states </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>Calculate the steady state equilibrium <computeroutput><ref refid="classness_1_1GF" kindref="compound">GF</ref></computeroutput> <formula id="267">$ G $</formula> for the given density of states (own type <computeroutput>dos_function</computeroutput>) via <formula id="268">$G(t-t&apos;) = -i \int d\omega A(\omega+\mu) \exp(i\omega (t&apos;-t)) [ \Theta(t-t&apos;) - \Theta(t&apos;-t)\exp(-\beta*\omega)]$</formula>, for all times and the retarded and lesser component. The calculation uses an adaptive Fourier transform algorithm.  </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>G</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output Greens function <ref refid="classness_1_1GF" kindref="compound">GF</ref> set to the equilibrium free propagator </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>density of states </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>beta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>inverse temperature </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timestep </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>chemical potential </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>max number of intervals in Fourier transform (default: 100) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of points in each interval of the Fourier transform (default: 20) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_equilibrium_decl.hpp" line="93" column="6" bodyfile="cntr/ness_equilibrium_decl.hpp" bodystart="93" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_a4aa5be21caf1146065e9b0847d58a49d_1a4aa5be21caf1146065e9b0847d58a49d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class dos_function</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ness::green_equilibrium_ness</definition>
+        <argsstring>(GF_pair &amp;G, dos_function &amp;dos, double beta, double h, int limit, int nn, double mu)</argsstring>
+        <name>green_equilibrium_ness</name>
+        <qualifiedname>ness::green_equilibrium_ness</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref> &amp;</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>dos_function &amp;</type>
+          <declname>dos</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nn</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+<para><bold> Equilibrium steady state propagator for the given density of states </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>Calculate the steady state equilibrium <computeroutput><ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref></computeroutput> <formula id="267">$ G $</formula> (in time domain) for the given density of states (own type <computeroutput>dos_function</computeroutput>) via <formula id="268">$G(t-t&apos;) = -i \int d\omega A(\omega+\mu) \exp(i\omega (t&apos;-t)) [ \Theta(t-t&apos;) - \Theta(t&apos;-t)\exp(-\beta*\omega)]$</formula>, for all times and the retarded and lesser component. The calculation uses an adaptive Fourier transform algorithm.  </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>G</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The output Greens function pair <ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref> set to the equilibrium free propagator (time component) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>density of states </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>beta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>inverse temperature </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timestep </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>chemical potential </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>max number of intervals in Fourier transform (default: 100) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of points in each interval of the Fourier transform (default: 20) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_equilibrium_decl.hpp" line="180" column="6" bodyfile="cntr/ness_equilibrium_decl.hpp" bodystart="180" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_1ae2dfd4a6984f013ab00226b1c7a3a96a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class dos_function</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ness::green_equilibrium_ret_ness</definition>
+        <argsstring>(GF &amp;G, dos_function &amp;dos, double h, int limit, int nn, double mu)</argsstring>
+        <name>green_equilibrium_ret_ness</name>
+        <qualifiedname>ness::green_equilibrium_ret_ness</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>dos_function &amp;</type>
+          <declname>dos</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nn</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_equilibrium_decl.hpp" line="15" column="6" bodyfile="cntr/ness_equilibrium_decl.hpp" bodystart="15" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_1acf1516f95a664cacc39f470911e8262c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class dos_function</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ness::green_equilibrium_ret_ness</definition>
+        <argsstring>(GF_pair &amp;G, dos_function &amp;dos, double h, int limit, int nn, double mu)</argsstring>
+        <name>green_equilibrium_ret_ness</name>
+        <qualifiedname>ness::green_equilibrium_ret_ness</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref> &amp;</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>dos_function &amp;</type>
+          <declname>dos</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nn</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_equilibrium_decl.hpp" line="101" column="6" bodyfile="cntr/ness_equilibrium_decl.hpp" bodystart="101" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_abb849f39723f5e0f4b60dd9435100d0e_1abb849f39723f5e0f4b60dd9435100d0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ness::healthCheck</definition>
+        <argsstring>(GF &amp;G)</argsstring>
+        <name>healthCheck</name>
+        <qualifiedname>ness::healthCheck</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>G</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_utils_decl.hpp" line="43" column="5" declfile="cntr/ness_utils_decl.hpp" declline="43" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_a1d012dc5b5b6e8cf5b446b7bb759b0fa_1a1d012dc5b5b6e8cf5b446b7bb759b0fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::impose_sym</definition>
+        <argsstring>(GF &amp;gf, cdmatrix &amp;sym)</argsstring>
+        <name>impose_sym</name>
+        <qualifiedname>ness::impose_sym</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>gf</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceness_a244be30cfc18ed5350dc3063666210a8_1a244be30cfc18ed5350dc3063666210a8" kindref="member">cdmatrix</ref> &amp;</type>
+          <declname>sym</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_utils_decl.hpp" line="52" column="6" declfile="cntr/ness_utils_decl.hpp" declline="52" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_a1daaa0c8ad27ad42451bfc2d093043d9_1a1daaa0c8ad27ad42451bfc2d093043d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="namespaceness_a2686f449ce9d3426ec0a03f236fb04b8_1a2686f449ce9d3426ec0a03f236fb04b8" kindref="member">cplx</ref></type>
+        <definition>const cplx ness::NESS_II</definition>
+        <argsstring>(0.0, 1.0)</argsstring>
+        <name>NESS_II</name>
+        <qualifiedname>ness::NESS_II</qualifiedname>
+        <param>
+          <type>0.</type>
+          <declname>0</declname>
+        </param>
+        <param>
+          <type>1.</type>
+          <declname>0</declname>
+        </param>
+        <briefdescription>
+<para><bold> Imaginary unit </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_global_settings.hpp" line="32" column="12" declfile="cntr/ness_global_settings.hpp" declline="32" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_a30548eeacaf0b8b556a5acaea3aebe0b_1a30548eeacaf0b8b556a5acaea3aebe0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::outputGF</definition>
+        <argsstring>(GF &amp;G, std::string filename)</argsstring>
+        <name>outputGF</name>
+        <qualifiedname>ness::outputGF</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_utils_decl.hpp" line="41" column="6" declfile="cntr/ness_utils_decl.hpp" declline="41" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_a8d3a56845b27cdd37a63c3d47a13b73c_1a8d3a56845b27cdd37a63c3d47a13b73c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::readGF</definition>
+        <argsstring>(GF &amp;G, std::string filename)</argsstring>
+        <name>readGF</name>
+        <qualifiedname>ness::readGF</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_utils_decl.hpp" line="50" column="6" declfile="cntr/ness_utils_decl.hpp" declline="50" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_ab778bf1db238795f3457e6bfb916ce13_1ab778bf1db238795f3457e6bfb916ce13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ness::set_bwd_from_fwd</definition>
+        <argsstring>(GF &amp;gf_bwd, GF &amp;gf_fwd)</argsstring>
+        <name>set_bwd_from_fwd</name>
+        <qualifiedname>ness::set_bwd_from_fwd</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>gf_bwd</declname>
+        </param>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>gf_fwd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_utils_decl.hpp" line="36" column="5" declfile="cntr/ness_utils_decl.hpp" declline="36" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_a24971c89f5ed356c52171687e18f68f8_1a24971c89f5ed356c52171687e18f68f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::set_les_from_ret</definition>
+        <argsstring>(GF &amp;gf, std::vector&lt; double &gt; fd)</argsstring>
+        <name>set_les_from_ret</name>
+        <qualifiedname>ness::set_les_from_ret</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>gf</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt;</type>
+          <declname>fd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_utils_decl.hpp" line="10" column="6" declfile="cntr/ness_utils_decl.hpp" declline="10" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_a248b236db7270a41e55f5003ec361e92_1a248b236db7270a41e55f5003ec361e92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::set_les_from_ret</definition>
+        <argsstring>(GF_pair &amp;gf, std::vector&lt; double &gt; fd)</argsstring>
+        <name>set_les_from_ret</name>
+        <qualifiedname>ness::set_les_from_ret</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref> &amp;</type>
+          <declname>gf</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt;</type>
+          <declname>fd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_utils_decl.hpp" line="11" column="6" declfile="cntr/ness_utils_decl.hpp" declline="11" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_a3c0e0740375e6a79acb668bdcdd44a4f_1a3c0e0740375e6a79acb668bdcdd44a4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::shift_fd</definition>
+        <argsstring>(std::vector&lt; double &gt; &amp;func, double dw, double shift)</argsstring>
+        <name>shift_fd</name>
+        <qualifiedname>ness::shift_fd</qualifiedname>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dw</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>shift</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_utils_decl.hpp" line="26" column="6" declfile="cntr/ness_utils_decl.hpp" declline="26" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_aea6d9fa4b26ab13c4e467bd08d1b23cc_1aea6d9fa4b26ab13c4e467bd08d1b23cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::tgrid_from_fgrid</definition>
+        <argsstring>(double &amp;dt, int &amp;nt, double &amp;df, int &amp;nf)</argsstring>
+        <name>tgrid_from_fgrid</name>
+        <qualifiedname>ness::tgrid_from_fgrid</qualifiedname>
+        <param>
+          <type>double &amp;</type>
+          <declname>dt</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>nt</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>df</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>nf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_utils_decl.hpp" line="14" column="6" declfile="cntr/ness_utils_decl.hpp" declline="14" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_aef5b921d7849159bc81732b6afca185a_1aef5b921d7849159bc81732b6afca185a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::vie2_ness</definition>
+        <argsstring>(GF &amp;G, const GF &amp;F, const GF &amp;Q)</argsstring>
+        <name>vie2_ness</name>
+        <qualifiedname>ness::vie2_ness</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>F</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>Q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_volterra_decl.hpp" line="12" column="8" declfile="cntr/ness_volterra_decl.hpp" declline="12" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_a57c0d09bb6094b4541dd19cc0c58073b_1a57c0d09bb6094b4541dd19cc0c58073b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::vie2_ness</definition>
+        <argsstring>(GF_pair &amp;G, const GF_pair &amp;F, const GF_pair &amp;Q)</argsstring>
+        <name>vie2_ness</name>
+        <qualifiedname>ness::vie2_ness</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref> &amp;</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref> &amp;</type>
+          <declname>F</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref> &amp;</type>
+          <declname>Q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_volterra_decl.hpp" line="13" column="8" declfile="cntr/ness_volterra_decl.hpp" declline="13" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_a561cf2f128adef6c02d2e1aa9bfc7d74_1a561cf2f128adef6c02d2e1aa9bfc7d74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::volterra_IABC</definition>
+        <argsstring>(GF &amp;gf, const cdmatrix &amp;A, const GF &amp;B, const cdmatrix &amp;C, const cdmatrix &amp;Id)</argsstring>
+        <name>volterra_IABC</name>
+        <qualifiedname>ness::volterra_IABC</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>gf</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceness_a244be30cfc18ed5350dc3063666210a8_1a244be30cfc18ed5350dc3063666210a8" kindref="member">cdmatrix</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceness_a244be30cfc18ed5350dc3063666210a8_1a244be30cfc18ed5350dc3063666210a8" kindref="member">cdmatrix</ref> &amp;</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceness_a244be30cfc18ed5350dc3063666210a8_1a244be30cfc18ed5350dc3063666210a8" kindref="member">cdmatrix</ref> &amp;</type>
+          <declname>Id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_volterra_decl.hpp" line="19" column="8" declfile="cntr/ness_volterra_decl.hpp" declline="19" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_a372e3410c1f3c3ebda4857d799a440f7_1a372e3410c1f3c3ebda4857d799a440f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::volterra_IABC</definition>
+        <argsstring>(GF &amp;gf, const cdmatrix &amp;A, const GF &amp;B, const GF &amp;C, const cdmatrix &amp;Id)</argsstring>
+        <name>volterra_IABC</name>
+        <qualifiedname>ness::volterra_IABC</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>gf</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceness_a244be30cfc18ed5350dc3063666210a8_1a244be30cfc18ed5350dc3063666210a8" kindref="member">cdmatrix</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceness_a244be30cfc18ed5350dc3063666210a8_1a244be30cfc18ed5350dc3063666210a8" kindref="member">cdmatrix</ref> &amp;</type>
+          <declname>Id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_volterra_decl.hpp" line="17" column="8" declfile="cntr/ness_volterra_decl.hpp" declline="17" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_aa68135541f575da819660aba17f7f1b1_1aa68135541f575da819660aba17f7f1b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::volterra_IABC</definition>
+        <argsstring>(GF &amp;gf, const GF &amp;A, const cdmatrix &amp;B, const GF &amp;C, const cdmatrix &amp;Id)</argsstring>
+        <name>volterra_IABC</name>
+        <qualifiedname>ness::volterra_IABC</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>gf</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceness_a244be30cfc18ed5350dc3063666210a8_1a244be30cfc18ed5350dc3063666210a8" kindref="member">cdmatrix</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceness_a244be30cfc18ed5350dc3063666210a8_1a244be30cfc18ed5350dc3063666210a8" kindref="member">cdmatrix</ref> &amp;</type>
+          <declname>Id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_volterra_decl.hpp" line="18" column="8" declfile="cntr/ness_volterra_decl.hpp" declline="18" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_adb37cd7c9335dd0db33ba6d6cec8670f_1adb37cd7c9335dd0db33ba6d6cec8670f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::volterra_IABC</definition>
+        <argsstring>(GF &amp;gf, const GF &amp;A, const GF &amp;B, const GF &amp;C, const cdmatrix &amp;Id)</argsstring>
+        <name>volterra_IABC</name>
+        <qualifiedname>ness::volterra_IABC</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>gf</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceness_a244be30cfc18ed5350dc3063666210a8_1a244be30cfc18ed5350dc3063666210a8" kindref="member">cdmatrix</ref> &amp;</type>
+          <declname>Id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_volterra_decl.hpp" line="20" column="8" declfile="cntr/ness_volterra_decl.hpp" declline="20" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_a2a29ac13acb3bc416227820cf9c58ce2_1a2a29ac13acb3bc416227820cf9c58ce2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::volterra_IABUCU</definition>
+        <argsstring>(GF &amp;gf, const cdmatrix &amp;A, const GF &amp;B, const GF &amp;C, cdmatrix U, const cdmatrix &amp;Id)</argsstring>
+        <name>volterra_IABUCU</name>
+        <qualifiedname>ness::volterra_IABUCU</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>gf</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceness_a244be30cfc18ed5350dc3063666210a8_1a244be30cfc18ed5350dc3063666210a8" kindref="member">cdmatrix</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceness_a244be30cfc18ed5350dc3063666210a8_1a244be30cfc18ed5350dc3063666210a8" kindref="member">cdmatrix</ref></type>
+          <declname>U</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceness_a244be30cfc18ed5350dc3063666210a8_1a244be30cfc18ed5350dc3063666210a8" kindref="member">cdmatrix</ref> &amp;</type>
+          <declname>Id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_volterra_decl.hpp" line="21" column="8" declfile="cntr/ness_volterra_decl.hpp" declline="21" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_a19fed50e6b689f94681eab035a1afb1f_1a19fed50e6b689f94681eab035a1afb1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::volterra_IALMC</definition>
+        <argsstring>(GF &amp;gf, const GF &amp;A, const GF &amp;L, const GF &amp;M, const GF &amp;C, const cdmatrix &amp;Id)</argsstring>
+        <name>volterra_IALMC</name>
+        <qualifiedname>ness::volterra_IALMC</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>gf</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>L</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>M</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceness_a244be30cfc18ed5350dc3063666210a8_1a244be30cfc18ed5350dc3063666210a8" kindref="member">cdmatrix</ref> &amp;</type>
+          <declname>Id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_volterra_decl.hpp" line="22" column="8" declfile="cntr/ness_volterra_decl.hpp" declline="22" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_a67804aec707e9cc7721a7e9bbc8f7590_1a67804aec707e9cc7721a7e9bbc8f7590" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::volterra_IBC</definition>
+        <argsstring>(GF &amp;gf, const GF &amp;B, const GF &amp;C, const cdmatrix &amp;Id)</argsstring>
+        <name>volterra_IBC</name>
+        <qualifiedname>ness::volterra_IBC</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>gf</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceness_a244be30cfc18ed5350dc3063666210a8_1a244be30cfc18ed5350dc3063666210a8" kindref="member">cdmatrix</ref> &amp;</type>
+          <declname>Id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_volterra_decl.hpp" line="16" column="8" declfile="cntr/ness_volterra_decl.hpp" declline="16" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness_a8722cfe1e9bfc21c69c137324e289b69_1a8722cfe1e9bfc21c69c137324e289b69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::volterra_IBCgtr</definition>
+        <argsstring>(GF &amp;gf, const GF &amp;B, const GF &amp;C, const cdmatrix &amp;Id)</argsstring>
+        <name>volterra_IBCgtr</name>
+        <qualifiedname>ness::volterra_IBCgtr</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>gf</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceness_a244be30cfc18ed5350dc3063666210a8_1a244be30cfc18ed5350dc3063666210a8" kindref="member">cdmatrix</ref> &amp;</type>
+          <declname>Id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_volterra_decl.hpp" line="23" column="8" declfile="cntr/ness_volterra_decl.hpp" declline="23" declcolumn="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="cntr/ness_equilibrium_decl.hpp" line="10" column="1"/>
+  </compounddef>
+</doxygen>

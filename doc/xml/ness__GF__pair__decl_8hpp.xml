@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="ness__GF__pair__decl_8hpp" kind="file" language="C++">
+    <compoundname>ness_GF_pair_decl.hpp</compoundname>
+    <innerclass refid="classness_1_1GF__pair" prot="public">ness::GF_pair</innerclass>
+    <innernamespace refid="namespaceness">ness</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ness__GF__decl_8hpp" kindref="compound">ness_GF_decl.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ness__fft__decl_8hpp" kindref="compound">ness_fft_decl.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GF_PAIR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GF_PAIR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceness" kindref="compound">ness</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19" refid="classness_1_1GF__pair" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classness_1_1GF__pair_a1494f50f7331b9b2d329b4353b153279_1a1494f50f7331b9b2d329b4353b153279" kindref="member">GF_pair</ref></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24" refid="classness_1_1GF__pair_a1b10257ea1a54c406d37128eb0ebff10_1a1b10257ea1a54c406d37128eb0ebff10" refkind="member"><highlight class="normal"><ref refid="classness_1_1GF" kindref="compound">GF</ref><sp/><ref refid="classness_1_1GF__pair_a1b10257ea1a54c406d37128eb0ebff10_1a1b10257ea1a54c406d37128eb0ebff10" kindref="member">freq</ref>,<sp/><ref refid="classness_1_1GF__pair_a7b45793d331c97b38625c5a352ce66be_1a7b45793d331c97b38625c5a352ce66be" kindref="member">time</ref>;<sp/></highlight></codeline>
+<codeline lineno="26" refid="classness_1_1GF__pair_affce54aff4372502cc0efbf91fa296c8_1affce54aff4372502cc0efbf91fa296c8" refkind="member"><highlight class="normal"><ref refid="classness_1_1fft__solver" kindref="compound">fft_solver</ref><sp/>*<sp/><ref refid="classness_1_1GF__pair_affce54aff4372502cc0efbf91fa296c8_1affce54aff4372502cc0efbf91fa296c8" kindref="member">fft_</ref>;</highlight></codeline>
+<codeline lineno="28" refid="classness_1_1GF__pair_a7857c4c95286150e883f378c8ac8b7d2_1a7857c4c95286150e883f378c8ac8b7d2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classness_1_1GF__pair_a7857c4c95286150e883f378c8ac8b7d2_1a7857c4c95286150e883f378c8ac8b7d2" kindref="member">newest</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="classness_1_1GF__pair_a1494f50f7331b9b2d329b4353b153279_1a1494f50f7331b9b2d329b4353b153279" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classness_1_1GF__pair_a1494f50f7331b9b2d329b4353b153279_1a1494f50f7331b9b2d329b4353b153279" kindref="member">GF_pair</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>h,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sign,<sp/><ref refid="classness_1_1fft__solver" kindref="compound">fft_solver</ref><sp/>&amp;<sp/>fft);</highlight></codeline>
+<codeline lineno="32" refid="classness_1_1GF__pair_ad2abc6dab7b0e507af68b20eaaca8e2e_1ad2abc6dab7b0e507af68b20eaaca8e2e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classness_1_1GF__pair_ad2abc6dab7b0e507af68b20eaaca8e2e_1ad2abc6dab7b0e507af68b20eaaca8e2e" kindref="member">GF_pair</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="classness_1_1GF__pair_a424a1986f596c1056e3fd73a63d828b5_1a424a1986f596c1056e3fd73a63d828b5" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classness_1_1GF__pair_a424a1986f596c1056e3fd73a63d828b5_1a424a1986f596c1056e3fd73a63d828b5" kindref="member">~GF_pair</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="classness_1_1GF__pair_a445e1ae7fcd49153a913504515d9ba05_1a445e1ae7fcd49153a913504515d9ba05" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classness_1_1GF__pair_a445e1ae7fcd49153a913504515d9ba05_1a445e1ae7fcd49153a913504515d9ba05" kindref="member">GF_pair</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classness_1_1GF__pair_a1494f50f7331b9b2d329b4353b153279_1a1494f50f7331b9b2d329b4353b153279" kindref="member">GF_pair</ref><sp/>&amp;<sp/>gp);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="classness_1_1GF__pair_a782cfb0b5222112bb981edb48649946b_1a782cfb0b5222112bb981edb48649946b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="classness_1_1GF__pair_a1494f50f7331b9b2d329b4353b153279_1a1494f50f7331b9b2d329b4353b153279" kindref="member">GF_pair</ref>&amp;<sp/><ref refid="classness_1_1GF__pair_a782cfb0b5222112bb981edb48649946b_1a782cfb0b5222112bb981edb48649946b" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classness_1_1GF__pair_a1494f50f7331b9b2d329b4353b153279_1a1494f50f7331b9b2d329b4353b153279" kindref="member">GF_pair</ref><sp/>&amp;<sp/>gp);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="classness_1_1GF__pair_aca8327952ba0b8a788deca53f518e270_1aca8327952ba0b8a788deca53f518e270" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classness_1_1GF__pair_aca8327952ba0b8a788deca53f518e270_1aca8327952ba0b8a788deca53f518e270" kindref="member">clear</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="classness_1_1GF__pair_a40cec7edda1fa2320532aa5a309fe224_1a40cec7edda1fa2320532aa5a309fe224" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classness_1_1GF__pair_a40cec7edda1fa2320532aa5a309fe224_1a40cec7edda1fa2320532aa5a309fe224" kindref="member">to_time</ref>();</highlight></codeline>
+<codeline lineno="63" refid="classness_1_1GF__pair_ab9cb4c3e6ac119d1e71a291e359c0335_1ab9cb4c3e6ac119d1e71a291e359c0335" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classness_1_1GF__pair_ab9cb4c3e6ac119d1e71a291e359c0335_1ab9cb4c3e6ac119d1e71a291e359c0335" kindref="member">to_freq</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="67" refid="namespaceness_a55b8d98c06c788acc2f99e620e1831d2_1a55b8d98c06c788acc2f99e620e1831d2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::vector&lt;GF_pair&gt;<sp/><ref refid="namespaceness_a55b8d98c06c788acc2f99e620e1831d2_1a55b8d98c06c788acc2f99e620e1831d2" kindref="member">GF_pairs</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="cntr/ness_GF_pair_decl.hpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1802 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classcntr_1_1herm__pseudo" kind="class" language="C++" prot="private">
+    <compoundname>cntr::herm_pseudo</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classcntr_1_1herm__pseudo_a53577b5c122941ccbf54b88422ebaa21_1a53577b5c122941ccbf54b88422ebaa21" prot="public" static="no">
+        <type>std::complex&lt; T &gt;</type>
+        <definition>typedef std::complex&lt;T&gt; cntr::herm_pseudo&lt; T &gt;::cplx</definition>
+        <argsstring></argsstring>
+        <name>cplx</name>
+        <qualifiedname>cntr::herm_pseudo::cplx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="22" column="26" bodyfile="cntr/cntr_herm_pseudo_decl.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcntr_1_1herm__pseudo_1abb0732c9cd3addd78accdbfff8e0f053" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cntr::herm_pseudo&lt; T &gt;::element_size_</definition>
+        <argsstring></argsstring>
+        <name>element_size_</name>
+        <qualifiedname>cntr::herm_pseudo::element_size_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="134" column="9" bodyfile="cntr/cntr_herm_pseudo_decl.hpp" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1herm__pseudo_1ab39d501947d50b8ec2487bc01442fd77" prot="private" static="no" mutable="no">
+        <type>cplx *</type>
+        <definition>cplx* cntr::herm_pseudo&lt; T &gt;::les_</definition>
+        <argsstring></argsstring>
+        <name>les_</name>
+        <qualifiedname>cntr::herm_pseudo::les_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="118" column="10" bodyfile="cntr/cntr_herm_pseudo_decl.hpp" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1herm__pseudo_1ac53a6973709e3247527165bbc83f3781" prot="private" static="no" mutable="no">
+        <type>cplx *</type>
+        <definition>cplx* cntr::herm_pseudo&lt; T &gt;::mat_</definition>
+        <argsstring></argsstring>
+        <name>mat_</name>
+        <qualifiedname>cntr::herm_pseudo::mat_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="124" column="10" bodyfile="cntr/cntr_herm_pseudo_decl.hpp" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1herm__pseudo_1adc42f21e158861a2a8794664d8c5b02a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cntr::herm_pseudo&lt; T &gt;::nt_</definition>
+        <argsstring></argsstring>
+        <name>nt_</name>
+        <qualifiedname>cntr::herm_pseudo::nt_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="126" column="9" bodyfile="cntr/cntr_herm_pseudo_decl.hpp" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1herm__pseudo_1abfe99df05b7e27706b86b25ac9048227" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cntr::herm_pseudo&lt; T &gt;::ntau_</definition>
+        <argsstring></argsstring>
+        <name>ntau_</name>
+        <qualifiedname>cntr::herm_pseudo::ntau_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="128" column="9" bodyfile="cntr/cntr_herm_pseudo_decl.hpp" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1herm__pseudo_1abf23d214267b6a2ffcb425900f3a890b" prot="private" static="no" mutable="no">
+        <type>cplx *</type>
+        <definition>cplx* cntr::herm_pseudo&lt; T &gt;::ret_</definition>
+        <argsstring></argsstring>
+        <name>ret_</name>
+        <qualifiedname>cntr::herm_pseudo::ret_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="120" column="10" bodyfile="cntr/cntr_herm_pseudo_decl.hpp" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1herm__pseudo_1a7bc16667f0dd12a3f9f0956f5a2c9660" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cntr::herm_pseudo&lt; T &gt;::sig_</definition>
+        <argsstring></argsstring>
+        <name>sig_</name>
+        <qualifiedname>cntr::herm_pseudo::sig_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="136" column="9" bodyfile="cntr/cntr_herm_pseudo_decl.hpp" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1herm__pseudo_1a4a021871c12ba65467a9e8ffa8c13f39" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cntr::herm_pseudo&lt; T &gt;::size1_</definition>
+        <argsstring></argsstring>
+        <name>size1_</name>
+        <qualifiedname>cntr::herm_pseudo::size1_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="130" column="9" bodyfile="cntr/cntr_herm_pseudo_decl.hpp" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1herm__pseudo_1a3cb9aad9d9eb6581c857d8c550bd9a27" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cntr::herm_pseudo&lt; T &gt;::size2_</definition>
+        <argsstring></argsstring>
+        <name>size2_</name>
+        <qualifiedname>cntr::herm_pseudo::size2_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="132" column="9" bodyfile="cntr/cntr_herm_pseudo_decl.hpp" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1herm__pseudo_1a685d59ac3470d407a213e4fe9a0bbf93" prot="private" static="no" mutable="no">
+        <type>cplx *</type>
+        <definition>cplx* cntr::herm_pseudo&lt; T &gt;::tv_</definition>
+        <argsstring></argsstring>
+        <name>tv_</name>
+        <qualifiedname>cntr::herm_pseudo::tv_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="122" column="10" bodyfile="cntr/cntr_herm_pseudo_decl.hpp" bodystart="122" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a71bc6acb723f0931551a9a33a0392e8e_1a71bc6acb723f0931551a9a33a0392e8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::clear</definition>
+        <argsstring>(void)</argsstring>
+        <name>clear</name>
+        <qualifiedname>cntr::herm_pseudo::clear</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="33" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a5d99b5b694903cdeaa92affc9c695356_1a5d99b5b694903cdeaa92affc9c695356" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>cplx</type>
+        <definition>cplx cntr::herm_pseudo&lt; T &gt;::density_matrix</definition>
+        <argsstring>(int i)</argsstring>
+        <name>density_matrix</name>
+        <qualifiedname>cntr::herm_pseudo::density_matrix</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="81" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a83041320874e43a86d12b2c286efbda6_1a83041320874e43a86d12b2c286efbda6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Matrix</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::density_matrix</definition>
+        <argsstring>(int tstp, Matrix &amp;M)</argsstring>
+        <name>density_matrix</name>
+        <qualifiedname>cntr::herm_pseudo::density_matrix</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type>Matrix &amp;</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="82" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_ab2ac1219edea3397e1e44c0cbb419676_1ab2ac1219edea3397e1e44c0cbb419676" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::get_gtr</definition>
+        <argsstring>(int i, int j, cplx &amp;x)</argsstring>
+        <name>get_gtr</name>
+        <qualifiedname>cntr::herm_pseudo::get_gtr</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>cplx &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="65" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a908b5a8f9db0dfd7e0ff5cbf1bf7228e_1a908b5a8f9db0dfd7e0ff5cbf1bf7228e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Matrix</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::get_gtr</definition>
+        <argsstring>(int i, int j, Matrix &amp;M)</argsstring>
+        <name>get_gtr</name>
+        <qualifiedname>cntr::herm_pseudo::get_gtr</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>Matrix &amp;</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="56" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a95cfa8a057b4a1a71c13546e7c250f9a_1a95cfa8a057b4a1a71c13546e7c250f9a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::get_les</definition>
+        <argsstring>(int i, int j, cplx &amp;x)</argsstring>
+        <name>get_les</name>
+        <qualifiedname>cntr::herm_pseudo::get_les</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>cplx &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="64" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a92a5101f39b991caa49c2d98042fa5d8_1a92a5101f39b991caa49c2d98042fa5d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Matrix</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::get_les</definition>
+        <argsstring>(int i, int j, Matrix &amp;M)</argsstring>
+        <name>get_les</name>
+        <qualifiedname>cntr::herm_pseudo::get_les</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>Matrix &amp;</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="55" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a343755a074dc8f80118588b77fa78b6b_1a343755a074dc8f80118588b77fa78b6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::get_mat</definition>
+        <argsstring>(int i, cplx &amp;x)</argsstring>
+        <name>get_mat</name>
+        <qualifiedname>cntr::herm_pseudo::get_mat</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>cplx &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="69" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a53a4852972c292653d1455e28c39ea76_1a53a4852972c292653d1455e28c39ea76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Matrix</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::get_mat</definition>
+        <argsstring>(int i, Matrix &amp;M)</argsstring>
+        <name>get_mat</name>
+        <qualifiedname>cntr::herm_pseudo::get_mat</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Matrix &amp;</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="60" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_add8db045681c21fc77e3471dd5da9156_1add8db045681c21fc77e3471dd5da9156" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::get_matminus</definition>
+        <argsstring>(int i, cplx &amp;x)</argsstring>
+        <name>get_matminus</name>
+        <qualifiedname>cntr::herm_pseudo::get_matminus</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>cplx &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="70" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a766a1906e6e2d77b651d096a7465d1b7_1a766a1906e6e2d77b651d096a7465d1b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Matrix</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::get_matminus</definition>
+        <argsstring>(int i, Matrix &amp;M)</argsstring>
+        <name>get_matminus</name>
+        <qualifiedname>cntr::herm_pseudo::get_matminus</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Matrix &amp;</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="61" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a3fa7cb6317c39b12b3ee559ab39ab2d3_1a3fa7cb6317c39b12b3ee559ab39ab2d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::get_ret</definition>
+        <argsstring>(int i, int j, cplx &amp;x)</argsstring>
+        <name>get_ret</name>
+        <qualifiedname>cntr::herm_pseudo::get_ret</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>cplx &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="66" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a755c8aae0d9b28b522a5d6fdff36360f_1a755c8aae0d9b28b522a5d6fdff36360f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Matrix</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::get_ret</definition>
+        <argsstring>(int i, int j, Matrix &amp;M)</argsstring>
+        <name>get_ret</name>
+        <qualifiedname>cntr::herm_pseudo::get_ret</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>Matrix &amp;</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="57" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a7e925aa26ef45c6ebafca4019e06f09c_1a7e925aa26ef45c6ebafca4019e06f09c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::get_timestep</definition>
+        <argsstring>(int tstp, herm_matrix_timestep&lt; T &gt; &amp;timestep)</argsstring>
+        <name>get_timestep</name>
+        <qualifiedname>cntr::herm_pseudo::get_timestep</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type><ref refid="classcntr_1_1herm__matrix__timestep" kindref="compound">herm_matrix_timestep</ref>&lt; T &gt; &amp;</type>
+          <declname>timestep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="104" column="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_ab77a22d55d5853dc479512013859f014_1ab77a22d55d5853dc479512013859f014" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::get_tv</definition>
+        <argsstring>(int i, int j, cplx &amp;x)</argsstring>
+        <name>get_tv</name>
+        <qualifiedname>cntr::herm_pseudo::get_tv</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>cplx &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="68" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a62b9a422ff14bc8c0dacc8af796526cd_1a62b9a422ff14bc8c0dacc8af796526cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Matrix</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::get_tv</definition>
+        <argsstring>(int i, int j, Matrix &amp;M)</argsstring>
+        <name>get_tv</name>
+        <qualifiedname>cntr::herm_pseudo::get_tv</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>Matrix &amp;</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="59" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a7878cd3b1661cb655f6af391ca7d934e_1a7878cd3b1661cb655f6af391ca7d934e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::get_vt</definition>
+        <argsstring>(int i, int j, cplx &amp;x)</argsstring>
+        <name>get_vt</name>
+        <qualifiedname>cntr::herm_pseudo::get_vt</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>cplx &amp;</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="67" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a8feb330d8a1e237bd55aa6f4f19754e9_1a8feb330d8a1e237bd55aa6f4f19754e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Matrix</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::get_vt</definition>
+        <argsstring>(int i, int j, Matrix &amp;M)</argsstring>
+        <name>get_vt</name>
+        <qualifiedname>cntr::herm_pseudo::get_vt</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>Matrix &amp;</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="58" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_af5dac503232bfa1d886fab74f19d3147_1af5dac503232bfa1d886fab74f19d3147" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cntr::herm_pseudo&lt; T &gt;::herm_pseudo</definition>
+        <argsstring>()</argsstring>
+        <name>herm_pseudo</name>
+        <qualifiedname>cntr::herm_pseudo::herm_pseudo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="24" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a2b592f633c7fc7b55841dba12e18eb86_1a2b592f633c7fc7b55841dba12e18eb86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cntr::herm_pseudo&lt; T &gt;::herm_pseudo</definition>
+        <argsstring>(const herm_pseudo &amp;g)</argsstring>
+        <name>herm_pseudo</name>
+        <qualifiedname>cntr::herm_pseudo::herm_pseudo</qualifiedname>
+        <param>
+          <type>const herm_pseudo &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="27" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_ad2020be8d62e1f6ff9a370303de73daa_1ad2020be8d62e1f6ff9a370303de73daa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cntr::herm_pseudo&lt; T &gt;::herm_pseudo</definition>
+        <argsstring>(int nt, int ntau, int size1=1, int sig=-1)</argsstring>
+        <name>herm_pseudo</name>
+        <qualifiedname>cntr::herm_pseudo::herm_pseudo</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>nt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ntau</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size1</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sig</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="26" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a649fd64f21812db3b96333d71b02888d_1a649fd64f21812db3b96333d71b02888d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::incr_timestep</definition>
+        <argsstring>(int tstp, herm_matrix_timestep&lt; T &gt; &amp;timestep, cplx alpha=1.0)</argsstring>
+        <name>incr_timestep</name>
+        <qualifiedname>cntr::herm_pseudo::incr_timestep</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type><ref refid="classcntr_1_1herm__matrix__timestep" kindref="compound">herm_matrix_timestep</ref>&lt; T &gt; &amp;</type>
+          <declname>timestep</declname>
+        </param>
+        <param>
+          <type>cplx</type>
+          <declname>alpha</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="105" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a0669a3902dbeacb4e5f20034784f54a9_1a0669a3902dbeacb4e5f20034784f54a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::left_multiply</definition>
+        <argsstring>(int tstp, cplx *f0, cplx *ft, T weight=1.0)</argsstring>
+        <name>left_multiply</name>
+        <qualifiedname>cntr::herm_pseudo::left_multiply</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type>cplx *</type>
+          <declname>f0</declname>
+        </param>
+        <param>
+          <type>cplx *</type>
+          <declname>ft</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>weight</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="106" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_ad22d424663fd6dd2b6fc5d070ef49798_1ad22d424663fd6dd2b6fc5d070ef49798" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::left_multiply</definition>
+        <argsstring>(int tstp, function&lt; T &gt; &amp;ft, T weight=1.0)</argsstring>
+        <name>left_multiply</name>
+        <qualifiedname>cntr::herm_pseudo::left_multiply</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type><ref refid="classcntr_1_1function" kindref="compound">function</ref>&lt; T &gt; &amp;</type>
+          <declname>ft</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>weight</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="110" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a40068f738f92dc1ebd0d1677c31cb14b_1a40068f738f92dc1ebd0d1677c31cb14b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>cplx *</type>
+        <definition>cplx * cntr::herm_pseudo&lt; T &gt;::lesptr</definition>
+        <argsstring>(int i, int j)</argsstring>
+        <name>lesptr</name>
+        <qualifiedname>cntr::herm_pseudo::lesptr</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="50" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_ac5a303a3cfc3b4d954ef9aaf7d4774ac_1ac5a303a3cfc3b4d954ef9aaf7d4774ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>cplx *</type>
+        <definition>cplx * cntr::herm_pseudo&lt; T &gt;::matptr</definition>
+        <argsstring>(int i)</argsstring>
+        <name>matptr</name>
+        <qualifiedname>cntr::herm_pseudo::matptr</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="53" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a94229c60f0e72e5d45b5038292be56c9_1a94229c60f0e72e5d45b5038292be56c9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int cntr::herm_pseudo&lt; T &gt;::nt</definition>
+        <argsstring>(void) const</argsstring>
+        <name>nt</name>
+        <qualifiedname>cntr::herm_pseudo::nt</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="40" column="9" bodyfile="cntr/cntr_herm_pseudo_decl.hpp" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a490ec86eedfb712b61af81ec3a90c687_1a490ec86eedfb712b61af81ec3a90c687" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int cntr::herm_pseudo&lt; T &gt;::ntau</definition>
+        <argsstring>(void) const</argsstring>
+        <name>ntau</name>
+        <qualifiedname>cntr::herm_pseudo::ntau</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="39" column="9" bodyfile="cntr/cntr_herm_pseudo_decl.hpp" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_ae9d9ba3f016ecd48cfe5d1ce74c86996_1ae9d9ba3f016ecd48cfe5d1ce74c86996" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>herm_pseudo &amp;</type>
+        <definition>herm_pseudo &amp; cntr::herm_pseudo&lt; T &gt;::operator=</definition>
+        <argsstring>(const herm_pseudo &amp;g)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>cntr::herm_pseudo::operator=</qualifiedname>
+        <param>
+          <type>const herm_pseudo &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="28" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_aa945eaebdfb0c4391105425dfdf1dfbe_1aa945eaebdfb0c4391105425dfdf1dfbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::print_to_file</definition>
+        <argsstring>(const char *file, int precision=16)</argsstring>
+        <name>print_to_file</name>
+        <qualifiedname>cntr::herm_pseudo::print_to_file</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>precision</declname>
+          <defval>16</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="84" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_aac47afd990c833c6500b32fa51d6b075_1aac47afd990c833c6500b32fa51d6b075" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::read_from_file</definition>
+        <argsstring>(const char *file)</argsstring>
+        <name>read_from_file</name>
+        <qualifiedname>cntr::herm_pseudo::read_from_file</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="85" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a2cc6e3a66169c46bbaa0d8e2497f0e54_1a2cc6e3a66169c46bbaa0d8e2497f0e54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::read_from_hdf5</definition>
+        <argsstring>(const char *filename, const char *groupname)</argsstring>
+        <name>read_from_hdf5</name>
+        <qualifiedname>cntr::herm_pseudo::read_from_hdf5</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>groupname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="93" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a5aafb808bd81ab1049fb0bc0c6aadf1e_1a5aafb808bd81ab1049fb0bc0c6aadf1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::read_from_hdf5</definition>
+        <argsstring>(hid_t group_id)</argsstring>
+        <name>read_from_hdf5</name>
+        <qualifiedname>cntr::herm_pseudo::read_from_hdf5</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>group_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="91" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a750c0b3a94e42807c66426f81527b403_1a750c0b3a94e42807c66426f81527b403" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::read_from_hdf5</definition>
+        <argsstring>(hid_t group_id, const char *groupname)</argsstring>
+        <name>read_from_hdf5</name>
+        <qualifiedname>cntr::herm_pseudo::read_from_hdf5</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>group_id</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>groupname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="92" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a4bca350ed2ec9f56facb7d03f6b96bfc_1a4bca350ed2ec9f56facb7d03f6b96bfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::read_from_hdf5</definition>
+        <argsstring>(int nt1, const char *filename, const char *groupname)</argsstring>
+        <name>read_from_hdf5</name>
+        <qualifiedname>cntr::herm_pseudo::read_from_hdf5</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>nt1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>groupname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="97" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a89056cc4aa021fdb8e4e116defac5707_1a89056cc4aa021fdb8e4e116defac5707" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::read_from_hdf5</definition>
+        <argsstring>(int nt1, hid_t group_id)</argsstring>
+        <name>read_from_hdf5</name>
+        <qualifiedname>cntr::herm_pseudo::read_from_hdf5</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>nt1</declname>
+        </param>
+        <param>
+          <type>hid_t</type>
+          <declname>group_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="95" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a9ea8099d50b84f4994089bc5490acdf6_1a9ea8099d50b84f4994089bc5490acdf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::read_from_hdf5</definition>
+        <argsstring>(int nt1, hid_t group_id, const char *groupname)</argsstring>
+        <name>read_from_hdf5</name>
+        <qualifiedname>cntr::herm_pseudo::read_from_hdf5</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>nt1</declname>
+        </param>
+        <param>
+          <type>hid_t</type>
+          <declname>group_id</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>groupname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="96" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a00b7cfcf522728e77e85195d04e58322_1a00b7cfcf522728e77e85195d04e58322" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::resize</definition>
+        <argsstring>(int nt, int ntau, int size1)</argsstring>
+        <name>resize</name>
+        <qualifiedname>cntr::herm_pseudo::resize</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>nt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ntau</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="32" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a311bfe5468d1d96de5cf2532ce4452c5_1a311bfe5468d1d96de5cf2532ce4452c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::resize_discard</definition>
+        <argsstring>(int nt, int ntau, int size1)</argsstring>
+        <name>resize_discard</name>
+        <qualifiedname>cntr::herm_pseudo::resize_discard</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>nt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ntau</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="30" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a2796a4123d85dbd09333c9a1c433a18e_1a2796a4123d85dbd09333c9a1c433a18e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::resize_nt</definition>
+        <argsstring>(int nt)</argsstring>
+        <name>resize_nt</name>
+        <qualifiedname>cntr::herm_pseudo::resize_nt</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>nt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="31" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a1e5ba6d95ac4a3d9e3745880443c46fe_1a1e5ba6d95ac4a3d9e3745880443c46fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>cplx *</type>
+        <definition>cplx * cntr::herm_pseudo&lt; T &gt;::retptr</definition>
+        <argsstring>(int i, int j)</argsstring>
+        <name>retptr</name>
+        <qualifiedname>cntr::herm_pseudo::retptr</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="51" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a3529229da360b6f8bf8bd24bec4e3f85_1a3529229da360b6f8bf8bd24bec4e3f85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::right_multiply</definition>
+        <argsstring>(int tstp, cplx *f0, cplx *ft, T weight=1.0)</argsstring>
+        <name>right_multiply</name>
+        <qualifiedname>cntr::herm_pseudo::right_multiply</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type>cplx *</type>
+          <declname>f0</declname>
+        </param>
+        <param>
+          <type>cplx *</type>
+          <declname>ft</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>weight</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="108" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_aecf5119e4a26ee7e7014e190e7eb9735_1aecf5119e4a26ee7e7014e190e7eb9735" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::right_multiply</definition>
+        <argsstring>(int tstp, function&lt; T &gt; &amp;ft, T weight=1.0)</argsstring>
+        <name>right_multiply</name>
+        <qualifiedname>cntr::herm_pseudo::right_multiply</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type><ref refid="classcntr_1_1function" kindref="compound">function</ref>&lt; T &gt; &amp;</type>
+          <declname>ft</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>weight</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="111" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a144dbcdee69ef0fd4849ee2229b87909_1a144dbcdee69ef0fd4849ee2229b87909" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::set_les</definition>
+        <argsstring>(int i, int j, cplx x)</argsstring>
+        <name>set_les</name>
+        <qualifiedname>cntr::herm_pseudo::set_les</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>cplx</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="76" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_aa2baf0a8b1d20dc7491101a1eacf88af_1aa2baf0a8b1d20dc7491101a1eacf88af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Matrix</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::set_les</definition>
+        <argsstring>(int i, int j, Matrix &amp;M)</argsstring>
+        <name>set_les</name>
+        <qualifiedname>cntr::herm_pseudo::set_les</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>Matrix &amp;</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="72" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_aef4f6779f0d82e8de4d708cc2619cc98_1aef4f6779f0d82e8de4d708cc2619cc98" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::set_mat</definition>
+        <argsstring>(int i, cplx x)</argsstring>
+        <name>set_mat</name>
+        <qualifiedname>cntr::herm_pseudo::set_mat</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>cplx</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="79" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_ae6b375fc9adaef1a201156b689028539_1ae6b375fc9adaef1a201156b689028539" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Matrix</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::set_mat</definition>
+        <argsstring>(int i, Matrix &amp;M)</argsstring>
+        <name>set_mat</name>
+        <qualifiedname>cntr::herm_pseudo::set_mat</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Matrix &amp;</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="75" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_ab06d363ad82ca5a4f5d6dde0aaca1a98_1ab06d363ad82ca5a4f5d6dde0aaca1a98" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::set_ret</definition>
+        <argsstring>(int i, int j, cplx x)</argsstring>
+        <name>set_ret</name>
+        <qualifiedname>cntr::herm_pseudo::set_ret</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>cplx</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="77" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a2a36458bef6c53f341777235fc941c06_1a2a36458bef6c53f341777235fc941c06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Matrix</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::set_ret</definition>
+        <argsstring>(int i, int j, Matrix &amp;M)</argsstring>
+        <name>set_ret</name>
+        <qualifiedname>cntr::herm_pseudo::set_ret</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>Matrix &amp;</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="73" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_ae7a99a0e34a97ee7717419c6bb6468b8_1ae7a99a0e34a97ee7717419c6bb6468b8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::set_sig</definition>
+        <argsstring>(int sig)</argsstring>
+        <name>set_sig</name>
+        <qualifiedname>cntr::herm_pseudo::set_sig</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>sig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="42" column="10" bodyfile="cntr/cntr_herm_pseudo_decl.hpp" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_ab471175dd858c342fbc1bcac43655e60_1ab471175dd858c342fbc1bcac43655e60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::set_timestep</definition>
+        <argsstring>(int tstp, herm_matrix_timestep&lt; T &gt; &amp;timestep)</argsstring>
+        <name>set_timestep</name>
+        <qualifiedname>cntr::herm_pseudo::set_timestep</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type><ref refid="classcntr_1_1herm__matrix__timestep" kindref="compound">herm_matrix_timestep</ref>&lt; T &gt; &amp;</type>
+          <declname>timestep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="103" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a25f9c233b17d6182264021a841ea7b2a_1a25f9c233b17d6182264021a841ea7b2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::set_timestep</definition>
+        <argsstring>(int tstp, herm_pseudo &amp;g1)</argsstring>
+        <name>set_timestep</name>
+        <qualifiedname>cntr::herm_pseudo::set_timestep</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type>herm_pseudo &amp;</type>
+          <declname>g1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="102" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_ad5a3bb6b98673a351db06c5434b60525_1ad5a3bb6b98673a351db06c5434b60525" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::set_timestep_zero</definition>
+        <argsstring>(int tstp)</argsstring>
+        <name>set_timestep_zero</name>
+        <qualifiedname>cntr::herm_pseudo::set_timestep_zero</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="101" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_aca2ba785cbe1c3076af946d97d356f93_1aca2ba785cbe1c3076af946d97d356f93" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::set_tv</definition>
+        <argsstring>(int i, int j, cplx x)</argsstring>
+        <name>set_tv</name>
+        <qualifiedname>cntr::herm_pseudo::set_tv</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>cplx</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="78" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_aaa8164715e75fc0656ae4c5b42a6ebff_1aaa8164715e75fc0656ae4c5b42a6ebff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Matrix</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::set_tv</definition>
+        <argsstring>(int i, int j, Matrix &amp;M)</argsstring>
+        <name>set_tv</name>
+        <qualifiedname>cntr::herm_pseudo::set_tv</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>Matrix &amp;</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="74" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a21d9cd71d16cc1cc7fba44e8d4d0b0f8_1a21d9cd71d16cc1cc7fba44e8d4d0b0f8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int cntr::herm_pseudo&lt; T &gt;::sig</definition>
+        <argsstring>(void) const</argsstring>
+        <name>sig</name>
+        <qualifiedname>cntr::herm_pseudo::sig</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="41" column="9" bodyfile="cntr/cntr_herm_pseudo_decl.hpp" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a1db28345906e4ea7c2a8d9bdbcd0a4c7_1a1db28345906e4ea7c2a8d9bdbcd0a4c7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int cntr::herm_pseudo&lt; T &gt;::size1</definition>
+        <argsstring>(void) const</argsstring>
+        <name>size1</name>
+        <qualifiedname>cntr::herm_pseudo::size1</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="37" column="9" bodyfile="cntr/cntr_herm_pseudo_decl.hpp" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a71f304f62d773e0dfed668d7460e74f6_1a71f304f62d773e0dfed668d7460e74f6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int cntr::herm_pseudo&lt; T &gt;::size2</definition>
+        <argsstring>(void) const</argsstring>
+        <name>size2</name>
+        <qualifiedname>cntr::herm_pseudo::size2</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="38" column="9" bodyfile="cntr/cntr_herm_pseudo_decl.hpp" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_ad1976f0df46a97a45325be0795ceeeae_1ad1976f0df46a97a45325be0795ceeeae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::smul</definition>
+        <argsstring>(int tstp, cplx alpha)</argsstring>
+        <name>smul</name>
+        <qualifiedname>cntr::herm_pseudo::smul</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type>cplx</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="114" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a56378e14c470adec03a900d5131d948d_1a56378e14c470adec03a900d5131d948d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::smul</definition>
+        <argsstring>(int tstp, T alpha)</argsstring>
+        <name>smul</name>
+        <qualifiedname>cntr::herm_pseudo::smul</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="113" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a798c28d5d7a4aac226734639fe08aa32_1a798c28d5d7a4aac226734639fe08aa32" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>cplx *</type>
+        <definition>cplx * cntr::herm_pseudo&lt; T &gt;::tvptr</definition>
+        <argsstring>(int i, int j)</argsstring>
+        <name>tvptr</name>
+        <qualifiedname>cntr::herm_pseudo::tvptr</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="52" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_ab1d6f09f4dcf185f3ba9fecf18f5585c_1ab1d6f09f4dcf185f3ba9fecf18f5585c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::write_to_hdf5</definition>
+        <argsstring>(const char *filename, const char *groupname)</argsstring>
+        <name>write_to_hdf5</name>
+        <qualifiedname>cntr::herm_pseudo::write_to_hdf5</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>groupname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="90" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_ab5d264b6b7a4b0aea58dcc54fd2ba7c0_1ab5d264b6b7a4b0aea58dcc54fd2ba7c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::write_to_hdf5</definition>
+        <argsstring>(hid_t group_id)</argsstring>
+        <name>write_to_hdf5</name>
+        <qualifiedname>cntr::herm_pseudo::write_to_hdf5</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>group_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="88" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a9554388cabcfa0347bdc3c75538f81f3_1a9554388cabcfa0347bdc3c75538f81f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_pseudo&lt; T &gt;::write_to_hdf5</definition>
+        <argsstring>(hid_t group_id, const char *groupname)</argsstring>
+        <name>write_to_hdf5</name>
+        <qualifiedname>cntr::herm_pseudo::write_to_hdf5</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>group_id</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>groupname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="89" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_a95158c768a1901e29dd7084c011512ee_1a95158c768a1901e29dd7084c011512ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cntr::herm_pseudo&lt; T &gt;::~herm_pseudo</definition>
+        <argsstring>()</argsstring>
+        <name>~herm_pseudo</name>
+        <qualifiedname>cntr::herm_pseudo::~herm_pseudo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="25" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcntr_1_1herm__pseudo_1a019697d58da7c070d22c2ae2cdffbb75" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int cntr::herm_pseudo&lt; T &gt;::element_size</definition>
+        <argsstring>(void) const</argsstring>
+        <name>element_size</name>
+        <qualifiedname>cntr::herm_pseudo::element_size</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_pseudo_decl.hpp" line="36" column="9" bodyfile="cntr/cntr_herm_pseudo_decl.hpp" bodystart="36" bodyend="36"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="cntr/cntr_herm_pseudo_decl.hpp" line="20" column="12" bodyfile="cntr/cntr_herm_pseudo_decl.hpp" bodystart="20" bodyend="137"/>
+    <listofallmembers>
+      <member refid="classcntr_1_1herm__pseudo_a71bc6acb723f0931551a9a33a0392e8e_1a71bc6acb723f0931551a9a33a0392e8e" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>clear</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a53577b5c122941ccbf54b88422ebaa21_1a53577b5c122941ccbf54b88422ebaa21" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>cplx</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a5d99b5b694903cdeaa92affc9c695356_1a5d99b5b694903cdeaa92affc9c695356" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>density_matrix</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a83041320874e43a86d12b2c286efbda6_1a83041320874e43a86d12b2c286efbda6" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>density_matrix</name></member>
+      <member refid="classcntr_1_1herm__pseudo_1a019697d58da7c070d22c2ae2cdffbb75" prot="private" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>element_size</name></member>
+      <member refid="classcntr_1_1herm__pseudo_1abb0732c9cd3addd78accdbfff8e0f053" prot="private" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>element_size_</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a908b5a8f9db0dfd7e0ff5cbf1bf7228e_1a908b5a8f9db0dfd7e0ff5cbf1bf7228e" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>get_gtr</name></member>
+      <member refid="classcntr_1_1herm__pseudo_ab2ac1219edea3397e1e44c0cbb419676_1ab2ac1219edea3397e1e44c0cbb419676" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>get_gtr</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a92a5101f39b991caa49c2d98042fa5d8_1a92a5101f39b991caa49c2d98042fa5d8" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>get_les</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a95cfa8a057b4a1a71c13546e7c250f9a_1a95cfa8a057b4a1a71c13546e7c250f9a" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>get_les</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a53a4852972c292653d1455e28c39ea76_1a53a4852972c292653d1455e28c39ea76" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>get_mat</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a343755a074dc8f80118588b77fa78b6b_1a343755a074dc8f80118588b77fa78b6b" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>get_mat</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a766a1906e6e2d77b651d096a7465d1b7_1a766a1906e6e2d77b651d096a7465d1b7" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>get_matminus</name></member>
+      <member refid="classcntr_1_1herm__pseudo_add8db045681c21fc77e3471dd5da9156_1add8db045681c21fc77e3471dd5da9156" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>get_matminus</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a755c8aae0d9b28b522a5d6fdff36360f_1a755c8aae0d9b28b522a5d6fdff36360f" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>get_ret</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a3fa7cb6317c39b12b3ee559ab39ab2d3_1a3fa7cb6317c39b12b3ee559ab39ab2d3" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>get_ret</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a7e925aa26ef45c6ebafca4019e06f09c_1a7e925aa26ef45c6ebafca4019e06f09c" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>get_timestep</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a62b9a422ff14bc8c0dacc8af796526cd_1a62b9a422ff14bc8c0dacc8af796526cd" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>get_tv</name></member>
+      <member refid="classcntr_1_1herm__pseudo_ab77a22d55d5853dc479512013859f014_1ab77a22d55d5853dc479512013859f014" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>get_tv</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a8feb330d8a1e237bd55aa6f4f19754e9_1a8feb330d8a1e237bd55aa6f4f19754e9" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>get_vt</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a7878cd3b1661cb655f6af391ca7d934e_1a7878cd3b1661cb655f6af391ca7d934e" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>get_vt</name></member>
+      <member refid="classcntr_1_1herm__pseudo_af5dac503232bfa1d886fab74f19d3147_1af5dac503232bfa1d886fab74f19d3147" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>herm_pseudo</name></member>
+      <member refid="classcntr_1_1herm__pseudo_ad2020be8d62e1f6ff9a370303de73daa_1ad2020be8d62e1f6ff9a370303de73daa" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>herm_pseudo</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a2b592f633c7fc7b55841dba12e18eb86_1a2b592f633c7fc7b55841dba12e18eb86" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>herm_pseudo</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a649fd64f21812db3b96333d71b02888d_1a649fd64f21812db3b96333d71b02888d" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>incr_timestep</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a0669a3902dbeacb4e5f20034784f54a9_1a0669a3902dbeacb4e5f20034784f54a9" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>left_multiply</name></member>
+      <member refid="classcntr_1_1herm__pseudo_ad22d424663fd6dd2b6fc5d070ef49798_1ad22d424663fd6dd2b6fc5d070ef49798" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>left_multiply</name></member>
+      <member refid="classcntr_1_1herm__pseudo_1ab39d501947d50b8ec2487bc01442fd77" prot="private" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>les_</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a40068f738f92dc1ebd0d1677c31cb14b_1a40068f738f92dc1ebd0d1677c31cb14b" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>lesptr</name></member>
+      <member refid="classcntr_1_1herm__pseudo_1ac53a6973709e3247527165bbc83f3781" prot="private" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>mat_</name></member>
+      <member refid="classcntr_1_1herm__pseudo_ac5a303a3cfc3b4d954ef9aaf7d4774ac_1ac5a303a3cfc3b4d954ef9aaf7d4774ac" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>matptr</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a94229c60f0e72e5d45b5038292be56c9_1a94229c60f0e72e5d45b5038292be56c9" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>nt</name></member>
+      <member refid="classcntr_1_1herm__pseudo_1adc42f21e158861a2a8794664d8c5b02a" prot="private" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>nt_</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a490ec86eedfb712b61af81ec3a90c687_1a490ec86eedfb712b61af81ec3a90c687" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>ntau</name></member>
+      <member refid="classcntr_1_1herm__pseudo_1abfe99df05b7e27706b86b25ac9048227" prot="private" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>ntau_</name></member>
+      <member refid="classcntr_1_1herm__pseudo_ae9d9ba3f016ecd48cfe5d1ce74c86996_1ae9d9ba3f016ecd48cfe5d1ce74c86996" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>operator=</name></member>
+      <member refid="classcntr_1_1herm__pseudo_aa945eaebdfb0c4391105425dfdf1dfbe_1aa945eaebdfb0c4391105425dfdf1dfbe" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>print_to_file</name></member>
+      <member refid="classcntr_1_1herm__pseudo_aac47afd990c833c6500b32fa51d6b075_1aac47afd990c833c6500b32fa51d6b075" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>read_from_file</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a5aafb808bd81ab1049fb0bc0c6aadf1e_1a5aafb808bd81ab1049fb0bc0c6aadf1e" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>read_from_hdf5</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a750c0b3a94e42807c66426f81527b403_1a750c0b3a94e42807c66426f81527b403" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>read_from_hdf5</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a2cc6e3a66169c46bbaa0d8e2497f0e54_1a2cc6e3a66169c46bbaa0d8e2497f0e54" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>read_from_hdf5</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a89056cc4aa021fdb8e4e116defac5707_1a89056cc4aa021fdb8e4e116defac5707" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>read_from_hdf5</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a9ea8099d50b84f4994089bc5490acdf6_1a9ea8099d50b84f4994089bc5490acdf6" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>read_from_hdf5</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a4bca350ed2ec9f56facb7d03f6b96bfc_1a4bca350ed2ec9f56facb7d03f6b96bfc" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>read_from_hdf5</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a00b7cfcf522728e77e85195d04e58322_1a00b7cfcf522728e77e85195d04e58322" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>resize</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a311bfe5468d1d96de5cf2532ce4452c5_1a311bfe5468d1d96de5cf2532ce4452c5" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>resize_discard</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a2796a4123d85dbd09333c9a1c433a18e_1a2796a4123d85dbd09333c9a1c433a18e" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>resize_nt</name></member>
+      <member refid="classcntr_1_1herm__pseudo_1abf23d214267b6a2ffcb425900f3a890b" prot="private" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>ret_</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a1e5ba6d95ac4a3d9e3745880443c46fe_1a1e5ba6d95ac4a3d9e3745880443c46fe" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>retptr</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a3529229da360b6f8bf8bd24bec4e3f85_1a3529229da360b6f8bf8bd24bec4e3f85" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>right_multiply</name></member>
+      <member refid="classcntr_1_1herm__pseudo_aecf5119e4a26ee7e7014e190e7eb9735_1aecf5119e4a26ee7e7014e190e7eb9735" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>right_multiply</name></member>
+      <member refid="classcntr_1_1herm__pseudo_aa2baf0a8b1d20dc7491101a1eacf88af_1aa2baf0a8b1d20dc7491101a1eacf88af" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>set_les</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a144dbcdee69ef0fd4849ee2229b87909_1a144dbcdee69ef0fd4849ee2229b87909" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>set_les</name></member>
+      <member refid="classcntr_1_1herm__pseudo_ae6b375fc9adaef1a201156b689028539_1ae6b375fc9adaef1a201156b689028539" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>set_mat</name></member>
+      <member refid="classcntr_1_1herm__pseudo_aef4f6779f0d82e8de4d708cc2619cc98_1aef4f6779f0d82e8de4d708cc2619cc98" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>set_mat</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a2a36458bef6c53f341777235fc941c06_1a2a36458bef6c53f341777235fc941c06" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>set_ret</name></member>
+      <member refid="classcntr_1_1herm__pseudo_ab06d363ad82ca5a4f5d6dde0aaca1a98_1ab06d363ad82ca5a4f5d6dde0aaca1a98" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>set_ret</name></member>
+      <member refid="classcntr_1_1herm__pseudo_ae7a99a0e34a97ee7717419c6bb6468b8_1ae7a99a0e34a97ee7717419c6bb6468b8" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>set_sig</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a25f9c233b17d6182264021a841ea7b2a_1a25f9c233b17d6182264021a841ea7b2a" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>set_timestep</name></member>
+      <member refid="classcntr_1_1herm__pseudo_ab471175dd858c342fbc1bcac43655e60_1ab471175dd858c342fbc1bcac43655e60" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>set_timestep</name></member>
+      <member refid="classcntr_1_1herm__pseudo_ad5a3bb6b98673a351db06c5434b60525_1ad5a3bb6b98673a351db06c5434b60525" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>set_timestep_zero</name></member>
+      <member refid="classcntr_1_1herm__pseudo_aaa8164715e75fc0656ae4c5b42a6ebff_1aaa8164715e75fc0656ae4c5b42a6ebff" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>set_tv</name></member>
+      <member refid="classcntr_1_1herm__pseudo_aca2ba785cbe1c3076af946d97d356f93_1aca2ba785cbe1c3076af946d97d356f93" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>set_tv</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a21d9cd71d16cc1cc7fba44e8d4d0b0f8_1a21d9cd71d16cc1cc7fba44e8d4d0b0f8" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>sig</name></member>
+      <member refid="classcntr_1_1herm__pseudo_1a7bc16667f0dd12a3f9f0956f5a2c9660" prot="private" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>sig_</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a1db28345906e4ea7c2a8d9bdbcd0a4c7_1a1db28345906e4ea7c2a8d9bdbcd0a4c7" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>size1</name></member>
+      <member refid="classcntr_1_1herm__pseudo_1a4a021871c12ba65467a9e8ffa8c13f39" prot="private" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>size1_</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a71f304f62d773e0dfed668d7460e74f6_1a71f304f62d773e0dfed668d7460e74f6" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>size2</name></member>
+      <member refid="classcntr_1_1herm__pseudo_1a3cb9aad9d9eb6581c857d8c550bd9a27" prot="private" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>size2_</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a56378e14c470adec03a900d5131d948d_1a56378e14c470adec03a900d5131d948d" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>smul</name></member>
+      <member refid="classcntr_1_1herm__pseudo_ad1976f0df46a97a45325be0795ceeeae_1ad1976f0df46a97a45325be0795ceeeae" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>smul</name></member>
+      <member refid="classcntr_1_1herm__pseudo_1a685d59ac3470d407a213e4fe9a0bbf93" prot="private" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>tv_</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a798c28d5d7a4aac226734639fe08aa32_1a798c28d5d7a4aac226734639fe08aa32" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>tvptr</name></member>
+      <member refid="classcntr_1_1herm__pseudo_ab5d264b6b7a4b0aea58dcc54fd2ba7c0_1ab5d264b6b7a4b0aea58dcc54fd2ba7c0" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>write_to_hdf5</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a9554388cabcfa0347bdc3c75538f81f3_1a9554388cabcfa0347bdc3c75538f81f3" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>write_to_hdf5</name></member>
+      <member refid="classcntr_1_1herm__pseudo_ab1d6f09f4dcf185f3ba9fecf18f5585c_1ab1d6f09f4dcf185f3ba9fecf18f5585c" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>write_to_hdf5</name></member>
+      <member refid="classcntr_1_1herm__pseudo_a95158c768a1901e29dd7084c011512ee_1a95158c768a1901e29dd7084c011512ee" prot="public" virt="non-virtual"><scope>cntr::herm_pseudo</scope><name>~herm_pseudo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

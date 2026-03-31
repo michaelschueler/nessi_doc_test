@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="linalg_8hpp" kind="file" language="C++">
+    <compoundname>linalg.hpp</compoundname>
+    <innernamespace refid="namespacelinalg">linalg</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*#####################################################################</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">#</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">#<sp/><sp/>LINEAR<sp/>ALGEBRA<sp/>INTERFACE:</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">#</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">#<sp/><sp/>FOR<sp/>A<sp/>MOMENT,<sp/>I<sp/>STILL<sp/>USE<sp/>THOSE<sp/>FROM<sp/>THE<sp/>EIGEN<sp/>LIBRARY,</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">#<sp/><sp/>BUT<sp/>THY<sp/>MAY<sp/>BE<sp/>REPLACED<sp/>BY<sp/>DIRECT<sp/>BLAS/LAPACK<sp/>CALLS</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">#<sp/><sp/>AT<sp/>A<sp/>LATER<sp/>TIME</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">#</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">#####################################################################*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_LINALG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_LINALG_H<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;complex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cassert&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="namespacelinalg" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacelinalg" kindref="compound">linalg</ref><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>interface<sp/>to<sp/>simple<sp/>linear<sp/>algebra<sp/>routines:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>implementation<sp/>(using<sp/>EIGEN<sp/>library)<sp/>defined<sp/>in<sp/>linalg_eigen.cpp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//void<sp/>cplx_sq_solve(void<sp/>*a,void<sp/><sp/>*b,void<sp/>*x,int<sp/>n,int<sp/>d);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacelinalg_ac0901cd7238f667f033e7c929b5946a4_1ac0901cd7238f667f033e7c929b5946a4" kindref="member">eigen_hermv</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size,std::complex&lt;double&gt;<sp/>*A,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*eval,std::complex&lt;double&gt;<sp/>*evec);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacelinalg_ae48239dc572e82139995d51871ba5d46_1ae48239dc572e82139995d51871ba5d46" kindref="member">real_sq_solve</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*ad,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*bd,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*xd,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacelinalg_a51c9b6e710b3df6d3ba075fc3d6c24cd_1a51c9b6e710b3df6d3ba075fc3d6c24cd" kindref="member">cplx_sq_solve</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*a,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*b,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*x,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacelinalg_ad6e447b2fad4a0bae9a19f8c808a3f7e_1ad6e447b2fad4a0bae9a19f8c808a3f7e" kindref="member">cplx_sq_solve_many</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*a,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*b,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*x,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dim,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="comment">//void<sp/>cplx_tri_solve(double<sp/>*a,double<sp/>*b,double<sp/>*x,int<sp/>dim);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacelinalg_afeb1b243c8afe4137155be88de978c23_1afeb1b243c8afe4137155be88de978c23" kindref="member">cplx_matrix_inverse</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*a,</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*x,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacelinalg_a0deea2e0310edf1c18cf392f4f244d83_1a0deea2e0310edf1c18cf392f4f244d83" kindref="member">linalg_matrix_inverse</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*a,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*x,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="comment">//void<sp/>QR_decomposition(double<sp/>*aa,double<sp/>*qq,double<sp/>*rr,int<sp/>n,int<sp/>m);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">//<sp/>linalg</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="cntr/linalg.hpp"/>
+  </compounddef>
+</doxygen>

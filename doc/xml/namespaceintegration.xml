@@ -1,0 +1,324 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespaceintegration" kind="namespace" language="C++">
+    <compoundname>integration</compoundname>
+    <innerclass refid="classintegration_1_1Integrator" prot="public">integration::Integrator</innerclass>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceintegration_ae19c84094b9ccb7aec5f47f4e80672ec_1ae19c84094b9ccb7aec5f47f4e80672ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="classintegration_1_1Integrator" kindref="compound">Integrator</ref>&lt; T &gt; &amp;</type>
+        <definition>Integrator&lt; T &gt; &amp; integration::I</definition>
+        <argsstring>(int k)</argsstring>
+        <name>I</name>
+        <qualifiedname>integration::I</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.hpp" line="506" column="25" bodyfile="cntr/integration.hpp" bodystart="506" bodyend="514"/>
+        <referencedby refid="namespacecntr_a2d8954a3da3ccc9f2269aecd59306ad1_1a2d8954a3da3ccc9f2269aecd59306ad1" compoundref="cntr__dyson__moving__impl__org_8hpp" startline="338" endline="340">cntr::dyson_timestep</referencedby>
+        <referencedby refid="namespacecntr_a80cde225ad008e456d1a0bf9404273a2_1a80cde225ad008e456d1a0bf9404273a2" compoundref="cntr__dyson__moving__impl__par_8cpp" startline="423" endline="425">cntr::dyson_timestep</referencedby>
+        <referencedby refid="namespacecntr_abb866e8c162a063024d06815ca704d5a_1abb866e8c162a063024d06815ca704d5a" compoundref="cntr__dyson__omp__impl__org_8hpp" startline="643" endline="671">cntr::dyson_timestep_omp</referencedby>
+        <referencedby refid="classintegration_1_1Integrator_af48607b631a43b59c09aedeb35b82df7_1af48607b631a43b59c09aedeb35b82df7" compoundref="integration_8hpp" startline="199" endline="216">integration::Integrator&lt; T &gt;::Integrator</referencedby>
+        <referencedby refid="classintegration_1_1Integrator_ac223048aba8d7b915f1cce7c2bb7bda7_1ac223048aba8d7b915f1cce7c2bb7bda7" compoundref="integration_8hpp" startline="165" endline="190">integration::Integrator&lt; T &gt;::operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceintegration_ae56663ce119bbdcea51e472665f3c93b_1ae56663ce119bbdcea51e472665f3c93b" prot="public" static="no" extern="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>template <ref refid="classintegration_1_1Integrator" kindref="compound">Integrator</ref>&lt; double &gt; &amp;</type>
+        <definition>template Integrator&lt; double &gt; &amp; integration::I&lt; double &gt;</definition>
+        <argsstring>(int k)</argsstring>
+        <name>I&lt; double &gt;</name>
+        <qualifiedname>integration::I&lt; double &gt;</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.hpp" line="518" column="10" declfile="cntr/integration.hpp" declline="518" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceintegration_1a6b422e61ea1d0509001150582921d21e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void integration::read_bd_weights</definition>
+        <argsstring>(int k, double *w)</argsstring>
+        <name>read_bd_weights</name>
+        <qualifiedname>integration::read_bd_weights</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.cpp" line="815" column="6" bodyfile="cntr/integration.cpp" bodystart="815" bodyend="896" declfile="cntr/integration.hpp" declline="29" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceintegration_1af2451cb6485bcd71df0a812c69502955" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void integration::read_gregory_weights</definition>
+        <argsstring>(int k, double *w)</argsstring>
+        <name>read_gregory_weights</name>
+        <qualifiedname>integration::read_gregory_weights</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.cpp" line="152" column="6" bodyfile="cntr/integration.cpp" bodystart="152" bodyend="805" declfile="cntr/integration.hpp" declline="28" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceintegration_1af85d9748855d437f759ad11723b5d288" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void integration::read_poly_differentiation</definition>
+        <argsstring>(int k, double *P)</argsstring>
+        <name>read_poly_differentiation</name>
+        <qualifiedname>integration::read_poly_differentiation</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>P</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.cpp" line="97" column="6" bodyfile="cntr/integration.cpp" bodystart="97" bodyend="104" declfile="cntr/integration.hpp" declline="23" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceintegration_1ada8656f9ffe63885d92153fcbd4c5b1f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void integration::read_poly_differentiation</definition>
+        <argsstring>(int k, float *P)</argsstring>
+        <name>read_poly_differentiation</name>
+        <qualifiedname>integration::read_poly_differentiation</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>P</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.cpp" line="124" column="6" bodyfile="cntr/integration.cpp" bodystart="124" bodyend="131" declfile="cntr/integration.hpp" declline="26" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceintegration_1a66abde8c00537de6ce5c3dced7d78136" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void integration::read_poly_differentiation</definition>
+        <argsstring>(int k, long double *w)</argsstring>
+        <name>read_poly_differentiation</name>
+        <qualifiedname>integration::read_poly_differentiation</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>long double *</type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.cpp" line="37" column="6" bodyfile="cntr/integration.cpp" bodystart="37" bodyend="57" declfile="cntr/integration.hpp" declline="20" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceintegration_1a01df2df54a09f179bad6d972433db1ad" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void integration::read_poly_integration</definition>
+        <argsstring>(int k, double *P)</argsstring>
+        <name>read_poly_integration</name>
+        <qualifiedname>integration::read_poly_integration</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>P</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.cpp" line="106" column="6" bodyfile="cntr/integration.cpp" bodystart="106" bodyend="113" declfile="cntr/integration.hpp" declline="24" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceintegration_1af0f223a9e9b202a0c39c84b0f6493a49" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void integration::read_poly_integration</definition>
+        <argsstring>(int k, float *P)</argsstring>
+        <name>read_poly_integration</name>
+        <qualifiedname>integration::read_poly_integration</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>P</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.cpp" line="133" column="6" bodyfile="cntr/integration.cpp" bodystart="133" bodyend="140" declfile="cntr/integration.hpp" declline="27" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceintegration_1a794604d049d2528bbef32e7b5a72a6c2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void integration::read_poly_integration</definition>
+        <argsstring>(int k, long double *w)</argsstring>
+        <name>read_poly_integration</name>
+        <qualifiedname>integration::read_poly_integration</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>long double *</type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.cpp" line="59" column="6" bodyfile="cntr/integration.cpp" bodystart="59" bodyend="84" declfile="cntr/integration.hpp" declline="21" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceintegration_1a43c9bd794dd52c1d2ab07caaf3ecadff" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void integration::read_poly_interpolation</definition>
+        <argsstring>(int k, double *P)</argsstring>
+        <name>read_poly_interpolation</name>
+        <qualifiedname>integration::read_poly_interpolation</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>P</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.cpp" line="88" column="6" bodyfile="cntr/integration.cpp" bodystart="88" bodyend="95" declfile="cntr/integration.hpp" declline="22" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceintegration_1a894fd4ec0f1629dbe055beae17d831c6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void integration::read_poly_interpolation</definition>
+        <argsstring>(int k, float *P)</argsstring>
+        <name>read_poly_interpolation</name>
+        <qualifiedname>integration::read_poly_interpolation</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>P</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.cpp" line="115" column="6" bodyfile="cntr/integration.cpp" bodystart="115" bodyend="122" declfile="cntr/integration.hpp" declline="25" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceintegration_1a5250a7ce943c441e4064f1ba3ffaa654" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void integration::read_poly_interpolation</definition>
+        <argsstring>(int k, long double *P)</argsstring>
+        <name>read_poly_interpolation</name>
+        <qualifiedname>integration::read_poly_interpolation</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>long double *</type>
+          <declname>P</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.cpp" line="15" column="6" bodyfile="cntr/integration.cpp" bodystart="15" bodyend="35" declfile="cntr/integration.hpp" declline="19" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceintegration_1ae2c98cd5c7f1d86067af65c790d88748" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void integration::read_rcorr</definition>
+        <argsstring>(int k, double *w)</argsstring>
+        <name>read_rcorr</name>
+        <qualifiedname>integration::read_rcorr</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.cpp" line="905" column="6" bodyfile="cntr/integration.cpp" bodystart="905" bodyend="1182" declfile="cntr/integration.hpp" declline="30" declcolumn="8"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="cntr/integration.cpp" line="5" column="1"/>
+  </compounddef>
+</doxygen>

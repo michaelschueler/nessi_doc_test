@@ -1,0 +1,2024 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespaceness2" kind="namespace" language="C++">
+    <compoundname>ness2</compoundname>
+    <innerclass refid="classness2_1_1bethedos" prot="public">ness2::bethedos</innerclass>
+    <innerclass refid="classness2_1_1fft__array" prot="public">ness2::fft_array</innerclass>
+    <innerclass refid="classness2_1_1FFT__OMP__Manager" prot="public">ness2::FFT_OMP_Manager</innerclass>
+    <innerclass refid="classness2_1_1gauss" prot="public">ness2::gauss</innerclass>
+    <innerclass refid="classness2_1_1grid__info" prot="public">ness2::grid_info</innerclass>
+    <innerclass refid="classness2_1_1herm__matrix__ness" prot="public">ness2::herm_matrix_ness</innerclass>
+    <innerclass refid="classness2_1_1ohmic__sym" prot="private">ness2::ohmic_sym</innerclass>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespaceness2_a384022e4fa54faa358d00af720094f3a_1a384022e4fa54faa358d00af720094f3a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>dyson_bath_type</name>
+        <qualifiedname>ness2::dyson_bath_type</qualifiedname>
+        <enumvalue id="namespaceness2_a384022e4fa54faa358d00af720094f3a_1a384022e4fa54faa358d00af720094f3aa348c703624a79ac630f1378fb250a79e" prot="public">
+          <name>BATH_NONE</name>
+          <initializer>=0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceness2_a384022e4fa54faa358d00af720094f3a_1a384022e4fa54faa358d00af720094f3aaa090a991fc0fdf14d98803bb73bb519a" prot="public">
+          <name>BATH_CONST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceness2_a384022e4fa54faa358d00af720094f3a_1a384022e4fa54faa358d00af720094f3aa44ae46961823eca881d98d0dee408494" prot="public">
+          <name>BATH_GAUSS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceness2_a384022e4fa54faa358d00af720094f3a_1a384022e4fa54faa358d00af720094f3aa6b851dcb6085245f28ff621a41482655" prot="public">
+          <name>BATH_OHMIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_dyson_decl.hpp" line="8" column="3" bodyfile="cntr/ness2_dyson_decl.hpp" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242b" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>fft_domain</name>
+        <qualifiedname>ness2::fft_domain</qualifiedname>
+        <enumvalue id="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242ba07cc694b9b3fc636710fa08b6922c42b" prot="public">
+          <name>time</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242bab0038f6cab2d16ebdcf2e36d1779d8ba" prot="public">
+          <name>freq</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_global_settings.hpp" line="26" column="3" bodyfile="cntr/ness2_global_settings.hpp" bodystart="26" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespaceness2_ad92d2a80687f622c86e0162cc967dc9d_1ad92d2a80687f622c86e0162cc967dc9d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>fft_integral_method</name>
+        <qualifiedname>ness2::fft_integral_method</qualifiedname>
+        <enumvalue id="namespaceness2_ad92d2a80687f622c86e0162cc967dc9d_1ad92d2a80687f622c86e0162cc967dc9da9942107d8b6d0644aa8ed27932d72afd" prot="public">
+          <name>FFT_TRAPEZ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceness2_ad92d2a80687f622c86e0162cc967dc9d_1ad92d2a80687f622c86e0162cc967dc9da79bd1bf1fce3e3844e90fa37209e413b" prot="public">
+          <name>FFT_CUBIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespaceness2_ad92d2a80687f622c86e0162cc967dc9d_1ad92d2a80687f622c86e0162cc967dc9da3284d2fd17b9114c9bd6122edbe84aaf" prot="public">
+          <name>FFT_ADAPTIVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_global_settings.hpp" line="28" column="3" bodyfile="cntr/ness2_global_settings.hpp" bodystart="28" bodyend="28"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespaceness2_a76742c181e9d22bf9f3d16742670437e_1a76742c181e9d22bf9f3d16742670437e" prot="public" static="no">
+        <type>std::complex&lt; double &gt;</type>
+        <definition>typedef std::complex&lt;double&gt; ness2::cdouble</definition>
+        <argsstring></argsstring>
+        <name>cdouble</name>
+        <qualifiedname>ness2::cdouble</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_global_settings.hpp" line="23" column="24" bodyfile="cntr/ness2_global_settings.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceness2_afd4e1ebc14989f0be6d55840cfd5571b_1afd4e1ebc14989f0be6d55840cfd5571b" prot="public" static="no">
+        <type>std::complex&lt; double &gt;</type>
+        <definition>typedef std::complex&lt;double&gt; ness2::cplx</definition>
+        <argsstring></argsstring>
+        <name>cplx</name>
+        <qualifiedname>ness2::cplx</qualifiedname>
+        <briefdescription>
+<para>Define complex data type ... same as in cntr:: </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_global_settings.hpp" line="22" column="24" bodyfile="cntr/ness2_global_settings.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceness2_a98e78bce977ac6cb70c3b33208e2593d_1a98e78bce977ac6cb70c3b33208e2593d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness2::Bubble1_ness</definition>
+        <argsstring>(herm_matrix_ness &amp;C, herm_matrix_ness &amp;A, herm_matrix_ness &amp;B)</argsstring>
+        <name>Bubble1_ness</name>
+        <qualifiedname>ness2::Bubble1_ness</qualifiedname>
+        <param>
+          <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_utils_decl.hpp" line="103" column="8" declfile="cntr/ness2_utils_decl.hpp" declline="103" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness2_aa646233b6c0779cfba079d64a5270ede_1aa646233b6c0779cfba079d64a5270ede" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness2::Bubble1_ness</definition>
+        <argsstring>(herm_matrix_ness &amp;C, int c1, int c2, herm_matrix_ness &amp;A, int a1, int a2, herm_matrix_ness &amp;B, int b1, int b2)</argsstring>
+        <name>Bubble1_ness</name>
+        <qualifiedname>ness2::Bubble1_ness</qualifiedname>
+        <param>
+          <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c2</declname>
+        </param>
+        <param>
+          <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a2</declname>
+        </param>
+        <param>
+          <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b2</declname>
+        </param>
+        <briefdescription>
+<para><bold> Calculate the bubble diagram of first type: <formula id="250">$ C_{c_1,c_2} (t)= i A_{a_1,a_2} (t) B_{b_2,b_1} (-t) $</formula> </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>Evaluate Green&apos;s function C given by the bubble diagram equation <formula id="250">$ C_{c_1,c_2} (t)= i A_{a_1,a_2} (t) B_{b_2,b_1} (-t) $</formula>. The evaluation is done for all time points and for the lesser and retarded component. </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&amp;C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Green&apos;s function to store result in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>&amp;c1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First orbital index of C </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>&amp;c2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second orbital index of C </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>&amp;A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time Green&apos;s function </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>&amp;a1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First orbital index of A </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>&amp;a2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second orbital index of A </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>&amp;B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time Green&apos;s function </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>&amp;b1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First orbital index of B </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>&amp;b2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second orbital index of B </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_utils_decl.hpp" line="102" column="8" declfile="cntr/ness2_utils_decl.hpp" declline="102" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness2_ae8d005d95f8abd85ce790331b0cd2e52_1ae8d005d95f8abd85ce790331b0cd2e52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness2::Bubble2_ness</definition>
+        <argsstring>(herm_matrix_ness &amp;C, herm_matrix_ness &amp;A, herm_matrix_ness &amp;B)</argsstring>
+        <name>Bubble2_ness</name>
+        <qualifiedname>ness2::Bubble2_ness</qualifiedname>
+        <param>
+          <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_utils_decl.hpp" line="139" column="8" declfile="cntr/ness2_utils_decl.hpp" declline="139" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness2_a9d4d4b4c8d6ddd29e73148912c3acd10_1a9d4d4b4c8d6ddd29e73148912c3acd10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness2::Bubble2_ness</definition>
+        <argsstring>(herm_matrix_ness &amp;C, int c1, int c2, herm_matrix_ness &amp;A, int a1, int a2, herm_matrix_ness &amp;B, int b1, int b2)</argsstring>
+        <name>Bubble2_ness</name>
+        <qualifiedname>ness2::Bubble2_ness</qualifiedname>
+        <param>
+          <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>c2</declname>
+        </param>
+        <param>
+          <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a2</declname>
+        </param>
+        <param>
+          <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>b2</declname>
+        </param>
+        <briefdescription>
+<para><bold> Calculate the bubble diagram of second type: <formula id="251">$ C_{c_1,c_2} (t)= i A_{a_1,a_2} (t) B_{b_1,b_2} (t) $</formula> </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>Evaluate Green&apos;s function C given by the bubble diagram equation <formula id="251">$ C_{c_1,c_2} (t)= i A_{a_1,a_2} (t) B_{b_1,b_2} (t) $</formula>. The evaluation is done for all time points and for the lesser ad retarded component. </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&amp;C</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time Green&apos;s function to store result in </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>&amp;c1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First orbital index of C </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>&amp;c2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second orbital index of C </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>&amp;A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time Green&apos;s function </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>&amp;a1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First orbital index of A </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>&amp;a2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second orbital index of A </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>&amp;B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time Green&apos;s function </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>&amp;b1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First orbital index of B </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>&amp;b2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second orbital index of B </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_utils_decl.hpp" line="138" column="8" declfile="cntr/ness2_utils_decl.hpp" declline="138" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness2_a83d3e84c58d40593726bfd8d70da73db_1a83d3e84c58d40593726bfd8d70da73db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ness2::cntr2ness</definition>
+        <argsstring>(herm_matrix_ness &amp;Gness, cntr::herm_matrix&lt; T &gt; &amp;Gcntr, int tstp=-1)</argsstring>
+        <name>cntr2ness</name>
+        <qualifiedname>ness2::cntr2ness</qualifiedname>
+        <param>
+          <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>Gness</declname>
+        </param>
+        <param>
+          <type><ref refid="classcntr_1_1herm__matrix" kindref="compound">cntr::herm_matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>Gcntr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>Convert CNTR Green&apos;s function <computeroutput><ref refid="classcntr_1_1herm__matrix" kindref="compound">cntr::herm_matrix</ref></computeroutput> to NESS <computeroutput><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">ness2::herm_matrix_ness</ref></computeroutput> by sampling a given time slice. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Read <formula id="252">$ G_{\rm ness}^{R|&lt;}(t) = G{\rm cntr}^{R|&lt;}(tstp, tstp - t) $</formula> from CNTR object at time slice <computeroutput>tstp</computeroutput>, and write to NESS object.</para>
+<para>Values at negative times <formula id="208">$ t &lt; 0 $</formula> are set by Hermitian symmetry: <formula id="219">$ G^&lt;(-t) = -[G^&lt;(t)]^\dagger $</formula></para>
+<para>If <computeroutput>tstp</computeroutput> is smaller than the maximum time in Gness, the tail is left zero.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>GcntrType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the contour Green&apos;s function (<ref refid="classcntr_1_1herm__matrix" kindref="compound">cntr::herm_matrix</ref>,<ref refid="classcntr_1_1herm__matrix__timestep" kindref="compound">cntr::herm_matrix_timestep</ref>, <ref refid="classcntr_1_1herm__matrix__moving" kindref="compound">cntr::herm_matrix_moving</ref>, <ref refid="classcntr_1_1herm__matrix__timestep__moving" kindref="compound">cntr::herm_matrix_timestep_moving</ref>) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">Gness</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target steady-state Green&apos;s function (time domain filled) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Gcntr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source two-time Green&apos;s function </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">tstp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time slice in <computeroutput>Gcntr</computeroutput> to sample from (defaults to max time) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::runtime_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If dimensions mismatch </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_utils_decl.hpp" line="160" column="8" bodyfile="cntr/ness2_utils_decl.hpp" bodystart="160" bodyend="182"/>
+        <references refid="classness2_1_1herm__matrix__ness_ab56e5ba98c9801aa7b7d88ab3310feaa_1ab56e5ba98c9801aa7b7d88ab3310feaa" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="365">ness2::herm_matrix_ness::Nft_</references>
+        <references refid="classcntr_1_1herm__matrix_ae5fbe3d5c668b6808cd19d4a2e873c67_1ae5fbe3d5c668b6808cd19d4a2e873c67" compoundref="cntr__herm__matrix__decl_8hpp" startline="69" endline="69">cntr::herm_matrix&lt; T &gt;::nt</references>
+        <references refid="classness2_1_1herm__matrix__ness_a8f27dda5fd911c6733c65a92943113ff_1a8f27dda5fd911c6733c65a92943113ff" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="409" endline="411">ness2::herm_matrix_ness::set_les</references>
+        <references refid="classness2_1_1herm__matrix__ness_a14b78ea6bc592ede7606e8a9ee065956_1a14b78ea6bc592ede7606e8a9ee065956" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="399" endline="401">ness2::herm_matrix_ness::set_ret</references>
+        <references refid="classness2_1_1herm__matrix__ness_a8f813ffca6c658477ebd97c66f786f8c_1a8f813ffca6c658477ebd97c66f786f8c">ness2::herm_matrix_ness::set_zero</references>
+        <references refid="classcntr_1_1herm__matrix_a304d40545765d7bd51f5f09f71f81ee5_1a304d40545765d7bd51f5f09f71f81ee5" compoundref="cntr__herm__matrix__decl_8hpp" startline="66" endline="66">cntr::herm_matrix&lt; T &gt;::size1</references>
+        <references refid="classness2_1_1herm__matrix__ness_aee3dcb5f4c19dd807b76f8efb5a4ebd9_1aee3dcb5f4c19dd807b76f8efb5a4ebd9" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="366">ness2::herm_matrix_ness::size1_</references>
+        <references refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242ba07cc694b9b3fc636710fa08b6922c42b" compoundref="ness2__global__settings_8hpp" startline="26">time</references>
+        <referencedby refid="namespaceness2_afef87b86eb3bbb3023d80286cb90970f_1afef87b86eb3bbb3023d80286cb90970f" compoundref="ness2__utils__decl_8hpp" startline="232" endline="235">cntr2ness</referencedby>
+        <referencedby refid="namespaceness2_adaaeabe296a9af1b1112fdf20bd9dfb2_1adaaeabe296a9af1b1112fdf20bd9dfb2" compoundref="ness2__utils__decl_8hpp" startline="227" endline="230">cntr2ness</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness2_afef87b86eb3bbb3023d80286cb90970f_1afef87b86eb3bbb3023d80286cb90970f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ness2::cntr2ness</definition>
+        <argsstring>(herm_matrix_ness &amp;Gness, cntr::herm_matrix_moving&lt; T &gt; &amp;Gcntr, int tstp=-1)</argsstring>
+        <name>cntr2ness</name>
+        <qualifiedname>ness2::cntr2ness</qualifiedname>
+        <param>
+          <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>Gness</declname>
+        </param>
+        <param>
+          <type><ref refid="classcntr_1_1herm__matrix__moving" kindref="compound">cntr::herm_matrix_moving</ref>&lt; T &gt; &amp;</type>
+          <declname>Gcntr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_utils_decl.hpp" line="232" column="8" bodyfile="cntr/ness2_utils_decl.hpp" bodystart="232" bodyend="235"/>
+        <references refid="namespaceness2_a83d3e84c58d40593726bfd8d70da73db_1a83d3e84c58d40593726bfd8d70da73db" compoundref="ness2__utils__decl_8hpp" startline="160" endline="182">cntr2ness</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness2_ab5fb4500340661a61ec1e39f6083e431_1ab5fb4500340661a61ec1e39f6083e431" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ness2::cntr2ness</definition>
+        <argsstring>(herm_matrix_ness &amp;Gness, cntr::herm_matrix_timestep&lt; T &gt; &amp;Gcntr, int tstp=-1)</argsstring>
+        <name>cntr2ness</name>
+        <qualifiedname>ness2::cntr2ness</qualifiedname>
+        <param>
+          <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>Gness</declname>
+        </param>
+        <param>
+          <type><ref refid="classcntr_1_1herm__matrix__timestep" kindref="compound">cntr::herm_matrix_timestep</ref>&lt; T &gt; &amp;</type>
+          <declname>Gcntr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_utils_decl.hpp" line="184" column="8" bodyfile="cntr/ness2_utils_decl.hpp" bodystart="184" bodyend="205"/>
+        <references refid="classness2_1_1herm__matrix__ness_ab56e5ba98c9801aa7b7d88ab3310feaa_1ab56e5ba98c9801aa7b7d88ab3310feaa" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="365">ness2::herm_matrix_ness::Nft_</references>
+        <references refid="classness2_1_1herm__matrix__ness_a8f27dda5fd911c6733c65a92943113ff_1a8f27dda5fd911c6733c65a92943113ff" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="409" endline="411">ness2::herm_matrix_ness::set_les</references>
+        <references refid="classness2_1_1herm__matrix__ness_a14b78ea6bc592ede7606e8a9ee065956_1a14b78ea6bc592ede7606e8a9ee065956" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="399" endline="401">ness2::herm_matrix_ness::set_ret</references>
+        <references refid="classness2_1_1herm__matrix__ness_a8f813ffca6c658477ebd97c66f786f8c_1a8f813ffca6c658477ebd97c66f786f8c">ness2::herm_matrix_ness::set_zero</references>
+        <references refid="classcntr_1_1herm__matrix__timestep_ab4d60001bf07673a5e0a848c474cf6c4_1ab4d60001bf07673a5e0a848c474cf6c4" compoundref="cntr__herm__matrix__timestep__decl_8hpp" startline="53" endline="53">cntr::herm_matrix_timestep&lt; T &gt;::size1</references>
+        <references refid="classness2_1_1herm__matrix__ness_aee3dcb5f4c19dd807b76f8efb5a4ebd9_1aee3dcb5f4c19dd807b76f8efb5a4ebd9" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="366">ness2::herm_matrix_ness::size1_</references>
+        <references refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242ba07cc694b9b3fc636710fa08b6922c42b" compoundref="ness2__global__settings_8hpp" startline="26">time</references>
+        <references refid="classcntr_1_1herm__matrix__timestep_a96bef30390444e19d7413c66c0376b72_1a96bef30390444e19d7413c66c0376b72" compoundref="cntr__herm__matrix__timestep__decl_8hpp" startline="55" endline="55">cntr::herm_matrix_timestep&lt; T &gt;::tstp</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness2_adaaeabe296a9af1b1112fdf20bd9dfb2_1adaaeabe296a9af1b1112fdf20bd9dfb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ness2::cntr2ness</definition>
+        <argsstring>(herm_matrix_ness &amp;Gness, cntr::herm_matrix_timestep_moving&lt; T &gt; &amp;Gcntr, int tstp=-1)</argsstring>
+        <name>cntr2ness</name>
+        <qualifiedname>ness2::cntr2ness</qualifiedname>
+        <param>
+          <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>Gness</declname>
+        </param>
+        <param>
+          <type><ref refid="classcntr_1_1herm__matrix__timestep__moving" kindref="compound">cntr::herm_matrix_timestep_moving</ref>&lt; T &gt; &amp;</type>
+          <declname>Gcntr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_utils_decl.hpp" line="227" column="8" bodyfile="cntr/ness2_utils_decl.hpp" bodystart="227" bodyend="230"/>
+        <references refid="namespaceness2_a83d3e84c58d40593726bfd8d70da73db_1a83d3e84c58d40593726bfd8d70da73db" compoundref="ness2__utils__decl_8hpp" startline="160" endline="182">cntr2ness</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness2_aefa06eb8e7d1e29c1fb94983ac8470ee_1aefa06eb8e7d1e29c1fb94983ac8470ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ness2::cntr2ness</definition>
+        <argsstring>(herm_matrix_ness &amp;Gness, cntr::herm_matrix_timestep_moving_view&lt; T &gt; &amp;Gcntr, int tstp=-1)</argsstring>
+        <name>cntr2ness</name>
+        <qualifiedname>ness2::cntr2ness</qualifiedname>
+        <param>
+          <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>Gness</declname>
+        </param>
+        <param>
+          <type><ref refid="classcntr_1_1herm__matrix__timestep__moving__view" kindref="compound">cntr::herm_matrix_timestep_moving_view</ref>&lt; T &gt; &amp;</type>
+          <declname>Gcntr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_utils_decl.hpp" line="209" column="8" bodyfile="cntr/ness2_utils_decl.hpp" bodystart="209" bodyend="225"/>
+        <references refid="classcntr_1_1herm__matrix__timestep__moving__view_aa12f6dd65d37318fdc21e67a91ebf662_1aa12f6dd65d37318fdc21e67a91ebf662">cntr::herm_matrix_timestep_moving_view&lt; T &gt;::get_les</references>
+        <references refid="classcntr_1_1herm__matrix__timestep__moving__view_ac2c421c4e5c5b5623c7b19351e320a66_1ac2c421c4e5c5b5623c7b19351e320a66">cntr::herm_matrix_timestep_moving_view&lt; T &gt;::get_ret</references>
+        <references refid="classness2_1_1herm__matrix__ness_ab56e5ba98c9801aa7b7d88ab3310feaa_1ab56e5ba98c9801aa7b7d88ab3310feaa" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="365">ness2::herm_matrix_ness::Nft_</references>
+        <references refid="classness2_1_1herm__matrix__ness_a8f27dda5fd911c6733c65a92943113ff_1a8f27dda5fd911c6733c65a92943113ff" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="409" endline="411">ness2::herm_matrix_ness::set_les</references>
+        <references refid="classness2_1_1herm__matrix__ness_a14b78ea6bc592ede7606e8a9ee065956_1a14b78ea6bc592ede7606e8a9ee065956" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="399" endline="401">ness2::herm_matrix_ness::set_ret</references>
+        <references refid="classness2_1_1herm__matrix__ness_a8f813ffca6c658477ebd97c66f786f8c_1a8f813ffca6c658477ebd97c66f786f8c">ness2::herm_matrix_ness::set_zero</references>
+        <references refid="classcntr_1_1herm__matrix__timestep__moving__view_af2dd69f0565ac4a599fe106ad0e880ec_1af2dd69f0565ac4a599fe106ad0e880ec" compoundref="cntr__herm__matrix__timestep__moving__view__decl_8hpp" startline="44" endline="44">cntr::herm_matrix_timestep_moving_view&lt; T &gt;::size1</references>
+        <references refid="classness2_1_1herm__matrix__ness_aee3dcb5f4c19dd807b76f8efb5a4ebd9_1aee3dcb5f4c19dd807b76f8efb5a4ebd9" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="366">ness2::herm_matrix_ness::size1_</references>
+        <references refid="classcntr_1_1herm__matrix__timestep__moving__view_a9d6b3eecba49664497e19e55d145b46a_1a9d6b3eecba49664497e19e55d145b46a" compoundref="cntr__herm__matrix__timestep__moving__view__decl_8hpp" startline="50" endline="50">cntr::herm_matrix_timestep_moving_view&lt; T &gt;::tc</references>
+        <references refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242ba07cc694b9b3fc636710fa08b6922c42b" compoundref="ness2__global__settings_8hpp" startline="26">time</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness2_a9ae52e2965c52a526b782e5afc35b0ab_1a9ae52e2965c52a526b782e5afc35b0ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Integrand</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ness2::compute_lesser</definition>
+        <argsstring>(fft_array &amp;G, int nt, Integrand &amp;integrand, double lo, double hi, double h, int nn, int limit)</argsstring>
+        <name>compute_lesser</name>
+        <qualifiedname>ness2::compute_lesser</qualifiedname>
+        <param>
+          <type><ref refid="classness2_1_1fft__array" kindref="compound">fft_array</ref> &amp;</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nt</declname>
+        </param>
+        <param>
+          <type>Integrand &amp;</type>
+          <declname>integrand</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>lo</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>hi</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nn</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_equilibrium_decl.hpp" line="285" column="8" bodyfile="cntr/ness2_equilibrium_decl.hpp" bodystart="285" bodyend="317" declfile="cntr/ness2_equilibrium_decl.hpp" declline="16" declcolumn="8"/>
+        <references refid="classfourier_1_1adft__func_aaa081b6da5008bdb6ab01c8ce025b19a_1aaa081b6da5008bdb6ab01c8ce025b19a" compoundref="fourier_8hpp" startline="317" endline="334">fourier::adft_func::dft</references>
+        <references refid="classness2_1_1fft__array_ad5a736d2b7936035493288b0cff5a3e2_1ad5a736d2b7936035493288b0cff5a3e2" compoundref="ness2__fft__decl_8hpp" startline="351">ness2::fft_array::Nft_</references>
+        <references refid="classfourier_1_1adft__func_a352d3b8ba7b6c50c699a66b8903a8d0d_1a352d3b8ba7b6c50c699a66b8903a8d0d" compoundref="fourier_8hpp" startline="366" endline="418">fourier::adft_func::sample</references>
+        <references refid="classness2_1_1fft__array_aaecf397393a5c107c42d8d1a25b139ee_1aaecf397393a5c107c42d8d1a25b139ee" compoundref="ness2__fft__decl_8hpp" startline="451" endline="469">ness2::fft_array::set_element</references>
+        <references refid="classness2_1_1fft__array_a40396087c4af731bee88c21c87769495_1a40396087c4af731bee88c21c87769495">ness2::fft_array::set_zero</references>
+        <references refid="classness2_1_1fft__array_ac1ee36ea21977212d05ccc865813a38d_1ac1ee36ea21977212d05ccc865813a38d" compoundref="ness2__fft__decl_8hpp" startline="352">ness2::fft_array::size1_</references>
+        <references refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242ba07cc694b9b3fc636710fa08b6922c42b" compoundref="ness2__global__settings_8hpp" startline="26">time</references>
+        <referencedby refid="namespaceness2_a3fc04c6c94b6f4037f54206a319dff27_1a3fc04c6c94b6f4037f54206a319dff27" compoundref="ness2__equilibrium__decl_8hpp" startline="201" endline="239">green_equilibrium_ness_bose</referencedby>
+        <referencedby refid="namespaceness2_a3a3ddda2ed9698ac30831954cb6f3248_1a3a3ddda2ed9698ac30831954cb6f3248" compoundref="ness2__equilibrium__decl_8hpp" startline="156" endline="197">green_equilibrium_ness_fermi</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness2_a465cc9d39bbd273a5f9181dd35eaaab0_1a465cc9d39bbd273a5f9181dd35eaaab0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness2::convolution_density_matrix</definition>
+        <argsstring>(cdmatrix &amp;result, int bosefermi, herm_matrix_ness &amp;A, herm_matrix_ness &amp;B, double h)</argsstring>
+        <name>convolution_density_matrix</name>
+        <qualifiedname>ness2::convolution_density_matrix</qualifiedname>
+        <param>
+          <type>cdmatrix &amp;</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bosefermi</declname>
+        </param>
+        <param>
+          <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+<para>Compute the equal-time lesser component of the product <formula id="256">$ i (A \cdot B)^&lt; $</formula> for two steady-state Green&apos;s functions in NESS representation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This routine evaluates    <formula id="257">\[   M = bosefermi* i (A \cdot B)^&lt;(t=0)
+     = bosefermi*i \, \mathcal{F}^{-1} \left[ A^&lt;(\omega) B^A(\omega) + A^R(\omega) B^&lt;(\omega) \right]_{t=0}
+\]</formula></para>
+<para>The function transforms A and B to frequency (overwriing eisting values) on the frequency grid of the NESS object, limited to the range</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Complex matrix of dimension <computeroutput>(size1 x size1)</computeroutput> containing the equal-time value <formula id="258">$ i(A \cdot B)^&lt;(t=0) $</formula>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">bosefermi</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(+1) for bosonic functions, (-1) for fermionic functions </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time step used for the Fourier transforms. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>First steady-state Green&apos;s function (<computeroutput><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref></computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second steady-state Green&apos;s function (<computeroutput><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref></computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_utils_decl.hpp" line="347" column="8" declfile="cntr/ness2_utils_decl.hpp" declline="347" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness2_aad0c0cb59123f7f79006dc907a65b61e_1aad0c0cb59123f7f79006dc907a65b61e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness2::density_matrix</definition>
+        <argsstring>(cdmatrix &amp;result, int bosefermi, herm_matrix_ness &amp;A)</argsstring>
+        <name>density_matrix</name>
+        <qualifiedname>ness2::density_matrix</qualifiedname>
+        <param>
+          <type>cdmatrix &amp;</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bosefermi</declname>
+        </param>
+        <param>
+          <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+<para>Compute the equal-time density matrix from the lesser component of a NESS Green&apos;s function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This routine evaluates   <formula id="259">\[   \rho = {\tt bosefermi} \cdot i \, A^&lt;(t=0)
+\]</formula> where <formula id="260">$ A^&lt;(t) $</formula> is the lesser Green&apos;s function in the time domain, and <formula id="261">$t=0$</formula> denotes the equal-time value.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Complex matrix of dimension <computeroutput>(size1 x size1)</computeroutput> containing <formula id="262">$ {\tt bosefermi} \cdot i A^&lt;(t=0) $</formula>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">bosefermi</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(+1) for bosonic functions, (-1) for fermionic functions </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Steady-state Green&apos;s function (<computeroutput><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref></computeroutput>) in the time domain. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_utils_decl.hpp" line="367" column="8" declfile="cntr/ness2_utils_decl.hpp" declline="367" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness2_ad8a4c6cf146cd434419e98928f688de5_1ad8a4c6cf146cd434419e98928f688de5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ness2::distance_norm2</definition>
+        <argsstring>(fft_array &amp;A, fft_array &amp;B, fft_domain type)</argsstring>
+        <name>distance_norm2</name>
+        <qualifiedname>ness2::distance_norm2</qualifiedname>
+        <param>
+          <type><ref refid="classness2_1_1fft__array" kindref="compound">fft_array</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="classness2_1_1fft__array" kindref="compound">fft_array</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242b" kindref="member">fft_domain</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para><bold> Compute Euclidean distance between two <computeroutput><ref refid="classness2_1_1fft__array" kindref="compound">fft_array</ref></computeroutput> objects in time or frequency domain </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>Computes the L2 norm (Euclidean distance) <formula id="248">$ \|A - B\|_2 = \sqrt{ \sum_i |A_i - B_i|^2 } $</formula> between two <computeroutput><ref refid="classness2_1_1fft__array" kindref="compound">fft_array</ref></computeroutput> objects in either time or frequency domain. </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&amp;A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><linebreak/>
+ First <computeroutput><ref refid="classness2_1_1fft__array" kindref="compound">fft_array</ref></computeroutput> object <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>&amp;B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><linebreak/>
+ Second <computeroutput><ref refid="classness2_1_1fft__array" kindref="compound">fft_array</ref></computeroutput> object <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><linebreak/>
+ <computeroutput><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242ba07cc694b9b3fc636710fa08b6922c42b" kindref="member">fft_domain::time</ref></computeroutput> or <computeroutput><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242bab0038f6cab2d16ebdcf2e36d1779d8ba" kindref="member">fft_domain::freq</ref></computeroutput> – determines which internal data to compare <linebreak/>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><linebreak/>
+ Euclidean norm of the difference</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::invalid_argument</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><linebreak/>
+ If array sizes or shapes do not match </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_utils_decl.hpp" line="39" column="11" declfile="cntr/ness2_utils_decl.hpp" declline="39" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness2_a7627f40c4257c58d140827c085fc441c_1a7627f40c4257c58d140827c085fc441c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ness2::distance_norm2</definition>
+        <argsstring>(herm_matrix_ness &amp;A, herm_matrix_ness &amp;B, fft_domain type)</argsstring>
+        <name>distance_norm2</name>
+        <qualifiedname>ness2::distance_norm2</qualifiedname>
+        <param>
+          <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242b" kindref="member">fft_domain</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para><bold> Compute Euclidean distance between two <computeroutput><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref></computeroutput> objects </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>Computes the combined L2 norm for retarded and lesser components: <formula id="249">$ \|A - B\|_2 = \sqrt{ \|A^{ret} - B^{ret}\|_2^2 + \|A^{les} - B^{les}\|_2^2 } $</formula> </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&amp;A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><linebreak/>
+ First <computeroutput><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref></computeroutput> object <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>&amp;B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><linebreak/>
+ Second <computeroutput><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref></computeroutput> object <linebreak/>
+ </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><linebreak/>
+ <computeroutput><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242ba07cc694b9b3fc636710fa08b6922c42b" kindref="member">fft_domain::time</ref></computeroutput> or <computeroutput><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242bab0038f6cab2d16ebdcf2e36d1779d8ba" kindref="member">fft_domain::freq</ref></computeroutput> – domain to compare <linebreak/>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><linebreak/>
+ Total Euclidean norm of the difference across components </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_utils_decl.hpp" line="66" column="11" declfile="cntr/ness2_utils_decl.hpp" declline="66" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness2_abafb242b4f7de9bc12503a852ed45b08_1abafb242b4f7de9bc12503a852ed45b08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classness2_1_1fft__array" kindref="compound">fft_array</ref></type>
+        <definition>fft_array ness2::downsample</definition>
+        <argsstring>(fft_array &amp;in, int factor)</argsstring>
+        <name>downsample</name>
+        <qualifiedname>ness2::downsample</qualifiedname>
+        <param>
+          <type><ref refid="classness2_1_1fft__array" kindref="compound">fft_array</ref> &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+<para>Downsampling of a <computeroutput><ref refid="classness2_1_1fft__array" kindref="compound">fft_array</ref></computeroutput> to a coarser time grid, taking only every <computeroutput>factor</computeroutput> entry of the original object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The new length is <formula id="263">$ N_{ft1} = \frac{N_{ft}}{\tt factor} $</formula>. In frequency space, only values <formula id="264">$ 0, \ldots, \frac{N_{ft1}}{2} - 1, N_{ft} - \frac{N_{ft1}}{2}, \ldots, N_{ft} - 1 $</formula> of the input are written to the output object. Returns a downsampled <computeroutput><ref refid="classness2_1_1fft__array" kindref="compound">fft_array</ref></computeroutput> object. It is required that <formula id="184">$ N_{ft} $</formula> is an integer multiple of <computeroutput>factor</computeroutput>, and <formula id="265">$ N_{ft1} $</formula> (the new length) is still an integer multiple of 2.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input array (<computeroutput><ref refid="classness2_1_1fft__array" kindref="compound">fft_array</ref></computeroutput>). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coarse-graining factor, larger than one. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_utils_decl.hpp" line="383" column="13" declfile="cntr/ness2_utils_decl.hpp" declline="383" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness2_a3ea46ed012de7b0fbea4b4e604d38871_1a3ea46ed012de7b0fbea4b4e604d38871" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref></type>
+        <definition>herm_matrix_ness ness2::downsample</definition>
+        <argsstring>(herm_matrix_ness &amp;in, int factor)</argsstring>
+        <name>downsample</name>
+        <qualifiedname>ness2::downsample</qualifiedname>
+        <param>
+          <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+<para>Downsampling of a <computeroutput><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref></computeroutput> to a coarser time grid, taking only every <computeroutput>factor</computeroutput> entry of the original object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The new length is <formula id="263">$ N_{ft1} = \frac{N_{ft}}{\tt factor} $</formula>. In frequency space, only values <formula id="264">$ 0, \ldots, \frac{N_{ft1}}{2} - 1, N_{ft} - \frac{N_{ft1}}{2}, \ldots, N_{ft} - 1 $</formula> of the input are written to the output object. Returns a downsampled <computeroutput><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref></computeroutput> object. It is required that <formula id="184">$ N_{ft} $</formula> is an integer multiple of <computeroutput>factor</computeroutput>, and <formula id="265">$ N_{ft1} $</formula> (the new length) is still an integer multiple of 2.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input steady-state Green&apos;s function (<computeroutput><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref></computeroutput>). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coarse-graining factor, larger than one. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_utils_decl.hpp" line="398" column="20" declfile="cntr/ness2_utils_decl.hpp" declline="398" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness2_aeb50b23de8dea84f0fd5299c599cf124_1aeb50b23de8dea84f0fd5299c599cf124" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness2::dyson</definition>
+        <argsstring>(herm_matrix_ness &amp;G, double mu, cdmatrix &amp;epsilon, herm_matrix_ness &amp;Sigma, double h, fft_integral_method method=FFT_TRAPEZ, dyson_bath_type bath_type=BATH_NONE, double bath_eta=0, double bath_beta=0, double bath_mu=0)</argsstring>
+        <name>dyson</name>
+        <qualifiedname>ness2::dyson</qualifiedname>
+        <param>
+          <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>cdmatrix &amp;</type>
+          <declname>epsilon</declname>
+        </param>
+        <param>
+          <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>Sigma</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceness2_ad92d2a80687f622c86e0162cc967dc9d_1ad92d2a80687f622c86e0162cc967dc9d" kindref="member">fft_integral_method</ref></type>
+          <declname>method</declname>
+          <defval><ref refid="namespaceness2_ad92d2a80687f622c86e0162cc967dc9d_1ad92d2a80687f622c86e0162cc967dc9da9942107d8b6d0644aa8ed27932d72afd" kindref="member">FFT_TRAPEZ</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="namespaceness2_a384022e4fa54faa358d00af720094f3a_1a384022e4fa54faa358d00af720094f3a" kindref="member">dyson_bath_type</ref></type>
+          <declname>bath_type</declname>
+          <defval><ref refid="namespaceness2_a384022e4fa54faa358d00af720094f3a_1a384022e4fa54faa358d00af720094f3aa348c703624a79ac630f1378fb250a79e" kindref="member">BATH_NONE</ref></defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>bath_eta</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>bath_beta</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>bath_mu</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Solve the Dyson equation for the steady-state Green&apos;s function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para><blockquote><para>Computes the time-domain solution <formula id="168">$ G^{R|&lt;}(t) $</formula> of the Dyson equation for a steady-state system, using a frequency-domain method with optional bath regularization. The method transforms <formula id="169">$ \Sigma^{R|&lt;}(t) $</formula> to frequency space, solves Dyson equations there, and back-transforms to obtain <formula id="168">$ G^{R|&lt;}(t) $</formula>. </para>
+</blockquote></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">G</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output Green&apos;s function <formula id="168">$ G^{R|&lt;}(t) $</formula> of type <computeroutput><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref></computeroutput>, modified in-place.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Chemical potential <formula id="170">$ \mu $</formula>.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">epsilon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Complex-valued single-particle Hamiltonian matrix <formula id="171">$ \epsilon $</formula> (dimension must match <computeroutput>G</computeroutput>).</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Sigma</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input self-energy <formula id="169">$ \Sigma^{R|&lt;}(t) $</formula> of type <computeroutput><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref></computeroutput>, defined on the same grid as <computeroutput>G</computeroutput>.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time step size <formula id="172">$ h $</formula> used for time grids.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integral transformation method (default = <computeroutput><ref refid="namespaceness2_ad92d2a80687f622c86e0162cc967dc9d_1ad92d2a80687f622c86e0162cc967dc9da9942107d8b6d0644aa8ed27932d72afd" kindref="member">FFT_TRAPEZ</ref></computeroutput>). Currently only <computeroutput><ref refid="namespaceness2_ad92d2a80687f622c86e0162cc967dc9d_1ad92d2a80687f622c86e0162cc967dc9da9942107d8b6d0644aa8ed27932d72afd" kindref="member">FFT_TRAPEZ</ref></computeroutput> is implemented.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">bath_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of bath regularization added to the self-energy. If <computeroutput>bath_type != REG_NONE</computeroutput>, a bath self-energy <formula id="173">$ \Sigma_{\rm reg} $</formula> is added to <formula id="174">$ \Sigma $</formula>:<itemizedlist>
+<listitem><para><computeroutput>REG_CONST</computeroutput>: Constant density (Lorentzian broadening)</para>
+</listitem><listitem><para><computeroutput>REG_GAUSS</computeroutput>: Gaussian cutoff in frequency space.</para>
+</listitem><listitem><para><computeroutput>REG_OHMIC</computeroutput>: Ohmic spectral function with cutoff.</para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">bath_eta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Broadening parameter <formula id="175">$ \eta $</formula> for the bath (used for all regularization types except <computeroutput><ref refid="namespaceness2_a384022e4fa54faa358d00af720094f3a_1a384022e4fa54faa358d00af720094f3aa348c703624a79ac630f1378fb250a79e" kindref="member">BATH_NONE</ref></computeroutput>).</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">bath_beta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Inverse temperature <formula id="176">$ \beta $</formula> of the bath (used in <computeroutput><ref refid="namespaceness2_a384022e4fa54faa358d00af720094f3a_1a384022e4fa54faa358d00af720094f3aaa090a991fc0fdf14d98803bb73bb519a" kindref="member">BATH_CONST</ref></computeroutput>, <computeroutput><ref refid="namespaceness2_a384022e4fa54faa358d00af720094f3a_1a384022e4fa54faa358d00af720094f3aa44ae46961823eca881d98d0dee408494" kindref="member">BATH_GAUSS</ref></computeroutput>, <computeroutput><ref refid="namespaceness2_a384022e4fa54faa358d00af720094f3a_1a384022e4fa54faa358d00af720094f3aa6b851dcb6085245f28ff621a41482655" kindref="member">BATH_OHMIC</ref></computeroutput>).</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">bath_mu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Chemical potential <formula id="177">$ \mu_{\rm bath} $</formula> of the bath (used in <computeroutput><ref refid="namespaceness2_a384022e4fa54faa358d00af720094f3a_1a384022e4fa54faa358d00af720094f3aaa090a991fc0fdf14d98803bb73bb519a" kindref="member">BATH_CONST</ref></computeroutput>, <computeroutput><ref refid="namespaceness2_a384022e4fa54faa358d00af720094f3a_1a384022e4fa54faa358d00af720094f3aa44ae46961823eca881d98d0dee408494" kindref="member">BATH_GAUSS</ref></computeroutput>). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_dyson_decl.hpp" line="59" column="8" declfile="cntr/ness2_dyson_decl.hpp" declline="59" declcolumn="8"/>
+        <references refid="namespaceness2_a384022e4fa54faa358d00af720094f3a_1a384022e4fa54faa358d00af720094f3aa348c703624a79ac630f1378fb250a79e" compoundref="ness2__dyson__decl_8hpp" startline="8">BATH_NONE</references>
+        <references refid="namespaceness2_ad92d2a80687f622c86e0162cc967dc9d_1ad92d2a80687f622c86e0162cc967dc9da9942107d8b6d0644aa8ed27932d72afd" compoundref="ness2__global__settings_8hpp" startline="28">FFT_TRAPEZ</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness2_ae32bc91d01f0b0dcd580887f13126052_1ae32bc91d01f0b0dcd580887f13126052" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness2::dyson_fft</definition>
+        <argsstring>(herm_matrix_ness &amp;G, herm_matrix_ness &amp;Sigma, cdmatrix &amp;H, double mu, double h, dyson_bath_type bath_type, double bath_eta, double bath_beta, double bath_mu)</argsstring>
+        <name>dyson_fft</name>
+        <qualifiedname>ness2::dyson_fft</qualifiedname>
+        <param>
+          <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>Sigma</declname>
+        </param>
+        <param>
+          <type>cdmatrix &amp;</type>
+          <declname>H</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceness2_a384022e4fa54faa358d00af720094f3a_1a384022e4fa54faa358d00af720094f3a" kindref="member">dyson_bath_type</ref></type>
+          <declname>bath_type</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>bath_eta</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>bath_beta</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>bath_mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_dyson_decl.hpp" line="65" column="8" declfile="cntr/ness2_dyson_decl.hpp" declline="65" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness2_aadeef392bf48884aad9766e84c4bdb50_1aadeef392bf48884aad9766e84c4bdb50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename DOS</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ness2::green_equilibrium_ness</definition>
+        <argsstring>(int bosefermi, herm_matrix_ness &amp;G, DOS &amp;dos, double beta, double mu, double h, fft_integral_method method, int limit=100, int nn=20)</argsstring>
+        <name>green_equilibrium_ness</name>
+        <qualifiedname>ness2::green_equilibrium_ness</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>bosefermi</declname>
+        </param>
+        <param>
+          <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>DOS &amp;</type>
+          <declname>dos</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceness2_ad92d2a80687f622c86e0162cc967dc9d_1ad92d2a80687f622c86e0162cc967dc9d" kindref="member">fft_integral_method</ref></type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limit</declname>
+          <defval>100</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nn</declname>
+          <defval>20</defval>
+        </param>
+        <briefdescription>
+<para><bold>Equilibrium steady-state Green&apos;s function systems</bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructs a retarded and lesser Green&apos;s function in the time domain for a system in thermal equilibrium, using a specified density of states and numerical Fourier integration method.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>DOS</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A density of states class providing:<itemizedlist>
+<listitem><para><computeroutput>double lo_</computeroutput> — lower frequency bound</para>
+</listitem><listitem><para><computeroutput>double hi_</computeroutput> — upper frequency bound</para>
+</listitem><listitem><para><computeroutput>double operator()(double omega)</computeroutput> — density of states <formula id="178">$ A(\omega) $</formula></para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>bose_fermi</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>= BOSON (+1) or FERMION (-1) sign </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output: Green&apos;s function object (<computeroutput><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref></computeroutput>) to be filled in time domain </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Density of states object used to define the spectral function </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>beta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Inverse temperature <formula id="176">$ \beta $</formula> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time step size </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mu</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Chemical potential <formula id="170">$ \mu $</formula> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integration method to use for the Fourier transform. One of:<itemizedlist>
+<listitem><para><computeroutput><ref refid="namespaceness2_ad92d2a80687f622c86e0162cc967dc9d_1ad92d2a80687f622c86e0162cc967dc9da9942107d8b6d0644aa8ed27932d72afd" kindref="member">FFT_TRAPEZ</ref></computeroutput>: Simple piecewise-constant quadrature (trapezoidal rule)</para>
+</listitem><listitem><para><computeroutput><ref refid="namespaceness2_ad92d2a80687f622c86e0162cc967dc9d_1ad92d2a80687f622c86e0162cc967dc9da3284d2fd17b9114c9bd6122edbe84aaf" kindref="member">FFT_ADAPTIVE</ref></computeroutput>: Adaptive quadrature as in libcntr (uses <computeroutput>nn</computeroutput> and <computeroutput>limit</computeroutput>) </para>
+</listitem></itemizedlist>
+</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nn</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of sub-sample points per interval (used only if <computeroutput>method == <ref refid="namespaceness2_ad92d2a80687f622c86e0162cc967dc9d_1ad92d2a80687f622c86e0162cc967dc9da3284d2fd17b9114c9bd6122edbe84aaf" kindref="member">FFT_ADAPTIVE</ref></computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>limit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum number of intervals in adaptive Fourier transform (used only if <computeroutput>method == <ref refid="namespaceness2_ad92d2a80687f622c86e0162cc967dc9d_1ad92d2a80687f622c86e0162cc967dc9da3284d2fd17b9114c9bd6122edbe84aaf" kindref="member">FFT_ADAPTIVE</ref></computeroutput>)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Computes the time-domain Green&apos;s functions:   <formula id="179">\[G^R(t) = -i \int_{\mathrm{lo}}^{\mathrm{hi}} d\omega\, A(\omega) e^{-i \omega t}
+\]</formula>    <formula id="180">\[G^&lt;(t) = - \xi i \int_{\mathrm{lo}}^{\mathrm{hi}} d\omega\, A(\omega) f_F(\omega - \mu) e^{-i \omega t},
+\quad f_F(x) = \frac{1}{e^{\beta x} - \xi}
+\]</formula> where $\xi$ = BOSE or FERMI, and <formula id="181">$ A(\omega)$</formula> is computed from the density of states.</para>
+<para>The integration bounds are taken from <computeroutput>dos.lo_</computeroutput> to <computeroutput>dos.hi_</computeroutput>.</para>
+<para>For <computeroutput><ref refid="namespaceness2_ad92d2a80687f622c86e0162cc967dc9d_1ad92d2a80687f622c86e0162cc967dc9da3284d2fd17b9114c9bd6122edbe84aaf" kindref="member">FFT_ADAPTIVE</ref></computeroutput>, a frequency-adaptive scheme is used, refining the interval until convergence. For <computeroutput><ref refid="namespaceness2_ad92d2a80687f622c86e0162cc967dc9d_1ad92d2a80687f622c86e0162cc967dc9da9942107d8b6d0644aa8ed27932d72afd" kindref="member">FFT_TRAPEZ</ref></computeroutput> the FFT grid defined by Nft_ and h is used, nn and limit are ignored </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_equilibrium_decl.hpp" line="243" column="8" bodyfile="cntr/ness2_equilibrium_decl.hpp" bodystart="243" bodyend="250" declfile="cntr/ness2_equilibrium_decl.hpp" declline="70" declcolumn="8"/>
+        <references refid="namespaceness2_a3fc04c6c94b6f4037f54206a319dff27_1a3fc04c6c94b6f4037f54206a319dff27" compoundref="ness2__equilibrium__decl_8hpp" startline="201" endline="239">green_equilibrium_ness_bose</references>
+        <references refid="namespaceness2_a3a3ddda2ed9698ac30831954cb6f3248_1a3a3ddda2ed9698ac30831954cb6f3248" compoundref="ness2__equilibrium__decl_8hpp" startline="156" endline="197">green_equilibrium_ness_fermi</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness2_a3fc04c6c94b6f4037f54206a319dff27_1a3fc04c6c94b6f4037f54206a319dff27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename DOS</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ness2::green_equilibrium_ness_bose</definition>
+        <argsstring>(herm_matrix_ness &amp;G, DOS &amp;dos, double beta, double mu, double h, fft_integral_method method, int limit, int nn)</argsstring>
+        <name>green_equilibrium_ness_bose</name>
+        <qualifiedname>ness2::green_equilibrium_ness_bose</qualifiedname>
+        <param>
+          <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>DOS &amp;</type>
+          <declname>dos</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceness2_ad92d2a80687f622c86e0162cc967dc9d_1ad92d2a80687f622c86e0162cc967dc9d" kindref="member">fft_integral_method</ref></type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_equilibrium_decl.hpp" line="201" column="8" bodyfile="cntr/ness2_equilibrium_decl.hpp" bodystart="201" bodyend="239"/>
+        <references refid="namespaceness2_a9ae52e2965c52a526b782e5afc35b0ab_1a9ae52e2965c52a526b782e5afc35b0ab" compoundref="ness2__equilibrium__decl_8hpp" startline="285" endline="317">compute_lesser</references>
+        <references refid="namespaceness2_ad92d2a80687f622c86e0162cc967dc9d_1ad92d2a80687f622c86e0162cc967dc9da3284d2fd17b9114c9bd6122edbe84aaf" compoundref="ness2__global__settings_8hpp" startline="28">FFT_ADAPTIVE</references>
+        <references refid="namespaceness2_ad92d2a80687f622c86e0162cc967dc9d_1ad92d2a80687f622c86e0162cc967dc9da9942107d8b6d0644aa8ed27932d72afd" compoundref="ness2__global__settings_8hpp" startline="28">FFT_TRAPEZ</references>
+        <references refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242bab0038f6cab2d16ebdcf2e36d1779d8ba" compoundref="ness2__global__settings_8hpp" startline="26">freq</references>
+        <references refid="classness2_1_1grid__info_a60e4853c58c526398d560cfd12590aa2_1a60e4853c58c526398d560cfd12590aa2">ness2::grid_info::freq_at</references>
+        <references refid="namespaceness2_ae4fd56058fa510f2f5fa1c8c49e4d6a8_1ae4fd56058fa510f2f5fa1c8c49e4d6a8" compoundref="ness2__equilibrium__decl_8hpp" startline="255" endline="281">green_equilibrium_ret_ness_adaptive</references>
+        <references refid="classness2_1_1herm__matrix__ness_abc14c5623a6d93fa56968845588db64a_1abc14c5623a6d93fa56968845588db64a">ness2::herm_matrix_ness::integral_transform_to_time</references>
+        <references refid="classness2_1_1herm__matrix__ness_a0d9c6fc63d1c6fc417cb562ee1f06dd6_1a0d9c6fc63d1c6fc417cb562ee1f06dd6" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="368">ness2::herm_matrix_ness::les_</references>
+        <references refid="classness2_1_1herm__matrix__ness_ab56e5ba98c9801aa7b7d88ab3310feaa_1ab56e5ba98c9801aa7b7d88ab3310feaa" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="365">ness2::herm_matrix_ness::Nft_</references>
+        <references refid="classness2_1_1herm__matrix__ness_a0a60893fb855e39151db71f97f9e8c53_1a0a60893fb855e39151db71f97f9e8c53" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="367">ness2::herm_matrix_ness::ret_</references>
+        <references refid="classness2_1_1herm__matrix__ness_a8f27dda5fd911c6733c65a92943113ff_1a8f27dda5fd911c6733c65a92943113ff" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="409" endline="411">ness2::herm_matrix_ness::set_les</references>
+        <references refid="classness2_1_1herm__matrix__ness_a14b78ea6bc592ede7606e8a9ee065956_1a14b78ea6bc592ede7606e8a9ee065956" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="399" endline="401">ness2::herm_matrix_ness::set_ret</references>
+        <references refid="classness2_1_1fft__array_a40396087c4af731bee88c21c87769495_1a40396087c4af731bee88c21c87769495">ness2::fft_array::set_zero</references>
+        <references refid="classness2_1_1herm__matrix__ness_aee3dcb5f4c19dd807b76f8efb5a4ebd9_1aee3dcb5f4c19dd807b76f8efb5a4ebd9" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="366">ness2::herm_matrix_ness::size1_</references>
+        <referencedby refid="namespaceness2_aadeef392bf48884aad9766e84c4bdb50_1aadeef392bf48884aad9766e84c4bdb50" compoundref="ness2__equilibrium__decl_8hpp" startline="243" endline="250">green_equilibrium_ness</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness2_a3a3ddda2ed9698ac30831954cb6f3248_1a3a3ddda2ed9698ac30831954cb6f3248" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename DOS</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ness2::green_equilibrium_ness_fermi</definition>
+        <argsstring>(herm_matrix_ness &amp;G, DOS &amp;dos, double beta, double mu, double h, fft_integral_method method, int limit, int nn)</argsstring>
+        <name>green_equilibrium_ness_fermi</name>
+        <qualifiedname>ness2::green_equilibrium_ness_fermi</qualifiedname>
+        <param>
+          <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>DOS &amp;</type>
+          <declname>dos</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>beta</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceness2_ad92d2a80687f622c86e0162cc967dc9d_1ad92d2a80687f622c86e0162cc967dc9d" kindref="member">fft_integral_method</ref></type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limit</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_equilibrium_decl.hpp" line="156" column="8" bodyfile="cntr/ness2_equilibrium_decl.hpp" bodystart="156" bodyend="197"/>
+        <references refid="namespaceness2_a9ae52e2965c52a526b782e5afc35b0ab_1a9ae52e2965c52a526b782e5afc35b0ab" compoundref="ness2__equilibrium__decl_8hpp" startline="285" endline="317">compute_lesser</references>
+        <references refid="namespaceness2_ad92d2a80687f622c86e0162cc967dc9d_1ad92d2a80687f622c86e0162cc967dc9da3284d2fd17b9114c9bd6122edbe84aaf" compoundref="ness2__global__settings_8hpp" startline="28">FFT_ADAPTIVE</references>
+        <references refid="namespaceness2_ad92d2a80687f622c86e0162cc967dc9d_1ad92d2a80687f622c86e0162cc967dc9da9942107d8b6d0644aa8ed27932d72afd" compoundref="ness2__global__settings_8hpp" startline="28">FFT_TRAPEZ</references>
+        <references refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242bab0038f6cab2d16ebdcf2e36d1779d8ba" compoundref="ness2__global__settings_8hpp" startline="26">freq</references>
+        <references refid="classness2_1_1grid__info_a60e4853c58c526398d560cfd12590aa2_1a60e4853c58c526398d560cfd12590aa2">ness2::grid_info::freq_at</references>
+        <references refid="namespaceness2_ae4fd56058fa510f2f5fa1c8c49e4d6a8_1ae4fd56058fa510f2f5fa1c8c49e4d6a8" compoundref="ness2__equilibrium__decl_8hpp" startline="255" endline="281">green_equilibrium_ret_ness_adaptive</references>
+        <references refid="classness2_1_1herm__matrix__ness_abc14c5623a6d93fa56968845588db64a_1abc14c5623a6d93fa56968845588db64a">ness2::herm_matrix_ness::integral_transform_to_time</references>
+        <references refid="classness2_1_1herm__matrix__ness_a0d9c6fc63d1c6fc417cb562ee1f06dd6_1a0d9c6fc63d1c6fc417cb562ee1f06dd6" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="368">ness2::herm_matrix_ness::les_</references>
+        <references refid="classness2_1_1herm__matrix__ness_ab56e5ba98c9801aa7b7d88ab3310feaa_1ab56e5ba98c9801aa7b7d88ab3310feaa" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="365">ness2::herm_matrix_ness::Nft_</references>
+        <references refid="classness2_1_1herm__matrix__ness_a0a60893fb855e39151db71f97f9e8c53_1a0a60893fb855e39151db71f97f9e8c53" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="367">ness2::herm_matrix_ness::ret_</references>
+        <references refid="classness2_1_1herm__matrix__ness_a8f27dda5fd911c6733c65a92943113ff_1a8f27dda5fd911c6733c65a92943113ff" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="409" endline="411">ness2::herm_matrix_ness::set_les</references>
+        <references refid="classness2_1_1herm__matrix__ness_a14b78ea6bc592ede7606e8a9ee065956_1a14b78ea6bc592ede7606e8a9ee065956" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="399" endline="401">ness2::herm_matrix_ness::set_ret</references>
+        <references refid="classness2_1_1fft__array_a40396087c4af731bee88c21c87769495_1a40396087c4af731bee88c21c87769495">ness2::fft_array::set_zero</references>
+        <references refid="classness2_1_1herm__matrix__ness_aee3dcb5f4c19dd807b76f8efb5a4ebd9_1aee3dcb5f4c19dd807b76f8efb5a4ebd9" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="366">ness2::herm_matrix_ness::size1_</references>
+        <referencedby refid="namespaceness2_aadeef392bf48884aad9766e84c4bdb50_1aadeef392bf48884aad9766e84c4bdb50" compoundref="ness2__equilibrium__decl_8hpp" startline="243" endline="250">green_equilibrium_ness</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness2_ae4fd56058fa510f2f5fa1c8c49e4d6a8_1ae4fd56058fa510f2f5fa1c8c49e4d6a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename DosFunction</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ness2::green_equilibrium_ret_ness_adaptive</definition>
+        <argsstring>(herm_matrix_ness &amp;G, DosFunction &amp;dos, double h, int nn, int limit)</argsstring>
+        <name>green_equilibrium_ret_ness_adaptive</name>
+        <qualifiedname>ness2::green_equilibrium_ret_ness_adaptive</qualifiedname>
+        <param>
+          <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>DosFunction &amp;</type>
+          <declname>dos</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nn</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_equilibrium_decl.hpp" line="255" column="8" bodyfile="cntr/ness2_equilibrium_decl.hpp" bodystart="255" bodyend="281" declfile="cntr/ness2_equilibrium_decl.hpp" declline="12" declcolumn="8"/>
+        <references refid="classfourier_1_1adft__func_aaa081b6da5008bdb6ab01c8ce025b19a_1aaa081b6da5008bdb6ab01c8ce025b19a" compoundref="fourier_8hpp" startline="317" endline="334">fourier::adft_func::dft</references>
+        <references refid="classness2_1_1herm__matrix__ness_ab56e5ba98c9801aa7b7d88ab3310feaa_1ab56e5ba98c9801aa7b7d88ab3310feaa" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="365">ness2::herm_matrix_ness::Nft_</references>
+        <references refid="classness2_1_1herm__matrix__ness_ab36fca628fd9c2d6198f234bc9759004_1ab36fca628fd9c2d6198f234bc9759004" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="171" endline="171">ness2::herm_matrix_ness::retarded</references>
+        <references refid="classfourier_1_1adft__func_a352d3b8ba7b6c50c699a66b8903a8d0d_1a352d3b8ba7b6c50c699a66b8903a8d0d" compoundref="fourier_8hpp" startline="366" endline="418">fourier::adft_func::sample</references>
+        <references refid="classness2_1_1fft__array_aaecf397393a5c107c42d8d1a25b139ee_1aaecf397393a5c107c42d8d1a25b139ee" compoundref="ness2__fft__decl_8hpp" startline="451" endline="469">ness2::fft_array::set_element</references>
+        <references refid="classness2_1_1fft__array_ac1ee36ea21977212d05ccc865813a38d_1ac1ee36ea21977212d05ccc865813a38d" compoundref="ness2__fft__decl_8hpp" startline="352">ness2::fft_array::size1_</references>
+        <references refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242ba07cc694b9b3fc636710fa08b6922c42b" compoundref="ness2__global__settings_8hpp" startline="26">time</references>
+        <referencedby refid="namespaceness2_a3fc04c6c94b6f4037f54206a319dff27_1a3fc04c6c94b6f4037f54206a319dff27" compoundref="ness2__equilibrium__decl_8hpp" startline="201" endline="239">green_equilibrium_ness_bose</referencedby>
+        <referencedby refid="namespaceness2_a3a3ddda2ed9698ac30831954cb6f3248_1a3a3ddda2ed9698ac30831954cb6f3248" compoundref="ness2__equilibrium__decl_8hpp" startline="156" endline="197">green_equilibrium_ness_fermi</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness2_a74cbbae7af8954fed49d4cd32ef99269_1a74cbbae7af8954fed49d4cd32ef99269" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ness2::ness2cntr</definition>
+        <argsstring>(cntr::herm_matrix&lt; T &gt; &amp;Gcntr, const herm_matrix_ness &amp;Gness)</argsstring>
+        <name>ness2cntr</name>
+        <qualifiedname>ness2::ness2cntr</qualifiedname>
+        <param>
+          <type><ref refid="classcntr_1_1herm__matrix" kindref="compound">cntr::herm_matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>Gcntr</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>Gness</declname>
+        </param>
+        <briefdescription>
+<para>Convert a steady-state Green&apos;s function into a CNTR Green&apos;s function, assuming tranlstional invariance in time. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For each pair <formula id="253">$ (t, t&apos;) $</formula>, if the relative time <formula id="254">$ t - t&apos; $</formula> exists in the NESS domain, use <formula id="255">$ G_{cntr}(t,t&apos;) =  G_{ness}(t - t&apos;) $</formula>. Else, set to zero.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>GcntrType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any writable two-time Green&apos;s function (<ref refid="classcntr_1_1herm__matrix" kindref="compound">cntr::herm_matrix</ref>,<ref refid="classcntr_1_1herm__matrix__timestep" kindref="compound">cntr::herm_matrix_timestep</ref>, <ref refid="classcntr_1_1herm__matrix__moving" kindref="compound">cntr::herm_matrix_moving</ref>, <ref refid="classcntr_1_1herm__matrix__timestep__moving" kindref="compound">cntr::herm_matrix_timestep_moving</ref>) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">Gcntr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Target two-time function </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">Gness</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source steady-state function </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_utils_decl.hpp" line="248" column="8" bodyfile="cntr/ness2_utils_decl.hpp" bodystart="248" bodyend="268"/>
+        <references refid="classness2_1_1herm__matrix__ness_a41567e9ad7790e1854498c54d2c5e792_1a41567e9ad7790e1854498c54d2c5e792" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="414" endline="416">ness2::herm_matrix_ness::get_les</references>
+        <references refid="classness2_1_1herm__matrix__ness_a7a9ddcb6e6320727fdb5107c8564565d_1a7a9ddcb6e6320727fdb5107c8564565d" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="404" endline="406">ness2::herm_matrix_ness::get_ret</references>
+        <references refid="classness2_1_1herm__matrix__ness_ab56e5ba98c9801aa7b7d88ab3310feaa_1ab56e5ba98c9801aa7b7d88ab3310feaa" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="365">ness2::herm_matrix_ness::Nft_</references>
+        <references refid="classcntr_1_1herm__matrix_ae5fbe3d5c668b6808cd19d4a2e873c67_1ae5fbe3d5c668b6808cd19d4a2e873c67" compoundref="cntr__herm__matrix__decl_8hpp" startline="69" endline="69">cntr::herm_matrix&lt; T &gt;::nt</references>
+        <references refid="classcntr_1_1herm__matrix_a3e98fc0a00a61da924e6126b1c75e5ed_1a3e98fc0a00a61da924e6126b1c75e5ed">cntr::herm_matrix&lt; T &gt;::set_timestep_zero</references>
+        <references refid="classcntr_1_1herm__matrix_a304d40545765d7bd51f5f09f71f81ee5_1a304d40545765d7bd51f5f09f71f81ee5" compoundref="cntr__herm__matrix__decl_8hpp" startline="66" endline="66">cntr::herm_matrix&lt; T &gt;::size1</references>
+        <references refid="classness2_1_1herm__matrix__ness_aee3dcb5f4c19dd807b76f8efb5a4ebd9_1aee3dcb5f4c19dd807b76f8efb5a4ebd9" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="366">ness2::herm_matrix_ness::size1_</references>
+        <references refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242ba07cc694b9b3fc636710fa08b6922c42b" compoundref="ness2__global__settings_8hpp" startline="26">time</references>
+        <referencedby refid="namespaceness2_a64c76b0d6c9a6d9fcbe63025501eadba_1a64c76b0d6c9a6d9fcbe63025501eadba" compoundref="ness2__utils__decl_8hpp" startline="308" endline="314">ness2cntr</referencedby>
+        <referencedby refid="namespaceness2_ae074252525af1e45427413abd6adfc52_1ae074252525af1e45427413abd6adfc52" compoundref="ness2__utils__decl_8hpp" startline="316" endline="319">ness2cntr</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness2_a64c76b0d6c9a6d9fcbe63025501eadba_1a64c76b0d6c9a6d9fcbe63025501eadba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ness2::ness2cntr</definition>
+        <argsstring>(cntr::herm_matrix_moving&lt; T &gt; &amp;Gcntr, const herm_matrix_ness &amp;Gness)</argsstring>
+        <name>ness2cntr</name>
+        <qualifiedname>ness2::ness2cntr</qualifiedname>
+        <param>
+          <type><ref refid="classcntr_1_1herm__matrix__moving" kindref="compound">cntr::herm_matrix_moving</ref>&lt; T &gt; &amp;</type>
+          <declname>Gcntr</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>Gness</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_utils_decl.hpp" line="308" column="8" bodyfile="cntr/ness2_utils_decl.hpp" bodystart="308" bodyend="314"/>
+        <references refid="namespaceness2_a74cbbae7af8954fed49d4cd32ef99269_1a74cbbae7af8954fed49d4cd32ef99269" compoundref="ness2__utils__decl_8hpp" startline="248" endline="268">ness2cntr</references>
+        <references refid="classcntr_1_1herm__matrix__moving_a03888269955a02905d6e5586cc40ae3a_1a03888269955a02905d6e5586cc40ae3a" compoundref="cntr__herm__matrix__moving__decl_8hpp" startline="45" endline="45">cntr::herm_matrix_moving&lt; T &gt;::tc</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness2_a99f3efbd6662d6b78b597b5382f49d8a_1a99f3efbd6662d6b78b597b5382f49d8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ness2::ness2cntr</definition>
+        <argsstring>(cntr::herm_matrix_timestep&lt; T &gt; &amp;Gcntr, const herm_matrix_ness &amp;Gness)</argsstring>
+        <name>ness2cntr</name>
+        <qualifiedname>ness2::ness2cntr</qualifiedname>
+        <param>
+          <type><ref refid="classcntr_1_1herm__matrix__timestep" kindref="compound">cntr::herm_matrix_timestep</ref>&lt; T &gt; &amp;</type>
+          <declname>Gcntr</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>Gness</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_utils_decl.hpp" line="270" column="8" bodyfile="cntr/ness2_utils_decl.hpp" bodystart="270" bodyend="288"/>
+        <references refid="classness2_1_1herm__matrix__ness_a41567e9ad7790e1854498c54d2c5e792_1a41567e9ad7790e1854498c54d2c5e792" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="414" endline="416">ness2::herm_matrix_ness::get_les</references>
+        <references refid="classness2_1_1herm__matrix__ness_a7a9ddcb6e6320727fdb5107c8564565d_1a7a9ddcb6e6320727fdb5107c8564565d" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="404" endline="406">ness2::herm_matrix_ness::get_ret</references>
+        <references refid="classness2_1_1herm__matrix__ness_ab56e5ba98c9801aa7b7d88ab3310feaa_1ab56e5ba98c9801aa7b7d88ab3310feaa" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="365">ness2::herm_matrix_ness::Nft_</references>
+        <references refid="classcntr_1_1herm__matrix__timestep_a7e3c94c5a14432e16b0ffa3ff2cfa50f_1a7e3c94c5a14432e16b0ffa3ff2cfa50f">cntr::herm_matrix_timestep&lt; T &gt;::set_timestep_zero</references>
+        <references refid="classcntr_1_1herm__matrix__timestep_ab4d60001bf07673a5e0a848c474cf6c4_1ab4d60001bf07673a5e0a848c474cf6c4" compoundref="cntr__herm__matrix__timestep__decl_8hpp" startline="53" endline="53">cntr::herm_matrix_timestep&lt; T &gt;::size1</references>
+        <references refid="classness2_1_1herm__matrix__ness_aee3dcb5f4c19dd807b76f8efb5a4ebd9_1aee3dcb5f4c19dd807b76f8efb5a4ebd9" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="366">ness2::herm_matrix_ness::size1_</references>
+        <references refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242ba07cc694b9b3fc636710fa08b6922c42b" compoundref="ness2__global__settings_8hpp" startline="26">time</references>
+        <references refid="classcntr_1_1herm__matrix__timestep_a96bef30390444e19d7413c66c0376b72_1a96bef30390444e19d7413c66c0376b72" compoundref="cntr__herm__matrix__timestep__decl_8hpp" startline="55" endline="55">cntr::herm_matrix_timestep&lt; T &gt;::tstp</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness2_ae074252525af1e45427413abd6adfc52_1ae074252525af1e45427413abd6adfc52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ness2::ness2cntr</definition>
+        <argsstring>(cntr::herm_matrix_timestep_moving&lt; T &gt; &amp;Gcntr, const herm_matrix_ness &amp;Gness)</argsstring>
+        <name>ness2cntr</name>
+        <qualifiedname>ness2::ness2cntr</qualifiedname>
+        <param>
+          <type><ref refid="classcntr_1_1herm__matrix__timestep__moving" kindref="compound">cntr::herm_matrix_timestep_moving</ref>&lt; T &gt; &amp;</type>
+          <declname>Gcntr</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>Gness</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_utils_decl.hpp" line="316" column="8" bodyfile="cntr/ness2_utils_decl.hpp" bodystart="316" bodyend="319"/>
+        <references refid="namespaceness2_a74cbbae7af8954fed49d4cd32ef99269_1a74cbbae7af8954fed49d4cd32ef99269" compoundref="ness2__utils__decl_8hpp" startline="248" endline="268">ness2cntr</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness2_a0d5475b724def9bed1a015eae6829169_1a0d5475b724def9bed1a015eae6829169" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ness2::ness2cntr</definition>
+        <argsstring>(cntr::herm_matrix_timestep_moving_view&lt; T &gt; &amp;Gcntr, const herm_matrix_ness &amp;Gness)</argsstring>
+        <name>ness2cntr</name>
+        <qualifiedname>ness2::ness2cntr</qualifiedname>
+        <param>
+          <type><ref refid="classcntr_1_1herm__matrix__timestep__moving__view" kindref="compound">cntr::herm_matrix_timestep_moving_view</ref>&lt; T &gt; &amp;</type>
+          <declname>Gcntr</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>Gness</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_utils_decl.hpp" line="290" column="8" bodyfile="cntr/ness2_utils_decl.hpp" bodystart="290" bodyend="306"/>
+        <references refid="classness2_1_1herm__matrix__ness_a41567e9ad7790e1854498c54d2c5e792_1a41567e9ad7790e1854498c54d2c5e792" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="414" endline="416">ness2::herm_matrix_ness::get_les</references>
+        <references refid="classness2_1_1herm__matrix__ness_a7a9ddcb6e6320727fdb5107c8564565d_1a7a9ddcb6e6320727fdb5107c8564565d" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="404" endline="406">ness2::herm_matrix_ness::get_ret</references>
+        <references refid="classness2_1_1herm__matrix__ness_ab56e5ba98c9801aa7b7d88ab3310feaa_1ab56e5ba98c9801aa7b7d88ab3310feaa" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="365">ness2::herm_matrix_ness::Nft_</references>
+        <references refid="classcntr_1_1herm__matrix__timestep__moving__view_ae07bb1dc6a1dc9b9efce9de1f9994e9f_1ae07bb1dc6a1dc9b9efce9de1f9994e9f">cntr::herm_matrix_timestep_moving_view&lt; T &gt;::set_les</references>
+        <references refid="classcntr_1_1herm__matrix__timestep__moving__view_adefdc3a3e0db1f3cfd1af47d7407b630_1adefdc3a3e0db1f3cfd1af47d7407b630">cntr::herm_matrix_timestep_moving_view&lt; T &gt;::set_ret</references>
+        <references refid="classcntr_1_1herm__matrix__timestep__moving__view_a13a53615141b9fb8066e6275970c4867_1a13a53615141b9fb8066e6275970c4867">cntr::herm_matrix_timestep_moving_view&lt; T &gt;::set_timestep_zero</references>
+        <references refid="classcntr_1_1herm__matrix__timestep__moving__view_af2dd69f0565ac4a599fe106ad0e880ec_1af2dd69f0565ac4a599fe106ad0e880ec" compoundref="cntr__herm__matrix__timestep__moving__view__decl_8hpp" startline="44" endline="44">cntr::herm_matrix_timestep_moving_view&lt; T &gt;::size1</references>
+        <references refid="classness2_1_1herm__matrix__ness_aee3dcb5f4c19dd807b76f8efb5a4ebd9_1aee3dcb5f4c19dd807b76f8efb5a4ebd9" compoundref="ness2__herm__matrix__ness__decl_8hpp" startline="366">ness2::herm_matrix_ness::size1_</references>
+        <references refid="classcntr_1_1herm__matrix__timestep__moving__view_a9d6b3eecba49664497e19e55d145b46a_1a9d6b3eecba49664497e19e55d145b46a" compoundref="cntr__herm__matrix__timestep__moving__view__decl_8hpp" startline="50" endline="50">cntr::herm_matrix_timestep_moving_view&lt; T &gt;::tc</references>
+        <references refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242ba07cc694b9b3fc636710fa08b6922c42b" compoundref="ness2__global__settings_8hpp" startline="26">time</references>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness2_a1637bffaefd89e4f04c2fc2d8109db59_1a1637bffaefd89e4f04c2fc2d8109db59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="namespaceness2_afd4e1ebc14989f0be6d55840cfd5571b_1afd4e1ebc14989f0be6d55840cfd5571b" kindref="member">cplx</ref></type>
+        <definition>const cplx ness2::NESS_II</definition>
+        <argsstring>(0.0, 1.0)</argsstring>
+        <name>NESS_II</name>
+        <qualifiedname>ness2::NESS_II</qualifiedname>
+        <param>
+          <type>0.</type>
+          <declname>0</declname>
+        </param>
+        <param>
+          <type>1.</type>
+          <declname>0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_global_settings.hpp" line="25" column="14" declfile="cntr/ness2_global_settings.hpp" declline="25" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness2_a96b405003dac2738605ce86855a2a78b_1a96b405003dac2738605ce86855a2a78b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref></type>
+        <definition>herm_matrix_ness ness2::resample</definition>
+        <argsstring>(double h_in, herm_matrix_ness &amp;in, int factor)</argsstring>
+        <name>resample</name>
+        <qualifiedname>ness2::resample</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>h_in</declname>
+        </param>
+        <param>
+          <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+<para>Automatic upsampling of a <computeroutput><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref></computeroutput> by a factor of &apos;-factor&apos; if a negative value is passed and an automatic downsampling ba a factor of &apos;factor&apos; if a positive value is passed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input steady-state Green&apos;s function (<computeroutput><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref></computeroutput>). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Coarse-graining factor if positive, if negative &apos;-factor&apos; is fine-graining factor. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_utils_decl.hpp" line="421" column="20" declfile="cntr/ness2_utils_decl.hpp" declline="421" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness2_a417dbfceedbc4074032c6934cca44cd9_1a417dbfceedbc4074032c6934cca44cd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness2::sigma_bath</definition>
+        <argsstring>(double &amp;ret, double &amp;les, double omega, double h, dyson_bath_type bath_type, double bath_eta, double bath_beta, double bath_mu)</argsstring>
+        <name>sigma_bath</name>
+        <qualifiedname>ness2::sigma_bath</qualifiedname>
+        <param>
+          <type>double &amp;</type>
+          <declname>ret</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>les</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>omega</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceness2_a384022e4fa54faa358d00af720094f3a_1a384022e4fa54faa358d00af720094f3a" kindref="member">dyson_bath_type</ref></type>
+          <declname>bath_type</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>bath_eta</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>bath_beta</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>bath_mu</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_dyson_decl.hpp" line="69" column="8" declfile="cntr/ness2_dyson_decl.hpp" declline="69" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceness2_a80d68205f1c485148403cbed3129c88c_1a80d68205f1c485148403cbed3129c88c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref></type>
+        <definition>herm_matrix_ness ness2::upsample</definition>
+        <argsstring>(double h_in, herm_matrix_ness &amp;in, int factor)</argsstring>
+        <name>upsample</name>
+        <qualifiedname>ness2::upsample</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>h_in</declname>
+        </param>
+        <param>
+          <type><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref> &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>factor</declname>
+        </param>
+        <briefdescription>
+<para>Upsampling of a <computeroutput><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref></computeroutput> to a finer time grid by transforming to frequency space, appending zeros until the new length <formula id="266">$ N_{ft1} = N_{ft} \times factor $</formula>, and transforming back. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>h_in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Initial time step. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input steady-state Green&apos;s function (<computeroutput><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref></computeroutput>). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>factor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fine-graining factor, larger than one. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_utils_decl.hpp" line="411" column="20" declfile="cntr/ness2_utils_decl.hpp" declline="411" declcolumn="20"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="cntr/ness2_dyson_decl.hpp" line="6" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,2199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="cntr__getset__herm__matrix__inc_8hpp" kind="file" language="C++">
+    <compoundname>cntr_getset_herm_matrix_inc.hpp</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="cntr__getset__herm__matrix__inc_8hpp_a150cf20713385cbd654a98231a6ef419_1a150cf20713385cbd654a98231a6ef419" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void get_gtr</definition>
+        <argsstring>(const int i, const int j, cdmatrix &amp;G_gtr, herm_matrix&lt; T &gt; &amp;G)</argsstring>
+        <name>get_gtr</name>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>cdmatrix &amp;</type>
+          <declname>G_gtr</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>G</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns the greater component of a hermitian contour function at given times. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>Returns the greater component <formula id="48">$ G^&gt;(t_i,t_j) $</formula> at given times <formula id="40">$ t_i$</formula> and <formula id="41">$ t_j$</formula> from <formula id="49">$G^&lt;(t_i,t_j)$</formula> and <formula id="44">$G^\mathrm{R}(t_i,t_j)$</formula>. </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>[int] Index of time <formula id="40">$ t_i$</formula> . </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[int] Index of time <formula id="41">$ t_j$</formula> . </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G_gtr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[cdmatrix] The greater component (returned to an eigen3 matrix). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Contour function G  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_getset_herm_matrix_inc.hpp" line="823" column="6" bodyfile="cntr/cntr_getset_herm_matrix_inc.hpp" bodystart="823" bodyend="825"/>
+        <references refid="cntr__getset__herm__matrix__inc_8hpp_ab18892912fb003b450fe71fdfbcbaf7d_1ab18892912fb003b450fe71fdfbcbaf7d" compoundref="cntr__getset__herm__matrix__inc_8hpp" startline="499" endline="505">get_gtr</references>
+      </memberdef>
+      <memberdef kind="function" id="cntr__getset__herm__matrix__inc_8hpp_a4d6f268c5fbe92058c6842681205dd52_1a4d6f268c5fbe92058c6842681205dd52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void get_gtr</definition>
+        <argsstring>(const int i, const int j, cdmatrix &amp;G_gtr, herm_matrix&lt; T &gt; &amp;G, herm_matrix&lt; T &gt; &amp;Gcc)</argsstring>
+        <name>get_gtr</name>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>cdmatrix &amp;</type>
+          <declname>G_gtr</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>Gcc</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns the greater component of a general contour function at given times. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>Returns the greater component <formula id="48">$ G^&gt;(t_i,t_j) $</formula> at given times <formula id="40">$ t_i$</formula> and <formula id="41">$ t_j$</formula> from <formula id="49">$G^&lt;(t_i,t_j)$</formula> and <formula id="44">$G^\mathrm{R}(t_i,t_j)$</formula>. </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>[int] Index of time <formula id="40">$ t_i$</formula> . </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[int] Index of time <formula id="41">$ t_j$</formula> . </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G_gtr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[cdmatrix] The greater component (returned to an eigen3 matrix). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Contour function G </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Gcc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Hermitian conjugate <formula id="38">$G^\ddagger$</formula> of <formula id="20">$G$</formula>.  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_getset_herm_matrix_inc.hpp" line="532" column="6" bodyfile="cntr/cntr_getset_herm_matrix_inc.hpp" bodystart="532" bodyend="539"/>
+        <references refid="cntr__getset__herm__matrix__inc_8hpp_a4f6b21e4e1b571d16460cd8e5f41bc0c_1a4f6b21e4e1b571d16460cd8e5f41bc0c" compoundref="cntr__getset__herm__matrix__inc_8hpp" startline="152" endline="168">get_les</references>
+        <references refid="cntr__getset__herm__matrix__inc_8hpp_a29054b759c88454549d211e18eeb92b7_1a29054b759c88454549d211e18eeb92b7" compoundref="cntr__getset__herm__matrix__inc_8hpp" startline="246" endline="261">get_ret</references>
+      </memberdef>
+      <memberdef kind="function" id="cntr__getset__herm__matrix__inc_8hpp_ad4364111db993cdd30a6390db66d0a5c_1ad4364111db993cdd30a6390db66d0a5c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void get_gtr</definition>
+        <argsstring>(const int i, const int j, std::complex&lt; T &gt; &amp;G_gtr, herm_matrix&lt; T &gt; &amp;G)</argsstring>
+        <name>get_gtr</name>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>std::complex&lt; T &gt; &amp;</type>
+          <declname>G_gtr</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>G</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns the greatesr component of a hermitian contour function at given times. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>Returns the greater component <formula id="48">$ G^&gt;(t_i,t_j) $</formula> at given times <formula id="40">$ t_i$</formula> and <formula id="41">$ t_j$</formula> from <formula id="49">$G^&lt;(t_i,t_j)$</formula> and <formula id="44">$G^\mathrm{R}(t_i,t_j)$</formula>.  </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>[int] Index of time <formula id="40">$ t_i$</formula> . </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[int] Index of time <formula id="41">$ t_j$</formula> . </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G_gtr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[complex&lt;T&gt;] The greater component (scalar GF). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Contour function G  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_getset_herm_matrix_inc.hpp" line="796" column="13" bodyfile="cntr/cntr_getset_herm_matrix_inc.hpp" bodystart="796" bodyend="798"/>
+        <references refid="cntr__getset__herm__matrix__inc_8hpp_ab18892912fb003b450fe71fdfbcbaf7d_1ab18892912fb003b450fe71fdfbcbaf7d" compoundref="cntr__getset__herm__matrix__inc_8hpp" startline="499" endline="505">get_gtr</references>
+      </memberdef>
+      <memberdef kind="function" id="cntr__getset__herm__matrix__inc_8hpp_ab18892912fb003b450fe71fdfbcbaf7d_1ab18892912fb003b450fe71fdfbcbaf7d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void get_gtr</definition>
+        <argsstring>(const int i, const int j, std::complex&lt; T &gt; &amp;G_gtr, herm_matrix&lt; T &gt; &amp;G, herm_matrix&lt; T &gt; &amp;Gcc)</argsstring>
+        <name>get_gtr</name>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>std::complex&lt; T &gt; &amp;</type>
+          <declname>G_gtr</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>Gcc</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns the greatesr component of a general contour function at given times. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>Returns the greater component <formula id="48">$ G^&gt;(t_i,t_j) $</formula> at given times <formula id="40">$ t_i$</formula> and <formula id="41">$ t_j$</formula> from <formula id="49">$G^&lt;(t_i,t_j)$</formula> and <formula id="44">$G^\mathrm{R}(t_i,t_j)$</formula>.  </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>[int] Index of time <formula id="40">$ t_i$</formula> . </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[int] Index of time <formula id="41">$ t_j$</formula> . </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G_gtr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[complex&lt;T&gt;] The greater component (scalar GF). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Contour function G </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Gcc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Hermitian conjugate <formula id="38">$G^\ddagger$</formula> of <formula id="20">$G$</formula>.  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_getset_herm_matrix_inc.hpp" line="499" column="13" bodyfile="cntr/cntr_getset_herm_matrix_inc.hpp" bodystart="499" bodyend="505"/>
+        <references refid="cntr__getset__herm__matrix__inc_8hpp_a4f6b21e4e1b571d16460cd8e5f41bc0c_1a4f6b21e4e1b571d16460cd8e5f41bc0c" compoundref="cntr__getset__herm__matrix__inc_8hpp" startline="152" endline="168">get_les</references>
+        <references refid="cntr__getset__herm__matrix__inc_8hpp_a29054b759c88454549d211e18eeb92b7_1a29054b759c88454549d211e18eeb92b7" compoundref="cntr__getset__herm__matrix__inc_8hpp" startline="246" endline="261">get_ret</references>
+        <referencedby refid="cntr__getset__herm__matrix__inc_8hpp_a150cf20713385cbd654a98231a6ef419_1a150cf20713385cbd654a98231a6ef419" compoundref="cntr__getset__herm__matrix__inc_8hpp" startline="823" endline="825">get_gtr</referencedby>
+        <referencedby refid="cntr__getset__herm__matrix__inc_8hpp_ad4364111db993cdd30a6390db66d0a5c_1ad4364111db993cdd30a6390db66d0a5c" compoundref="cntr__getset__herm__matrix__inc_8hpp" startline="796" endline="798">get_gtr</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="cntr__getset__herm__matrix__inc_8hpp_afd19d7b4dafe0781bb9f3d36dd1519d1_1afd19d7b4dafe0781bb9f3d36dd1519d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void get_les</definition>
+        <argsstring>(const int i, const int j, cdmatrix &amp;G_les, herm_matrix&lt; T &gt; &amp;G)</argsstring>
+        <name>get_les</name>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>cdmatrix &amp;</type>
+          <declname>G_les</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>G</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns the lesser component of a hermitian contour function at given times. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>Returns the lesser component <formula id="39">$ G^&lt;(t_i,t_j) $</formula> at given times <formula id="40">$ t_i$</formula> and <formula id="41">$ t_j$</formula>. Hermitian symmetry is assumed. </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>[int] Index of time <formula id="40">$ t_i$</formula> . </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[int] Index of time <formula id="41">$ t_j$</formula> . </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G_les</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[cdmatrix] The lesser component (returned to an eigen3 matrix). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Contour function G  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_getset_herm_matrix_inc.hpp" line="598" column="6" bodyfile="cntr/cntr_getset_herm_matrix_inc.hpp" bodystart="598" bodyend="600"/>
+        <references refid="cntr__getset__herm__matrix__inc_8hpp_a4f6b21e4e1b571d16460cd8e5f41bc0c_1a4f6b21e4e1b571d16460cd8e5f41bc0c" compoundref="cntr__getset__herm__matrix__inc_8hpp" startline="152" endline="168">get_les</references>
+      </memberdef>
+      <memberdef kind="function" id="cntr__getset__herm__matrix__inc_8hpp_ae01762fe80863ae8efe1098aec09165a_1ae01762fe80863ae8efe1098aec09165a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void get_les</definition>
+        <argsstring>(const int i, const int j, cdmatrix &amp;G_les, herm_matrix&lt; T &gt; &amp;G, herm_matrix&lt; T &gt; &amp;Gcc)</argsstring>
+        <name>get_les</name>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>cdmatrix &amp;</type>
+          <declname>G_les</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>Gcc</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns the lesser component of a general contour function at given times. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>Returns the lesser component <formula id="39">$ G^&lt;(t_i,t_j) $</formula> at given times <formula id="40">$ t_i$</formula> and <formula id="41">$ t_j$</formula>. For <formula id="42">$ i &gt; j$</formula> the hermitian conjugate <formula id="38">$G^\ddagger$</formula> is used. </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>[int] Index of time <formula id="40">$ t_i$</formula> . </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[int] Index of time <formula id="41">$ t_j$</formula> . </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G_les</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[cdmatrix] The lesser component (returned to an eigen3 matrix). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Contour function G </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Gcc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Hermitian conjugate <formula id="38">$G^\ddagger$</formula> of <formula id="20">$G$</formula>.  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_getset_herm_matrix_inc.hpp" line="197" column="6" bodyfile="cntr/cntr_getset_herm_matrix_inc.hpp" bodystart="197" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="cntr__getset__herm__matrix__inc_8hpp_a09f0bc88931330de2b667c4f89697f96_1a09f0bc88931330de2b667c4f89697f96" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void get_les</definition>
+        <argsstring>(const int i, const int j, std::complex&lt; T &gt; &amp;G_les, herm_matrix&lt; T &gt; &amp;G)</argsstring>
+        <name>get_les</name>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>std::complex&lt; T &gt; &amp;</type>
+          <declname>G_les</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>G</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns the lesser component of a hermitian contour function at given times. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>Returns the lesser component <formula id="39">$ G^&lt;(t_i,t_j) $</formula> at given times <formula id="40">$ t_i$</formula> and <formula id="41">$ t_j$</formula>. Hermitian symmetry is assumed. </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>[int] Index of time <formula id="40">$ t_i$</formula> . </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[int] Index of time <formula id="41">$ t_j$</formula> . </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G_les</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[complex&lt;T&gt;] The lesser component (scalar). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Contour function G  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_getset_herm_matrix_inc.hpp" line="570" column="13" bodyfile="cntr/cntr_getset_herm_matrix_inc.hpp" bodystart="570" bodyend="572"/>
+        <references refid="cntr__getset__herm__matrix__inc_8hpp_a4f6b21e4e1b571d16460cd8e5f41bc0c_1a4f6b21e4e1b571d16460cd8e5f41bc0c" compoundref="cntr__getset__herm__matrix__inc_8hpp" startline="152" endline="168">get_les</references>
+      </memberdef>
+      <memberdef kind="function" id="cntr__getset__herm__matrix__inc_8hpp_a4f6b21e4e1b571d16460cd8e5f41bc0c_1a4f6b21e4e1b571d16460cd8e5f41bc0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void get_les</definition>
+        <argsstring>(const int i, const int j, std::complex&lt; T &gt; &amp;G_les, herm_matrix&lt; T &gt; &amp;G, herm_matrix&lt; T &gt; &amp;Gcc)</argsstring>
+        <name>get_les</name>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>std::complex&lt; T &gt; &amp;</type>
+          <declname>G_les</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>Gcc</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns the lesser component of a general contour function at given times. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>Returns the lesser component <formula id="39">$ G^&lt;(t_i,t_j) $</formula> at given times <formula id="40">$ t_i$</formula> and <formula id="41">$ t_j$</formula>. For <formula id="42">$ i &gt; j$</formula> the hermitian conjugate <formula id="38">$G^\ddagger$</formula> is used. </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>[int] Index of time <formula id="40">$ t_i$</formula> . </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[int] Index of time <formula id="41">$ t_j$</formula> . </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G_les</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[complex&lt;T&gt;] The lesser component (scalar). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Contour function G </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Gcc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Hermitian conjugate <formula id="38">$G^\ddagger$</formula> of <formula id="20">$G$</formula>.  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_getset_herm_matrix_inc.hpp" line="152" column="13" bodyfile="cntr/cntr_getset_herm_matrix_inc.hpp" bodystart="152" bodyend="168"/>
+        <referencedby refid="cntr__getset__herm__matrix__inc_8hpp_a4d6f268c5fbe92058c6842681205dd52_1a4d6f268c5fbe92058c6842681205dd52" compoundref="cntr__getset__herm__matrix__inc_8hpp" startline="532" endline="539">get_gtr</referencedby>
+        <referencedby refid="cntr__getset__herm__matrix__inc_8hpp_ab18892912fb003b450fe71fdfbcbaf7d_1ab18892912fb003b450fe71fdfbcbaf7d" compoundref="cntr__getset__herm__matrix__inc_8hpp" startline="499" endline="505">get_gtr</referencedby>
+        <referencedby refid="cntr__getset__herm__matrix__inc_8hpp_afd19d7b4dafe0781bb9f3d36dd1519d1_1afd19d7b4dafe0781bb9f3d36dd1519d1" compoundref="cntr__getset__herm__matrix__inc_8hpp" startline="598" endline="600">get_les</referencedby>
+        <referencedby refid="cntr__getset__herm__matrix__inc_8hpp_a09f0bc88931330de2b667c4f89697f96_1a09f0bc88931330de2b667c4f89697f96" compoundref="cntr__getset__herm__matrix__inc_8hpp" startline="570" endline="572">get_les</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="cntr__getset__herm__matrix__inc_8hpp_a38996882b427bcb5e58ed1f4a0176ecd_1a38996882b427bcb5e58ed1f4a0176ecd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void get_mat</definition>
+        <argsstring>(const int m, cdmatrix &amp;G_mat, herm_matrix&lt; T &gt; &amp;G)</argsstring>
+        <name>get_mat</name>
+        <param>
+          <type>const int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>cdmatrix &amp;</type>
+          <declname>G_mat</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>G</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns the Matsubara component of a general contour function at given times. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>Returns the lesser component <formula id="36">$ G^\mathrm{M}(\tau_m) $</formula> at given imaginary time <formula id="37">$ \tau_m$</formula>. </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>[int] Index of time <formula id="37">$ \tau_m$</formula> . </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G_mat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[complex&lt;T&gt;] The Matsubara component (scalar GF). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Contour function G  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_getset_herm_matrix_inc.hpp" line="116" column="6" bodyfile="cntr/cntr_getset_herm_matrix_inc.hpp" bodystart="116" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="cntr__getset__herm__matrix__inc_8hpp_a6977350bdd1ca6125fe47bfdaa39be11_1a6977350bdd1ca6125fe47bfdaa39be11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void get_mat</definition>
+        <argsstring>(const int m, cdmatrix &amp;G_mat, herm_matrix&lt; T &gt; &amp;G, herm_matrix&lt; T &gt; &amp;Gcc)</argsstring>
+        <name>get_mat</name>
+        <param>
+          <type>const int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>cdmatrix &amp;</type>
+          <declname>G_mat</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>Gcc</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns the Matsubara component of a general contour function at given times. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>Returns the lesser component <formula id="36">$ G^\mathrm{M}(\tau_m) $</formula> at given imaginary time <formula id="37">$ \tau_m$</formula>. </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>[int] Index of time <formula id="37">$ \tau_m$</formula> . </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G_mat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[complex&lt;T&gt;] The Matsubara component (scalar GF). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Contour function G </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Gcc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Hermitian conjugate <formula id="38">$G^\ddagger$</formula> of <formula id="20">$G$</formula>.  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_getset_herm_matrix_inc.hpp" line="55" column="6" bodyfile="cntr/cntr_getset_herm_matrix_inc.hpp" bodystart="55" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="cntr__getset__herm__matrix__inc_8hpp_ae7b517e257c58ddc321e81e53a307f4e_1ae7b517e257c58ddc321e81e53a307f4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void get_mat</definition>
+        <argsstring>(const int m, std::complex&lt; T &gt; &amp;G_mat, herm_matrix&lt; T &gt; &amp;G)</argsstring>
+        <name>get_mat</name>
+        <param>
+          <type>const int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>std::complex&lt; T &gt; &amp;</type>
+          <declname>G_mat</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>G</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns the Matsubara component of a general contour function at given times. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>Returns the lesser component <formula id="36">$ G^\mathrm{M}(\tau_m) $</formula> at given imaginary time <formula id="37">$ \tau_m$</formula>. </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>[int] Index of time <formula id="37">$ \tau_m$</formula> . </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G_mat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[complex&lt;T&gt;] The Matsubara component (scalar GF). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Contour function G  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_getset_herm_matrix_inc.hpp" line="90" column="13" bodyfile="cntr/cntr_getset_herm_matrix_inc.hpp" bodystart="90" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="cntr__getset__herm__matrix__inc_8hpp_a1ec4aa8ce2a5be7a84258f4903004827_1a1ec4aa8ce2a5be7a84258f4903004827" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void get_mat</definition>
+        <argsstring>(const int m, std::complex&lt; T &gt; &amp;G_mat, herm_matrix&lt; T &gt; &amp;G, herm_matrix&lt; T &gt; &amp;Gcc)</argsstring>
+        <name>get_mat</name>
+        <param>
+          <type>const int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>std::complex&lt; T &gt; &amp;</type>
+          <declname>G_mat</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>Gcc</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns the Matsubara component of a general contour function at given times. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>Returns the lesser component <formula id="36">$ G^\mathrm{M}(\tau_m) $</formula> at given imaginary time <formula id="37">$ \tau_m$</formula>. </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>[int] Index of time <formula id="37">$ \tau_m$</formula> . </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G_mat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[complex&lt;T&gt;] The Matsubara component (scalar GF). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Contour function G </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Gcc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Hermitian conjugate <formula id="38">$G^\ddagger$</formula> of <formula id="20">$G$</formula>.  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_getset_herm_matrix_inc.hpp" line="23" column="13" bodyfile="cntr/cntr_getset_herm_matrix_inc.hpp" bodystart="23" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="cntr__getset__herm__matrix__inc_8hpp_a49992582551357f967a817a53ad74ec8_1a49992582551357f967a817a53ad74ec8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void get_ret</definition>
+        <argsstring>(const int i, const int j, cdmatrix &amp;G_ret, herm_matrix&lt; T &gt; &amp;G)</argsstring>
+        <name>get_ret</name>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>cdmatrix &amp;</type>
+          <declname>G_ret</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>G</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns the retarded component of a hermitian contour function at given times. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>Returns the retarded component <formula id="43">$ G^\mathrm{R}(t_i,t_j) $</formula> at given times <formula id="40">$ t_i$</formula> and <formula id="41">$ t_j$</formula>. We assume <formula id="44">$G^\mathrm{R}(t_i,t_j)$</formula> can be analytically continued to <formula id="45">$ j &gt; i$</formula>, for which the hermitian conjugate <formula id="38">$G^\ddagger$</formula> is used. </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>[int] Index of time <formula id="40">$ t_i$</formula> . </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[int] Index of time <formula id="41">$ t_j$</formula> . </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G_ret</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[cdmatrix] The retarded component (returned to an eigen3 matrix). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Contour function G  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_getset_herm_matrix_inc.hpp" line="655" column="6" bodyfile="cntr/cntr_getset_herm_matrix_inc.hpp" bodystart="655" bodyend="657"/>
+        <references refid="cntr__getset__herm__matrix__inc_8hpp_a29054b759c88454549d211e18eeb92b7_1a29054b759c88454549d211e18eeb92b7" compoundref="cntr__getset__herm__matrix__inc_8hpp" startline="246" endline="261">get_ret</references>
+      </memberdef>
+      <memberdef kind="function" id="cntr__getset__herm__matrix__inc_8hpp_ab600f60c600a6c7753d2b590a012e0a6_1ab600f60c600a6c7753d2b590a012e0a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void get_ret</definition>
+        <argsstring>(const int i, const int j, cdmatrix &amp;G_ret, herm_matrix&lt; T &gt; &amp;G, herm_matrix&lt; T &gt; &amp;Gcc)</argsstring>
+        <name>get_ret</name>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>cdmatrix &amp;</type>
+          <declname>G_ret</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>Gcc</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns the retarded component of a general contour function at given times. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>Returns the retarded component <formula id="43">$ G^\mathrm{R}(t_i,t_j) $</formula> at given times <formula id="40">$ t_i$</formula> and <formula id="41">$ t_j$</formula>. We assume <formula id="44">$G^\mathrm{R}(t_i,t_j)$</formula> can be analytically continued to <formula id="45">$ j &gt; i$</formula>, for which the hermitian conjugate <formula id="38">$G^\ddagger$</formula> is used. </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>[int] Index of time <formula id="40">$ t_i$</formula> . </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[int] Index of time <formula id="41">$ t_j$</formula> . </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G_ret</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[cdmatrix] The retarded component (returned to an eigen3 matrix). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Contour function G </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Gcc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Hermitian conjugate <formula id="38">$G^\ddagger$</formula> of <formula id="20">$G$</formula>.  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_getset_herm_matrix_inc.hpp" line="289" column="6" bodyfile="cntr/cntr_getset_herm_matrix_inc.hpp" bodystart="289" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="cntr__getset__herm__matrix__inc_8hpp_ace4d602b72718ae2f2cc0a3a0485c723_1ace4d602b72718ae2f2cc0a3a0485c723" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void get_ret</definition>
+        <argsstring>(const int i, const int j, std::complex&lt; T &gt; &amp;G_ret, herm_matrix&lt; T &gt; &amp;G)</argsstring>
+        <name>get_ret</name>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>std::complex&lt; T &gt; &amp;</type>
+          <declname>G_ret</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>G</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns the retarded component of a hermitian contour function at given times. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>Returns the retarded component <formula id="43">$ G^\mathrm{R}(t_i,t_j) $</formula> at given times <formula id="40">$ t_i$</formula> and <formula id="41">$ t_j$</formula>. We assume <formula id="44">$G^\mathrm{R}(t_i,t_j)$</formula> can be analytically continued to <formula id="45">$ j &gt; i$</formula>, for which the hermitian conjugate <formula id="38">$G^\ddagger$</formula> is used. </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>[int] Index of time <formula id="40">$ t_i$</formula> . </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[int] Index of time <formula id="41">$ t_j$</formula> . </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G_ret</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[complex&lt;T&gt;] The retarded component (scalar GF). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Contour function G  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_getset_herm_matrix_inc.hpp" line="627" column="13" bodyfile="cntr/cntr_getset_herm_matrix_inc.hpp" bodystart="627" bodyend="629"/>
+        <references refid="cntr__getset__herm__matrix__inc_8hpp_a29054b759c88454549d211e18eeb92b7_1a29054b759c88454549d211e18eeb92b7" compoundref="cntr__getset__herm__matrix__inc_8hpp" startline="246" endline="261">get_ret</references>
+      </memberdef>
+      <memberdef kind="function" id="cntr__getset__herm__matrix__inc_8hpp_a29054b759c88454549d211e18eeb92b7_1a29054b759c88454549d211e18eeb92b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void get_ret</definition>
+        <argsstring>(const int i, const int j, std::complex&lt; T &gt; &amp;G_ret, herm_matrix&lt; T &gt; &amp;G, herm_matrix&lt; T &gt; &amp;Gcc)</argsstring>
+        <name>get_ret</name>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>std::complex&lt; T &gt; &amp;</type>
+          <declname>G_ret</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>Gcc</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns the retarded component of a general contour function at given times. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>Returns the retarded component <formula id="43">$ G^\mathrm{R}(t_i,t_j) $</formula> at given times <formula id="40">$ t_i$</formula> and <formula id="41">$ t_j$</formula>. We assume <formula id="44">$G^\mathrm{R}(t_i,t_j)$</formula> can be analytically continued to <formula id="45">$ j &gt; i$</formula>, for which the hermitian conjugate <formula id="38">$G^\ddagger$</formula> is used. </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>[int] Index of time <formula id="40">$ t_i$</formula> . </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[int] Index of time <formula id="41">$ t_j$</formula> . </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G_ret</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[complex&lt;T&gt;] The retarded component (scalar GF). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Contour function G </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Gcc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Hermitian conjugate <formula id="38">$G^\ddagger$</formula> of <formula id="20">$G$</formula>.  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_getset_herm_matrix_inc.hpp" line="246" column="13" bodyfile="cntr/cntr_getset_herm_matrix_inc.hpp" bodystart="246" bodyend="261"/>
+        <referencedby refid="cntr__getset__herm__matrix__inc_8hpp_a4d6f268c5fbe92058c6842681205dd52_1a4d6f268c5fbe92058c6842681205dd52" compoundref="cntr__getset__herm__matrix__inc_8hpp" startline="532" endline="539">get_gtr</referencedby>
+        <referencedby refid="cntr__getset__herm__matrix__inc_8hpp_ab18892912fb003b450fe71fdfbcbaf7d_1ab18892912fb003b450fe71fdfbcbaf7d" compoundref="cntr__getset__herm__matrix__inc_8hpp" startline="499" endline="505">get_gtr</referencedby>
+        <referencedby refid="cntr__getset__herm__matrix__inc_8hpp_a49992582551357f967a817a53ad74ec8_1a49992582551357f967a817a53ad74ec8" compoundref="cntr__getset__herm__matrix__inc_8hpp" startline="655" endline="657">get_ret</referencedby>
+        <referencedby refid="cntr__getset__herm__matrix__inc_8hpp_ace4d602b72718ae2f2cc0a3a0485c723_1ace4d602b72718ae2f2cc0a3a0485c723" compoundref="cntr__getset__herm__matrix__inc_8hpp" startline="627" endline="629">get_ret</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="cntr__getset__herm__matrix__inc_8hpp_a9364c72d7b136d1d750bbf11a495e085_1a9364c72d7b136d1d750bbf11a495e085" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void get_tv</definition>
+        <argsstring>(const int i, const int m, cdmatrix &amp;G_tv, herm_matrix&lt; T &gt; &amp;G)</argsstring>
+        <name>get_tv</name>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>cdmatrix &amp;</type>
+          <declname>G_tv</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>G</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns the left-mixing component of a hermitian contour function at given times. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>Returns the left-mixing component <formula id="46">$ G^\rceil(t_i,\tau_m) $</formula> at given times <formula id="40">$ t_i$</formula> and <formula id="37">$ \tau_m$</formula>. </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>[int] Index of time <formula id="40">$ t_i$</formula> . </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[int] Index of time <formula id="37">$ \tau_m$</formula> . </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G_tv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[cdmatrix] The left-mixing component (returned to an eigen3 matrix). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Contour function G  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_getset_herm_matrix_inc.hpp" line="711" column="6" bodyfile="cntr/cntr_getset_herm_matrix_inc.hpp" bodystart="711" bodyend="713"/>
+        <references refid="cntr__getset__herm__matrix__inc_8hpp_ac29132821fc2cc8fe54c3a77477795c8_1ac29132821fc2cc8fe54c3a77477795c8" compoundref="cntr__getset__herm__matrix__inc_8hpp" startline="338" endline="348">get_tv</references>
+      </memberdef>
+      <memberdef kind="function" id="cntr__getset__herm__matrix__inc_8hpp_a9a15516fbb11b6ab70c6161ed044ef03_1a9a15516fbb11b6ab70c6161ed044ef03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void get_tv</definition>
+        <argsstring>(const int i, const int m, cdmatrix &amp;G_tv, herm_matrix&lt; T &gt; &amp;G, herm_matrix&lt; T &gt; &amp;Gcc)</argsstring>
+        <name>get_tv</name>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>cdmatrix &amp;</type>
+          <declname>G_tv</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>Gcc</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns the left-mixing component of a general contour function at given times. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>Returns the left-mixing component <formula id="46">$ G^\rceil(t_i,\tau_m) $</formula> at given times <formula id="40">$ t_i$</formula> and <formula id="37">$ \tau_m$</formula>. </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>[int] Index of time <formula id="40">$ t_i$</formula> . </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[int] Index of time <formula id="37">$ \tau_m$</formula> . </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G_tv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[cdmatrix] The left-mixing component (returned to an eigen3 matrix). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Contour function G </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Gcc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Hermitian conjugate <formula id="38">$G^\ddagger$</formula> of <formula id="20">$G$</formula>.  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_getset_herm_matrix_inc.hpp" line="375" column="6" bodyfile="cntr/cntr_getset_herm_matrix_inc.hpp" bodystart="375" bodyend="388"/>
+      </memberdef>
+      <memberdef kind="function" id="cntr__getset__herm__matrix__inc_8hpp_a8bb3a1e989ee1d9ac23a49b3e94092f1_1a8bb3a1e989ee1d9ac23a49b3e94092f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void get_tv</definition>
+        <argsstring>(const int i, const int m, std::complex&lt; T &gt; &amp;G_tv, herm_matrix&lt; T &gt; &amp;G)</argsstring>
+        <name>get_tv</name>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>std::complex&lt; T &gt; &amp;</type>
+          <declname>G_tv</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>G</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns the left-mixing component of a hermitian contour function at given times. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>Returns the left-mixing component <formula id="46">$ G^\rceil(t_i,\tau_m) $</formula> at given times <formula id="40">$ t_i$</formula> and <formula id="37">$ \tau_m$</formula>. </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>[int] Index of time <formula id="40">$ t_i$</formula> . </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[int] Index of time <formula id="37">$ \tau_m$</formula> . </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G_tv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[complex&lt;T&gt;] The left-mixing component (scalar GF). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Contour function G  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_getset_herm_matrix_inc.hpp" line="684" column="13" bodyfile="cntr/cntr_getset_herm_matrix_inc.hpp" bodystart="684" bodyend="686"/>
+        <references refid="cntr__getset__herm__matrix__inc_8hpp_ac29132821fc2cc8fe54c3a77477795c8_1ac29132821fc2cc8fe54c3a77477795c8" compoundref="cntr__getset__herm__matrix__inc_8hpp" startline="338" endline="348">get_tv</references>
+      </memberdef>
+      <memberdef kind="function" id="cntr__getset__herm__matrix__inc_8hpp_ac29132821fc2cc8fe54c3a77477795c8_1ac29132821fc2cc8fe54c3a77477795c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void get_tv</definition>
+        <argsstring>(const int i, const int m, std::complex&lt; T &gt; &amp;G_tv, herm_matrix&lt; T &gt; &amp;G, herm_matrix&lt; T &gt; &amp;Gcc)</argsstring>
+        <name>get_tv</name>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>std::complex&lt; T &gt; &amp;</type>
+          <declname>G_tv</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>Gcc</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns the left-mixing component of a general contour function at given times. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>Returns the left-mixing component <formula id="46">$ G^\rceil(t_i,\tau_m) $</formula> at given times <formula id="40">$ t_i$</formula> and <formula id="37">$ \tau_m$</formula>. </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>[int] Index of time <formula id="40">$ t_i$</formula> . </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[int] Index of time <formula id="37">$ \tau_m$</formula> . </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G_tv</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[complex&lt;T&gt;] The left-mixing component (scalar GF). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Contour function G </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Gcc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Hermitian conjugate <formula id="38">$G^\ddagger$</formula> of <formula id="20">$G$</formula>.  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_getset_herm_matrix_inc.hpp" line="338" column="13" bodyfile="cntr/cntr_getset_herm_matrix_inc.hpp" bodystart="338" bodyend="348"/>
+        <referencedby refid="cntr__getset__herm__matrix__inc_8hpp_a9364c72d7b136d1d750bbf11a495e085_1a9364c72d7b136d1d750bbf11a495e085" compoundref="cntr__getset__herm__matrix__inc_8hpp" startline="711" endline="713">get_tv</referencedby>
+        <referencedby refid="cntr__getset__herm__matrix__inc_8hpp_a8bb3a1e989ee1d9ac23a49b3e94092f1_1a8bb3a1e989ee1d9ac23a49b3e94092f1" compoundref="cntr__getset__herm__matrix__inc_8hpp" startline="684" endline="686">get_tv</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="cntr__getset__herm__matrix__inc_8hpp_a96d14a2442ca933f5b5c3df4756ce0dd_1a96d14a2442ca933f5b5c3df4756ce0dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void get_vt</definition>
+        <argsstring>(const int m, const int i, cdmatrix &amp;G_vt, herm_matrix&lt; T &gt; &amp;G)</argsstring>
+        <name>get_vt</name>
+        <param>
+          <type>const int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>cdmatrix &amp;</type>
+          <declname>G_vt</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>G</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns the right-mixing component of a hermitian contour function at given times. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>Returns the right-mixing component <formula id="47">$ G^\lceil(\tau_m,t_i) $</formula> at given times <formula id="40">$ t_i$</formula> and <formula id="37">$ \tau_m$</formula> assuming hermitian symmetry. </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>[int] Index of time <formula id="37">$ \tau_m$</formula> . </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[int] Index of time <formula id="40">$ t_i$</formula> . </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G_vt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[cdmatrix] The right-mixing component (returned to an eigen3 matrix). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Contour function G  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_getset_herm_matrix_inc.hpp" line="767" column="6" bodyfile="cntr/cntr_getset_herm_matrix_inc.hpp" bodystart="767" bodyend="769"/>
+        <references refid="cntr__getset__herm__matrix__inc_8hpp_ac29b022146cf18f0dc106fa3ba7d0bf8_1ac29b022146cf18f0dc106fa3ba7d0bf8" compoundref="cntr__getset__herm__matrix__inc_8hpp" startline="417" endline="428">get_vt</references>
+      </memberdef>
+      <memberdef kind="function" id="cntr__getset__herm__matrix__inc_8hpp_aa1abb11e8b7fb0ee1093e4669cb1437c_1aa1abb11e8b7fb0ee1093e4669cb1437c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void get_vt</definition>
+        <argsstring>(const int m, const int i, cdmatrix &amp;G_vt, herm_matrix&lt; T &gt; &amp;G, herm_matrix&lt; T &gt; &amp;Gcc)</argsstring>
+        <name>get_vt</name>
+        <param>
+          <type>const int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>cdmatrix &amp;</type>
+          <declname>G_vt</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>Gcc</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns the right-mixing component of a general contour function at given times. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>Returns the right-mixing component <formula id="47">$ G^\lceil(\tau_m,t_i) $</formula> at given times <formula id="40">$ t_i$</formula> and <formula id="37">$ \tau_m$</formula>. The hermitian conjugate <formula id="38">$G^\ddagger$</formula> is used. </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>[int] Index of time <formula id="37">$ \tau_m$</formula> . </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[int] Index of time <formula id="40">$ t_i$</formula> . </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G_vt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[cdmatrix] The right-mixing component (returned to an eigen3 matrix). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Contour function G </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Gcc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Hermitian conjugate <formula id="38">$G^\ddagger$</formula> of <formula id="20">$G$</formula>.  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_getset_herm_matrix_inc.hpp" line="455" column="6" bodyfile="cntr/cntr_getset_herm_matrix_inc.hpp" bodystart="455" bodyend="470"/>
+      </memberdef>
+      <memberdef kind="function" id="cntr__getset__herm__matrix__inc_8hpp_a2190a5c97d2f293ed27de8b0bc73e717_1a2190a5c97d2f293ed27de8b0bc73e717" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void get_vt</definition>
+        <argsstring>(const int m, const int i, std::complex&lt; T &gt; &amp;G_vt, herm_matrix&lt; T &gt; &amp;G)</argsstring>
+        <name>get_vt</name>
+        <param>
+          <type>const int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>std::complex&lt; T &gt; &amp;</type>
+          <declname>G_vt</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>G</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns the right-mixing component of a hermitian contour function at given times. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>Returns the right-mixing component <formula id="47">$ G^\lceil(\tau_m,t_i) $</formula> at given times <formula id="40">$ t_i$</formula> and <formula id="37">$ \tau_m$</formula> assuming hermitian symmetry. </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>[int] Index of time <formula id="37">$ \tau_m$</formula> . </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[int] Index of time <formula id="40">$ t_i$</formula> . </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G_vt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[complex&lt;T&gt;] The right-mixing component (scalar GF). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Contour function G  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_getset_herm_matrix_inc.hpp" line="740" column="13" bodyfile="cntr/cntr_getset_herm_matrix_inc.hpp" bodystart="740" bodyend="742"/>
+        <references refid="cntr__getset__herm__matrix__inc_8hpp_ac29b022146cf18f0dc106fa3ba7d0bf8_1ac29b022146cf18f0dc106fa3ba7d0bf8" compoundref="cntr__getset__herm__matrix__inc_8hpp" startline="417" endline="428">get_vt</references>
+      </memberdef>
+      <memberdef kind="function" id="cntr__getset__herm__matrix__inc_8hpp_ac29b022146cf18f0dc106fa3ba7d0bf8_1ac29b022146cf18f0dc106fa3ba7d0bf8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void get_vt</definition>
+        <argsstring>(const int m, const int i, std::complex&lt; T &gt; &amp;G_vt, herm_matrix&lt; T &gt; &amp;G, herm_matrix&lt; T &gt; &amp;Gcc)</argsstring>
+        <name>get_vt</name>
+        <param>
+          <type>const int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>std::complex&lt; T &gt; &amp;</type>
+          <declname>G_vt</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>herm_matrix&lt; T &gt; &amp;</type>
+          <declname>Gcc</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns the right-mixing component of a general contour function at given times. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>Returns the right-mixing component <formula id="47">$ G^\lceil(\tau_m,t_i) $</formula> at given times <formula id="40">$ t_i$</formula> and <formula id="37">$ \tau_m$</formula>. The hermitian conjugate <formula id="38">$G^\ddagger$</formula> is used. </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>[int] Index of time <formula id="37">$ \tau_m$</formula> . </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[int] Index of time <formula id="40">$ t_i$</formula> . </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G_vt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[complex&lt;T&gt;] The right-mixing component (scalar GF). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>G</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Contour function G </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Gcc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[herm_matrix] Hermitian conjugate <formula id="38">$G^\ddagger$</formula> of <formula id="20">$G$</formula>.  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_getset_herm_matrix_inc.hpp" line="417" column="13" bodyfile="cntr/cntr_getset_herm_matrix_inc.hpp" bodystart="417" bodyend="428"/>
+        <referencedby refid="cntr__getset__herm__matrix__inc_8hpp_a96d14a2442ca933f5b5c3df4756ce0dd_1a96d14a2442ca933f5b5c3df4756ce0dd" compoundref="cntr__getset__herm__matrix__inc_8hpp" startline="767" endline="769">get_vt</referencedby>
+        <referencedby refid="cntr__getset__herm__matrix__inc_8hpp_a2190a5c97d2f293ed27de8b0bc73e717_1a2190a5c97d2f293ed27de8b0bc73e717" compoundref="cntr__getset__herm__matrix__inc_8hpp" startline="740" endline="742">get_vt</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="23" refid="cntr__getset__herm__matrix__inc_8hpp_a1ec4aa8ce2a5be7a84258f4903004827_1a1ec4aa8ce2a5be7a84258f4903004827" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_a1ec4aa8ce2a5be7a84258f4903004827_1a1ec4aa8ce2a5be7a84258f4903004827" kindref="member">get_mat</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/>std::complex&lt;T&gt;<sp/>&amp;G_mat,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;G,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;Gcc){</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(m<sp/>&lt;=<sp/>G.ntau());</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.ntau()<sp/>==<sp/>Gcc.ntau());</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.size1()<sp/>==<sp/>Gcc.size1());</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.size2()<sp/>==<sp/>Gcc.size2());</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.sig()<sp/>==<sp/>Gcc.sig());</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>G_mat<sp/>=<sp/>*G.matptr(m);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="55" refid="cntr__getset__herm__matrix__inc_8hpp_a6977350bdd1ca6125fe47bfdaa39be11_1a6977350bdd1ca6125fe47bfdaa39be11" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_a1ec4aa8ce2a5be7a84258f4903004827_1a1ec4aa8ce2a5be7a84258f4903004827" kindref="member">get_mat</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/>cdmatrix<sp/>&amp;G_mat,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;G,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;Gcc){</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(m<sp/>&lt;=<sp/>G.ntau());</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.ntau()<sp/>==<sp/>Gcc.ntau());</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.size1()<sp/>==<sp/>Gcc.size1());</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.size2()<sp/>==<sp/>Gcc.size2());</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.sig()<sp/>==<sp/>Gcc.sig());</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>std::complex&lt;T&gt;<sp/>*mat;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size1=G.size1(),<sp/>size2=G.size2();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>mat<sp/>=<sp/>G.matptr(m);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>map_ptr2matrix(size1,<sp/>size2,<sp/>mat,<sp/>G_mat);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="90" refid="cntr__getset__herm__matrix__inc_8hpp_ae7b517e257c58ddc321e81e53a307f4e_1ae7b517e257c58ddc321e81e53a307f4e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_a1ec4aa8ce2a5be7a84258f4903004827_1a1ec4aa8ce2a5be7a84258f4903004827" kindref="member">get_mat</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/>std::complex&lt;T&gt;<sp/>&amp;G_mat,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;G){</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(m<sp/>&lt;=<sp/>G.ntau());</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>G_mat<sp/>=<sp/>*G.matptr(m);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="116" refid="cntr__getset__herm__matrix__inc_8hpp_a38996882b427bcb5e58ed1f4a0176ecd_1a38996882b427bcb5e58ed1f4a0176ecd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_a1ec4aa8ce2a5be7a84258f4903004827_1a1ec4aa8ce2a5be7a84258f4903004827" kindref="member">get_mat</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/>cdmatrix<sp/>&amp;G_mat,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;G){</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(m<sp/>&lt;=<sp/>G.ntau());</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size1=G.size1(),<sp/>size2=G.size2();</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>std::complex&lt;T&gt;<sp/>*mat;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>mat<sp/>=<sp/>G.matptr(m);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>map_ptr2matrix(size1,<sp/>size2,<sp/>mat,<sp/>G_mat);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="152" refid="cntr__getset__herm__matrix__inc_8hpp_a4f6b21e4e1b571d16460cd8e5f41bc0c_1a4f6b21e4e1b571d16460cd8e5f41bc0c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_a4f6b21e4e1b571d16460cd8e5f41bc0c_1a4f6b21e4e1b571d16460cd8e5f41bc0c" kindref="member">get_les</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j,<sp/>std::complex&lt;T&gt;<sp/>&amp;G_les,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;G,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;Gcc){</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(i<sp/>&lt;=<sp/>G.nt()<sp/>&amp;&amp;<sp/>j<sp/>&lt;=<sp/>G.nt());</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(i<sp/>&lt;=<sp/>Gcc.nt()<sp/>&amp;&amp;<sp/>j<sp/>&lt;=<sp/>Gcc.nt());</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.nt()<sp/>==<sp/>Gcc.nt());</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.ntau()<sp/>==<sp/>Gcc.ntau());</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.size1()<sp/>==<sp/>Gcc.size1());</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.size2()<sp/>==<sp/>Gcc.size2());</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.sig()<sp/>==<sp/>Gcc.sig());</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size1<sp/>=<sp/>G.size1(),<sp/>size2<sp/>=<sp/>G.size2();</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>&lt;=<sp/>j)<sp/>{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>G_les<sp/>=<sp/>*G.lesptr(i,j);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>G_les<sp/>=<sp/>*Gcc.lesptr(j,i);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>G_les<sp/>=<sp/>-std::conj(G_les);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="197" refid="cntr__getset__herm__matrix__inc_8hpp_ae01762fe80863ae8efe1098aec09165a_1ae01762fe80863ae8efe1098aec09165a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_a4f6b21e4e1b571d16460cd8e5f41bc0c_1a4f6b21e4e1b571d16460cd8e5f41bc0c" kindref="member">get_les</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j,<sp/>cdmatrix<sp/>&amp;G_les,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;G,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;Gcc){</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(i<sp/>&lt;=<sp/>G.nt()<sp/>&amp;&amp;<sp/>j<sp/>&lt;=<sp/>G.nt());</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(i<sp/>&lt;=<sp/>Gcc.nt()<sp/>&amp;&amp;<sp/>j<sp/>&lt;=<sp/>Gcc.nt());</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.nt()<sp/>==<sp/>Gcc.nt());</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.ntau()<sp/>==<sp/>Gcc.ntau());</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.size1()<sp/>==<sp/>Gcc.size1());</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.size2()<sp/>==<sp/>Gcc.size2());</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.sig()<sp/>==<sp/>Gcc.sig());</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size1<sp/>=<sp/>G.size1(),<sp/>size2<sp/>=<sp/>G.size2();</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>std::complex&lt;T&gt;<sp/>*les;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>&lt;=<sp/>j)<sp/>{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>les<sp/>=<sp/>G.lesptr(i,j);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map_ptr2matrix(size1,<sp/>size2,<sp/>les,<sp/>G_les);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>les<sp/>=<sp/>Gcc.lesptr(j,i);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map_ptr2matrix(size1,<sp/>size2,<sp/>les,<sp/>G_les);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>G_les.adjointInPlace();</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>G_les<sp/>=<sp/>-G_les;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="217"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="246" refid="cntr__getset__herm__matrix__inc_8hpp_a29054b759c88454549d211e18eeb92b7_1a29054b759c88454549d211e18eeb92b7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_a29054b759c88454549d211e18eeb92b7_1a29054b759c88454549d211e18eeb92b7" kindref="member">get_ret</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j,<sp/>std::complex&lt;T&gt;<sp/>&amp;G_ret,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;G,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;Gcc){</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(i<sp/>&lt;=<sp/>G.nt()<sp/>&amp;&amp;<sp/>j<sp/>&lt;=<sp/>G.nt());</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(i<sp/>&lt;=<sp/>Gcc.nt()<sp/>&amp;&amp;<sp/>j<sp/>&lt;=<sp/>Gcc.nt());</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.nt()<sp/>==<sp/>Gcc.nt());</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.ntau()<sp/>==<sp/>Gcc.ntau());</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.size1()<sp/>==<sp/>Gcc.size1());</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.size2()<sp/>==<sp/>Gcc.size2());</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.sig()<sp/>==<sp/>Gcc.sig());</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(j<sp/>&lt;=<sp/>i)<sp/>{</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>G_ret<sp/>=<sp/>*G.retptr(i,j);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>G_ret<sp/>=<sp/>*Gcc.retptr(j,i);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>G_ret<sp/>=<sp/>-std::conj(G_ret);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="261"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="289" refid="cntr__getset__herm__matrix__inc_8hpp_ab600f60c600a6c7753d2b590a012e0a6_1ab600f60c600a6c7753d2b590a012e0a6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_a29054b759c88454549d211e18eeb92b7_1a29054b759c88454549d211e18eeb92b7" kindref="member">get_ret</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j,<sp/>cdmatrix<sp/>&amp;G_ret,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;G,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;Gcc){</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(i<sp/>&lt;=<sp/>G.nt()<sp/>&amp;&amp;<sp/>j<sp/>&lt;=<sp/>G.nt());</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(i<sp/>&lt;=<sp/>Gcc.nt()<sp/>&amp;&amp;<sp/>j<sp/>&lt;=<sp/>Gcc.nt());</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.nt()<sp/>==<sp/>Gcc.nt());</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.ntau()<sp/>==<sp/>Gcc.ntau());</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.size1()<sp/>==<sp/>Gcc.size1());</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.size2()<sp/>==<sp/>Gcc.size2());</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.sig()<sp/>==<sp/>Gcc.sig());</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size1<sp/>=<sp/>G.size1(),<sp/>size2<sp/>=<sp/>G.size2();</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/>std::complex&lt;T&gt;<sp/>*ret;</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(i<sp/>&gt;=<sp/>j)<sp/>{</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>G.retptr(i,j);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map_ptr2matrix(size1,<sp/>size2,<sp/>ret,<sp/>G_ret);</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>Gcc.retptr(j,i);</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map_ptr2matrix(size1,<sp/>size2,<sp/>ret,<sp/>G_ret);</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>G_ret.adjointInPlace();</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>G_ret<sp/>=<sp/>-G_ret;</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="309"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="338" refid="cntr__getset__herm__matrix__inc_8hpp_ac29132821fc2cc8fe54c3a77477795c8_1ac29132821fc2cc8fe54c3a77477795c8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_ac29132821fc2cc8fe54c3a77477795c8_1ac29132821fc2cc8fe54c3a77477795c8" kindref="member">get_tv</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/>std::complex&lt;T&gt;<sp/>&amp;G_tv,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;G,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;Gcc){</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(i<sp/>&lt;=<sp/>G.nt()<sp/>&amp;&amp;<sp/>m<sp/>&lt;=<sp/>G.ntau());</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(i<sp/>&lt;=<sp/>Gcc.nt()<sp/>&amp;&amp;<sp/>m<sp/>&lt;=<sp/>Gcc.ntau());</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.nt()<sp/>==<sp/>Gcc.nt());</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.ntau()<sp/>==<sp/>Gcc.ntau());</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.size1()<sp/>==<sp/>Gcc.size1());</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.size2()<sp/>==<sp/>Gcc.size2());</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.sig()<sp/>==<sp/>Gcc.sig());</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/>G_tv<sp/>=<sp/>*G.tvptr(i,m);</highlight></codeline>
+<codeline lineno="348"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="375" refid="cntr__getset__herm__matrix__inc_8hpp_a9a15516fbb11b6ab70c6161ed044ef03_1a9a15516fbb11b6ab70c6161ed044ef03" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_ac29132821fc2cc8fe54c3a77477795c8_1ac29132821fc2cc8fe54c3a77477795c8" kindref="member">get_tv</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/>cdmatrix<sp/>&amp;G_tv,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;G,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;Gcc){</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(i<sp/>&lt;=<sp/>G.nt()<sp/>&amp;&amp;<sp/>m<sp/>&lt;=<sp/>G.ntau());</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(i<sp/>&lt;=<sp/>Gcc.nt()<sp/>&amp;&amp;<sp/>m<sp/>&lt;=<sp/>Gcc.ntau());</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.nt()<sp/>==<sp/>Gcc.nt());</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.ntau()<sp/>==<sp/>Gcc.ntau());</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.size1()<sp/>==<sp/>Gcc.size1());</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.size2()<sp/>==<sp/>Gcc.size2());</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.sig()<sp/>==<sp/>Gcc.sig());</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size1<sp/>=<sp/>G.size1(),<sp/>size2<sp/>=<sp/>G.size2();</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/>std::complex&lt;T&gt;<sp/>*tv;</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"></highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/>tv<sp/>=<sp/>G.tvptr(i,m);</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/>map_ptr2matrix(size1,<sp/>size2,<sp/>tv,<sp/>G_tv);</highlight></codeline>
+<codeline lineno="388"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"></highlight></codeline>
+<codeline lineno="390"><highlight class="normal"></highlight></codeline>
+<codeline lineno="391"><highlight class="normal"></highlight></codeline>
+<codeline lineno="416"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="417" refid="cntr__getset__herm__matrix__inc_8hpp_ac29b022146cf18f0dc106fa3ba7d0bf8_1ac29b022146cf18f0dc106fa3ba7d0bf8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_ac29b022146cf18f0dc106fa3ba7d0bf8_1ac29b022146cf18f0dc106fa3ba7d0bf8" kindref="member">get_vt</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/>std::complex&lt;T&gt;<sp/>&amp;G_vt,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;G,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;Gcc){</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(i<sp/>&lt;=<sp/>G.nt()<sp/>&amp;&amp;<sp/>m<sp/>&lt;=<sp/>G.ntau());</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(i<sp/>&lt;=<sp/>Gcc.nt()<sp/>&amp;&amp;<sp/>m<sp/>&lt;=<sp/>Gcc.ntau());</highlight></codeline>
+<codeline lineno="420"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.nt()<sp/>==<sp/>Gcc.nt());</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.ntau()<sp/>==<sp/>Gcc.ntau());</highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.size1()<sp/>==<sp/>Gcc.size1());</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.size2()<sp/>==<sp/>Gcc.size2());</highlight></codeline>
+<codeline lineno="424"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.sig()<sp/>==<sp/>Gcc.sig());</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"></highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/>G_vt<sp/>=<sp/>*Gcc.tvptr(i,<sp/>G.ntau()<sp/>-<sp/>m);</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/>G_vt<sp/>=<sp/>std::complex&lt;T&gt;(-G.sig(),0.0)<sp/>*<sp/>std::conj(G_vt);</highlight></codeline>
+<codeline lineno="428"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"></highlight></codeline>
+<codeline lineno="454"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="455" refid="cntr__getset__herm__matrix__inc_8hpp_aa1abb11e8b7fb0ee1093e4669cb1437c_1aa1abb11e8b7fb0ee1093e4669cb1437c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_ac29b022146cf18f0dc106fa3ba7d0bf8_1ac29b022146cf18f0dc106fa3ba7d0bf8" kindref="member">get_vt</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/>cdmatrix<sp/>&amp;G_vt,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;G,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;Gcc){</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(i<sp/>&lt;=<sp/>G.nt()<sp/>&amp;&amp;<sp/>m<sp/>&lt;=<sp/>G.ntau());</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(i<sp/>&lt;=<sp/>Gcc.nt()<sp/>&amp;&amp;<sp/>m<sp/>&lt;=<sp/>Gcc.ntau());</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.nt()<sp/>==<sp/>Gcc.nt());</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.ntau()<sp/>==<sp/>Gcc.ntau());</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.size1()<sp/>==<sp/>Gcc.size1());</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.size2()<sp/>==<sp/>Gcc.size2());</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/>assert(G.sig()<sp/>==<sp/>Gcc.sig());</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size1<sp/>=<sp/>G.size1(),<sp/>size2<sp/>=<sp/>G.size2();</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/>std::complex&lt;T&gt;<sp/>*vt;</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"></highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/><sp/><sp/>vt<sp/>=<sp/>Gcc.tvptr(i,G.ntau()<sp/>-<sp/>m);</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/>map_ptr2matrix(size1,<sp/>size2,<sp/>vt,<sp/>G_vt);</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/>G_vt.adjointInPlace();</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/>G_vt<sp/>=<sp/>std::complex&lt;T&gt;(-G.sig(),0.0)*<sp/>G_vt;</highlight></codeline>
+<codeline lineno="470"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"></highlight></codeline>
+<codeline lineno="472"><highlight class="normal"></highlight></codeline>
+<codeline lineno="473"><highlight class="normal"></highlight></codeline>
+<codeline lineno="474"><highlight class="normal"></highlight></codeline>
+<codeline lineno="498"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="499" refid="cntr__getset__herm__matrix__inc_8hpp_ab18892912fb003b450fe71fdfbcbaf7d_1ab18892912fb003b450fe71fdfbcbaf7d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_ab18892912fb003b450fe71fdfbcbaf7d_1ab18892912fb003b450fe71fdfbcbaf7d" kindref="member">get_gtr</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j,<sp/>std::complex&lt;T&gt;<sp/>&amp;G_gtr,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;G,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;Gcc){</highlight></codeline>
+<codeline lineno="500"><highlight class="normal"><sp/><sp/><sp/><sp/>std::complex&lt;T&gt;<sp/>G_les,<sp/>G_ret;</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"></highlight></codeline>
+<codeline lineno="502"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_a4f6b21e4e1b571d16460cd8e5f41bc0c_1a4f6b21e4e1b571d16460cd8e5f41bc0c" kindref="member">get_les</ref>(i,<sp/>j,<sp/>G_les,<sp/>G,<sp/>Gcc);</highlight></codeline>
+<codeline lineno="503"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_a29054b759c88454549d211e18eeb92b7_1a29054b759c88454549d211e18eeb92b7" kindref="member">get_ret</ref>(i,<sp/>j,<sp/>G_ret,<sp/>G,<sp/>Gcc);</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"><sp/><sp/><sp/><sp/>G_gtr<sp/>=<sp/>G_les<sp/>+<sp/>G_ret;</highlight></codeline>
+<codeline lineno="505"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"></highlight></codeline>
+<codeline lineno="531"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="532" refid="cntr__getset__herm__matrix__inc_8hpp_a4d6f268c5fbe92058c6842681205dd52_1a4d6f268c5fbe92058c6842681205dd52" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_ab18892912fb003b450fe71fdfbcbaf7d_1ab18892912fb003b450fe71fdfbcbaf7d" kindref="member">get_gtr</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j,<sp/>cdmatrix<sp/>&amp;G_gtr,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;G,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;Gcc){</highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><sp/><sp/><sp/><sp/>cdmatrix<sp/>G_les,<sp/>G_ret;</highlight></codeline>
+<codeline lineno="534"><highlight class="normal"></highlight></codeline>
+<codeline lineno="535"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_a4f6b21e4e1b571d16460cd8e5f41bc0c_1a4f6b21e4e1b571d16460cd8e5f41bc0c" kindref="member">get_les</ref>(i,<sp/>j,<sp/>G_les,<sp/>G,<sp/>Gcc);</highlight></codeline>
+<codeline lineno="536"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_a29054b759c88454549d211e18eeb92b7_1a29054b759c88454549d211e18eeb92b7" kindref="member">get_ret</ref>(i,<sp/>j,<sp/>G_ret,<sp/>G,<sp/>Gcc);</highlight></codeline>
+<codeline lineno="537"><highlight class="normal"><sp/><sp/><sp/><sp/>G_gtr.noalias()<sp/>=<sp/>G_les<sp/>+<sp/>G_ret;</highlight></codeline>
+<codeline lineno="538"><highlight class="normal"></highlight></codeline>
+<codeline lineno="539"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="540"><highlight class="normal"></highlight></codeline>
+<codeline lineno="541"><highlight class="normal"></highlight></codeline>
+<codeline lineno="542"><highlight class="normal"></highlight></codeline>
+<codeline lineno="543"><highlight class="normal"></highlight></codeline>
+<codeline lineno="544"><highlight class="normal"></highlight></codeline>
+<codeline lineno="545"><highlight class="normal"></highlight></codeline>
+<codeline lineno="546"><highlight class="normal"></highlight></codeline>
+<codeline lineno="569"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="570" refid="cntr__getset__herm__matrix__inc_8hpp_a09f0bc88931330de2b667c4f89697f96_1a09f0bc88931330de2b667c4f89697f96" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_a4f6b21e4e1b571d16460cd8e5f41bc0c_1a4f6b21e4e1b571d16460cd8e5f41bc0c" kindref="member">get_les</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j,<sp/>std::complex&lt;T&gt;<sp/>&amp;G_les,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;G){</highlight></codeline>
+<codeline lineno="571"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_a4f6b21e4e1b571d16460cd8e5f41bc0c_1a4f6b21e4e1b571d16460cd8e5f41bc0c" kindref="member">get_les</ref>(i,<sp/>j,<sp/>G_les,<sp/>G,<sp/>G);</highlight></codeline>
+<codeline lineno="572"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="573"><highlight class="normal"></highlight></codeline>
+<codeline lineno="574"><highlight class="normal"></highlight></codeline>
+<codeline lineno="597"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="598" refid="cntr__getset__herm__matrix__inc_8hpp_afd19d7b4dafe0781bb9f3d36dd1519d1_1afd19d7b4dafe0781bb9f3d36dd1519d1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_a4f6b21e4e1b571d16460cd8e5f41bc0c_1a4f6b21e4e1b571d16460cd8e5f41bc0c" kindref="member">get_les</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j,<sp/>cdmatrix<sp/>&amp;G_les,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;G){</highlight></codeline>
+<codeline lineno="599"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_a4f6b21e4e1b571d16460cd8e5f41bc0c_1a4f6b21e4e1b571d16460cd8e5f41bc0c" kindref="member">get_les</ref>(i,<sp/>j,<sp/>G_les,<sp/>G,<sp/>G);</highlight></codeline>
+<codeline lineno="600"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="601"><highlight class="normal"></highlight></codeline>
+<codeline lineno="602"><highlight class="normal"></highlight></codeline>
+<codeline lineno="626"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="627" refid="cntr__getset__herm__matrix__inc_8hpp_ace4d602b72718ae2f2cc0a3a0485c723_1ace4d602b72718ae2f2cc0a3a0485c723" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_a29054b759c88454549d211e18eeb92b7_1a29054b759c88454549d211e18eeb92b7" kindref="member">get_ret</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j,<sp/>std::complex&lt;T&gt;<sp/>&amp;G_ret,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;G){</highlight></codeline>
+<codeline lineno="628"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_a29054b759c88454549d211e18eeb92b7_1a29054b759c88454549d211e18eeb92b7" kindref="member">get_ret</ref>(i,<sp/>j,<sp/>G_ret,<sp/>G,<sp/>G);</highlight></codeline>
+<codeline lineno="629"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="630"><highlight class="normal"></highlight></codeline>
+<codeline lineno="654"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="655" refid="cntr__getset__herm__matrix__inc_8hpp_a49992582551357f967a817a53ad74ec8_1a49992582551357f967a817a53ad74ec8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_a29054b759c88454549d211e18eeb92b7_1a29054b759c88454549d211e18eeb92b7" kindref="member">get_ret</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j,<sp/>cdmatrix<sp/>&amp;G_ret,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;G){</highlight></codeline>
+<codeline lineno="656"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_a29054b759c88454549d211e18eeb92b7_1a29054b759c88454549d211e18eeb92b7" kindref="member">get_ret</ref>(i,<sp/>j,<sp/>G_ret,<sp/>G,<sp/>G);</highlight></codeline>
+<codeline lineno="657"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="658"><highlight class="normal"></highlight></codeline>
+<codeline lineno="659"><highlight class="normal"></highlight></codeline>
+<codeline lineno="660"><highlight class="normal"></highlight></codeline>
+<codeline lineno="683"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="684" refid="cntr__getset__herm__matrix__inc_8hpp_a8bb3a1e989ee1d9ac23a49b3e94092f1_1a8bb3a1e989ee1d9ac23a49b3e94092f1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_ac29132821fc2cc8fe54c3a77477795c8_1ac29132821fc2cc8fe54c3a77477795c8" kindref="member">get_tv</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/>std::complex&lt;T&gt;<sp/>&amp;G_tv,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;G){</highlight></codeline>
+<codeline lineno="685"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_ac29132821fc2cc8fe54c3a77477795c8_1ac29132821fc2cc8fe54c3a77477795c8" kindref="member">get_tv</ref>(i,<sp/>m,<sp/>G_tv,<sp/>G,<sp/>G);</highlight></codeline>
+<codeline lineno="686"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="687"><highlight class="normal"></highlight></codeline>
+<codeline lineno="710"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="711" refid="cntr__getset__herm__matrix__inc_8hpp_a9364c72d7b136d1d750bbf11a495e085_1a9364c72d7b136d1d750bbf11a495e085" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_ac29132821fc2cc8fe54c3a77477795c8_1ac29132821fc2cc8fe54c3a77477795c8" kindref="member">get_tv</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/>cdmatrix<sp/>&amp;G_tv,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;G){</highlight></codeline>
+<codeline lineno="712"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_ac29132821fc2cc8fe54c3a77477795c8_1ac29132821fc2cc8fe54c3a77477795c8" kindref="member">get_tv</ref>(i,<sp/>m,<sp/>G_tv,<sp/>G,<sp/>G);</highlight></codeline>
+<codeline lineno="713"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="714"><highlight class="normal"></highlight></codeline>
+<codeline lineno="715"><highlight class="normal"></highlight></codeline>
+<codeline lineno="716"><highlight class="normal"></highlight></codeline>
+<codeline lineno="739"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="740" refid="cntr__getset__herm__matrix__inc_8hpp_a2190a5c97d2f293ed27de8b0bc73e717_1a2190a5c97d2f293ed27de8b0bc73e717" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_ac29b022146cf18f0dc106fa3ba7d0bf8_1ac29b022146cf18f0dc106fa3ba7d0bf8" kindref="member">get_vt</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/>std::complex&lt;T&gt;<sp/>&amp;G_vt,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;G){</highlight></codeline>
+<codeline lineno="741"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_ac29b022146cf18f0dc106fa3ba7d0bf8_1ac29b022146cf18f0dc106fa3ba7d0bf8" kindref="member">get_vt</ref>(m,<sp/>i,<sp/>G_vt,<sp/>G,<sp/>G);</highlight></codeline>
+<codeline lineno="742"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="743"><highlight class="normal"></highlight></codeline>
+<codeline lineno="766"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="767" refid="cntr__getset__herm__matrix__inc_8hpp_a96d14a2442ca933f5b5c3df4756ce0dd_1a96d14a2442ca933f5b5c3df4756ce0dd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_ac29b022146cf18f0dc106fa3ba7d0bf8_1ac29b022146cf18f0dc106fa3ba7d0bf8" kindref="member">get_vt</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/>cdmatrix<sp/>&amp;G_vt,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;G){</highlight></codeline>
+<codeline lineno="768"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_ac29b022146cf18f0dc106fa3ba7d0bf8_1ac29b022146cf18f0dc106fa3ba7d0bf8" kindref="member">get_vt</ref>(m,<sp/>i,<sp/>G_vt,<sp/>G,<sp/>G);</highlight></codeline>
+<codeline lineno="769"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="770"><highlight class="normal"></highlight></codeline>
+<codeline lineno="771"><highlight class="normal"></highlight></codeline>
+<codeline lineno="772"><highlight class="normal"></highlight></codeline>
+<codeline lineno="773"><highlight class="normal"></highlight></codeline>
+<codeline lineno="795"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="796" refid="cntr__getset__herm__matrix__inc_8hpp_ad4364111db993cdd30a6390db66d0a5c_1ad4364111db993cdd30a6390db66d0a5c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_ab18892912fb003b450fe71fdfbcbaf7d_1ab18892912fb003b450fe71fdfbcbaf7d" kindref="member">get_gtr</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j,<sp/>std::complex&lt;T&gt;<sp/>&amp;G_gtr,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;G){</highlight></codeline>
+<codeline lineno="797"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_ab18892912fb003b450fe71fdfbcbaf7d_1ab18892912fb003b450fe71fdfbcbaf7d" kindref="member">get_gtr</ref>(i,<sp/>j,<sp/>G_gtr,<sp/>G,<sp/>G);</highlight></codeline>
+<codeline lineno="798"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="799"><highlight class="normal"></highlight></codeline>
+<codeline lineno="822"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="823" refid="cntr__getset__herm__matrix__inc_8hpp_a150cf20713385cbd654a98231a6ef419_1a150cf20713385cbd654a98231a6ef419" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_ab18892912fb003b450fe71fdfbcbaf7d_1ab18892912fb003b450fe71fdfbcbaf7d" kindref="member">get_gtr</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j,<sp/>cdmatrix<sp/>&amp;G_gtr,<sp/>herm_matrix&lt;T&gt;<sp/>&amp;G){</highlight></codeline>
+<codeline lineno="824"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="cntr__getset__herm__matrix__inc_8hpp_ab18892912fb003b450fe71fdfbcbaf7d_1ab18892912fb003b450fe71fdfbcbaf7d" kindref="member">get_gtr</ref>(i,<sp/>j,<sp/>G_gtr,<sp/>G,<sp/>G);</highlight></codeline>
+<codeline lineno="825"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="cntr/cntr_getset_herm_matrix_inc.hpp"/>
+  </compounddef>
+</doxygen>

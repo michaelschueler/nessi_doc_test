@@ -1,0 +1,41 @@
+digraph "ness2::green_equilibrium_ness_fermi"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="ness2::green_equilibrium\l_ness_fermi",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ness2::compute_lesser",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceness2_a9ae52e2965c52a526b782e5afc35b0ab.html#a9ae52e2965c52a526b782e5afc35b0ab",tooltip=" "];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="fourier::adft_func::dft",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classfourier_1_1adft__func_aaa081b6da5008bdb6ab01c8ce025b19a.html#aaa081b6da5008bdb6ab01c8ce025b19a",tooltip="Computes the cubically corrected DFT."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="fourier::dft_cplx",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespacefourier_a979b474be5e069de6384017d9e841650.html#a979b474be5e069de6384017d9e841650",tooltip="Computes the Fourier integral  using cubically corrected DFT."];
+  Node4 -> Node5 [id="edge4_Node000004_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="fourier::complex_dftcor\l_cubic",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespacefourier_a7d2a7a3f3264376e7a2507527a148d3d.html#a7d2a7a3f3264376e7a2507527a148d3d",tooltip="Returns correction factor  and evaluate boundary correction terms needed for cubically corrected DFT."];
+  Node2 -> Node6 [id="edge5_Node000002_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="fourier::adft_func\l::sample",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classfourier_1_1adft__func_a352d3b8ba7b6c50c699a66b8903a8d0d.html#a352d3b8ba7b6c50c699a66b8903a8d0d",tooltip="Fourier samples the given function to determine the individual intervals."];
+  Node6 -> Node4 [id="edge6_Node000006_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node2 -> Node7 [id="edge7_Node000002_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="ness2::fft_array::set\l_element",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classness2_1_1fft__array_aaecf397393a5c107c42d8d1a25b139ee.html#aaecf397393a5c107c42d8d1a25b139ee",tooltip="Set this fft_array  to  =  at time or frequency index  (with periodic wrapping)."];
+  Node2 -> Node8 [id="edge8_Node000002_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="ness2::fft_array::set_zero",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classness2_1_1fft__array_a40396087c4af731bee88c21c87769495.html#a40396087c4af731bee88c21c87769495",tooltip="Set all elements of either the time or frequency array to zero."];
+  Node1 -> Node9 [id="edge9_Node000001_Node000009",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="ness2::grid_info::freq_at",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classness2_1_1grid__info_a60e4853c58c526398d560cfd12590aa2.html#a60e4853c58c526398d560cfd12590aa2",tooltip="Get frequency value  at grid index :  ."];
+  Node1 -> Node10 [id="edge10_Node000001_Node000010",color="steelblue1",style="solid",tooltip=" "];
+  Node10 [id="Node000010",label="ness2::green_equilibrium\l_ret_ness_adaptive",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceness2_ae4fd56058fa510f2f5fa1c8c49e4d6a8.html#ae4fd56058fa510f2f5fa1c8c49e4d6a8",tooltip=" "];
+  Node10 -> Node3 [id="edge11_Node000010_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node10 -> Node11 [id="edge12_Node000010_Node000011",color="steelblue1",style="solid",tooltip=" "];
+  Node11 [id="Node000011",label="ness2::herm_matrix\l_ness::retarded",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classness2_1_1herm__matrix__ness_ab36fca628fd9c2d6198f234bc9759004.html#ab36fca628fd9c2d6198f234bc9759004",tooltip="Access the retarded component."];
+  Node10 -> Node6 [id="edge13_Node000010_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node10 -> Node7 [id="edge14_Node000010_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node1 -> Node12 [id="edge15_Node000001_Node000012",color="steelblue1",style="solid",tooltip=" "];
+  Node12 [id="Node000012",label="ness2::herm_matrix\l_ness::integral_transform\l_to_time",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classness2_1_1herm__matrix__ness_abc14c5623a6d93fa56968845588db64a.html#abc14c5623a6d93fa56968845588db64a",tooltip="Compute the time-domain Fourier integral of the retarded Green's function."];
+  Node1 -> Node13 [id="edge16_Node000001_Node000013",color="steelblue1",style="solid",tooltip=" "];
+  Node13 [id="Node000013",label="ness2::herm_matrix\l_ness::set_les",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classness2_1_1herm__matrix__ness_a8f27dda5fd911c6733c65a92943113ff.html#a8f27dda5fd911c6733c65a92943113ff",tooltip="Set the lesser component of this herm_matrix_ness  at time index  (with periodic wrapping) from a mat..."];
+  Node1 -> Node14 [id="edge17_Node000001_Node000014",color="steelblue1",style="solid",tooltip=" "];
+  Node14 [id="Node000014",label="ness2::herm_matrix\l_ness::set_ret",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classness2_1_1herm__matrix__ness_a14b78ea6bc592ede7606e8a9ee065956.html#a14b78ea6bc592ede7606e8a9ee065956",tooltip="Set the retarded component of this herm_matrix_ness  at time index  (with periodic wrapping) from a m..."];
+  Node1 -> Node8 [id="edge18_Node000001_Node000008",color="steelblue1",style="solid",tooltip=" "];
+}

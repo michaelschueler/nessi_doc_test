@@ -1,0 +1,12 @@
+digraph "fourier::dft_cplx"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="fourier::dft_cplx",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Computes the Fourier integral  using cubically corrected DFT."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="fourier::complex_dftcor\l_cubic",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespacefourier_a7d2a7a3f3264376e7a2507527a148d3d.html#a7d2a7a3f3264376e7a2507527a148d3d",tooltip="Returns correction factor  and evaluate boundary correction terms needed for cubically corrected DFT."];
+}

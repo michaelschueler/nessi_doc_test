@@ -1,0 +1,349 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classness_1_1GF__pair" kind="class" language="C++" prot="public">
+    <compoundname>ness::GF_pair</compoundname>
+    <includes refid="ness__GF__pair__decl_8hpp" local="no">ness_GF_pair_decl.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classness_1_1GF__pair_affce54aff4372502cc0efbf91fa296c8_1affce54aff4372502cc0efbf91fa296c8" prot="public" static="no" mutable="no">
+        <type><ref refid="classness_1_1fft__solver" kindref="compound">fft_solver</ref> *</type>
+        <definition>fft_solver* ness::GF_pair::fft_</definition>
+        <argsstring></argsstring>
+        <name>fft_</name>
+        <qualifiedname>ness::GF_pair::fft_</qualifiedname>
+        <briefdescription>
+<para><bold> Pointer to Fourier solver object </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_pair_decl.hpp" line="26" column="13" bodyfile="cntr/ness_GF_pair_decl.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classness_1_1GF__pair_a1b10257ea1a54c406d37128eb0ebff10_1a1b10257ea1a54c406d37128eb0ebff10" prot="public" static="no" mutable="no">
+        <type><ref refid="classness_1_1GF" kindref="compound">GF</ref></type>
+        <definition>GF ness::GF_pair::freq</definition>
+        <argsstring></argsstring>
+        <name>freq</name>
+        <qualifiedname>ness::GF_pair::freq</qualifiedname>
+        <briefdescription>
+<para><bold> Freqeuncy <computeroutput><ref refid="classness_1_1GF" kindref="compound">GF</ref></computeroutput> object </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_pair_decl.hpp" line="24" column="4" bodyfile="cntr/ness_GF_pair_decl.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classness_1_1GF__pair_a7857c4c95286150e883f378c8ac8b7d2_1a7857c4c95286150e883f378c8ac8b7d2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ness::GF_pair::newest</definition>
+        <argsstring></argsstring>
+        <name>newest</name>
+        <qualifiedname>ness::GF_pair::newest</qualifiedname>
+        <briefdescription>
+<para><bold> Green&apos;s function type flag, 0: time, 1frequency </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_pair_decl.hpp" line="28" column="5" bodyfile="cntr/ness_GF_pair_decl.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classness_1_1GF__pair_a7b45793d331c97b38625c5a352ce66be_1a7b45793d331c97b38625c5a352ce66be" prot="public" static="no" mutable="no">
+        <type><ref refid="classness_1_1GF" kindref="compound">GF</ref></type>
+        <definition>GF ness::GF_pair::time</definition>
+        <argsstring></argsstring>
+        <name>time</name>
+        <qualifiedname>ness::GF_pair::time</qualifiedname>
+        <briefdescription>
+<para><bold> Time <computeroutput><ref refid="classness_1_1GF" kindref="compound">GF</ref></computeroutput> object </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_pair_decl.hpp" line="24" column="9" bodyfile="cntr/ness_GF_pair_decl.hpp" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classness_1_1GF__pair_aca8327952ba0b8a788deca53f518e270_1aca8327952ba0b8a788deca53f518e270" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::GF_pair::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>ness::GF_pair::clear</qualifiedname>
+        <briefdescription>
+<para><bold> Clear time and frequency Green&apos;s function in the <computeroutput><ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref></computeroutput> </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_pair_decl.hpp" line="58" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classness_1_1GF__pair_ad2abc6dab7b0e507af68b20eaaca8e2e_1ad2abc6dab7b0e507af68b20eaaca8e2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ness::GF_pair::GF_pair</definition>
+        <argsstring>()</argsstring>
+        <name>GF_pair</name>
+        <qualifiedname>ness::GF_pair::GF_pair</qualifiedname>
+        <briefdescription>
+<para><bold> Default constructor </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_pair_decl.hpp" line="32" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="classness_1_1GF__pair_a445e1ae7fcd49153a913504515d9ba05_1a445e1ae7fcd49153a913504515d9ba05" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ness::GF_pair::GF_pair</definition>
+        <argsstring>(const GF_pair &amp;gp)</argsstring>
+        <name>GF_pair</name>
+        <qualifiedname>ness::GF_pair::GF_pair</qualifiedname>
+        <param>
+          <type>const GF_pair &amp;</type>
+          <declname>gp</declname>
+        </param>
+        <briefdescription>
+<para><bold> Copy constructor </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>Constructs an empty <computeroutput><ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref></computeroutput> with all parameters given by another <computeroutput><ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref></computeroutput>, so that the new object has the same shape and type as the parameter <computeroutput><ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref></computeroutput>. </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&amp;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>gp <blockquote><para>[<ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref> ] Green&apos;s function pair to copy parameters from </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_pair_decl.hpp" line="53" column="3"/>
+        <references refid="classness_1_1GF__pair_a1494f50f7331b9b2d329b4353b153279_1a1494f50f7331b9b2d329b4353b153279">GF_pair</references>
+      </memberdef>
+      <memberdef kind="function" id="classness_1_1GF__pair_a1494f50f7331b9b2d329b4353b153279_1a1494f50f7331b9b2d329b4353b153279" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ness::GF_pair::GF_pair</definition>
+        <argsstring>(double h, int nt, int size, int sign, fft_solver &amp;fft)</argsstring>
+        <name>GF_pair</name>
+        <qualifiedname>ness::GF_pair::GF_pair</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sign</declname>
+        </param>
+        <param>
+          <type><ref refid="classness_1_1fft__solver" kindref="compound">fft_solver</ref> &amp;</type>
+          <declname>fft</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_pair_decl.hpp" line="30" column="3"/>
+        <referencedby refid="classness_1_1GF__pair_a445e1ae7fcd49153a913504515d9ba05_1a445e1ae7fcd49153a913504515d9ba05">GF_pair</referencedby>
+        <referencedby refid="classness_1_1GF__pair_a782cfb0b5222112bb981edb48649946b_1a782cfb0b5222112bb981edb48649946b">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classness_1_1GF__pair_a782cfb0b5222112bb981edb48649946b_1a782cfb0b5222112bb981edb48649946b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classness_1_1GF__pair_a1494f50f7331b9b2d329b4353b153279_1a1494f50f7331b9b2d329b4353b153279" kindref="member">GF_pair</ref> &amp;</type>
+        <definition>GF_pair &amp; ness::GF_pair::operator=</definition>
+        <argsstring>(const GF_pair &amp;gp)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>ness::GF_pair::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classness_1_1GF__pair_a1494f50f7331b9b2d329b4353b153279_1a1494f50f7331b9b2d329b4353b153279" kindref="member">GF_pair</ref> &amp;</type>
+          <declname>gp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_pair_decl.hpp" line="55" column="11"/>
+        <references refid="classness_1_1GF__pair_a1494f50f7331b9b2d329b4353b153279_1a1494f50f7331b9b2d329b4353b153279">GF_pair</references>
+      </memberdef>
+      <memberdef kind="function" id="classness_1_1GF__pair_ab9cb4c3e6ac119d1e71a291e359c0335_1ab9cb4c3e6ac119d1e71a291e359c0335" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::GF_pair::to_freq</definition>
+        <argsstring>()</argsstring>
+        <name>to_freq</name>
+        <qualifiedname>ness::GF_pair::to_freq</qualifiedname>
+        <briefdescription>
+<para><bold> Tranform time <computeroutput><ref refid="classness_1_1GF" kindref="compound">GF</ref></computeroutput> to frequency and write in the correspondingfrequency <computeroutput><ref refid="classness_1_1GF" kindref="compound">GF</ref></computeroutput> member in the <computeroutput><ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref></computeroutput> </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_pair_decl.hpp" line="63" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classness_1_1GF__pair_a40cec7edda1fa2320532aa5a309fe224_1a40cec7edda1fa2320532aa5a309fe224" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::GF_pair::to_time</definition>
+        <argsstring>()</argsstring>
+        <name>to_time</name>
+        <qualifiedname>ness::GF_pair::to_time</qualifiedname>
+        <briefdescription>
+<para><bold> Tranform frequency <computeroutput><ref refid="classness_1_1GF" kindref="compound">GF</ref></computeroutput> to time and write in the corresponding time <computeroutput><ref refid="classness_1_1GF" kindref="compound">GF</ref></computeroutput> member in the <computeroutput><ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref></computeroutput> </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_pair_decl.hpp" line="61" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classness_1_1GF__pair_a424a1986f596c1056e3fd73a63d828b5_1a424a1986f596c1056e3fd73a63d828b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ness::GF_pair::~GF_pair</definition>
+        <argsstring>()</argsstring>
+        <name>~GF_pair</name>
+        <qualifiedname>ness::GF_pair::~GF_pair</qualifiedname>
+        <briefdescription>
+<para><bold> Destructor </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_pair_decl.hpp" line="35" column="3"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><bold> Class <computeroutput><ref refid="classness_1_1GF__pair" kindref="compound">GF_pair</ref></computeroutput> represents Green&apos;s functions in both time or frequency domain. </bold> </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>This class contains two <computeroutput><ref refid="classness_1_1GF" kindref="compound">GF</ref></computeroutput> data structures for representing complex matrix valued Green&apos;s functions on a time and frequency grid (retarded and lesser component), and provides a FFT function given by the helper class <computeroutput><ref refid="classness_1_1fft__solver" kindref="compound">fft_solver</ref></computeroutput> for calculating Fourier integral transforms. </para>
+</blockquote></para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="7">
+        <label>Map&lt; Eigen::Matrix&lt; cplx, Eigen::Dynamic, Eigen::Dynamic, Eigen::RowMajor &gt; &gt;</label>
+      </node>
+      <node id="9">
+        <label>T</label>
+      </node>
+      <node id="3">
+        <label>double</label>
+      </node>
+      <node id="11">
+        <label>fftw_complex *</label>
+      </node>
+      <node id="12">
+        <label>fftw_plan</label>
+      </node>
+      <node id="5">
+        <label>int</label>
+      </node>
+      <node id="4">
+        <label>long</label>
+      </node>
+      <node id="2">
+        <label>ness::GF</label>
+        <link refid="classness_1_1GF"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>dgrid_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ngrid_</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>gf_type_</edgelabel>
+          <edgelabel>sign_</edgelabel>
+          <edgelabel>size1_</edgelabel>
+          <edgelabel>size2_</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>Lesser</edgelabel>
+          <edgelabel>Retarded</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ness::GF_pair</label>
+        <link refid="classness_1_1GF__pair"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>freq</edgelabel>
+          <edgelabel>time</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>fft_</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>newest</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>ness::fft_solver</label>
+        <link refid="classness_1_1fft__solver"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>in</edgelabel>
+          <edgelabel>out</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>Nft_</edgelabel>
+          <edgelabel>nfreq_</edgelabel>
+          <edgelabel>nt_</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>plan_back</edgelabel>
+          <edgelabel>plan_for</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>std::vector&lt; T &gt;</label>
+        <childnode refid="9" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>std::vector&lt; Eigen::Map&lt; Eigen::Matrix&lt; cplx, Eigen::Dynamic, Eigen::Dynamic, Eigen::RowMajor &gt; &gt; &gt;</label>
+        <childnode refid="7" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="template-instance">
+          <edgelabel>&lt; Eigen::Map&lt; Eigen::Matrix&lt; cplx, Eigen::Dynamic, Eigen::Dynamic, Eigen::RowMajor &gt; &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="cntr/ness_GF_pair_decl.hpp" line="19" column="1" bodyfile="cntr/ness_GF_pair_decl.hpp" bodystart="20" bodyend="65"/>
+    <listofallmembers>
+      <member refid="classness_1_1GF__pair_aca8327952ba0b8a788deca53f518e270_1aca8327952ba0b8a788deca53f518e270" prot="public" virt="non-virtual"><scope>ness::GF_pair</scope><name>clear</name></member>
+      <member refid="classness_1_1GF__pair_affce54aff4372502cc0efbf91fa296c8_1affce54aff4372502cc0efbf91fa296c8" prot="public" virt="non-virtual"><scope>ness::GF_pair</scope><name>fft_</name></member>
+      <member refid="classness_1_1GF__pair_a1b10257ea1a54c406d37128eb0ebff10_1a1b10257ea1a54c406d37128eb0ebff10" prot="public" virt="non-virtual"><scope>ness::GF_pair</scope><name>freq</name></member>
+      <member refid="classness_1_1GF__pair_a1494f50f7331b9b2d329b4353b153279_1a1494f50f7331b9b2d329b4353b153279" prot="public" virt="non-virtual"><scope>ness::GF_pair</scope><name>GF_pair</name></member>
+      <member refid="classness_1_1GF__pair_ad2abc6dab7b0e507af68b20eaaca8e2e_1ad2abc6dab7b0e507af68b20eaaca8e2e" prot="public" virt="non-virtual"><scope>ness::GF_pair</scope><name>GF_pair</name></member>
+      <member refid="classness_1_1GF__pair_a445e1ae7fcd49153a913504515d9ba05_1a445e1ae7fcd49153a913504515d9ba05" prot="public" virt="non-virtual"><scope>ness::GF_pair</scope><name>GF_pair</name></member>
+      <member refid="classness_1_1GF__pair_a7857c4c95286150e883f378c8ac8b7d2_1a7857c4c95286150e883f378c8ac8b7d2" prot="public" virt="non-virtual"><scope>ness::GF_pair</scope><name>newest</name></member>
+      <member refid="classness_1_1GF__pair_a782cfb0b5222112bb981edb48649946b_1a782cfb0b5222112bb981edb48649946b" prot="public" virt="non-virtual"><scope>ness::GF_pair</scope><name>operator=</name></member>
+      <member refid="classness_1_1GF__pair_a7b45793d331c97b38625c5a352ce66be_1a7b45793d331c97b38625c5a352ce66be" prot="public" virt="non-virtual"><scope>ness::GF_pair</scope><name>time</name></member>
+      <member refid="classness_1_1GF__pair_ab9cb4c3e6ac119d1e71a291e359c0335_1ab9cb4c3e6ac119d1e71a291e359c0335" prot="public" virt="non-virtual"><scope>ness::GF_pair</scope><name>to_freq</name></member>
+      <member refid="classness_1_1GF__pair_a40cec7edda1fa2320532aa5a309fe224_1a40cec7edda1fa2320532aa5a309fe224" prot="public" virt="non-virtual"><scope>ness::GF_pair</scope><name>to_time</name></member>
+      <member refid="classness_1_1GF__pair_a424a1986f596c1056e3fd73a63d828b5_1a424a1986f596c1056e3fd73a63d828b5" prot="public" virt="non-virtual"><scope>ness::GF_pair</scope><name>~GF_pair</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

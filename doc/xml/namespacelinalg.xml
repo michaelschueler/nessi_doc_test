@@ -1,0 +1,655 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespacelinalg" kind="namespace" language="C++">
+    <compoundname>linalg</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacelinalg_afeb1b243c8afe4137155be88de978c23_1afeb1b243c8afe4137155be88de978c23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linalg::cplx_matrix_inverse</definition>
+        <argsstring>(void *a, void *x, int n)</argsstring>
+        <name>cplx_matrix_inverse</name>
+        <qualifiedname>linalg::cplx_matrix_inverse</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para><bold> Evaluate the inverse matrix of a complex matrix <formula id="158">$a$</formula>. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+Evaluate the inverse matrix of a given complex matrix <formula id="158">$a$</formula> and put it to <formula id="166">$x$</formula>. </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>A complex square matrix given as a pointer. </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A complex square matrix into which <formula id="167">$a^{-1}$</formula> is set. Given as a pointer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the matrix <formula id="158">$a$</formula> and <formula id="166">$x$</formula>.  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/linalg_eigen.cpp" line="116" column="6" bodyfile="cntr/linalg_eigen.cpp" bodystart="116" bodyend="124" declfile="cntr/linalg.hpp" declline="141" declcolumn="6"/>
+        <references refid="namespacelinalg_aad5268f68470b098f36d753b308821c6_1aad5268f68470b098f36d753b308821c6" compoundref="linalg__eigen_8cpp" startline="42" endline="46">get_cdmatrix</references>
+        <references refid="namespacelinalg_aa1a41c79e7e16003e43a41703adc55e8_1aa1a41c79e7e16003e43a41703adc55e8" compoundref="linalg__eigen_8cpp" startline="14" endline="17">set_cdmatrix</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacelinalg_a51c9b6e710b3df6d3ba075fc3d6c24cd_1a51c9b6e710b3df6d3ba075fc3d6c24cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linalg::cplx_sq_solve</definition>
+        <argsstring>(void *a, void *b, void *x, int dim)</argsstring>
+        <name>cplx_sq_solve</name>
+        <qualifiedname>linalg::cplx_sq_solve</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dim</declname>
+        </param>
+        <briefdescription>
+<para><bold> Solve a linear equation ax=b. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+Solve a linear equation ax=b for a given complex square matrix <formula id="158">$a$</formula> and a complex vector <formula id="159">$b$</formula>. </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>A complex square matrix given as a pointer </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A complex vector given as a pointer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A complex vector into which the solution is set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the matrix and the vector  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/linalg_eigen.cpp" line="80" column="6" bodyfile="cntr/linalg_eigen.cpp" bodystart="80" bodyend="89" declfile="cntr/linalg.hpp" declline="93" declcolumn="6"/>
+        <references refid="namespacelinalg_a719418ba3f8ba5f43e13fc53158fffd1_1a719418ba3f8ba5f43e13fc53158fffd1" compoundref="linalg__eigen_8cpp" startline="32" endline="36">get_cdvector</references>
+        <references refid="namespacelinalg_aa1a41c79e7e16003e43a41703adc55e8_1aa1a41c79e7e16003e43a41703adc55e8" compoundref="linalg__eigen_8cpp" startline="14" endline="17">set_cdmatrix</references>
+        <references refid="namespacelinalg_aa19040ca50aacaf3be22c9d2f947e4d0_1aa19040ca50aacaf3be22c9d2f947e4d0" compoundref="linalg__eigen_8cpp" startline="22" endline="25">set_cdvector</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacelinalg_ad6e447b2fad4a0bae9a19f8c808a3f7e_1ad6e447b2fad4a0bae9a19f8c808a3f7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linalg::cplx_sq_solve_many</definition>
+        <argsstring>(void *a, void *b, void *x, int dim, int d)</argsstring>
+        <name>cplx_sq_solve_many</name>
+        <qualifiedname>linalg::cplx_sq_solve_many</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dim</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+<para><bold> Solve a linear equation <formula id="160">$ {\rm Diag}[a,a,a,.,a] x=b $</formula>. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+Solve a linear equation <formula id="160">$ {\rm Diag}[a,a,a,.,a] x=b $</formula> for a given complex square matrix <formula id="158">$a$</formula> and a complex vector <formula id="159">$b$</formula>. The size of <formula id="158">$a$</formula> is <formula id="161">$n$</formula>. Here <formula id="162">$ {\rm Diag}[a,a,a,.,a]$</formula> is the block diagonal square matrix, whose size is <formula id="163">${\rm dim}\times d$</formula>. </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>A complex square matrix, whose size is <formula id="164">${\rm dim}$</formula>. </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A complex vector, whose size is <formula id="165">$n\times d$</formula> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A complex vector into which the solution is set. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the matrix <formula id="158">$a$</formula> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><formula id="163">${\rm dim}\times d$</formula> is the size of <formula id="159">$b$</formula> and <formula id="166">$x$</formula>.  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/linalg_eigen.cpp" line="91" column="6" bodyfile="cntr/linalg_eigen.cpp" bodystart="91" bodyend="105" declfile="cntr/linalg.hpp" declline="119" declcolumn="6"/>
+        <references refid="namespacelinalg_a719418ba3f8ba5f43e13fc53158fffd1_1a719418ba3f8ba5f43e13fc53158fffd1" compoundref="linalg__eigen_8cpp" startline="32" endline="36">get_cdvector</references>
+        <references refid="namespacelinalg_aa1a41c79e7e16003e43a41703adc55e8_1aa1a41c79e7e16003e43a41703adc55e8" compoundref="linalg__eigen_8cpp" startline="14" endline="17">set_cdmatrix</references>
+        <references refid="namespacelinalg_aa19040ca50aacaf3be22c9d2f947e4d0_1aa19040ca50aacaf3be22c9d2f947e4d0" compoundref="linalg__eigen_8cpp" startline="22" endline="25">set_cdvector</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacelinalg_ac0901cd7238f667f033e7c929b5946a4_1ac0901cd7238f667f033e7c929b5946a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linalg::eigen_hermv</definition>
+        <argsstring>(int size, std::complex&lt; double &gt; *A, double *eval, std::complex&lt; double &gt; *evec)</argsstring>
+        <name>eigen_hermv</name>
+        <qualifiedname>linalg::eigen_hermv</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>std::complex&lt; double &gt; *</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>eval</declname>
+        </param>
+        <param>
+          <type>std::complex&lt; double &gt; *</type>
+          <declname>evec</declname>
+        </param>
+        <briefdescription>
+<para><bold> Evaluate the eigen set of a given Hermitian matrix <formula id="7">$A$</formula>. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+Evaluate the eigen system of a given Hermitian matrix <formula id="7">$A$</formula>, and put the eigen values into &quot;eval&quot; and and the eigen vectors into &quot;evec&quot;. </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>Size of the matrix <formula id="7">$A$</formula>. </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A Hermitian matrix given as a pointer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>eval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A complex vector into which the eigen values are set. Given as a pointer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>evec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A complex Matrix into which the eigen vectors are set. Given as a pointer.  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/linalg_eigen.cpp" line="134" column="6" bodyfile="cntr/linalg_eigen.cpp" bodystart="134" bodyend="144" declfile="cntr/linalg.hpp" declline="49" declcolumn="6"/>
+        <references refid="namespacelinalg_aad5268f68470b098f36d753b308821c6_1aad5268f68470b098f36d753b308821c6" compoundref="linalg__eigen_8cpp" startline="42" endline="46">get_cdmatrix</references>
+        <references refid="namespacelinalg_ae1de11f6a40a031cafe6e0450c970568_1ae1de11f6a40a031cafe6e0450c970568" compoundref="linalg__eigen_8cpp" startline="37" endline="41">get_dvector</references>
+        <references refid="namespacelinalg_aa1a41c79e7e16003e43a41703adc55e8_1aa1a41c79e7e16003e43a41703adc55e8" compoundref="linalg__eigen_8cpp" startline="14" endline="17">set_cdmatrix</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacelinalg_aad5268f68470b098f36d753b308821c6_1aad5268f68470b098f36d753b308821c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linalg::get_cdmatrix</definition>
+        <argsstring>(int n, void *a, cdmatrix &amp;A)</argsstring>
+        <name>get_cdmatrix</name>
+        <qualifiedname>linalg::get_cdmatrix</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>cdmatrix &amp;</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/linalg_eigen.cpp" line="42" column="6" bodyfile="cntr/linalg_eigen.cpp" bodystart="42" bodyend="46"/>
+        <referencedby refid="namespacelinalg_afeb1b243c8afe4137155be88de978c23_1afeb1b243c8afe4137155be88de978c23" compoundref="linalg__eigen_8cpp" startline="116" endline="124">cplx_matrix_inverse</referencedby>
+        <referencedby refid="namespacelinalg_ac0901cd7238f667f033e7c929b5946a4_1ac0901cd7238f667f033e7c929b5946a4" compoundref="linalg__eigen_8cpp" startline="134" endline="144">eigen_hermv</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacelinalg_a719418ba3f8ba5f43e13fc53158fffd1_1a719418ba3f8ba5f43e13fc53158fffd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linalg::get_cdvector</definition>
+        <argsstring>(int n, void *a, cdvector &amp;A)</argsstring>
+        <name>get_cdvector</name>
+        <qualifiedname>linalg::get_cdvector</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>cdvector &amp;</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/linalg_eigen.cpp" line="32" column="6" bodyfile="cntr/linalg_eigen.cpp" bodystart="32" bodyend="36"/>
+        <referencedby refid="namespacelinalg_a51c9b6e710b3df6d3ba075fc3d6c24cd_1a51c9b6e710b3df6d3ba075fc3d6c24cd" compoundref="linalg__eigen_8cpp" startline="80" endline="89">cplx_sq_solve</referencedby>
+        <referencedby refid="namespacelinalg_ad6e447b2fad4a0bae9a19f8c808a3f7e_1ad6e447b2fad4a0bae9a19f8c808a3f7e" compoundref="linalg__eigen_8cpp" startline="91" endline="105">cplx_sq_solve_many</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacelinalg_accedcd8f025bc02a27f3d52c47208669_1accedcd8f025bc02a27f3d52c47208669" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linalg::get_dmatrix</definition>
+        <argsstring>(int n, void *a, const dmatrix &amp;A)</argsstring>
+        <name>get_dmatrix</name>
+        <qualifiedname>linalg::get_dmatrix</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>const dmatrix &amp;</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/linalg_eigen.cpp" line="47" column="6" bodyfile="cntr/linalg_eigen.cpp" bodystart="47" bodyend="51"/>
+        <referencedby refid="namespacelinalg_a0deea2e0310edf1c18cf392f4f244d83_1a0deea2e0310edf1c18cf392f4f244d83" compoundref="linalg__eigen_8cpp" startline="125" endline="133">linalg_matrix_inverse</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacelinalg_ae1de11f6a40a031cafe6e0450c970568_1ae1de11f6a40a031cafe6e0450c970568" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linalg::get_dvector</definition>
+        <argsstring>(int n, void *a, dvector &amp;A)</argsstring>
+        <name>get_dvector</name>
+        <qualifiedname>linalg::get_dvector</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>dvector &amp;</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/linalg_eigen.cpp" line="37" column="6" bodyfile="cntr/linalg_eigen.cpp" bodystart="37" bodyend="41"/>
+        <referencedby refid="namespacelinalg_ac0901cd7238f667f033e7c929b5946a4_1ac0901cd7238f667f033e7c929b5946a4" compoundref="linalg__eigen_8cpp" startline="134" endline="144">eigen_hermv</referencedby>
+        <referencedby refid="namespacelinalg_ae48239dc572e82139995d51871ba5d46_1ae48239dc572e82139995d51871ba5d46" compoundref="linalg__eigen_8cpp" startline="106" endline="115">real_sq_solve</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacelinalg_a0deea2e0310edf1c18cf392f4f244d83_1a0deea2e0310edf1c18cf392f4f244d83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linalg::linalg_matrix_inverse</definition>
+        <argsstring>(double *a, double *x, int n)</argsstring>
+        <name>linalg_matrix_inverse</name>
+        <qualifiedname>linalg::linalg_matrix_inverse</qualifiedname>
+        <param>
+          <type>double *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para><bold> Evaluate the inverse matrix of a real matrix <formula id="158">$a$</formula>. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+Evaluate the inverse matrix of a given real matrix <formula id="158">$a$</formula> and put it to <formula id="166">$x$</formula>. </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>A real square matrix given as a pointer. </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A real square matrix into which <formula id="167">$a^{-1}$</formula> is set. Given as a pointer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the matrix <formula id="158">$a$</formula> and <formula id="166">$x$</formula>.  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/linalg_eigen.cpp" line="125" column="6" bodyfile="cntr/linalg_eigen.cpp" bodystart="125" bodyend="133" declfile="cntr/linalg.hpp" declline="160" declcolumn="6"/>
+        <references refid="namespacelinalg_accedcd8f025bc02a27f3d52c47208669_1accedcd8f025bc02a27f3d52c47208669" compoundref="linalg__eigen_8cpp" startline="47" endline="51">get_dmatrix</references>
+        <references refid="namespacelinalg_afc345b6b3095c1bf28ed2860a4cb07a4_1afc345b6b3095c1bf28ed2860a4cb07a4" compoundref="linalg__eigen_8cpp" startline="18" endline="21">set_dmatrix</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacelinalg_ae48239dc572e82139995d51871ba5d46_1ae48239dc572e82139995d51871ba5d46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linalg::real_sq_solve</definition>
+        <argsstring>(double *ad, double *bd, double *xd, int dim)</argsstring>
+        <name>real_sq_solve</name>
+        <qualifiedname>linalg::real_sq_solve</qualifiedname>
+        <param>
+          <type>double *</type>
+          <declname>ad</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>bd</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>xd</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dim</declname>
+        </param>
+        <briefdescription>
+<para><bold> Solve a linear equation ax=b. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+Solve a linear equation ax=b for a given real square matrx ( <formula id="158">$a$</formula>) and a real vector ( <formula id="159">$b$</formula>). </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ad</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>A real square matrix given as a pointer. </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A real vector given as a pointer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>xd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A real vector into which the solution is set. Given as a pointer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size of the matrix and the vector  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/linalg_eigen.cpp" line="106" column="6" bodyfile="cntr/linalg_eigen.cpp" bodystart="106" bodyend="115" declfile="cntr/linalg.hpp" declline="71" declcolumn="6"/>
+        <references refid="namespacelinalg_ae1de11f6a40a031cafe6e0450c970568_1ae1de11f6a40a031cafe6e0450c970568" compoundref="linalg__eigen_8cpp" startline="37" endline="41">get_dvector</references>
+        <references refid="namespacelinalg_afc345b6b3095c1bf28ed2860a4cb07a4_1afc345b6b3095c1bf28ed2860a4cb07a4" compoundref="linalg__eigen_8cpp" startline="18" endline="21">set_dmatrix</references>
+        <references refid="namespacelinalg_a687d58b3d68ea8d3804061b3ff68488a_1a687d58b3d68ea8d3804061b3ff68488a" compoundref="linalg__eigen_8cpp" startline="27" endline="30">set_dvector</references>
+      </memberdef>
+      <memberdef kind="function" id="namespacelinalg_aa1a41c79e7e16003e43a41703adc55e8_1aa1a41c79e7e16003e43a41703adc55e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linalg::set_cdmatrix</definition>
+        <argsstring>(int n, void *a, cdmatrix &amp;A)</argsstring>
+        <name>set_cdmatrix</name>
+        <qualifiedname>linalg::set_cdmatrix</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>cdmatrix &amp;</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/linalg_eigen.cpp" line="14" column="6" bodyfile="cntr/linalg_eigen.cpp" bodystart="14" bodyend="17"/>
+        <referencedby refid="namespacelinalg_afeb1b243c8afe4137155be88de978c23_1afeb1b243c8afe4137155be88de978c23" compoundref="linalg__eigen_8cpp" startline="116" endline="124">cplx_matrix_inverse</referencedby>
+        <referencedby refid="namespacelinalg_a51c9b6e710b3df6d3ba075fc3d6c24cd_1a51c9b6e710b3df6d3ba075fc3d6c24cd" compoundref="linalg__eigen_8cpp" startline="80" endline="89">cplx_sq_solve</referencedby>
+        <referencedby refid="namespacelinalg_ad6e447b2fad4a0bae9a19f8c808a3f7e_1ad6e447b2fad4a0bae9a19f8c808a3f7e" compoundref="linalg__eigen_8cpp" startline="91" endline="105">cplx_sq_solve_many</referencedby>
+        <referencedby refid="namespacelinalg_ac0901cd7238f667f033e7c929b5946a4_1ac0901cd7238f667f033e7c929b5946a4" compoundref="linalg__eigen_8cpp" startline="134" endline="144">eigen_hermv</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacelinalg_aa19040ca50aacaf3be22c9d2f947e4d0_1aa19040ca50aacaf3be22c9d2f947e4d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linalg::set_cdvector</definition>
+        <argsstring>(int n, void *a, cdvector &amp;A)</argsstring>
+        <name>set_cdvector</name>
+        <qualifiedname>linalg::set_cdvector</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>cdvector &amp;</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/linalg_eigen.cpp" line="22" column="6" bodyfile="cntr/linalg_eigen.cpp" bodystart="22" bodyend="25"/>
+        <referencedby refid="namespacelinalg_a51c9b6e710b3df6d3ba075fc3d6c24cd_1a51c9b6e710b3df6d3ba075fc3d6c24cd" compoundref="linalg__eigen_8cpp" startline="80" endline="89">cplx_sq_solve</referencedby>
+        <referencedby refid="namespacelinalg_ad6e447b2fad4a0bae9a19f8c808a3f7e_1ad6e447b2fad4a0bae9a19f8c808a3f7e" compoundref="linalg__eigen_8cpp" startline="91" endline="105">cplx_sq_solve_many</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacelinalg_afc345b6b3095c1bf28ed2860a4cb07a4_1afc345b6b3095c1bf28ed2860a4cb07a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linalg::set_dmatrix</definition>
+        <argsstring>(int n, void *a, dmatrix &amp;A)</argsstring>
+        <name>set_dmatrix</name>
+        <qualifiedname>linalg::set_dmatrix</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>dmatrix &amp;</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/linalg_eigen.cpp" line="18" column="6" bodyfile="cntr/linalg_eigen.cpp" bodystart="18" bodyend="21"/>
+        <referencedby refid="namespacelinalg_a0deea2e0310edf1c18cf392f4f244d83_1a0deea2e0310edf1c18cf392f4f244d83" compoundref="linalg__eigen_8cpp" startline="125" endline="133">linalg_matrix_inverse</referencedby>
+        <referencedby refid="namespacelinalg_ae48239dc572e82139995d51871ba5d46_1ae48239dc572e82139995d51871ba5d46" compoundref="linalg__eigen_8cpp" startline="106" endline="115">real_sq_solve</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacelinalg_a687d58b3d68ea8d3804061b3ff68488a_1a687d58b3d68ea8d3804061b3ff68488a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linalg::set_dvector</definition>
+        <argsstring>(int n, void *a, dvector &amp;A)</argsstring>
+        <name>set_dvector</name>
+        <qualifiedname>linalg::set_dvector</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>dvector &amp;</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/linalg_eigen.cpp" line="27" column="6" bodyfile="cntr/linalg_eigen.cpp" bodystart="27" bodyend="30"/>
+        <referencedby refid="namespacelinalg_ae48239dc572e82139995d51871ba5d46_1ae48239dc572e82139995d51871ba5d46" compoundref="linalg__eigen_8cpp" startline="106" endline="115">real_sq_solve</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="cntr/linalg.hpp" line="19" column="1"/>
+  </compounddef>
+</doxygen>

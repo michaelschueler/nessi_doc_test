@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="indexpage" kind="page">
+    <compoundname>index</compoundname>
+    <title>Welcome to the KAdanoff-BAym Non-Equilibrium COntour (Kaba-Neco) library!</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="index_1S1">
+<title>Introduction</title><para>Some stuff to explain why you coded all this</para>
+</sect1>
+<sect1 id="index_1S2">
+<title>Examples</title><para>Many examples of how the code can be used</para>
+</sect1>
+<sect1 id="index_1S3">
+<title>How to cite</title><para>Please cite the following paper whenever you use parts of Kaba-Neco: </para>
+</sect1>
+    </detaileddescription>
+    <location file="cntr/cntr.hpp"/>
+  </compounddef>
+</doxygen>

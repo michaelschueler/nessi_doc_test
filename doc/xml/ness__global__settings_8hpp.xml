@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="ness__global__settings_8hpp" kind="file" language="C++">
+    <compoundname>ness_global_settings.hpp</compoundname>
+    <innernamespace refid="namespaceness">ness</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>NESS_GLOBAL_SETTINGS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NESS_GLOBAL_SETTINGS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;complex&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iomanip&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;eigen3/Eigen/Dense&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fftw3.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceness" kindref="compound">ness</ref>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NESS_ASSERT_0<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="namespaceness_a2686f449ce9d3426ec0a03f236fb04b8_1a2686f449ce9d3426ec0a03f236fb04b8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::complex&lt;double&gt;<sp/><ref refid="namespaceness_a2686f449ce9d3426ec0a03f236fb04b8_1a2686f449ce9d3426ec0a03f236fb04b8" kindref="member">cplx</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="namespaceness_aa3a09e3b1af7702c47964f6f2fa9d09a_1aa3a09e3b1af7702c47964f6f2fa9d09aa7d4323c485010095bf321a4eb384a055" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{<ref refid="namespaceness_aa3a09e3b1af7702c47964f6f2fa9d09a_1aa3a09e3b1af7702c47964f6f2fa9d09aafb9523a8c73d65ef1332f86a319c02a1" kindref="member">fermion</ref><sp/>=<sp/>-1,<sp/><ref refid="namespaceness_aa3a09e3b1af7702c47964f6f2fa9d09a_1aa3a09e3b1af7702c47964f6f2fa9d09aa7d4323c485010095bf321a4eb384a055" kindref="member">boson</ref><sp/>=<sp/>1};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Eigen::MatrixXcd;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Eigen::VectorXcd;</highlight></codeline>
+<codeline lineno="27" refid="namespaceness_a244be30cfc18ed5350dc3063666210a8_1a244be30cfc18ed5350dc3063666210a8" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>MatrixXcd<sp/><ref refid="namespaceness_a244be30cfc18ed5350dc3063666210a8_1a244be30cfc18ed5350dc3063666210a8" kindref="member">cdmatrix</ref>;</highlight></codeline>
+<codeline lineno="29" refid="namespaceness_a6e7c10361110ce83366df7f9f5025134_1a6e7c10361110ce83366df7f9f5025134" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>VectorXcd<sp/><ref refid="namespaceness_a6e7c10361110ce83366df7f9f5025134_1a6e7c10361110ce83366df7f9f5025134" kindref="member">cdvector</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/>awkward,<sp/>to<sp/>be<sp/>conflicting<sp/>with<sp/>cntr</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="namespaceness_a1daaa0c8ad27ad42451bfc2d093043d9_1a1daaa0c8ad27ad42451bfc2d093043d9" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceness_a2686f449ce9d3426ec0a03f236fb04b8_1a2686f449ce9d3426ec0a03f236fb04b8" kindref="member">cplx</ref><sp/><ref refid="namespaceness_a1daaa0c8ad27ad42451bfc2d093043d9_1a1daaa0c8ad27ad42451bfc2d093043d9" kindref="member">NESS_II</ref>(0.0,<sp/>1.0);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}<sp/></highlight><highlight class="comment">//end<sp/>of<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CNTR_ASSERT_EQ(d1,<sp/>a,b,<sp/>d2)<sp/>(assert((a)==(b)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CNTR_ASSERT_LESEQ(d1,<sp/>a,b,<sp/>d2)<sp/>(assert((a)&lt;=(b)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CNTR_ASSERT_LESEQ_3(d1,<sp/>a,b,c,<sp/>d2)<sp/>(assert((a)&lt;=(b)<sp/>&amp;&amp;<sp/>(b)&lt;=(c)));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="cntr/ness_global_settings.hpp"/>
+  </compounddef>
+</doxygen>

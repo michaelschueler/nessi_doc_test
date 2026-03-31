@@ -1,0 +1,568 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classcntr_1_1distributed__timestep__array__moving" kind="class" language="C++" prot="public">
+    <compoundname>cntr::distributed_timestep_array_moving</compoundname>
+    <includes refid="cntr__distributed__timestep__array__moving__decl_8hpp" local="no">cntr_distributed_timestep_array_moving_decl.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcntr_1_1distributed__timestep__array__moving_1a6291c4ac3e4140de19e225af67d082d6" prot="private" static="no" mutable="no">
+        <type><ref refid="classcntr_1_1distributed__array" kindref="compound">distributed_array</ref>&lt; std::complex&lt; T &gt; &gt;</type>
+        <definition>distributed_array&lt;std::complex&lt;T&gt; &gt; cntr::distributed_timestep_array_moving&lt; T &gt;::data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <qualifiedname>cntr::distributed_timestep_array_moving::data_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to the contiguous data </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_timestep_array_moving_decl.hpp" line="58" column="23" bodyfile="cntr/cntr_distributed_timestep_array_moving_decl.hpp" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1distributed__timestep__array__moving_1ae02e1d2154f10ec7ee8a1c174477f87a" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classcntr_1_1herm__matrix__timestep__moving__view" kindref="compound">cntr::herm_matrix_timestep_moving_view</ref>&lt; T &gt; &gt;</type>
+        <definition>std::vector&lt;cntr::herm_matrix_timestep_moving_view&lt;T&gt; &gt; cntr::distributed_timestep_array_moving&lt; T &gt;::G_</definition>
+        <argsstring></argsstring>
+        <name>G_</name>
+        <qualifiedname>cntr::distributed_timestep_array_moving::G_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Vector of views to the <ref refid="classcntr_1_1herm__matrix__timestep" kindref="compound">herm_matrix_timestep</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_timestep_array_moving_decl.hpp" line="62" column="17" bodyfile="cntr/cntr_distributed_timestep_array_moving_decl.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1distributed__timestep__array__moving_1a201bf72a7c05b03ee24e52fd951a0005" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cntr::distributed_timestep_array_moving&lt; T &gt;::n_</definition>
+        <argsstring></argsstring>
+        <name>n_</name>
+        <qualifiedname>cntr::distributed_timestep_array_moving::n_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of blocks </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_timestep_array_moving_decl.hpp" line="59" column="9" bodyfile="cntr/cntr_distributed_timestep_array_moving_decl.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1distributed__timestep__array__moving_1a757606f5cc5b3019d2c04db4536910e1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cntr::distributed_timestep_array_moving&lt; T &gt;::ntasks_</definition>
+        <argsstring></argsstring>
+        <name>ntasks_</name>
+        <qualifiedname>cntr::distributed_timestep_array_moving::ntasks_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MPI size if MPI is defined, else 1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_timestep_array_moving_decl.hpp" line="61" column="9" bodyfile="cntr/cntr_distributed_timestep_array_moving_decl.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1distributed__timestep__array__moving_1a4a48439e1d0a4e17832311a242dbddb6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cntr::distributed_timestep_array_moving&lt; T &gt;::sig_</definition>
+        <argsstring></argsstring>
+        <name>sig_</name>
+        <qualifiedname>cntr::distributed_timestep_array_moving::sig_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fermion(boson)=-1(1) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_timestep_array_moving_decl.hpp" line="66" column="9" bodyfile="cntr/cntr_distributed_timestep_array_moving_decl.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1distributed__timestep__array__moving_1a9bb21210e1b29b56c0722c91d95c249d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cntr::distributed_timestep_array_moving&lt; T &gt;::size_</definition>
+        <argsstring></argsstring>
+        <name>size_</name>
+        <qualifiedname>cntr::distributed_timestep_array_moving::size_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Size of green&apos;s function </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_timestep_array_moving_decl.hpp" line="65" column="9" bodyfile="cntr/cntr_distributed_timestep_array_moving_decl.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1distributed__timestep__array__moving_1ae36cb5d9cba5a084a318085c429f66b1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cntr::distributed_timestep_array_moving&lt; T &gt;::t0_</definition>
+        <argsstring></argsstring>
+        <name>t0_</name>
+        <qualifiedname>cntr::distributed_timestep_array_moving::t0_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current timestep </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_timestep_array_moving_decl.hpp" line="63" column="9" bodyfile="cntr/cntr_distributed_timestep_array_moving_decl.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1distributed__timestep__array__moving_1a84a99bb0c0a24295ef6b4540d401ee5d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cntr::distributed_timestep_array_moving&lt; T &gt;::tc_</definition>
+        <argsstring></argsstring>
+        <name>tc_</name>
+        <qualifiedname>cntr::distributed_timestep_array_moving::tc_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The maximum allowed timestep (set by size of data_) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_timestep_array_moving_decl.hpp" line="64" column="9" bodyfile="cntr/cntr_distributed_timestep_array_moving_decl.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1distributed__timestep__array__moving_1a0b13b9e3e57c8cd40a51501da55ad1ae" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cntr::distributed_timestep_array_moving&lt; T &gt;::tid_</definition>
+        <argsstring></argsstring>
+        <name>tid_</name>
+        <qualifiedname>cntr::distributed_timestep_array_moving::tid_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MPI rank if MPI is defined, else 0 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_timestep_array_moving_decl.hpp" line="60" column="9" bodyfile="cntr/cntr_distributed_timestep_array_moving_decl.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcntr_1_1distributed__timestep__array__moving_aac3f14ec66c9f5faf3cd4431782c7f54_1aac3f14ec66c9f5faf3cd4431782c7f54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::distributed_timestep_array_moving&lt; T &gt;::clear</definition>
+        <argsstring>(void)</argsstring>
+        <name>clear</name>
+        <qualifiedname>cntr::distributed_timestep_array_moving::clear</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_timestep_array_moving_decl.hpp" line="38" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__timestep__array__moving_a8227088c029efd8597b072059e7c543f_1a8227088c029efd8597b072059e7c543f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcntr_1_1distributed__array" kindref="compound">distributed_array</ref>&lt; std::complex&lt; T &gt; &gt;</type>
+        <definition>distributed_array&lt; std::complex&lt; T &gt; &gt; cntr::distributed_timestep_array_moving&lt; T &gt;::data</definition>
+        <argsstring>(void) const</argsstring>
+        <name>data</name>
+        <qualifiedname>cntr::distributed_timestep_array_moving::data</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_timestep_array_moving_decl.hpp" line="44" column="23" bodyfile="cntr/cntr_distributed_timestep_array_moving_decl.hpp" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__timestep__array__moving_a448f6ee087ca8b64024a703ddc72b40b_1a448f6ee087ca8b64024a703ddc72b40b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cntr::distributed_timestep_array_moving&lt; T &gt;::distributed_timestep_array_moving</definition>
+        <argsstring>()</argsstring>
+        <name>distributed_timestep_array_moving</name>
+        <qualifiedname>cntr::distributed_timestep_array_moving::distributed_timestep_array_moving</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_timestep_array_moving_decl.hpp" line="27" column="5"/>
+        <referencedby refid="classcntr_1_1distributed__timestep__array__moving_a89b1fac368b7625d26957ab62f90ee5d_1a89b1fac368b7625d26957ab62f90ee5d">cntr::distributed_timestep_array_moving&lt; T &gt;::distributed_timestep_array_moving</referencedby>
+        <referencedby refid="classcntr_1_1distributed__timestep__array__moving_a22dd6aa1ad988d78e44c255fab48d9fb_1a22dd6aa1ad988d78e44c255fab48d9fb">cntr::distributed_timestep_array_moving&lt; T &gt;::operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__timestep__array__moving_a89b1fac368b7625d26957ab62f90ee5d_1a89b1fac368b7625d26957ab62f90ee5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cntr::distributed_timestep_array_moving&lt; T &gt;::distributed_timestep_array_moving</definition>
+        <argsstring>(const distributed_timestep_array_moving &amp;a)</argsstring>
+        <name>distributed_timestep_array_moving</name>
+        <qualifiedname>cntr::distributed_timestep_array_moving::distributed_timestep_array_moving</qualifiedname>
+        <param>
+          <type>const distributed_timestep_array_moving &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_timestep_array_moving_decl.hpp" line="29" column="5"/>
+        <references refid="classcntr_1_1distributed__timestep__array__moving_a448f6ee087ca8b64024a703ddc72b40b_1a448f6ee087ca8b64024a703ddc72b40b">cntr::distributed_timestep_array_moving&lt; T &gt;::distributed_timestep_array_moving</references>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__timestep__array__moving_a70aa003e58a5d4c10b22f09ab13caad8_1a70aa003e58a5d4c10b22f09ab13caad8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cntr::distributed_timestep_array_moving&lt; T &gt;::distributed_timestep_array_moving</definition>
+        <argsstring>(int n, int tc, int t0, int size, int sig, bool mpi)</argsstring>
+        <name>distributed_timestep_array_moving</name>
+        <qualifiedname>cntr::distributed_timestep_array_moving::distributed_timestep_array_moving</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>t0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sig</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mpi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_timestep_array_moving_decl.hpp" line="31" column="5"/>
+        <references refid="classcntr_1_1distributed__timestep__array__moving_a67092b613f7c6828077e1a96bde61de0_1a67092b613f7c6828077e1a96bde61de0" compoundref="cntr__distributed__timestep__array__moving__decl_8hpp" startline="45" endline="45">cntr::distributed_timestep_array_moving&lt; T &gt;::n</references>
+        <references refid="classcntr_1_1distributed__timestep__array__moving_a57d42895aa06b65bf620a84d5d4f3020_1a57d42895aa06b65bf620a84d5d4f3020" compoundref="cntr__distributed__timestep__array__moving__decl_8hpp" startline="52" endline="52">cntr::distributed_timestep_array_moving&lt; T &gt;::sig</references>
+        <references refid="classcntr_1_1distributed__timestep__array__moving_a0b68698dbcd01ca995e14f126566a076_1a0b68698dbcd01ca995e14f126566a076" compoundref="cntr__distributed__timestep__array__moving__decl_8hpp" startline="51" endline="51">cntr::distributed_timestep_array_moving&lt; T &gt;::size</references>
+        <references refid="classcntr_1_1distributed__timestep__array__moving_ad125d9516631beda164a6ca6644e4f21_1ad125d9516631beda164a6ca6644e4f21" compoundref="cntr__distributed__timestep__array__moving__decl_8hpp" startline="49" endline="49">cntr::distributed_timestep_array_moving&lt; T &gt;::t0</references>
+        <references refid="classcntr_1_1distributed__timestep__array__moving_a70661749ddc87fc7ec5395e76eee8436_1a70661749ddc87fc7ec5395e76eee8436" compoundref="cntr__distributed__timestep__array__moving__decl_8hpp" startline="50" endline="50">cntr::distributed_timestep_array_moving&lt; T &gt;::tc</references>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__timestep__array__moving_a90731a5fc367ea71e1fbf446c08a79f2_1a90731a5fc367ea71e1fbf446c08a79f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcntr_1_1herm__matrix__timestep__moving__view" kindref="compound">cntr::herm_matrix_timestep_moving_view</ref>&lt; T &gt; &amp;</type>
+        <definition>cntr::herm_matrix_timestep_moving_view&lt; T &gt; &amp; cntr::distributed_timestep_array_moving&lt; T &gt;::G</definition>
+        <argsstring>(int j)</argsstring>
+        <name>G</name>
+        <qualifiedname>cntr::distributed_timestep_array_moving::G</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_timestep_array_moving_decl.hpp" line="41" column="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__timestep__array__moving_a399713a2f57fb1a7ea5eee7148faf016_1a399713a2f57fb1a7ea5eee7148faf016" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="classcntr_1_1herm__matrix__timestep__moving__view" kindref="compound">cntr::herm_matrix_timestep_moving_view</ref>&lt; T &gt; &gt;</type>
+        <definition>std::vector&lt; cntr::herm_matrix_timestep_moving_view&lt; T &gt; &gt; cntr::distributed_timestep_array_moving&lt; T &gt;::G</definition>
+        <argsstring>(void) const</argsstring>
+        <name>G</name>
+        <qualifiedname>cntr::distributed_timestep_array_moving::G</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_timestep_array_moving_decl.hpp" line="48" column="17" bodyfile="cntr/cntr_distributed_timestep_array_moving_decl.hpp" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__timestep__array__moving_a3c05e3d329e84a29765bf672ece28463_1a3c05e3d329e84a29765bf672ece28463" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::distributed_timestep_array_moving&lt; T &gt;::mpi_bcast_all</definition>
+        <argsstring>(void)</argsstring>
+        <name>mpi_bcast_all</name>
+        <qualifiedname>cntr::distributed_timestep_array_moving::mpi_bcast_all</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_timestep_array_moving_decl.hpp" line="55" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__timestep__array__moving_adf307d4ed95833794eaaf100a7ee35ef_1adf307d4ed95833794eaaf100a7ee35ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::distributed_timestep_array_moving&lt; T &gt;::mpi_bcast_block</definition>
+        <argsstring>(int j)</argsstring>
+        <name>mpi_bcast_block</name>
+        <qualifiedname>cntr::distributed_timestep_array_moving::mpi_bcast_block</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_timestep_array_moving_decl.hpp" line="54" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__timestep__array__moving_a67092b613f7c6828077e1a96bde61de0_1a67092b613f7c6828077e1a96bde61de0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int cntr::distributed_timestep_array_moving&lt; T &gt;::n</definition>
+        <argsstring>(void) const</argsstring>
+        <name>n</name>
+        <qualifiedname>cntr::distributed_timestep_array_moving::n</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_timestep_array_moving_decl.hpp" line="45" column="9" bodyfile="cntr/cntr_distributed_timestep_array_moving_decl.hpp" bodystart="45" bodyend="45"/>
+        <referencedby refid="classcntr_1_1distributed__timestep__array__moving_a70aa003e58a5d4c10b22f09ab13caad8_1a70aa003e58a5d4c10b22f09ab13caad8">cntr::distributed_timestep_array_moving&lt; T &gt;::distributed_timestep_array_moving</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__timestep__array__moving_a3b47388ec7a8dabb262466184b526094_1a3b47388ec7a8dabb262466184b526094" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int cntr::distributed_timestep_array_moving&lt; T &gt;::ntasks</definition>
+        <argsstring>(void) const</argsstring>
+        <name>ntasks</name>
+        <qualifiedname>cntr::distributed_timestep_array_moving::ntasks</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_timestep_array_moving_decl.hpp" line="47" column="9" bodyfile="cntr/cntr_distributed_timestep_array_moving_decl.hpp" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__timestep__array__moving_a22dd6aa1ad988d78e44c255fab48d9fb_1a22dd6aa1ad988d78e44c255fab48d9fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcntr_1_1distributed__timestep__array__moving_a448f6ee087ca8b64024a703ddc72b40b_1a448f6ee087ca8b64024a703ddc72b40b" kindref="member">distributed_timestep_array_moving</ref>&lt; T &gt; &amp;</type>
+        <definition>distributed_timestep_array_moving&lt; T &gt; &amp; cntr::distributed_timestep_array_moving&lt; T &gt;::operator=</definition>
+        <argsstring>(const distributed_timestep_array_moving &amp;a)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>cntr::distributed_timestep_array_moving::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classcntr_1_1distributed__timestep__array__moving_a448f6ee087ca8b64024a703ddc72b40b_1a448f6ee087ca8b64024a703ddc72b40b" kindref="member">distributed_timestep_array_moving</ref> &amp;</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_timestep_array_moving_decl.hpp" line="30" column="40"/>
+        <references refid="classcntr_1_1distributed__timestep__array__moving_a448f6ee087ca8b64024a703ddc72b40b_1a448f6ee087ca8b64024a703ddc72b40b">cntr::distributed_timestep_array_moving&lt; T &gt;::distributed_timestep_array_moving</references>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__timestep__array__moving_a6b8811c71eb533181219fa03d41a2eef_1a6b8811c71eb533181219fa03d41a2eef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::distributed_timestep_array_moving&lt; T &gt;::reset_tstp</definition>
+        <argsstring>(int tstp)</argsstring>
+        <name>reset_tstp</name>
+        <qualifiedname>cntr::distributed_timestep_array_moving::reset_tstp</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_timestep_array_moving_decl.hpp" line="37" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__timestep__array__moving_afd2a7c60890dcc49744cba68d7da229c_1afd2a7c60890dcc49744cba68d7da229c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::distributed_timestep_array_moving&lt; T &gt;::set_t0</definition>
+        <argsstring>(int t0)</argsstring>
+        <name>set_t0</name>
+        <qualifiedname>cntr::distributed_timestep_array_moving::set_t0</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>t0</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_timestep_array_moving_decl.hpp" line="53" column="10" bodyfile="cntr/cntr_distributed_timestep_array_moving_decl.hpp" bodystart="53" bodyend="53"/>
+        <references refid="classcntr_1_1distributed__timestep__array__moving_ad125d9516631beda164a6ca6644e4f21_1ad125d9516631beda164a6ca6644e4f21" compoundref="cntr__distributed__timestep__array__moving__decl_8hpp" startline="49" endline="49">cntr::distributed_timestep_array_moving&lt; T &gt;::t0</references>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__timestep__array__moving_a57d42895aa06b65bf620a84d5d4f3020_1a57d42895aa06b65bf620a84d5d4f3020" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int cntr::distributed_timestep_array_moving&lt; T &gt;::sig</definition>
+        <argsstring>(void) const</argsstring>
+        <name>sig</name>
+        <qualifiedname>cntr::distributed_timestep_array_moving::sig</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_timestep_array_moving_decl.hpp" line="52" column="9" bodyfile="cntr/cntr_distributed_timestep_array_moving_decl.hpp" bodystart="52" bodyend="52"/>
+        <referencedby refid="classcntr_1_1distributed__timestep__array__moving_a70aa003e58a5d4c10b22f09ab13caad8_1a70aa003e58a5d4c10b22f09ab13caad8">cntr::distributed_timestep_array_moving&lt; T &gt;::distributed_timestep_array_moving</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__timestep__array__moving_a0b68698dbcd01ca995e14f126566a076_1a0b68698dbcd01ca995e14f126566a076" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int cntr::distributed_timestep_array_moving&lt; T &gt;::size</definition>
+        <argsstring>(void) const</argsstring>
+        <name>size</name>
+        <qualifiedname>cntr::distributed_timestep_array_moving::size</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_timestep_array_moving_decl.hpp" line="51" column="9" bodyfile="cntr/cntr_distributed_timestep_array_moving_decl.hpp" bodystart="51" bodyend="51"/>
+        <referencedby refid="classcntr_1_1distributed__timestep__array__moving_a70aa003e58a5d4c10b22f09ab13caad8_1a70aa003e58a5d4c10b22f09ab13caad8">cntr::distributed_timestep_array_moving&lt; T &gt;::distributed_timestep_array_moving</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__timestep__array__moving_ad125d9516631beda164a6ca6644e4f21_1ad125d9516631beda164a6ca6644e4f21" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int cntr::distributed_timestep_array_moving&lt; T &gt;::t0</definition>
+        <argsstring>(void) const</argsstring>
+        <name>t0</name>
+        <qualifiedname>cntr::distributed_timestep_array_moving::t0</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_timestep_array_moving_decl.hpp" line="49" column="9" bodyfile="cntr/cntr_distributed_timestep_array_moving_decl.hpp" bodystart="49" bodyend="49"/>
+        <referencedby refid="classcntr_1_1distributed__timestep__array__moving_a70aa003e58a5d4c10b22f09ab13caad8_1a70aa003e58a5d4c10b22f09ab13caad8">cntr::distributed_timestep_array_moving&lt; T &gt;::distributed_timestep_array_moving</referencedby>
+        <referencedby refid="classcntr_1_1distributed__timestep__array__moving_afd2a7c60890dcc49744cba68d7da229c_1afd2a7c60890dcc49744cba68d7da229c" compoundref="cntr__distributed__timestep__array__moving__decl_8hpp" startline="53" endline="53">cntr::distributed_timestep_array_moving&lt; T &gt;::set_t0</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__timestep__array__moving_a70661749ddc87fc7ec5395e76eee8436_1a70661749ddc87fc7ec5395e76eee8436" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int cntr::distributed_timestep_array_moving&lt; T &gt;::tc</definition>
+        <argsstring>(void) const</argsstring>
+        <name>tc</name>
+        <qualifiedname>cntr::distributed_timestep_array_moving::tc</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_timestep_array_moving_decl.hpp" line="50" column="9" bodyfile="cntr/cntr_distributed_timestep_array_moving_decl.hpp" bodystart="50" bodyend="50"/>
+        <referencedby refid="classcntr_1_1distributed__timestep__array__moving_a70aa003e58a5d4c10b22f09ab13caad8_1a70aa003e58a5d4c10b22f09ab13caad8">cntr::distributed_timestep_array_moving&lt; T &gt;::distributed_timestep_array_moving</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__timestep__array__moving_a3beb70a9cff7c809dade511f38809f0b_1a3beb70a9cff7c809dade511f38809f0b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int cntr::distributed_timestep_array_moving&lt; T &gt;::tid</definition>
+        <argsstring>(void) const</argsstring>
+        <name>tid</name>
+        <qualifiedname>cntr::distributed_timestep_array_moving::tid</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_timestep_array_moving_decl.hpp" line="46" column="9" bodyfile="cntr/cntr_distributed_timestep_array_moving_decl.hpp" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__timestep__array__moving_abb7de02d908d08ed2a285b4ef2a4c98a_1abb7de02d908d08ed2a285b4ef2a4c98a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cntr::distributed_timestep_array_moving&lt; T &gt;::~distributed_timestep_array_moving</definition>
+        <argsstring>()</argsstring>
+        <name>~distributed_timestep_array_moving</name>
+        <qualifiedname>cntr::distributed_timestep_array_moving::~distributed_timestep_array_moving</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_timestep_array_moving_decl.hpp" line="28" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><bold> Specialization of the <ref refid="classcntr_1_1distributed__array" kindref="compound">distributed_array</ref> in which data-blocks are associated with the <ref refid="classcntr_1_1herm__matrix__timestep__moving" kindref="compound">herm_matrix_timestep_moving</ref> objects </bold> </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+Specialization of the <ref refid="classcntr_1_1distributed__array" kindref="compound">distributed_array</ref> for the <ref refid="classcntr_1_1herm__matrix__timestep__moving" kindref="compound">herm_matrix_timestep_moving</ref> objects, which is used for problems, where all ranks need to have the full information [for instance spatial] about the system for a given timestep. In practice the time stepping procedure is used and the last timestep needs to be communicated between all MPI processes. </para>
+    </detaileddescription>
+    <location file="cntr/cntr_distributed_timestep_array_moving_decl.hpp" line="23" column="3" bodyfile="cntr/cntr_distributed_timestep_array_moving_decl.hpp" bodystart="23" bodyend="67"/>
+    <listofallmembers>
+      <member refid="classcntr_1_1distributed__timestep__array__moving_aac3f14ec66c9f5faf3cd4431782c7f54_1aac3f14ec66c9f5faf3cd4431782c7f54" prot="public" virt="non-virtual"><scope>cntr::distributed_timestep_array_moving</scope><name>clear</name></member>
+      <member refid="classcntr_1_1distributed__timestep__array__moving_a8227088c029efd8597b072059e7c543f_1a8227088c029efd8597b072059e7c543f" prot="public" virt="non-virtual"><scope>cntr::distributed_timestep_array_moving</scope><name>data</name></member>
+      <member refid="classcntr_1_1distributed__timestep__array__moving_1a6291c4ac3e4140de19e225af67d082d6" prot="private" virt="non-virtual"><scope>cntr::distributed_timestep_array_moving</scope><name>data_</name></member>
+      <member refid="classcntr_1_1distributed__timestep__array__moving_a448f6ee087ca8b64024a703ddc72b40b_1a448f6ee087ca8b64024a703ddc72b40b" prot="public" virt="non-virtual"><scope>cntr::distributed_timestep_array_moving</scope><name>distributed_timestep_array_moving</name></member>
+      <member refid="classcntr_1_1distributed__timestep__array__moving_a89b1fac368b7625d26957ab62f90ee5d_1a89b1fac368b7625d26957ab62f90ee5d" prot="public" virt="non-virtual"><scope>cntr::distributed_timestep_array_moving</scope><name>distributed_timestep_array_moving</name></member>
+      <member refid="classcntr_1_1distributed__timestep__array__moving_a70aa003e58a5d4c10b22f09ab13caad8_1a70aa003e58a5d4c10b22f09ab13caad8" prot="public" virt="non-virtual"><scope>cntr::distributed_timestep_array_moving</scope><name>distributed_timestep_array_moving</name></member>
+      <member refid="classcntr_1_1distributed__timestep__array__moving_a90731a5fc367ea71e1fbf446c08a79f2_1a90731a5fc367ea71e1fbf446c08a79f2" prot="public" virt="non-virtual"><scope>cntr::distributed_timestep_array_moving</scope><name>G</name></member>
+      <member refid="classcntr_1_1distributed__timestep__array__moving_a399713a2f57fb1a7ea5eee7148faf016_1a399713a2f57fb1a7ea5eee7148faf016" prot="public" virt="non-virtual"><scope>cntr::distributed_timestep_array_moving</scope><name>G</name></member>
+      <member refid="classcntr_1_1distributed__timestep__array__moving_1ae02e1d2154f10ec7ee8a1c174477f87a" prot="private" virt="non-virtual"><scope>cntr::distributed_timestep_array_moving</scope><name>G_</name></member>
+      <member refid="classcntr_1_1distributed__timestep__array__moving_a3c05e3d329e84a29765bf672ece28463_1a3c05e3d329e84a29765bf672ece28463" prot="public" virt="non-virtual"><scope>cntr::distributed_timestep_array_moving</scope><name>mpi_bcast_all</name></member>
+      <member refid="classcntr_1_1distributed__timestep__array__moving_adf307d4ed95833794eaaf100a7ee35ef_1adf307d4ed95833794eaaf100a7ee35ef" prot="public" virt="non-virtual"><scope>cntr::distributed_timestep_array_moving</scope><name>mpi_bcast_block</name></member>
+      <member refid="classcntr_1_1distributed__timestep__array__moving_a67092b613f7c6828077e1a96bde61de0_1a67092b613f7c6828077e1a96bde61de0" prot="public" virt="non-virtual"><scope>cntr::distributed_timestep_array_moving</scope><name>n</name></member>
+      <member refid="classcntr_1_1distributed__timestep__array__moving_1a201bf72a7c05b03ee24e52fd951a0005" prot="private" virt="non-virtual"><scope>cntr::distributed_timestep_array_moving</scope><name>n_</name></member>
+      <member refid="classcntr_1_1distributed__timestep__array__moving_a3b47388ec7a8dabb262466184b526094_1a3b47388ec7a8dabb262466184b526094" prot="public" virt="non-virtual"><scope>cntr::distributed_timestep_array_moving</scope><name>ntasks</name></member>
+      <member refid="classcntr_1_1distributed__timestep__array__moving_1a757606f5cc5b3019d2c04db4536910e1" prot="private" virt="non-virtual"><scope>cntr::distributed_timestep_array_moving</scope><name>ntasks_</name></member>
+      <member refid="classcntr_1_1distributed__timestep__array__moving_a22dd6aa1ad988d78e44c255fab48d9fb_1a22dd6aa1ad988d78e44c255fab48d9fb" prot="public" virt="non-virtual"><scope>cntr::distributed_timestep_array_moving</scope><name>operator=</name></member>
+      <member refid="classcntr_1_1distributed__timestep__array__moving_a6b8811c71eb533181219fa03d41a2eef_1a6b8811c71eb533181219fa03d41a2eef" prot="public" virt="non-virtual"><scope>cntr::distributed_timestep_array_moving</scope><name>reset_tstp</name></member>
+      <member refid="classcntr_1_1distributed__timestep__array__moving_afd2a7c60890dcc49744cba68d7da229c_1afd2a7c60890dcc49744cba68d7da229c" prot="public" virt="non-virtual"><scope>cntr::distributed_timestep_array_moving</scope><name>set_t0</name></member>
+      <member refid="classcntr_1_1distributed__timestep__array__moving_a57d42895aa06b65bf620a84d5d4f3020_1a57d42895aa06b65bf620a84d5d4f3020" prot="public" virt="non-virtual"><scope>cntr::distributed_timestep_array_moving</scope><name>sig</name></member>
+      <member refid="classcntr_1_1distributed__timestep__array__moving_1a4a48439e1d0a4e17832311a242dbddb6" prot="private" virt="non-virtual"><scope>cntr::distributed_timestep_array_moving</scope><name>sig_</name></member>
+      <member refid="classcntr_1_1distributed__timestep__array__moving_a0b68698dbcd01ca995e14f126566a076_1a0b68698dbcd01ca995e14f126566a076" prot="public" virt="non-virtual"><scope>cntr::distributed_timestep_array_moving</scope><name>size</name></member>
+      <member refid="classcntr_1_1distributed__timestep__array__moving_1a9bb21210e1b29b56c0722c91d95c249d" prot="private" virt="non-virtual"><scope>cntr::distributed_timestep_array_moving</scope><name>size_</name></member>
+      <member refid="classcntr_1_1distributed__timestep__array__moving_ad125d9516631beda164a6ca6644e4f21_1ad125d9516631beda164a6ca6644e4f21" prot="public" virt="non-virtual"><scope>cntr::distributed_timestep_array_moving</scope><name>t0</name></member>
+      <member refid="classcntr_1_1distributed__timestep__array__moving_1ae36cb5d9cba5a084a318085c429f66b1" prot="private" virt="non-virtual"><scope>cntr::distributed_timestep_array_moving</scope><name>t0_</name></member>
+      <member refid="classcntr_1_1distributed__timestep__array__moving_a70661749ddc87fc7ec5395e76eee8436_1a70661749ddc87fc7ec5395e76eee8436" prot="public" virt="non-virtual"><scope>cntr::distributed_timestep_array_moving</scope><name>tc</name></member>
+      <member refid="classcntr_1_1distributed__timestep__array__moving_1a84a99bb0c0a24295ef6b4540d401ee5d" prot="private" virt="non-virtual"><scope>cntr::distributed_timestep_array_moving</scope><name>tc_</name></member>
+      <member refid="classcntr_1_1distributed__timestep__array__moving_a3beb70a9cff7c809dade511f38809f0b_1a3beb70a9cff7c809dade511f38809f0b" prot="public" virt="non-virtual"><scope>cntr::distributed_timestep_array_moving</scope><name>tid</name></member>
+      <member refid="classcntr_1_1distributed__timestep__array__moving_1a0b13b9e3e57c8cd40a51501da55ad1ae" prot="private" virt="non-virtual"><scope>cntr::distributed_timestep_array_moving</scope><name>tid_</name></member>
+      <member refid="classcntr_1_1distributed__timestep__array__moving_abb7de02d908d08ed2a285b4ef2a4c98a_1abb7de02d908d08ed2a285b4ef2a4c98a" prot="public" virt="non-virtual"><scope>cntr::distributed_timestep_array_moving</scope><name>~distributed_timestep_array_moving</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

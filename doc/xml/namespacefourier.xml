@@ -1,0 +1,371 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespacefourier" kind="namespace" language="C++">
+    <compoundname>fourier</compoundname>
+    <innerclass refid="classfourier_1_1adft__func" prot="public">fourier::adft_func</innerclass>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="namespacefourier_ae7eadab34d3f4e54d1e04136be531403_1ae7eadab34d3f4e54d1e04136be531403" prot="public" static="no">
+        <type>std::complex&lt; double &gt;</type>
+        <definition>typedef std::complex&lt;double&gt; fourier::cplx</definition>
+        <argsstring></argsstring>
+        <name>cplx</name>
+        <qualifiedname>fourier::cplx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/fourier.cpp" line="11" column="22" bodyfile="cntr/fourier.cpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="namespacefourier_a7d2a7a3f3264376e7a2507527a148d3d_1a7d2a7a3f3264376e7a2507527a148d3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fourier::complex_dftcor_cubic</definition>
+        <argsstring>(double w, double delta, double a, double b, cplx *endpts, cplx *endcor, double *corfac)</argsstring>
+        <name>complex_dftcor_cubic</name>
+        <qualifiedname>fourier::complex_dftcor_cubic</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>delta</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefourier_ae7eadab34d3f4e54d1e04136be531403_1ae7eadab34d3f4e54d1e04136be531403" kindref="member">cplx</ref> *</type>
+          <declname>endpts</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefourier_ae7eadab34d3f4e54d1e04136be531403_1ae7eadab34d3f4e54d1e04136be531403" kindref="member">cplx</ref> *</type>
+          <declname>endcor</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>corfac</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns correction factor <formula id="103">$W(\theta)$</formula> and evaluate boundary correction terms needed for cubically corrected DFT. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>For a function <formula id="32">$f(t)$</formula>, represented on an equidistant grid <formula id="105">$t_n= n h$</formula>, <formula id="106">$n=0,\dots,N$</formula>, we would like to compute the Fourier integral <formula id="107">$I(\omega) = \int^b_a dt\, e^{i \omega t}f(t)$</formula>. Using piecewie cubic interpolation of <formula id="32">$f(t)$</formula>, the <formula id="108">$I(\omega)$</formula> can be computed by by cubically corrected discrete Fourier transformation (DFT). The algorithm is explained in</para>
+<para>W. H. Press, S. A. Teukolosky, W. T. Vetterling, B. P. Flannery, Numerical Recipes 3rd Edition: The Art of Scientific Computing, Cambridge University Press, 2007, chapter 13.9</para>
+<para><computeroutput><ref refid="namespacefourier_a7d2a7a3f3264376e7a2507527a148d3d_1a7d2a7a3f3264376e7a2507527a148d3d" kindref="member">complex_dftcor_cubic</ref></computeroutput> computes the required correction factor <formula id="103">$W(\theta)$</formula> and the boundary terms <formula id="113">$\alpha_j(\theta)f_j$</formula>, <formula id="114">$j=0,\dots,3$</formula>, and <formula id="115">$ e^{i\omega(b-a)}\alpha^*_j(\theta)f_{N-j} $</formula> where <formula id="111">$\theta = \omega h$</formula>. </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>[double] frequency <formula id="116">$\omega$</formula> </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[double] grid spacing <formula id="117">$h$</formula> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[double] starting point of interval </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[double] end point of interval </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>endpts</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[complex] &apos;endpts[j]&apos;, &apos;j=0,1,2,3&apos;, corresponds to <formula id="118">$f_j$</formula>, while &apos;endpts[7-j]&apos;, &apos;j=0,1,2,3&apos;, corresponds to <formula id="119">$f_{N-j}$</formula> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>endcor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[complex] on return, boundary correction terms, stored in the order as &apos;endpts&apos; </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>corfac</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[double] on return, correction factor <formula id="103">$W(\theta)$</formula>  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/fourier.cpp" line="182" column="6" bodyfile="cntr/fourier.cpp" bodystart="182" bodyend="242" declfile="cntr/fourier.hpp" declline="19" declcolumn="6"/>
+        <referencedby refid="namespacefourier_a979b474be5e069de6384017d9e841650_1a979b474be5e069de6384017d9e841650" compoundref="fourier_8cpp" startline="283" endline="341">dft_cplx</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefourier_a979b474be5e069de6384017d9e841650_1a979b474be5e069de6384017d9e841650" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fourier::dft_cplx</definition>
+        <argsstring>(double w, int n, double a, double b, cplx *f, cplx &amp;res, cplx &amp;err)</argsstring>
+        <name>dft_cplx</name>
+        <qualifiedname>fourier::dft_cplx</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefourier_ae7eadab34d3f4e54d1e04136be531403_1ae7eadab34d3f4e54d1e04136be531403" kindref="member">cplx</ref> *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefourier_ae7eadab34d3f4e54d1e04136be531403_1ae7eadab34d3f4e54d1e04136be531403" kindref="member">cplx</ref> &amp;</type>
+          <declname>res</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefourier_ae7eadab34d3f4e54d1e04136be531403_1ae7eadab34d3f4e54d1e04136be531403" kindref="member">cplx</ref> &amp;</type>
+          <declname>err</declname>
+        </param>
+        <briefdescription>
+<para><bold> Computes the Fourier integral <formula id="107">$I(\omega) = \int^b_a dt\, e^{i \omega t}f(t)$</formula> using cubically corrected DFT.</bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>For a function <formula id="32">$f(t)$</formula>, represented on an equidistant grid <formula id="120">$t_j= j h$</formula>, <formula id="81">$j=0,\dots,n$</formula>, we would like to compute the Fourier integral <formula id="107">$I(\omega) = \int^b_a dt\, e^{i \omega t}f(t)$</formula>. Using piecewie cubic interpolation of <formula id="32">$f(t)$</formula>, the <formula id="108">$I(\omega)$</formula> can be computed by by cubically corrected discrete Fourier transformation (DFT). The algorithm is explained in</para>
+<para>W. H. Press, S. A. Teukolosky, W. T. Vetterling, B. P. Flannery, Numerical Recipes 3rd Edition: The Art of Scientific Computing, Cambridge University Press, 2007, chapter 13.9</para>
+<para><computeroutput><ref refid="namespacefourier_a979b474be5e069de6384017d9e841650_1a979b474be5e069de6384017d9e841650" kindref="member">dft_cplx</ref></computeroutput> computes the integral <formula id="108">$I(\omega)$</formula>, using the cubic correction factor and boundary correction terms computed by <computeroutput><ref refid="namespacefourier_a7d2a7a3f3264376e7a2507527a148d3d_1a7d2a7a3f3264376e7a2507527a148d3d" kindref="member">complex_dftcor_cubic</ref></computeroutput>. Furthermore, an approximate error is returned, given the difference using <computeroutput>n</computeroutput> and <computeroutput>(n+1)/2</computeroutput> points. </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>[double] frequency <formula id="116">$\omega$</formula> </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[int] number of time points <formula id="121">$t_j=j h, j=0,\dots,n$</formula> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[double] starting point of interval </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[double] end point of interval </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[complex] pointer containing the function values </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>res</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[complex] Fourier integral <formula id="108">$I(\omega)$</formula> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>err</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[complex] difference using &apos;n&apos; and &apos;(N+1)/2&apos; points.  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/fourier.cpp" line="283" column="6" bodyfile="cntr/fourier.cpp" bodystart="283" bodyend="341" declfile="cntr/fourier.hpp" declline="21" declcolumn="6"/>
+        <references refid="namespacefourier_a7d2a7a3f3264376e7a2507527a148d3d_1a7d2a7a3f3264376e7a2507527a148d3d" compoundref="fourier_8cpp" startline="182" endline="242">complex_dftcor_cubic</references>
+        <referencedby refid="classfourier_1_1adft__func_aaa081b6da5008bdb6ab01c8ce025b19a_1aaa081b6da5008bdb6ab01c8ce025b19a" compoundref="fourier_8hpp" startline="317" endline="334">fourier::adft_func::dft</referencedby>
+        <referencedby refid="classfourier_1_1adft__func_a352d3b8ba7b6c50c699a66b8903a8d0d_1a352d3b8ba7b6c50c699a66b8903a8d0d" compoundref="fourier_8hpp" startline="366" endline="418">fourier::adft_func::sample</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="namespacefourier_a103f46eaa9740ea4939445a4671a6aab_1a103f46eaa9740ea4939445a4671a6aab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fourier::get_dftcorr_cubic</definition>
+        <argsstring>(double th, double *corfac, cplx *endcor)</argsstring>
+        <name>get_dftcorr_cubic</name>
+        <qualifiedname>fourier::get_dftcorr_cubic</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>th</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>corfac</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefourier_ae7eadab34d3f4e54d1e04136be531403_1ae7eadab34d3f4e54d1e04136be531403" kindref="member">cplx</ref> *</type>
+          <declname>endcor</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns correction factor <formula id="103">$W(\theta)$</formula> and boundary correction terms <formula id="104">$\alpha_j(\theta)$</formula> needed for cubically corrected DFT. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>For a function <formula id="32">$f(t)$</formula>, represented on an equidistant grid <formula id="105">$t_n= n h$</formula>, <formula id="106">$n=0,\dots,N$</formula>, we would like to compute the Fourier integral <formula id="107">$I(\omega) = \int^b_a dt\, e^{i \omega t}f(t)$</formula>. Using piecewie cubic interpolation of <formula id="32">$f(t)$</formula>, the <formula id="108">$I(\omega)$</formula> can be computed by by cubically corrected discrete Fourier transformation (DFT). The algorithm is explained in</para>
+<para>W. H. Press, S. A. Teukolosky, W. T. Vetterling, B. P. Flannery, Numerical Recipes 3rd Edition: The Art of Scientific Computing, Cambridge University Press, 2007, chapter 13.9 </para>
+</blockquote></para>
+<para><blockquote><para><computeroutput><ref refid="namespacefourier_a103f46eaa9740ea4939445a4671a6aab_1a103f46eaa9740ea4939445a4671a6aab" kindref="member">get_dftcorr_cubic</ref></computeroutput> computes the required correction factor <formula id="103">$W(\theta)$</formula> and the boundary terms <formula id="109">$\alpha_i(\theta)$</formula>, <formula id="110">$i=0,\dots,3$</formula>, where <formula id="111">$\theta = \omega h$</formula>. </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>th</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>[double] <formula id="111">$\theta = \omega h$</formula> as explained above. </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>corfac</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[double] on return, correction factor <formula id="103">$W(\theta)$</formula> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>endcor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[complex] on return, boundary term <formula id="104">$\alpha_j(\theta)$</formula>, stored in &apos;endcor[j]&apos;  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/fourier.cpp" line="43" column="6" bodyfile="cntr/fourier.cpp" bodystart="43" bodyend="86" declfile="cntr/fourier.hpp" declline="17" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="namespacefourier_a79c8242d3e4cbad1e55ae076fee8c851_1a79c8242d3e4cbad1e55ae076fee8c851" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fourier::get_dftcorr_linear</definition>
+        <argsstring>(double th, double *corfac, cplx *endcor)</argsstring>
+        <name>get_dftcorr_linear</name>
+        <qualifiedname>fourier::get_dftcorr_linear</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>th</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>corfac</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacefourier_ae7eadab34d3f4e54d1e04136be531403_1ae7eadab34d3f4e54d1e04136be531403" kindref="member">cplx</ref> *</type>
+          <declname>endcor</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns correction factor <formula id="103">$W(\theta)$</formula> and boundary correction term <formula id="112">$\alpha_0(\theta)$</formula> needed for linearly corrected DFT. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>For a function <formula id="32">$f(t)$</formula>, represented on an equidistant grid <formula id="105">$t_n= n h$</formula>, <formula id="106">$n=0,\dots,N$</formula>, we would like to compute the Fourier integral <formula id="107">$I(\omega) = \int^b_a dt\, e^{i \omega t}f(t)$</formula>. Using linear interpolation of <formula id="32">$f(t)$</formula>, the <formula id="108">$I(\omega)$</formula> can be computed by by linearlt corrected discrete Fourier transformation (DFT). The algorithm is explained in</para>
+<para>W. H. Press, S. A. Teukolosky, W. T. Vetterling, B. P. Flannery, Numerical Recipes 3rd Edition: The Art of Scientific Computing, Cambridge University Press, 2007, chapter 13.9</para>
+<para><computeroutput><ref refid="namespacefourier_a79c8242d3e4cbad1e55ae076fee8c851_1a79c8242d3e4cbad1e55ae076fee8c851" kindref="member">get_dftcorr_linear</ref></computeroutput> computes the required correction factor <formula id="103">$W(\theta)$</formula> and the boundary term <formula id="112">$\alpha_0(\theta)$</formula>, where <formula id="111">$\theta = \omega h$</formula>. </para>
+</blockquote></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>th</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>[double] <formula id="111">$\theta = \omega h$</formula> as explained above. </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>corfac</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[double] on return, correction factor <formula id="103">$W(\theta)$</formula> </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>endcor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>[complex] on return, boundary term <formula id="112">$\alpha_0(\theta)$</formula>  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/fourier.cpp" line="117" column="6" bodyfile="cntr/fourier.cpp" bodystart="117" bodyend="139" declfile="cntr/fourier.hpp" declline="16" declcolumn="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="cntr/fourier.cpp" line="9" column="1"/>
+  </compounddef>
+</doxygen>

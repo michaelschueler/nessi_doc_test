@@ -1,0 +1,16 @@
+digraph "cntr::function::ptr"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="cntr::function::ptr",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="cntr::dyson_timestep_omp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespacecntr_abb866e8c162a063024d06815ca704d5a.html#abb866e8c162a063024d06815ca704d5a",tooltip="One step Dyson solver (integral-differential form) for a Green's function  using openMP parallelizati..."];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="cntr::function::operator[]",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classcntr_1_1function_a870fb47e43054e50574ada742fa26109.html#a870fb47e43054e50574ada742fa26109",tooltip=" "];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="cntr::function::operator[]",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classcntr_1_1function_ac58bbe56ac964b37a0f6878e13e17b53.html#ac58bbe56ac964b37a0f6878e13e17b53",tooltip=" "];
+}

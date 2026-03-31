@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classness2_1_1FFT__OMP__Manager" kind="class" language="C++" prot="public">
+    <compoundname>ness2::FFT_OMP_Manager</compoundname>
+    <includes refid="ness2__fft__decl_8hpp" local="no">ness2_fft_decl.hpp</includes>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classness2_1_1FFT__OMP__Manager_1a4f9065d808de7917dcfae915de5090ff" prot="private" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int ness2::FFT_OMP_Manager::current_threads_</definition>
+        <argsstring></argsstring>
+        <name>current_threads_</name>
+        <qualifiedname>ness2::FFT_OMP_Manager::current_threads_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="106" column="17" bodyfile="cntr/ness2_fft_decl.hpp" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classness2_1_1FFT__OMP__Manager_1a680dad82b6a84f561717e0c9a2bf2451" prot="private" static="yes" mutable="no">
+        <type>bool</type>
+        <definition>bool ness2::FFT_OMP_Manager::initialized_</definition>
+        <argsstring></argsstring>
+        <name>initialized_</name>
+        <qualifiedname>ness2::FFT_OMP_Manager::initialized_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="105" column="17" bodyfile="cntr/ness2_fft_decl.hpp" bodystart="105" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classness2_1_1FFT__OMP__Manager_ac18bae9046885f297e4dd30c95ce78f2_1ac18bae9046885f297e4dd30c95ce78f2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ness2::FFT_OMP_Manager::finalize</definition>
+        <argsstring>()</argsstring>
+        <name>finalize</name>
+        <qualifiedname>ness2::FFT_OMP_Manager::finalize</qualifiedname>
+        <briefdescription>
+<para>Clean up threading resources (call only after all plans are destroyed). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="98" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1FFT__OMP__Manager_aa2cd7c2a4abb18b32b7f3c15d5292253_1aa2cd7c2a4abb18b32b7f3c15d5292253" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ness2::FFT_OMP_Manager::initialize</definition>
+        <argsstring>(void)</argsstring>
+        <name>initialize</name>
+        <qualifiedname>ness2::FFT_OMP_Manager::initialize</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Initialize FFTW threads (pthreads backend). <formula id="191">$ n$</formula> is used for plans created afterwards. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="92" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1FFT__OMP__Manager_a2ae2b2c799dc89e84db8e75dbc02ffda_1a2ae2b2c799dc89e84db8e75dbc02ffda" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ness2::FFT_OMP_Manager::set_threads_for_new_plans</definition>
+        <argsstring>(int n)</argsstring>
+        <name>set_threads_for_new_plans</name>
+        <qualifiedname>ness2::FFT_OMP_Manager::set_threads_for_new_plans</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Change the thread count used by <emphasis>new</emphasis> plans (does not affect existing plans) to <computeroutput>n</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="95" column="17"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classness2_1_1FFT__OMP__Manager_a4772335eb446ed28e329f153e70a303d_1a4772335eb446ed28e329f153e70a303d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ness2::FFT_OMP_Manager::FFT_OMP_Manager</definition>
+        <argsstring>()=delete</argsstring>
+        <name>FFT_OMP_Manager</name>
+        <qualifiedname>ness2::FFT_OMP_Manager::FFT_OMP_Manager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="100" column="5"/>
+        <referencedby refid="classness2_1_1FFT__OMP__Manager_a0830523efce26886a693d493fdc13f87_1a0830523efce26886a693d493fdc13f87">FFT_OMP_Manager</referencedby>
+        <referencedby refid="classness2_1_1FFT__OMP__Manager_a36cc9d73253adaa09b43c0abbf66ac34_1a36cc9d73253adaa09b43c0abbf66ac34">operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1FFT__OMP__Manager_a0830523efce26886a693d493fdc13f87_1a0830523efce26886a693d493fdc13f87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ness2::FFT_OMP_Manager::FFT_OMP_Manager</definition>
+        <argsstring>(const FFT_OMP_Manager &amp;)=delete</argsstring>
+        <name>FFT_OMP_Manager</name>
+        <qualifiedname>ness2::FFT_OMP_Manager::FFT_OMP_Manager</qualifiedname>
+        <param>
+          <type>const FFT_OMP_Manager &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="101" column="5"/>
+        <references refid="classness2_1_1FFT__OMP__Manager_a4772335eb446ed28e329f153e70a303d_1a4772335eb446ed28e329f153e70a303d">FFT_OMP_Manager</references>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1FFT__OMP__Manager_a36cc9d73253adaa09b43c0abbf66ac34_1a36cc9d73253adaa09b43c0abbf66ac34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classness2_1_1FFT__OMP__Manager_a4772335eb446ed28e329f153e70a303d_1a4772335eb446ed28e329f153e70a303d" kindref="member">FFT_OMP_Manager</ref> &amp;</type>
+        <definition>FFT_OMP_Manager &amp; ness2::FFT_OMP_Manager::operator=</definition>
+        <argsstring>(const FFT_OMP_Manager &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>ness2::FFT_OMP_Manager::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classness2_1_1FFT__OMP__Manager_a4772335eb446ed28e329f153e70a303d_1a4772335eb446ed28e329f153e70a303d" kindref="member">FFT_OMP_Manager</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="102" column="21"/>
+        <references refid="classness2_1_1FFT__OMP__Manager_a4772335eb446ed28e329f153e70a303d_1a4772335eb446ed28e329f153e70a303d">FFT_OMP_Manager</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Class to manage FFTW threading setup and cleanup. Use this to initialize FFTW with threads once at program start. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="cntr/ness2_fft_decl.hpp" line="89" column="3" bodyfile="cntr/ness2_fft_decl.hpp" bodystart="89" bodyend="107"/>
+    <listofallmembers>
+      <member refid="classness2_1_1FFT__OMP__Manager_1a4f9065d808de7917dcfae915de5090ff" prot="private" virt="non-virtual"><scope>ness2::FFT_OMP_Manager</scope><name>current_threads_</name></member>
+      <member refid="classness2_1_1FFT__OMP__Manager_a4772335eb446ed28e329f153e70a303d_1a4772335eb446ed28e329f153e70a303d" prot="public" virt="non-virtual"><scope>ness2::FFT_OMP_Manager</scope><name>FFT_OMP_Manager</name></member>
+      <member refid="classness2_1_1FFT__OMP__Manager_a0830523efce26886a693d493fdc13f87_1a0830523efce26886a693d493fdc13f87" prot="public" virt="non-virtual"><scope>ness2::FFT_OMP_Manager</scope><name>FFT_OMP_Manager</name></member>
+      <member refid="classness2_1_1FFT__OMP__Manager_ac18bae9046885f297e4dd30c95ce78f2_1ac18bae9046885f297e4dd30c95ce78f2" prot="public" virt="non-virtual"><scope>ness2::FFT_OMP_Manager</scope><name>finalize</name></member>
+      <member refid="classness2_1_1FFT__OMP__Manager_aa2cd7c2a4abb18b32b7f3c15d5292253_1aa2cd7c2a4abb18b32b7f3c15d5292253" prot="public" virt="non-virtual"><scope>ness2::FFT_OMP_Manager</scope><name>initialize</name></member>
+      <member refid="classness2_1_1FFT__OMP__Manager_1a680dad82b6a84f561717e0c9a2bf2451" prot="private" virt="non-virtual"><scope>ness2::FFT_OMP_Manager</scope><name>initialized_</name></member>
+      <member refid="classness2_1_1FFT__OMP__Manager_a36cc9d73253adaa09b43c0abbf66ac34_1a36cc9d73253adaa09b43c0abbf66ac34" prot="public" virt="non-virtual"><scope>ness2::FFT_OMP_Manager</scope><name>operator=</name></member>
+      <member refid="classness2_1_1FFT__OMP__Manager_a2ae2b2c799dc89e84db8e75dbc02ffda_1a2ae2b2c799dc89e84db8e75dbc02ffda" prot="public" virt="non-virtual"><scope>ness2::FFT_OMP_Manager</scope><name>set_threads_for_new_plans</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

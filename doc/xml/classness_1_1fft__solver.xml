@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classness_1_1fft__solver" kind="class" language="C++" prot="public">
+    <compoundname>ness::fft_solver</compoundname>
+    <includes refid="ness__fft__decl_8hpp" local="no">ness_fft_decl.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classness_1_1fft__solver_a1f28a071909e468cfce7c69e9b04fa4f_1a1f28a071909e468cfce7c69e9b04fa4f" prot="public" static="no" mutable="no">
+        <type>fftw_complex *</type>
+        <definition>fftw_complex* ness::fft_solver::in</definition>
+        <argsstring></argsstring>
+        <name>in</name>
+        <qualifiedname>ness::fft_solver::in</qualifiedname>
+        <briefdescription>
+<para>Internal FFT input array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_fft_decl.hpp" line="38" column="18" bodyfile="cntr/ness_fft_decl.hpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classness_1_1fft__solver_a117ae181557a9e9697b71a24c625bd99_1a117ae181557a9e9697b71a24c625bd99" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ness::fft_solver::nfreq_</definition>
+        <argsstring></argsstring>
+        <name>nfreq_</name>
+        <qualifiedname>ness::fft_solver::nfreq_</qualifiedname>
+        <briefdescription>
+<para>Number of frequency points (of the frequency <computeroutput><ref refid="classness_1_1GF" kindref="compound">GF</ref></computeroutput> object). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_fft_decl.hpp" line="41" column="9" bodyfile="cntr/ness_fft_decl.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classness_1_1fft__solver_a53a228901f43541a1092096b33aa7428_1a53a228901f43541a1092096b33aa7428" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ness::fft_solver::Nft_</definition>
+        <argsstring></argsstring>
+        <name>Nft_</name>
+        <qualifiedname>ness::fft_solver::Nft_</qualifiedname>
+        <briefdescription>
+<para>Total number of FFT points. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_fft_decl.hpp" line="40" column="9" bodyfile="cntr/ness_fft_decl.hpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classness_1_1fft__solver_a8be74d857b3fcddba40d07c689de30b4_1a8be74d857b3fcddba40d07c689de30b4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ness::fft_solver::nt_</definition>
+        <argsstring></argsstring>
+        <name>nt_</name>
+        <qualifiedname>ness::fft_solver::nt_</qualifiedname>
+        <briefdescription>
+<para>Number of time points (of the <computeroutput><ref refid="classness_1_1GF" kindref="compound">GF</ref></computeroutput> object). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_fft_decl.hpp" line="42" column="9" bodyfile="cntr/ness_fft_decl.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classness_1_1fft__solver_a059843fb475da87510c99b10e555f0ed_1a059843fb475da87510c99b10e555f0ed" prot="public" static="no" mutable="no">
+        <type>fftw_complex *</type>
+        <definition>fftw_complex* ness::fft_solver::out</definition>
+        <argsstring></argsstring>
+        <name>out</name>
+        <qualifiedname>ness::fft_solver::out</qualifiedname>
+        <briefdescription>
+<para>Internal FFT output array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_fft_decl.hpp" line="39" column="18" bodyfile="cntr/ness_fft_decl.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classness_1_1fft__solver_a8b9856823b939e73a3a087d37f7f6696_1a8b9856823b939e73a3a087d37f7f6696" prot="public" static="no" mutable="no">
+        <type>fftw_plan</type>
+        <definition>fftw_plan ness::fft_solver::plan_back</definition>
+        <argsstring></argsstring>
+        <name>plan_back</name>
+        <qualifiedname>ness::fft_solver::plan_back</qualifiedname>
+        <briefdescription>
+<para>FFTW backward plan. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_fft_decl.hpp" line="44" column="15" bodyfile="cntr/ness_fft_decl.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classness_1_1fft__solver_a8914b55e18bb144036778ee81842c890_1a8914b55e18bb144036778ee81842c890" prot="public" static="no" mutable="no">
+        <type>fftw_plan</type>
+        <definition>fftw_plan ness::fft_solver::plan_for</definition>
+        <argsstring></argsstring>
+        <name>plan_for</name>
+        <qualifiedname>ness::fft_solver::plan_for</qualifiedname>
+        <briefdescription>
+<para>FFTW forward plan. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_fft_decl.hpp" line="43" column="15" bodyfile="cntr/ness_fft_decl.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classness_1_1fft__solver_ade69f08ddaccaeedfbd1326a46c1e537_1ade69f08ddaccaeedfbd1326a46c1e537" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ness::fft_solver::fft_solver</definition>
+        <argsstring>(int nt, size_t FFTW_FLAG)</argsstring>
+        <name>fft_solver</name>
+        <qualifiedname>ness::fft_solver::fft_solver</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>nt</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>FFTW_FLAG</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_fft_decl.hpp" line="31" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classness_1_1fft__solver_acf65c211def8218e8a4a36c4d452d23e_1acf65c211def8218e8a4a36c4d452d23e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::fft_solver::to_freq</definition>
+        <argsstring>(GF &amp;outG, const GF &amp;inG, int set_dw=0)</argsstring>
+        <name>to_freq</name>
+        <qualifiedname>ness::fft_solver::to_freq</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>outG</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>inG</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>set_dw</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_fft_decl.hpp" line="35" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classness_1_1fft__solver_a24804ee2fbda2cdadaf09a2e41dd6857_1a24804ee2fbda2cdadaf09a2e41dd6857" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::fft_solver::to_time</definition>
+        <argsstring>(GF &amp;outG, const GF &amp;inG, int set_dt=0)</argsstring>
+        <name>to_time</name>
+        <qualifiedname>ness::fft_solver::to_time</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>outG</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classness_1_1GF" kindref="compound">GF</ref> &amp;</type>
+          <declname>inG</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>set_dt</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_fft_decl.hpp" line="34" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classness_1_1fft__solver_acc65cda2ad87d42975e788941c8da05e_1acc65cda2ad87d42975e788941c8da05e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ness::fft_solver::~fft_solver</definition>
+        <argsstring>()</argsstring>
+        <name>~fft_solver</name>
+        <qualifiedname>ness::fft_solver::~fft_solver</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_fft_decl.hpp" line="33" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><bold> Class <computeroutput><ref refid="classness_1_1fft__solver" kindref="compound">fft_solver</ref></computeroutput> contains the FFTW3 data structures for Fourier transformation of Green&apos;s functions. </bold> </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>This class contains FFT as member functions to transform Green&apos;s function objects. </para>
+</blockquote></para>
+<para>Given:<itemizedlist>
+<listitem><para><computeroutput><ref refid="classness_1_1fft__solver_a8be74d857b3fcddba40d07c689de30b4_1a8be74d857b3fcddba40d07c689de30b4" kindref="member">nt_</ref></computeroutput>: Number of time points (of the <computeroutput><ref refid="classness_1_1GF" kindref="compound">GF</ref></computeroutput> object).</para>
+</listitem><listitem><para><computeroutput><ref refid="classness_1_1fft__solver_a117ae181557a9e9697b71a24c625bd99_1a117ae181557a9e9697b71a24c625bd99" kindref="member">nfreq_</ref></computeroutput>: Number of frequency points. The frequency <computeroutput><ref refid="classness_1_1GF" kindref="compound">GF</ref></computeroutput> needs <formula id="270">$ {\tt nfreq} = 2/3 ({\tt nt} - 1) $</formula> frequency points for the FFT to work.</para>
+</listitem><listitem><para><computeroutput><ref refid="classness_1_1fft__solver_a53a228901f43541a1092096b33aa7428_1a53a228901f43541a1092096b33aa7428" kindref="member">Nft_</ref></computeroutput>: Total number of FFT points, <formula id="271">$ {\tt Nft\_} = 2 ({\tt nt\_}-1)$</formula>.</para>
+</listitem><listitem><para><computeroutput><ref refid="classness_1_1fft__solver_a1f28a071909e468cfce7c69e9b04fa4f_1a1f28a071909e468cfce7c69e9b04fa4f" kindref="member">in</ref></computeroutput>: Internal FFT input array, <ref refid="classness_1_1GF" kindref="compound">GF</ref> data are read in. Has length <computeroutput><ref refid="classness_1_1fft__solver_a53a228901f43541a1092096b33aa7428_1a53a228901f43541a1092096b33aa7428" kindref="member">Nft_</ref></computeroutput>.</para>
+</listitem><listitem><para><computeroutput><ref refid="classness_1_1fft__solver_a059843fb475da87510c99b10e555f0ed_1a059843fb475da87510c99b10e555f0ed" kindref="member">out</ref></computeroutput>: Internal FFT output array, data are read out of this array.. Has length <computeroutput><ref refid="classness_1_1fft__solver_a53a228901f43541a1092096b33aa7428_1a53a228901f43541a1092096b33aa7428" kindref="member">Nft_</ref></computeroutput>.</para>
+</listitem><listitem><para><computeroutput><ref refid="classness_1_1fft__solver_a8914b55e18bb144036778ee81842c890_1a8914b55e18bb144036778ee81842c890" kindref="member">plan_for</ref></computeroutput>: FFTW plan for forward transform (here to time)</para>
+</listitem><listitem><para><computeroutput><ref refid="classness_1_1fft__solver_a8b9856823b939e73a3a087d37f7f6696_1a8b9856823b939e73a3a087d37f7f6696" kindref="member">plan_back</ref></computeroutput>: FFTW plan for backward transform (here to frequency) </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>fftw_complex *</label>
+      </node>
+      <node id="4">
+        <label>fftw_plan</label>
+      </node>
+      <node id="3">
+        <label>int</label>
+      </node>
+      <node id="1">
+        <label>ness::fft_solver</label>
+        <link refid="classness_1_1fft__solver"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>in</edgelabel>
+          <edgelabel>out</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Nft_</edgelabel>
+          <edgelabel>nfreq_</edgelabel>
+          <edgelabel>nt_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>plan_back</edgelabel>
+          <edgelabel>plan_for</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="cntr/ness_fft_decl.hpp" line="28" column="3" bodyfile="cntr/ness_fft_decl.hpp" bodystart="29" bodyend="46"/>
+    <listofallmembers>
+      <member refid="classness_1_1fft__solver_ade69f08ddaccaeedfbd1326a46c1e537_1ade69f08ddaccaeedfbd1326a46c1e537" prot="public" virt="non-virtual"><scope>ness::fft_solver</scope><name>fft_solver</name></member>
+      <member refid="classness_1_1fft__solver_a1f28a071909e468cfce7c69e9b04fa4f_1a1f28a071909e468cfce7c69e9b04fa4f" prot="public" virt="non-virtual"><scope>ness::fft_solver</scope><name>in</name></member>
+      <member refid="classness_1_1fft__solver_a117ae181557a9e9697b71a24c625bd99_1a117ae181557a9e9697b71a24c625bd99" prot="public" virt="non-virtual"><scope>ness::fft_solver</scope><name>nfreq_</name></member>
+      <member refid="classness_1_1fft__solver_a53a228901f43541a1092096b33aa7428_1a53a228901f43541a1092096b33aa7428" prot="public" virt="non-virtual"><scope>ness::fft_solver</scope><name>Nft_</name></member>
+      <member refid="classness_1_1fft__solver_a8be74d857b3fcddba40d07c689de30b4_1a8be74d857b3fcddba40d07c689de30b4" prot="public" virt="non-virtual"><scope>ness::fft_solver</scope><name>nt_</name></member>
+      <member refid="classness_1_1fft__solver_a059843fb475da87510c99b10e555f0ed_1a059843fb475da87510c99b10e555f0ed" prot="public" virt="non-virtual"><scope>ness::fft_solver</scope><name>out</name></member>
+      <member refid="classness_1_1fft__solver_a8b9856823b939e73a3a087d37f7f6696_1a8b9856823b939e73a3a087d37f7f6696" prot="public" virt="non-virtual"><scope>ness::fft_solver</scope><name>plan_back</name></member>
+      <member refid="classness_1_1fft__solver_a8914b55e18bb144036778ee81842c890_1a8914b55e18bb144036778ee81842c890" prot="public" virt="non-virtual"><scope>ness::fft_solver</scope><name>plan_for</name></member>
+      <member refid="classness_1_1fft__solver_acf65c211def8218e8a4a36c4d452d23e_1acf65c211def8218e8a4a36c4d452d23e" prot="public" virt="non-virtual"><scope>ness::fft_solver</scope><name>to_freq</name></member>
+      <member refid="classness_1_1fft__solver_a24804ee2fbda2cdadaf09a2e41dd6857_1a24804ee2fbda2cdadaf09a2e41dd6857" prot="public" virt="non-virtual"><scope>ness::fft_solver</scope><name>to_time</name></member>
+      <member refid="classness_1_1fft__solver_acc65cda2ad87d42975e788941c8da05e_1acc65cda2ad87d42975e788941c8da05e" prot="public" virt="non-virtual"><scope>ness::fft_solver</scope><name>~fft_solver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

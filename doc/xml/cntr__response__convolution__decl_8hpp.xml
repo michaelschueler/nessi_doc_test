@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="cntr__response__convolution__decl_8hpp" kind="file" language="C++">
+    <compoundname>cntr_response_convolution_decl.hpp</compoundname>
+    <innernamespace refid="namespacecntr">cntr</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>CNTR_RESPONSE_CONVOLUTION_DECL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CNTR_RESPONSE_CONVOLUTION_DECL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="cntr__global__settings_8hpp" kindref="compound">cntr_global_settings.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacecntr" kindref="compound">cntr</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">/*###########################################################################################</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">#</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">#<sp/><sp/><sp/>CONVOLUTION<sp/><sp/>c=W*f<sp/><sp/><sp/>with<sp/>a<sp/>response<sp/>function</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">#</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">#<sp/><sp/><sp/>c(t)<sp/>=<sp/><sp/>\int_C<sp/><sp/>dt&apos;<sp/>W_{a1,a2}(t,t&apos;)<sp/>f_{b1,b2}(t&apos;)</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">#</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">#<sp/><sp/><sp/>-<sp/>Assuming<sp/>that<sp/>W<sp/>is<sp/>hermitian,<sp/>i.e.,</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/>Wles_{a1,a2}(t&apos;,t)<sp/>=<sp/>-Wles_{a2,a1}(t,t&apos;)^*<sp/><sp/>etc.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">#<sp/><sp/><sp/>-<sp/>needs<sp/>timesteps<sp/>0...kt<sp/>of<sp/>W<sp/>for<sp/>t&lt;=kt</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">#<sp/><sp/><sp/><sp/><sp/>=&gt;<sp/>the<sp/>bersion<sp/>using<sp/>only<sp/>a<sp/>herm_matrix_timestep<sp/>works<sp/>only<sp/>for<sp/>tstp=-1<sp/>and<sp/>tstp&gt;=kt</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">#</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">###########################################################################################*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="57" refid="namespacecntr_a4fa12f26ccc6e98f70641bb153512229_1a4fa12f26ccc6e98f70641bb153512229" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacecntr_a4fa12f26ccc6e98f70641bb153512229_1a4fa12f26ccc6e98f70641bb153512229" kindref="member">response_convolution</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tstp,<sp/>std::complex&lt;T&gt;<sp/>&amp;cc,<sp/><ref refid="classcntr_1_1herm__matrix" kindref="compound">herm_matrix&lt;T&gt;</ref><sp/>&amp;W,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a2,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classcntr_1_1function" kindref="compound">function&lt;T&gt;</ref><sp/>&amp;f,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>b1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>b2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>kt,<sp/>T<sp/>beta,<sp/>T<sp/>h);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="95" refid="namespacecntr_a05d6767611fdeb7fd73b7ed809ac9b6d_1a05d6767611fdeb7fd73b7ed809ac9b6d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespacecntr_a4fa12f26ccc6e98f70641bb153512229_1a4fa12f26ccc6e98f70641bb153512229" kindref="member">response_convolution</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>tstp,<sp/>std::complex&lt;T&gt;<sp/>&amp;cc,<sp/><ref refid="classcntr_1_1herm__matrix__timestep" kindref="compound">herm_matrix_timestep&lt;T&gt;</ref><sp/>&amp;W,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a1,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a2,<sp/><ref refid="classcntr_1_1function" kindref="compound">function&lt;T&gt;</ref><sp/>&amp;f,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>b1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>b2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>kt,<sp/>T<sp/>beta,<sp/>T<sp/>h);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>cntr</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">//<sp/>CNTR_RESPONSE_CONVOLUTION_DECL_H</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="cntr/cntr_response_convolution_decl.hpp"/>
+  </compounddef>
+</doxygen>

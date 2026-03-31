@@ -1,0 +1,26 @@
+digraph "cntr::dyson_timestep_omp"
+{
+ // INTERACTIVE_SVG=YES
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="cntr::dyson_timestep_omp",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="One step Dyson solver (integral-differential form) for a Green's function  using openMP parallelizati..."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="integration::I",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$namespaceintegration_ae19c84094b9ccb7aec5f47f4e80672ec.html#ae19c84094b9ccb7aec5f47f4e80672ec",tooltip=" "];
+  Node1 -> Node3 [id="edge2_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="cntr::function::nt",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classcntr_1_1function_a6b43902241ab34719b0ae8aee895345e.html#a6b43902241ab34719b0ae8aee895345e",tooltip=" "];
+  Node1 -> Node4 [id="edge3_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="cntr::herm_matrix::nt",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classcntr_1_1herm__matrix_ae5fbe3d5c668b6808cd19d4a2e873c67.html#ae5fbe3d5c668b6808cd19d4a2e873c67",tooltip=" "];
+  Node1 -> Node5 [id="edge4_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="cntr::herm_matrix::ntau",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classcntr_1_1herm__matrix_a512f5f3b34e51d244d90bd07ff229b95.html#a512f5f3b34e51d244d90bd07ff229b95",tooltip=" "];
+  Node1 -> Node6 [id="edge5_Node000001_Node000006",color="steelblue1",style="solid",tooltip=" "];
+  Node6 [id="Node000006",label="cntr::function::ptr",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classcntr_1_1function_a4831da113d99012a37dc9911717097ad.html#a4831da113d99012a37dc9911717097ad",tooltip=" "];
+  Node1 -> Node7 [id="edge6_Node000001_Node000007",color="steelblue1",style="solid",tooltip=" "];
+  Node7 [id="Node000007",label="cntr::herm_matrix::sig",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classcntr_1_1herm__matrix_ac610cf4e901c562802ac5c9b1e74d062.html#ac610cf4e901c562802ac5c9b1e74d062",tooltip=" "];
+  Node1 -> Node8 [id="edge7_Node000001_Node000008",color="steelblue1",style="solid",tooltip=" "];
+  Node8 [id="Node000008",label="cntr::function::size1",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classcntr_1_1function_a1a9d1759dab741e546b3930250201b5f.html#a1a9d1759dab741e546b3930250201b5f",tooltip=" "];
+  Node1 -> Node9 [id="edge8_Node000001_Node000009",color="steelblue1",style="solid",tooltip=" "];
+  Node9 [id="Node000009",label="cntr::herm_matrix::\lsize1",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$classcntr_1_1herm__matrix_a304d40545765d7bd51f5f09f71f81ee5.html#a304d40545765d7bd51f5f09f71f81ee5",tooltip=" "];
+}

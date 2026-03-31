@@ -1,0 +1,1825 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classcntr_1_1herm__matrix__timestep__view" kind="class" language="C++" prot="public">
+    <compoundname>cntr::herm_matrix_timestep_view</compoundname>
+    <includes refid="cntr__herm__matrix__timestep__view__decl_8hpp" local="no">cntr_herm_matrix_timestep_view_decl.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classcntr_1_1herm__matrix__timestep__view_a3e9aeb853d24b9cb70442db36aaf8478_1a3e9aeb853d24b9cb70442db36aaf8478" prot="public" static="no">
+        <type>std::complex&lt; T &gt;</type>
+        <definition>typedef std::complex&lt;T&gt; cntr::herm_matrix_timestep_view&lt; T &gt;::cplx</definition>
+        <argsstring></argsstring>
+        <name>cplx</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::cplx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="36" column="26" bodyfile="cntr/cntr_herm_matrix_timestep_view_decl.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classcntr_1_1herm__matrix__timestep__view_a0cda941de73f7b669dd940dc5a703a53_1a0cda941de73f7b669dd940dc5a703a53" prot="public" static="no">
+        <type>T</type>
+        <definition>typedef T cntr::herm_matrix_timestep_view&lt; T &gt;::scalar_type</definition>
+        <argsstring></argsstring>
+        <name>scalar_type</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::scalar_type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="37" column="15" bodyfile="cntr/cntr_herm_matrix_timestep_view_decl.hpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcntr_1_1herm__matrix__timestep__view_1aaf50f516d10df9302676dba90abb53f9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cntr::herm_matrix_timestep_view&lt; T &gt;::element_size_</definition>
+        <argsstring></argsstring>
+        <name>element_size_</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::element_size_</qualifiedname>
+        <briefdescription>
+<para><bold> Size of the Matrix form; size1*size2. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="190" column="9" bodyfile="cntr/cntr_herm_matrix_timestep_view_decl.hpp" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1herm__matrix__timestep__view_1a1b9e03007550b911be8f0f62f645afcc" prot="private" static="no" mutable="no">
+        <type>std::complex&lt; T &gt; *</type>
+        <definition>std::complex&lt;T&gt;* cntr::herm_matrix_timestep_view&lt; T &gt;::les_</definition>
+        <argsstring></argsstring>
+        <name>les_</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::les_</qualifiedname>
+        <briefdescription>
+<para><bold> Pointer to the lesser component. &apos;less_+ <formula id="94">$t \;*$</formula> element_size&apos; corresponds to <formula id="62">$(0,0)$</formula>-component of <formula id="96">$ G^&lt;(t,tstp) $</formula> </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="169" column="18" bodyfile="cntr/cntr_herm_matrix_timestep_view_decl.hpp" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1herm__matrix__timestep__view_1a2d6720c615abfd8cc484868e7bf527d4" prot="private" static="no" mutable="no">
+        <type>std::complex&lt; T &gt; *</type>
+        <definition>std::complex&lt;T&gt;* cntr::herm_matrix_timestep_view&lt; T &gt;::mat_</definition>
+        <argsstring></argsstring>
+        <name>mat_</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::mat_</qualifiedname>
+        <briefdescription>
+<para><bold> Pointer to the Matsubara component. &apos;mat_+ <formula id="97">$\tau \;*$</formula> element_size&apos; corresponds to <formula id="62">$(0,0)$</formula>-component of <formula id="70">$ G^M(\tau) $</formula> </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="175" column="18" bodyfile="cntr/cntr_herm_matrix_timestep_view_decl.hpp" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1herm__matrix__timestep__view_1ae0861fce29261102670b04587ac62aa3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cntr::herm_matrix_timestep_view&lt; T &gt;::ntau_</definition>
+        <argsstring></argsstring>
+        <name>ntau_</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::ntau_</qualifiedname>
+        <briefdescription>
+<para><bold> Number of the time grids on the Matsubara axis.</bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="181" column="9" bodyfile="cntr/cntr_herm_matrix_timestep_view_decl.hpp" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1herm__matrix__timestep__view_1ae5f2eb40e507417f5142a2dffc2ca3d4" prot="private" static="no" mutable="no">
+        <type>std::complex&lt; T &gt; *</type>
+        <definition>std::complex&lt;T&gt;* cntr::herm_matrix_timestep_view&lt; T &gt;::ret_</definition>
+        <argsstring></argsstring>
+        <name>ret_</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::ret_</qualifiedname>
+        <briefdescription>
+<para><bold> Pointer to the retarded component. &apos;ret_+ <formula id="94">$t \;*$</formula> element_size&apos; corresponds to <formula id="62">$(0,0)$</formula>-component of <formula id="95">$ G^R(tstp,t) $</formula> </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="166" column="18" bodyfile="cntr/cntr_herm_matrix_timestep_view_decl.hpp" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1herm__matrix__timestep__view_1ad70c813289e509e711e09b1e3168938e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cntr::herm_matrix_timestep_view&lt; T &gt;::sig_</definition>
+        <argsstring></argsstring>
+        <name>sig_</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::sig_</qualifiedname>
+        <briefdescription>
+<para><bold> Bose = +1, Fermi =-1. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="193" column="9" bodyfile="cntr/cntr_herm_matrix_timestep_view_decl.hpp" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1herm__matrix__timestep__view_1aeb5c4f889b5d0f653a0758f62de5cd25" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cntr::herm_matrix_timestep_view&lt; T &gt;::size1_</definition>
+        <argsstring></argsstring>
+        <name>size1_</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::size1_</qualifiedname>
+        <briefdescription>
+<para><bold> Number of the colums in the Matrix form.</bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="184" column="9" bodyfile="cntr/cntr_herm_matrix_timestep_view_decl.hpp" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1herm__matrix__timestep__view_1a2ae35ba2709a337f0073879aa7f4134c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cntr::herm_matrix_timestep_view&lt; T &gt;::size2_</definition>
+        <argsstring></argsstring>
+        <name>size2_</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::size2_</qualifiedname>
+        <briefdescription>
+<para><bold> Number of the rows in the Matrix form.</bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="187" column="9" bodyfile="cntr/cntr_herm_matrix_timestep_view_decl.hpp" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1herm__matrix__timestep__view_1ac81ae7443498867fdc6aaa7caeba2d70" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cntr::herm_matrix_timestep_view&lt; T &gt;::tstp_</definition>
+        <argsstring></argsstring>
+        <name>tstp_</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::tstp_</qualifiedname>
+        <briefdescription>
+<para><bold> time step.</bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="178" column="9" bodyfile="cntr/cntr_herm_matrix_timestep_view_decl.hpp" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1herm__matrix__timestep__view_1afbec321aab07d693b48936e16f0c7e33" prot="private" static="no" mutable="no">
+        <type>std::complex&lt; T &gt; *</type>
+        <definition>std::complex&lt;T&gt;* cntr::herm_matrix_timestep_view&lt; T &gt;::tv_</definition>
+        <argsstring></argsstring>
+        <name>tv_</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::tv_</qualifiedname>
+        <briefdescription>
+<para><bold> Pointer to the left-mixing component. &apos;tv_+ <formula id="97">$\tau \;*$</formula> element_size&apos; corresponds to <formula id="62">$(0,0)$</formula>-component of <formula id="98">$ G^\rceil(tstp,\tau) $</formula> </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="172" column="18" bodyfile="cntr/cntr_herm_matrix_timestep_view_decl.hpp" bodystart="172" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_ab7594bf479f662a2b1013bb715a6f5c7_1ab7594bf479f662a2b1013bb715a6f5c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::Bcast_timestep</definition>
+        <argsstring>(int tstp, int root)</argsstring>
+        <name>Bcast_timestep</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::Bcast_timestep</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>root</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="155" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_a701f370a90719e0aa7b62ed1fe25cd51_1a701f370a90719e0aa7b62ed1fe25cd51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Matrix</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::density_matrix</definition>
+        <argsstring>(int tstp, Matrix &amp;M)</argsstring>
+        <name>density_matrix</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::density_matrix</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type>Matrix &amp;</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="132" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_a4e400d520b516d19bd07f94e614e8eea_1a4e400d520b516d19bd07f94e614e8eea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::density_matrix</definition>
+        <argsstring>(int tstp, std::complex&lt; T &gt; &amp;M)</argsstring>
+        <name>density_matrix</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::density_matrix</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type>std::complex&lt; T &gt; &amp;</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="131" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_a3cc74fddc86d59cca410c30a5eae1db7_1a3cc74fddc86d59cca410c30a5eae1db7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class GG</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::get_data</definition>
+        <argsstring>(GG &amp;g)</argsstring>
+        <name>get_data</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::get_data</qualifiedname>
+        <param>
+          <type>GG &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="91" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_a0d1796f2407adc001790452c6b76d7a1_1a0d1796f2407adc001790452c6b76d7a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::get_data</definition>
+        <argsstring>(herm_matrix_timestep_view&lt; T &gt; &amp;g)</argsstring>
+        <name>get_data</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::get_data</qualifiedname>
+        <param>
+          <type><ref refid="classcntr_1_1herm__matrix__timestep__view_a9ebf60f49af7e8af7a8be3c3ca1e32b1_1a9ebf60f49af7e8af7a8be3c3ca1e32b1" kindref="member">herm_matrix_timestep_view</ref>&lt; T &gt; &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="89" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_aa6bce30b0355b130c12704340265a58f_1aa6bce30b0355b130c12704340265a58f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::get_data</definition>
+        <argsstring>(std::complex&lt; T &gt; *ret, std::complex&lt; T &gt; *les, std::complex&lt; T &gt; *tv, std::complex&lt; T &gt; *mat)</argsstring>
+        <name>get_data</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::get_data</qualifiedname>
+        <param>
+          <type>std::complex&lt; T &gt; *</type>
+          <declname>ret</declname>
+        </param>
+        <param>
+          <type>std::complex&lt; T &gt; *</type>
+          <declname>les</declname>
+        </param>
+        <param>
+          <type>std::complex&lt; T &gt; *</type>
+          <declname>tv</declname>
+        </param>
+        <param>
+          <type>std::complex&lt; T &gt; *</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="162" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_a03046bd3cfda2a14bbe621914314bcbd_1a03046bd3cfda2a14bbe621914314bcbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::get_timestep</definition>
+        <argsstring>(int tstp, herm_matrix_timestep&lt; T &gt; &amp;timestep)</argsstring>
+        <name>get_timestep</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::get_timestep</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type><ref refid="classcntr_1_1herm__matrix__timestep" kindref="compound">herm_matrix_timestep</ref>&lt; T &gt; &amp;</type>
+          <declname>timestep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="135" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_a9ebf60f49af7e8af7a8be3c3ca1e32b1_1a9ebf60f49af7e8af7a8be3c3ca1e32b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cntr::herm_matrix_timestep_view&lt; T &gt;::herm_matrix_timestep_view</definition>
+        <argsstring>()</argsstring>
+        <name>herm_matrix_timestep_view</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::herm_matrix_timestep_view</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="38" column="5"/>
+        <referencedby refid="classcntr_1_1herm__matrix__timestep__view_a06128681da1e1b78d1b2296e4c7d6af8_1a06128681da1e1b78d1b2296e4c7d6af8">cntr::herm_matrix_timestep_view&lt; T &gt;::herm_matrix_timestep_view</referencedby>
+        <referencedby refid="classcntr_1_1herm__matrix__timestep__view_a36e1e0606af02435c3daa39b739b5b3c_1a36e1e0606af02435c3daa39b739b5b3c">cntr::herm_matrix_timestep_view&lt; T &gt;::herm_matrix_timestep_view</referencedby>
+        <referencedby refid="classcntr_1_1herm__matrix__timestep__view_a0e8ec543454c2571585d165faf93dd26_1a0e8ec543454c2571585d165faf93dd26">cntr::herm_matrix_timestep_view&lt; T &gt;::operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_a06128681da1e1b78d1b2296e4c7d6af8_1a06128681da1e1b78d1b2296e4c7d6af8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cntr::herm_matrix_timestep_view&lt; T &gt;::herm_matrix_timestep_view</definition>
+        <argsstring>(const herm_matrix_timestep_view &amp;g)</argsstring>
+        <name>herm_matrix_timestep_view</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::herm_matrix_timestep_view</qualifiedname>
+        <param>
+          <type>const herm_matrix_timestep_view &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="40" column="5"/>
+        <references refid="classcntr_1_1herm__matrix__timestep__view_a9ebf60f49af7e8af7a8be3c3ca1e32b1_1a9ebf60f49af7e8af7a8be3c3ca1e32b1">cntr::herm_matrix_timestep_view&lt; T &gt;::herm_matrix_timestep_view</references>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_a66bb3015db400e82bdd7d0b65e0f3627_1a66bb3015db400e82bdd7d0b65e0f3627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cntr::herm_matrix_timestep_view&lt; T &gt;::herm_matrix_timestep_view</definition>
+        <argsstring>(herm_matrix_timestep&lt; T &gt; &amp;g)</argsstring>
+        <name>herm_matrix_timestep_view</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::herm_matrix_timestep_view</qualifiedname>
+        <param>
+          <type><ref refid="classcntr_1_1herm__matrix__timestep" kindref="compound">herm_matrix_timestep</ref>&lt; T &gt; &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="42" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_ae91ec92d53cb2a11f406d9c05bf6d958_1ae91ec92d53cb2a11f406d9c05bf6d958" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cntr::herm_matrix_timestep_view&lt; T &gt;::herm_matrix_timestep_view</definition>
+        <argsstring>(int tstp, herm_matrix&lt; T &gt; &amp;g, bool check_assert=true)</argsstring>
+        <name>herm_matrix_timestep_view</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::herm_matrix_timestep_view</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type><ref refid="classcntr_1_1herm__matrix" kindref="compound">herm_matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>check_assert</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="43" column="5"/>
+        <references refid="classcntr_1_1herm__matrix__timestep__view_a13f9fa03aa273b7a991035e7fffd771b_1a13f9fa03aa273b7a991035e7fffd771b" compoundref="cntr__herm__matrix__timestep__view__decl_8hpp" startline="51" endline="51">cntr::herm_matrix_timestep_view&lt; T &gt;::tstp</references>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_a41d6fa00b8478e5f778c8ff571e73ea1_1a41d6fa00b8478e5f778c8ff571e73ea1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cntr::herm_matrix_timestep_view&lt; T &gt;::herm_matrix_timestep_view</definition>
+        <argsstring>(int tstp, herm_matrix_timestep&lt; T &gt; &amp;g, bool check_assert=true)</argsstring>
+        <name>herm_matrix_timestep_view</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::herm_matrix_timestep_view</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type><ref refid="classcntr_1_1herm__matrix__timestep" kindref="compound">herm_matrix_timestep</ref>&lt; T &gt; &amp;</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>check_assert</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="45" column="5"/>
+        <references refid="classcntr_1_1herm__matrix__timestep__view_a13f9fa03aa273b7a991035e7fffd771b_1a13f9fa03aa273b7a991035e7fffd771b" compoundref="cntr__herm__matrix__timestep__view__decl_8hpp" startline="51" endline="51">cntr::herm_matrix_timestep_view&lt; T &gt;::tstp</references>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_a36e1e0606af02435c3daa39b739b5b3c_1a36e1e0606af02435c3daa39b739b5b3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cntr::herm_matrix_timestep_view&lt; T &gt;::herm_matrix_timestep_view</definition>
+        <argsstring>(int tstp, herm_matrix_timestep_view&lt; T &gt; &amp;g)</argsstring>
+        <name>herm_matrix_timestep_view</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::herm_matrix_timestep_view</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type>herm_matrix_timestep_view&lt; T &gt; &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="46" column="5"/>
+        <references refid="classcntr_1_1herm__matrix__timestep__view_a9ebf60f49af7e8af7a8be3c3ca1e32b1_1a9ebf60f49af7e8af7a8be3c3ca1e32b1">cntr::herm_matrix_timestep_view&lt; T &gt;::herm_matrix_timestep_view</references>
+        <references refid="classcntr_1_1herm__matrix__timestep__view_a13f9fa03aa273b7a991035e7fffd771b_1a13f9fa03aa273b7a991035e7fffd771b" compoundref="cntr__herm__matrix__timestep__view__decl_8hpp" startline="51" endline="51">cntr::herm_matrix_timestep_view&lt; T &gt;::tstp</references>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_ada2b462794367a99e7543f6310b2625e_1ada2b462794367a99e7543f6310b2625e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cntr::herm_matrix_timestep_view&lt; T &gt;::herm_matrix_timestep_view</definition>
+        <argsstring>(int tstp, int ntau, int size1, int size2, int sig)</argsstring>
+        <name>herm_matrix_timestep_view</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::herm_matrix_timestep_view</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ntau</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="44" column="5"/>
+        <references refid="classcntr_1_1herm__matrix__timestep__view_a9b124e50052a2381594198834221e20b_1a9b124e50052a2381594198834221e20b" compoundref="cntr__herm__matrix__timestep__view__decl_8hpp" startline="50" endline="50">cntr::herm_matrix_timestep_view&lt; T &gt;::ntau</references>
+        <references refid="classcntr_1_1herm__matrix__timestep__view_a00d3c73c35508e58b23f820aacfd7fc2_1a00d3c73c35508e58b23f820aacfd7fc2" compoundref="cntr__herm__matrix__timestep__view__decl_8hpp" startline="52" endline="52">cntr::herm_matrix_timestep_view&lt; T &gt;::sig</references>
+        <references refid="classcntr_1_1herm__matrix__timestep__view_a511dfcd3793372cb19b37a9ea1c070b8_1a511dfcd3793372cb19b37a9ea1c070b8" compoundref="cntr__herm__matrix__timestep__view__decl_8hpp" startline="48" endline="48">cntr::herm_matrix_timestep_view&lt; T &gt;::size1</references>
+        <references refid="classcntr_1_1herm__matrix__timestep__view_aced1b45296e6eca3e48e46dd818f16af_1aced1b45296e6eca3e48e46dd818f16af" compoundref="cntr__herm__matrix__timestep__view__decl_8hpp" startline="49" endline="49">cntr::herm_matrix_timestep_view&lt; T &gt;::size2</references>
+        <references refid="classcntr_1_1herm__matrix__timestep__view_a13f9fa03aa273b7a991035e7fffd771b_1a13f9fa03aa273b7a991035e7fffd771b" compoundref="cntr__herm__matrix__timestep__view__decl_8hpp" startline="51" endline="51">cntr::herm_matrix_timestep_view&lt; T &gt;::tstp</references>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_af2ab30ae7926db93beb0c414f310b658_1af2ab30ae7926db93beb0c414f310b658" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class GG</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::incr_timestep</definition>
+        <argsstring>(GG &amp;g, std::complex&lt; T &gt; alpha)</argsstring>
+        <name>incr_timestep</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::incr_timestep</qualifiedname>
+        <param>
+          <type>GG &amp;</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>std::complex&lt; T &gt;</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="146" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_aa8ba6c4f2029b35d5a0dab406dd9c9a6_1aa8ba6c4f2029b35d5a0dab406dd9c9a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class GG</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::incr_timestep</definition>
+        <argsstring>(GG &amp;g, T alpha)</argsstring>
+        <name>incr_timestep</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::incr_timestep</qualifiedname>
+        <param>
+          <type>GG &amp;</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="148" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_a2fd125f6f69e5b03688eb5627f6bc4f5_1a2fd125f6f69e5b03688eb5627f6bc4f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::incr_timestep</definition>
+        <argsstring>(herm_matrix_timestep_view&lt; T &gt; &amp;g, std::complex&lt; T &gt; alpha)</argsstring>
+        <name>incr_timestep</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::incr_timestep</qualifiedname>
+        <param>
+          <type><ref refid="classcntr_1_1herm__matrix__timestep__view_a9ebf60f49af7e8af7a8be3c3ca1e32b1_1a9ebf60f49af7e8af7a8be3c3ca1e32b1" kindref="member">herm_matrix_timestep_view</ref>&lt; T &gt; &amp;</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>std::complex&lt; T &gt;</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="142" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_aca097259657bb3d1375d8acbc7a283c3_1aca097259657bb3d1375d8acbc7a283c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::incr_timestep</definition>
+        <argsstring>(herm_matrix_timestep_view&lt; T &gt; &amp;g, T alpha)</argsstring>
+        <name>incr_timestep</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::incr_timestep</qualifiedname>
+        <param>
+          <type><ref refid="classcntr_1_1herm__matrix__timestep__view_a9ebf60f49af7e8af7a8be3c3ca1e32b1_1a9ebf60f49af7e8af7a8be3c3ca1e32b1" kindref="member">herm_matrix_timestep_view</ref>&lt; T &gt; &amp;</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="144" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_a67b6eb7921379075e07487d932b4d1d3_1a67b6eb7921379075e07487d932b4d1d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::left_multiply</definition>
+        <argsstring>(int tstp, function&lt; T &gt; &amp;ft, T weight=1.0)</argsstring>
+        <name>left_multiply</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::left_multiply</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type><ref refid="classcntr_1_1function" kindref="compound">function</ref>&lt; T &gt; &amp;</type>
+          <declname>ft</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>weight</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="116" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_a2202c594d7465a81f38f18d365eef9a3_1a2202c594d7465a81f38f18d365eef9a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::left_multiply_hermconj</definition>
+        <argsstring>(int tstp, function&lt; T &gt; &amp;ft, T weight=1.0)</argsstring>
+        <name>left_multiply_hermconj</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::left_multiply_hermconj</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type><ref refid="classcntr_1_1function" kindref="compound">function</ref>&lt; T &gt; &amp;</type>
+          <declname>ft</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>weight</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="120" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_a9b124e50052a2381594198834221e20b_1a9b124e50052a2381594198834221e20b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int cntr::herm_matrix_timestep_view&lt; T &gt;::ntau</definition>
+        <argsstring>(void) const</argsstring>
+        <name>ntau</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::ntau</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="50" column="9" bodyfile="cntr/cntr_herm_matrix_timestep_view_decl.hpp" bodystart="50" bodyend="50"/>
+        <referencedby refid="classcntr_1_1herm__matrix__timestep__view_ada2b462794367a99e7543f6310b2625e_1ada2b462794367a99e7543f6310b2625e">cntr::herm_matrix_timestep_view&lt; T &gt;::herm_matrix_timestep_view</referencedby>
+        <referencedby refid="classcntr_1_1herm__matrix__timestep__view_a2e3d6c6a10046dce49f1d6989a7c748c_1a2e3d6c6a10046dce49f1d6989a7c748c">cntr::herm_matrix_timestep_view&lt; T &gt;::set_to_data</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_a0e8ec543454c2571585d165faf93dd26_1a0e8ec543454c2571585d165faf93dd26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcntr_1_1herm__matrix__timestep__view_a9ebf60f49af7e8af7a8be3c3ca1e32b1_1a9ebf60f49af7e8af7a8be3c3ca1e32b1" kindref="member">herm_matrix_timestep_view</ref> &amp;</type>
+        <definition>herm_matrix_timestep_view &amp; cntr::herm_matrix_timestep_view&lt; T &gt;::operator=</definition>
+        <argsstring>(const herm_matrix_timestep_view &amp;g)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classcntr_1_1herm__matrix__timestep__view_a9ebf60f49af7e8af7a8be3c3ca1e32b1_1a9ebf60f49af7e8af7a8be3c3ca1e32b1" kindref="member">herm_matrix_timestep_view</ref> &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="41" column="31"/>
+        <references refid="classcntr_1_1herm__matrix__timestep__view_a9ebf60f49af7e8af7a8be3c3ca1e32b1_1a9ebf60f49af7e8af7a8be3c3ca1e32b1">cntr::herm_matrix_timestep_view&lt; T &gt;::herm_matrix_timestep_view</references>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_a2470ba67030ed27d2a69756fd2f09d9e_1a2470ba67030ed27d2a69756fd2f09d9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::read_from_hdf5</definition>
+        <argsstring>(const char *filename, const char *groupname)</argsstring>
+        <name>read_from_hdf5</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::read_from_hdf5</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>groupname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="77" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_af3429266c5af896b5e3cff7af2180166_1af3429266c5af896b5e3cff7af2180166" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::read_from_hdf5</definition>
+        <argsstring>(hid_t group_id)</argsstring>
+        <name>read_from_hdf5</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::read_from_hdf5</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>group_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="76" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_aed5be931e1a8370310c6d2bfbd3eb3e9_1aed5be931e1a8370310c6d2bfbd3eb3e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::read_from_hdf5</definition>
+        <argsstring>(hid_t group_id, const char *groupname)</argsstring>
+        <name>read_from_hdf5</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::read_from_hdf5</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>group_id</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>groupname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="75" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_aa82fbe913531307f20cdbfbc26fc9c33_1aa82fbe913531307f20cdbfbc26fc9c33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::Recv_timestep</definition>
+        <argsstring>(int tstp, int root, int tag)</argsstring>
+        <name>Recv_timestep</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::Recv_timestep</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>root</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="157" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_a59d61e1e649d79a7c958b988154716d5_1a59d61e1e649d79a7c958b988154716d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::Reduce_timestep</definition>
+        <argsstring>(int tstp, int root)</argsstring>
+        <name>Reduce_timestep</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::Reduce_timestep</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>root</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="154" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_a962e8f7abec7c38d708661543c430334_1a962e8f7abec7c38d708661543c430334" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::right_multiply</definition>
+        <argsstring>(int tstp, function&lt; T &gt; &amp;ft, T weight=1.0)</argsstring>
+        <name>right_multiply</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::right_multiply</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type><ref refid="classcntr_1_1function" kindref="compound">function</ref>&lt; T &gt; &amp;</type>
+          <declname>ft</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>weight</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="119" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_a45a96797ef23e4156bdd7a494f88e105_1a45a96797ef23e4156bdd7a494f88e105" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::right_multiply_hermconj</definition>
+        <argsstring>(int tstp, function&lt; T &gt; &amp;ft, T weight=1.0)</argsstring>
+        <name>right_multiply_hermconj</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::right_multiply_hermconj</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type><ref refid="classcntr_1_1function" kindref="compound">function</ref>&lt; T &gt; &amp;</type>
+          <declname>ft</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>weight</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="121" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_aaf8440451b353a8e49b8bb5e992700e4_1aaf8440451b353a8e49b8bb5e992700e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::Send_timestep</definition>
+        <argsstring>(int tstp, int dest, int tag)</argsstring>
+        <name>Send_timestep</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::Send_timestep</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="156" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_a2708c15b8ced54e7b57877486df09d9f_1a2708c15b8ced54e7b57877486df09d9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class GG</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::set_matrixelement</definition>
+        <argsstring>(int i1, int i2, GG &amp;g, int j1, int j2)</argsstring>
+        <name>set_matrixelement</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::set_matrixelement</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i2</declname>
+        </param>
+        <param>
+          <type>GG &amp;</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="140" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_af66da0d45324744d506663c1f8df2bea_1af66da0d45324744d506663c1f8df2bea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::set_matrixelement</definition>
+        <argsstring>(int i1, int i2, herm_matrix_timestep_view&lt; T &gt; &amp;g, int j1, int j2)</argsstring>
+        <name>set_matrixelement</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::set_matrixelement</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i2</declname>
+        </param>
+        <param>
+          <type><ref refid="classcntr_1_1herm__matrix__timestep__view_a9ebf60f49af7e8af7a8be3c3ca1e32b1_1a9ebf60f49af7e8af7a8be3c3ca1e32b1" kindref="member">herm_matrix_timestep_view</ref>&lt; T &gt; &amp;</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="137" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_aa9aee85a3f5ed5e80cc366b3e89cf459_1aa9aee85a3f5ed5e80cc366b3e89cf459" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::set_timestep</definition>
+        <argsstring>(int tstp, herm_matrix&lt; T &gt; &amp;g1)</argsstring>
+        <name>set_timestep</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::set_timestep</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type><ref refid="classcntr_1_1herm__matrix" kindref="compound">herm_matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>g1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="125" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_ae7df86dfe0e80e889e83fbdd124343dc_1ae7df86dfe0e80e889e83fbdd124343dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::set_timestep</definition>
+        <argsstring>(int tstp, herm_matrix_timestep&lt; T &gt; &amp;g1)</argsstring>
+        <name>set_timestep</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::set_timestep</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type><ref refid="classcntr_1_1herm__matrix__timestep" kindref="compound">herm_matrix_timestep</ref>&lt; T &gt; &amp;</type>
+          <declname>g1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="126" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_abcfcd984c8e2218954ce300d2faeef45_1abcfcd984c8e2218954ce300d2faeef45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::set_timestep_zero</definition>
+        <argsstring>(int tstp)</argsstring>
+        <name>set_timestep_zero</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::set_timestep_zero</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="123" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_afb6da91f75b016786b5fa8642d26e5df_1afb6da91f75b016786b5fa8642d26e5df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::set_to_data</definition>
+        <argsstring>(herm_matrix_timestep&lt; T &gt; &amp;g)</argsstring>
+        <name>set_to_data</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::set_to_data</qualifiedname>
+        <param>
+          <type><ref refid="classcntr_1_1herm__matrix__timestep" kindref="compound">herm_matrix_timestep</ref>&lt; T &gt; &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="68" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_a55619d196e7f380139c86e62a678225b_1a55619d196e7f380139c86e62a678225b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::set_to_data</definition>
+        <argsstring>(int tstp, herm_matrix&lt; T &gt; &amp;g)</argsstring>
+        <name>set_to_data</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::set_to_data</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type><ref refid="classcntr_1_1herm__matrix" kindref="compound">herm_matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="67" column="10"/>
+        <references refid="classcntr_1_1herm__matrix__timestep__view_a13f9fa03aa273b7a991035e7fffd771b_1a13f9fa03aa273b7a991035e7fffd771b" compoundref="cntr__herm__matrix__timestep__view__decl_8hpp" startline="51" endline="51">cntr::herm_matrix_timestep_view&lt; T &gt;::tstp</references>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_a2e3d6c6a10046dce49f1d6989a7c748c_1a2e3d6c6a10046dce49f1d6989a7c748c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::set_to_data</definition>
+        <argsstring>(std::complex&lt; T &gt; *data, int tstp, int ntau, int size, int sig)</argsstring>
+        <name>set_to_data</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::set_to_data</qualifiedname>
+        <param>
+          <type>std::complex&lt; T &gt; *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ntau</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="65" column="10"/>
+        <references refid="classcntr_1_1herm__matrix__timestep__view_a9b124e50052a2381594198834221e20b_1a9b124e50052a2381594198834221e20b" compoundref="cntr__herm__matrix__timestep__view__decl_8hpp" startline="50" endline="50">cntr::herm_matrix_timestep_view&lt; T &gt;::ntau</references>
+        <references refid="classcntr_1_1herm__matrix__timestep__view_a00d3c73c35508e58b23f820aacfd7fc2_1a00d3c73c35508e58b23f820aacfd7fc2" compoundref="cntr__herm__matrix__timestep__view__decl_8hpp" startline="52" endline="52">cntr::herm_matrix_timestep_view&lt; T &gt;::sig</references>
+        <references refid="classcntr_1_1herm__matrix__timestep__view_a13f9fa03aa273b7a991035e7fffd771b_1a13f9fa03aa273b7a991035e7fffd771b" compoundref="cntr__herm__matrix__timestep__view__decl_8hpp" startline="51" endline="51">cntr::herm_matrix_timestep_view&lt; T &gt;::tstp</references>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_a00d3c73c35508e58b23f820aacfd7fc2_1a00d3c73c35508e58b23f820aacfd7fc2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int cntr::herm_matrix_timestep_view&lt; T &gt;::sig</definition>
+        <argsstring>(void) const</argsstring>
+        <name>sig</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::sig</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="52" column="9" bodyfile="cntr/cntr_herm_matrix_timestep_view_decl.hpp" bodystart="52" bodyend="52"/>
+        <referencedby refid="classcntr_1_1herm__matrix__timestep__view_ada2b462794367a99e7543f6310b2625e_1ada2b462794367a99e7543f6310b2625e">cntr::herm_matrix_timestep_view&lt; T &gt;::herm_matrix_timestep_view</referencedby>
+        <referencedby refid="classcntr_1_1herm__matrix__timestep__view_a2e3d6c6a10046dce49f1d6989a7c748c_1a2e3d6c6a10046dce49f1d6989a7c748c">cntr::herm_matrix_timestep_view&lt; T &gt;::set_to_data</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_a511dfcd3793372cb19b37a9ea1c070b8_1a511dfcd3793372cb19b37a9ea1c070b8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int cntr::herm_matrix_timestep_view&lt; T &gt;::size1</definition>
+        <argsstring>(void) const</argsstring>
+        <name>size1</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::size1</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="48" column="9" bodyfile="cntr/cntr_herm_matrix_timestep_view_decl.hpp" bodystart="48" bodyend="48"/>
+        <referencedby refid="classcntr_1_1herm__matrix__timestep__view_ada2b462794367a99e7543f6310b2625e_1ada2b462794367a99e7543f6310b2625e">cntr::herm_matrix_timestep_view&lt; T &gt;::herm_matrix_timestep_view</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_aced1b45296e6eca3e48e46dd818f16af_1aced1b45296e6eca3e48e46dd818f16af" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int cntr::herm_matrix_timestep_view&lt; T &gt;::size2</definition>
+        <argsstring>(void) const</argsstring>
+        <name>size2</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::size2</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="49" column="9" bodyfile="cntr/cntr_herm_matrix_timestep_view_decl.hpp" bodystart="49" bodyend="49"/>
+        <referencedby refid="classcntr_1_1herm__matrix__timestep__view_ada2b462794367a99e7543f6310b2625e_1ada2b462794367a99e7543f6310b2625e">cntr::herm_matrix_timestep_view&lt; T &gt;::herm_matrix_timestep_view</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_a1c3717b15e0087fd173ae7f7354882c4_1a1c3717b15e0087fd173ae7f7354882c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::smul</definition>
+        <argsstring>(T alpha)</argsstring>
+        <name>smul</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::smul</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="150" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_a13f9fa03aa273b7a991035e7fffd771b_1a13f9fa03aa273b7a991035e7fffd771b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int cntr::herm_matrix_timestep_view&lt; T &gt;::tstp</definition>
+        <argsstring>(void) const</argsstring>
+        <name>tstp</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::tstp</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="51" column="9" bodyfile="cntr/cntr_herm_matrix_timestep_view_decl.hpp" bodystart="51" bodyend="51"/>
+        <referencedby refid="classcntr_1_1herm__matrix__timestep__view_ae91ec92d53cb2a11f406d9c05bf6d958_1ae91ec92d53cb2a11f406d9c05bf6d958">cntr::herm_matrix_timestep_view&lt; T &gt;::herm_matrix_timestep_view</referencedby>
+        <referencedby refid="classcntr_1_1herm__matrix__timestep__view_a41d6fa00b8478e5f778c8ff571e73ea1_1a41d6fa00b8478e5f778c8ff571e73ea1">cntr::herm_matrix_timestep_view&lt; T &gt;::herm_matrix_timestep_view</referencedby>
+        <referencedby refid="classcntr_1_1herm__matrix__timestep__view_a36e1e0606af02435c3daa39b739b5b3c_1a36e1e0606af02435c3daa39b739b5b3c">cntr::herm_matrix_timestep_view&lt; T &gt;::herm_matrix_timestep_view</referencedby>
+        <referencedby refid="classcntr_1_1herm__matrix__timestep__view_ada2b462794367a99e7543f6310b2625e_1ada2b462794367a99e7543f6310b2625e">cntr::herm_matrix_timestep_view&lt; T &gt;::herm_matrix_timestep_view</referencedby>
+        <referencedby refid="classcntr_1_1herm__matrix__timestep__view_a55619d196e7f380139c86e62a678225b_1a55619d196e7f380139c86e62a678225b">cntr::herm_matrix_timestep_view&lt; T &gt;::set_to_data</referencedby>
+        <referencedby refid="classcntr_1_1herm__matrix__timestep__view_a2e3d6c6a10046dce49f1d6989a7c748c_1a2e3d6c6a10046dce49f1d6989a7c748c">cntr::herm_matrix_timestep_view&lt; T &gt;::set_to_data</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_a2e1064bb130e361c37f1aecf20457766_1a2e1064bb130e361c37f1aecf20457766" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::write_to_hdf5</definition>
+        <argsstring>(const char *filename, const char *groupname)</argsstring>
+        <name>write_to_hdf5</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::write_to_hdf5</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>groupname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="73" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_a91d9dcb054c562c5f823c0f7812706b6_1a91d9dcb054c562c5f823c0f7812706b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::write_to_hdf5</definition>
+        <argsstring>(hid_t group_id)</argsstring>
+        <name>write_to_hdf5</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::write_to_hdf5</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>group_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="71" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_ad1cb3c3a7c00059385c24a0bc09b1a02_1ad1cb3c3a7c00059385c24a0bc09b1a02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::write_to_hdf5</definition>
+        <argsstring>(hid_t group_id, const char *groupname)</argsstring>
+        <name>write_to_hdf5</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::write_to_hdf5</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>group_id</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>groupname</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="72" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_a8805f10ee21a854620fa3bc2fc7ed6e7_1a8805f10ee21a854620fa3bc2fc7ed6e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cntr::herm_matrix_timestep_view&lt; T &gt;::~herm_matrix_timestep_view</definition>
+        <argsstring>()</argsstring>
+        <name>~herm_matrix_timestep_view</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::~herm_matrix_timestep_view</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="39" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_1a6d4f369cf6fe787b02e58849a37d9db9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::complex&lt; T &gt;</type>
+        <definition>std::complex&lt; T &gt; cntr::herm_matrix_timestep_view&lt; T &gt;::density_matrix</definition>
+        <argsstring>(int tstp)</argsstring>
+        <name>density_matrix</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::density_matrix</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="129" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_1a844b694e4b91db84e63c860dcab05f0e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Matrix</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::get_les</definition>
+        <argsstring>(int i, int j, Matrix &amp;M)</argsstring>
+        <name>get_les</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::get_les</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>Matrix &amp;</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="103" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_1a7bf8d67f134e1605f6e296223fa9ed91" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Matrix</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::get_mat</definition>
+        <argsstring>(int i, Matrix &amp;M)</argsstring>
+        <name>get_mat</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::get_mat</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Matrix &amp;</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="109" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_1a52fbbb6081028fe58c413c4ab93f29dc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Matrix</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::get_matminus</definition>
+        <argsstring>(int i, Matrix &amp;M)</argsstring>
+        <name>get_matminus</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::get_matminus</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Matrix &amp;</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="111" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_1a016fe959c4d4d9bcf79dab238a8b52dd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Matrix</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::get_ret</definition>
+        <argsstring>(int i, int j, Matrix &amp;M)</argsstring>
+        <name>get_ret</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::get_ret</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>Matrix &amp;</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="105" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_1a48169133b1dedf1ee03cd61b4ed7fa56" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Matrix</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::get_tv</definition>
+        <argsstring>(int i, int j, Matrix &amp;M)</argsstring>
+        <name>get_tv</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::get_tv</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>Matrix &amp;</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="107" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_1a31d4bd6155a741738c6ae1b7ee2dea87" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::left_multiply</definition>
+        <argsstring>(int tstp, std::complex&lt; T &gt; *f0, std::complex&lt; T &gt; *ft, T weight=1.0)</argsstring>
+        <name>left_multiply</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::left_multiply</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type>std::complex&lt; T &gt; *</type>
+          <declname>f0</declname>
+        </param>
+        <param>
+          <type>std::complex&lt; T &gt; *</type>
+          <declname>ft</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>weight</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="115" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_1a6bf00a75f3f67cfdf3b3908282496201" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::complex&lt; T &gt; *</type>
+        <definition>std::complex&lt; T &gt; * cntr::herm_matrix_timestep_view&lt; T &gt;::lesptr</definition>
+        <argsstring>(int i)</argsstring>
+        <name>lesptr</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::lesptr</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="58" column="25" bodyfile="cntr/cntr_herm_matrix_timestep_view_decl.hpp" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_1a410df7e68f9ec88cf2b6d63453917e91" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::complex&lt; T &gt; *</type>
+        <definition>std::complex&lt; T &gt; * cntr::herm_matrix_timestep_view&lt; T &gt;::matptr</definition>
+        <argsstring>(int i)</argsstring>
+        <name>matptr</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::matptr</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="62" column="25" bodyfile="cntr/cntr_herm_matrix_timestep_view_decl.hpp" bodystart="62" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_1a65f1bd340570cc392ab1982c857f19d6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::MPI_Reduce</definition>
+        <argsstring>(int root)</argsstring>
+        <name>MPI_Reduce</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::MPI_Reduce</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>root</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="153" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_1a906eef7706fd6bcc96e98d9d591a8efc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::complex&lt; T &gt; *</type>
+        <definition>std::complex&lt; T &gt; * cntr::herm_matrix_timestep_view&lt; T &gt;::retptr</definition>
+        <argsstring>(int i)</argsstring>
+        <name>retptr</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::retptr</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="54" column="25" bodyfile="cntr/cntr_herm_matrix_timestep_view_decl.hpp" bodystart="54" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_1a28eecfddd10b58f157f6558c3cec4ad2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::right_multiply</definition>
+        <argsstring>(int tstp, std::complex&lt; T &gt; *f0, std::complex&lt; T &gt; *ft, T weight=1.0)</argsstring>
+        <name>right_multiply</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::right_multiply</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type>std::complex&lt; T &gt; *</type>
+          <declname>f0</declname>
+        </param>
+        <param>
+          <type>std::complex&lt; T &gt; *</type>
+          <declname>ft</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>weight</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="118" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_1aaa658ea2a5424b5ffbb00acdead010fa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Matrix</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::set_les</definition>
+        <argsstring>(int i, int j, Matrix &amp;M)</argsstring>
+        <name>set_les</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::set_les</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>Matrix &amp;</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="96" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_1a53602750f90e054111c1293f86b44cc9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Matrix</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::set_mat</definition>
+        <argsstring>(int i, Matrix &amp;M)</argsstring>
+        <name>set_mat</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::set_mat</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>Matrix &amp;</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="100" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_1a4d5bbdcee217ecbc554dde34c8b3a924" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Matrix</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::set_ret</definition>
+        <argsstring>(int i, int j, Matrix &amp;M)</argsstring>
+        <name>set_ret</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::set_ret</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>Matrix &amp;</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="94" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_1a9a596f48c44200479bac2197e8f213eb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Matrix</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cntr::herm_matrix_timestep_view&lt; T &gt;::set_tv</definition>
+        <argsstring>(int i, int j, Matrix &amp;M)</argsstring>
+        <name>set_tv</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::set_tv</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>Matrix &amp;</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="98" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1herm__matrix__timestep__view_1ae4f3ee9c88f8fd4cd6d660b09aa3be89" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::complex&lt; T &gt; *</type>
+        <definition>std::complex&lt; T &gt; * cntr::herm_matrix_timestep_view&lt; T &gt;::tvptr</definition>
+        <argsstring>(int i)</argsstring>
+        <name>tvptr</name>
+        <qualifiedname>cntr::herm_matrix_timestep_view::tvptr</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="56" column="25" bodyfile="cntr/cntr_herm_matrix_timestep_view_decl.hpp" bodystart="56" bodyend="56"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><bold> Class <computeroutput><ref refid="classcntr_1_1herm__matrix__timestep__view" kindref="compound">herm_matrix_timestep_view</ref></computeroutput> serves for interfacing with class <ref refid="classcntr_1_1herm__matrix__timestep" kindref="compound">herm_matrix_timestep</ref></bold> without copying the data. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+Occasionally you may have a pre-defined object of <ref refid="classcntr_1_1herm__matrix" kindref="compound">herm_matrix</ref> or <ref refid="classcntr_1_1herm__matrix__timestep" kindref="compound">herm_matrix_timestep</ref> that you want to use. While one option is to make a copy of the data, most commonly you probably want to re-use this memory as a libcntr type, and this class serves as an interface. Mark similar concept of a map class in Eigen. To construct this class you need: a pointers to the region of memory defining different components (<computeroutput>ret</computeroutput>,<computeroutput>tv</computeroutput>,<computeroutput>les</computeroutput>,<computeroutput>mat</computeroutput>) and usual defining constants for the <ref refid="classcntr_1_1herm__matrix__timestep" kindref="compound">herm_matrix_timestep</ref>. The contour function can be of scalar type or matrix-valued.</para>
+<para>Square-matrix-type contour functions are fully supported, while non-square- matrix contour functions are under development. !! NOTE: MIND DANGLING POINTERS </para>
+    </detaileddescription>
+    <location file="cntr/cntr_herm_matrix_timestep_view_decl.hpp" line="34" column="1" bodyfile="cntr/cntr_herm_matrix_timestep_view_decl.hpp" bodystart="34" bodyend="194"/>
+    <listofallmembers>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_ab7594bf479f662a2b1013bb715a6f5c7_1ab7594bf479f662a2b1013bb715a6f5c7" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>Bcast_timestep</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_a3e9aeb853d24b9cb70442db36aaf8478_1a3e9aeb853d24b9cb70442db36aaf8478" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>cplx</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_1a6d4f369cf6fe787b02e58849a37d9db9" prot="private" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>density_matrix</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_a4e400d520b516d19bd07f94e614e8eea_1a4e400d520b516d19bd07f94e614e8eea" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>density_matrix</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_a701f370a90719e0aa7b62ed1fe25cd51_1a701f370a90719e0aa7b62ed1fe25cd51" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>density_matrix</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_1aaf50f516d10df9302676dba90abb53f9" prot="private" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>element_size_</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_a0d1796f2407adc001790452c6b76d7a1_1a0d1796f2407adc001790452c6b76d7a1" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>get_data</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_a3cc74fddc86d59cca410c30a5eae1db7_1a3cc74fddc86d59cca410c30a5eae1db7" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>get_data</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_aa6bce30b0355b130c12704340265a58f_1aa6bce30b0355b130c12704340265a58f" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>get_data</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_1a844b694e4b91db84e63c860dcab05f0e" prot="private" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>get_les</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_1a7bf8d67f134e1605f6e296223fa9ed91" prot="private" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>get_mat</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_1a52fbbb6081028fe58c413c4ab93f29dc" prot="private" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>get_matminus</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_1a016fe959c4d4d9bcf79dab238a8b52dd" prot="private" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>get_ret</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_a03046bd3cfda2a14bbe621914314bcbd_1a03046bd3cfda2a14bbe621914314bcbd" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>get_timestep</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_1a48169133b1dedf1ee03cd61b4ed7fa56" prot="private" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>get_tv</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_a9ebf60f49af7e8af7a8be3c3ca1e32b1_1a9ebf60f49af7e8af7a8be3c3ca1e32b1" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>herm_matrix_timestep_view</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_a06128681da1e1b78d1b2296e4c7d6af8_1a06128681da1e1b78d1b2296e4c7d6af8" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>herm_matrix_timestep_view</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_a66bb3015db400e82bdd7d0b65e0f3627_1a66bb3015db400e82bdd7d0b65e0f3627" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>herm_matrix_timestep_view</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_ae91ec92d53cb2a11f406d9c05bf6d958_1ae91ec92d53cb2a11f406d9c05bf6d958" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>herm_matrix_timestep_view</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_ada2b462794367a99e7543f6310b2625e_1ada2b462794367a99e7543f6310b2625e" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>herm_matrix_timestep_view</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_a41d6fa00b8478e5f778c8ff571e73ea1_1a41d6fa00b8478e5f778c8ff571e73ea1" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>herm_matrix_timestep_view</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_a36e1e0606af02435c3daa39b739b5b3c_1a36e1e0606af02435c3daa39b739b5b3c" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>herm_matrix_timestep_view</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_a2fd125f6f69e5b03688eb5627f6bc4f5_1a2fd125f6f69e5b03688eb5627f6bc4f5" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>incr_timestep</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_aca097259657bb3d1375d8acbc7a283c3_1aca097259657bb3d1375d8acbc7a283c3" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>incr_timestep</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_af2ab30ae7926db93beb0c414f310b658_1af2ab30ae7926db93beb0c414f310b658" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>incr_timestep</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_aa8ba6c4f2029b35d5a0dab406dd9c9a6_1aa8ba6c4f2029b35d5a0dab406dd9c9a6" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>incr_timestep</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_1a31d4bd6155a741738c6ae1b7ee2dea87" prot="private" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>left_multiply</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_a67b6eb7921379075e07487d932b4d1d3_1a67b6eb7921379075e07487d932b4d1d3" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>left_multiply</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_a2202c594d7465a81f38f18d365eef9a3_1a2202c594d7465a81f38f18d365eef9a3" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>left_multiply_hermconj</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_1a1b9e03007550b911be8f0f62f645afcc" prot="private" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>les_</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_1a6bf00a75f3f67cfdf3b3908282496201" prot="private" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>lesptr</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_1a2d6720c615abfd8cc484868e7bf527d4" prot="private" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>mat_</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_1a410df7e68f9ec88cf2b6d63453917e91" prot="private" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>matptr</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_1a65f1bd340570cc392ab1982c857f19d6" prot="private" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>MPI_Reduce</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_a9b124e50052a2381594198834221e20b_1a9b124e50052a2381594198834221e20b" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>ntau</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_1ae0861fce29261102670b04587ac62aa3" prot="private" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>ntau_</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_a0e8ec543454c2571585d165faf93dd26_1a0e8ec543454c2571585d165faf93dd26" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>operator=</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_aed5be931e1a8370310c6d2bfbd3eb3e9_1aed5be931e1a8370310c6d2bfbd3eb3e9" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>read_from_hdf5</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_af3429266c5af896b5e3cff7af2180166_1af3429266c5af896b5e3cff7af2180166" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>read_from_hdf5</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_a2470ba67030ed27d2a69756fd2f09d9e_1a2470ba67030ed27d2a69756fd2f09d9e" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>read_from_hdf5</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_aa82fbe913531307f20cdbfbc26fc9c33_1aa82fbe913531307f20cdbfbc26fc9c33" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>Recv_timestep</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_a59d61e1e649d79a7c958b988154716d5_1a59d61e1e649d79a7c958b988154716d5" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>Reduce_timestep</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_1ae5f2eb40e507417f5142a2dffc2ca3d4" prot="private" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>ret_</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_1a906eef7706fd6bcc96e98d9d591a8efc" prot="private" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>retptr</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_1a28eecfddd10b58f157f6558c3cec4ad2" prot="private" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>right_multiply</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_a962e8f7abec7c38d708661543c430334_1a962e8f7abec7c38d708661543c430334" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>right_multiply</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_a45a96797ef23e4156bdd7a494f88e105_1a45a96797ef23e4156bdd7a494f88e105" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>right_multiply_hermconj</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_a0cda941de73f7b669dd940dc5a703a53_1a0cda941de73f7b669dd940dc5a703a53" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>scalar_type</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_aaf8440451b353a8e49b8bb5e992700e4_1aaf8440451b353a8e49b8bb5e992700e4" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>Send_timestep</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_1aaa658ea2a5424b5ffbb00acdead010fa" prot="private" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>set_les</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_1a53602750f90e054111c1293f86b44cc9" prot="private" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>set_mat</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_af66da0d45324744d506663c1f8df2bea_1af66da0d45324744d506663c1f8df2bea" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>set_matrixelement</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_a2708c15b8ced54e7b57877486df09d9f_1a2708c15b8ced54e7b57877486df09d9f" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>set_matrixelement</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_1a4d5bbdcee217ecbc554dde34c8b3a924" prot="private" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>set_ret</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_aa9aee85a3f5ed5e80cc366b3e89cf459_1aa9aee85a3f5ed5e80cc366b3e89cf459" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>set_timestep</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_ae7df86dfe0e80e889e83fbdd124343dc_1ae7df86dfe0e80e889e83fbdd124343dc" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>set_timestep</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_abcfcd984c8e2218954ce300d2faeef45_1abcfcd984c8e2218954ce300d2faeef45" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>set_timestep_zero</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_a2e3d6c6a10046dce49f1d6989a7c748c_1a2e3d6c6a10046dce49f1d6989a7c748c" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>set_to_data</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_a55619d196e7f380139c86e62a678225b_1a55619d196e7f380139c86e62a678225b" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>set_to_data</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_afb6da91f75b016786b5fa8642d26e5df_1afb6da91f75b016786b5fa8642d26e5df" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>set_to_data</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_1a9a596f48c44200479bac2197e8f213eb" prot="private" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>set_tv</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_a00d3c73c35508e58b23f820aacfd7fc2_1a00d3c73c35508e58b23f820aacfd7fc2" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>sig</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_1ad70c813289e509e711e09b1e3168938e" prot="private" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>sig_</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_a511dfcd3793372cb19b37a9ea1c070b8_1a511dfcd3793372cb19b37a9ea1c070b8" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>size1</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_1aeb5c4f889b5d0f653a0758f62de5cd25" prot="private" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>size1_</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_aced1b45296e6eca3e48e46dd818f16af_1aced1b45296e6eca3e48e46dd818f16af" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>size2</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_1a2ae35ba2709a337f0073879aa7f4134c" prot="private" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>size2_</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_a1c3717b15e0087fd173ae7f7354882c4_1a1c3717b15e0087fd173ae7f7354882c4" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>smul</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_a13f9fa03aa273b7a991035e7fffd771b_1a13f9fa03aa273b7a991035e7fffd771b" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>tstp</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_1ac81ae7443498867fdc6aaa7caeba2d70" prot="private" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>tstp_</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_1afbec321aab07d693b48936e16f0c7e33" prot="private" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>tv_</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_1ae4f3ee9c88f8fd4cd6d660b09aa3be89" prot="private" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>tvptr</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_a91d9dcb054c562c5f823c0f7812706b6_1a91d9dcb054c562c5f823c0f7812706b6" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>write_to_hdf5</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_ad1cb3c3a7c00059385c24a0bc09b1a02_1ad1cb3c3a7c00059385c24a0bc09b1a02" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>write_to_hdf5</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_a2e1064bb130e361c37f1aecf20457766_1a2e1064bb130e361c37f1aecf20457766" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>write_to_hdf5</name></member>
+      <member refid="classcntr_1_1herm__matrix__timestep__view_a8805f10ee21a854620fa3bc2fc7ed6e7_1a8805f10ee21a854620fa3bc2fc7ed6e7" prot="public" virt="non-virtual"><scope>cntr::herm_matrix_timestep_view</scope><name>~herm_matrix_timestep_view</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

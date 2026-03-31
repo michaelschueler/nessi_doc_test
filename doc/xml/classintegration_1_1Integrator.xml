@@ -1,0 +1,697 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classintegration_1_1Integrator" kind="class" language="C++" prot="public">
+    <compoundname>integration::Integrator</compoundname>
+    <includes refid="integration_8hpp" local="no">integration.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+        <defval>double</defval>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classintegration_1_1Integrator_1ab6edd84376ecd7ccdf845d2ba2005d06" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* integration::Integrator&lt; T &gt;::bd_weights_</definition>
+        <argsstring></argsstring>
+        <name>bd_weights_</name>
+        <qualifiedname>integration::Integrator::bd_weights_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.hpp" line="500" column="5" bodyfile="cntr/integration.hpp" bodystart="500" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classintegration_1_1Integrator_1a41798d55a920ae89f9c21579903ade5a" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* integration::Integrator&lt; T &gt;::gregory_omega_</definition>
+        <argsstring></argsstring>
+        <name>gregory_omega_</name>
+        <qualifiedname>integration::Integrator::gregory_omega_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.hpp" line="502" column="5" bodyfile="cntr/integration.hpp" bodystart="502" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classintegration_1_1Integrator_1a3ed5fa1b922dec48b4f6c17cc6cd8690" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* integration::Integrator&lt; T &gt;::gregory_weights_</definition>
+        <argsstring></argsstring>
+        <name>gregory_weights_</name>
+        <qualifiedname>integration::Integrator::gregory_weights_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.hpp" line="501" column="5" bodyfile="cntr/integration.hpp" bodystart="501" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classintegration_1_1Integrator_1a15d53572ac2eb7d3fb5eaf6c1147fcad" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int integration::Integrator&lt; T &gt;::k_</definition>
+        <argsstring></argsstring>
+        <name>k_</name>
+        <qualifiedname>integration::Integrator::k_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.hpp" line="496" column="7" bodyfile="cntr/integration.hpp" bodystart="496" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classintegration_1_1Integrator_1a4b0ac40654625fbfa3a5637c1743cf93" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* integration::Integrator&lt; T &gt;::poly_differentiation_</definition>
+        <argsstring></argsstring>
+        <name>poly_differentiation_</name>
+        <qualifiedname>integration::Integrator::poly_differentiation_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.hpp" line="498" column="5" bodyfile="cntr/integration.hpp" bodystart="498" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classintegration_1_1Integrator_1a77c45a823cc80bfc2f3a7a95f3e13050" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* integration::Integrator&lt; T &gt;::poly_integration_</definition>
+        <argsstring></argsstring>
+        <name>poly_integration_</name>
+        <qualifiedname>integration::Integrator::poly_integration_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.hpp" line="499" column="5" bodyfile="cntr/integration.hpp" bodystart="499" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classintegration_1_1Integrator_1a05aee81207ae65d25b47aceef94b70b7" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* integration::Integrator&lt; T &gt;::poly_interpolation_</definition>
+        <argsstring></argsstring>
+        <name>poly_interpolation_</name>
+        <qualifiedname>integration::Integrator::poly_interpolation_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.hpp" line="497" column="5" bodyfile="cntr/integration.hpp" bodystart="497" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classintegration_1_1Integrator_1a187f1f1965d56fe09b415126d06202eb" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* integration::Integrator&lt; T &gt;::rcorr_</definition>
+        <argsstring></argsstring>
+        <name>rcorr_</name>
+        <qualifiedname>integration::Integrator::rcorr_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.hpp" line="503" column="5" bodyfile="cntr/integration.hpp" bodystart="503" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classintegration_1_1Integrator_a4e7952d8dfd3f62087cd51572dcb1726_1a4e7952d8dfd3f62087cd51572dcb1726" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T integration::Integrator&lt; T &gt;::bd_weights</definition>
+        <argsstring>(int l) const</argsstring>
+        <name>bd_weights</name>
+        <qualifiedname>integration::Integrator::bd_weights</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns the the backwards differencing coefficients. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+Backward differentiation formula of order <formula id="138">$k+1$</formula> is given by</para>
+<para><formula id="139">\begin{align*}  \frac{d}{d x}f(x)\big|_{x_i} = \frac{1}{h}\sum^{k+1}_{l=0} c_l\, f(x_{i-l}) 
+\end{align*}</formula></para>
+<para>The weights are related to the <computeroutput><ref refid="classintegration_1_1Integrator_a8737cc79dbcd9f53508c705ae8f09da8_1a8737cc79dbcd9f53508c705ae8f09da8" kindref="member">poly_differentiation</ref></computeroutput> weights.</para>
+<para><computeroutput><ref refid="classintegration_1_1Integrator_a4e7952d8dfd3f62087cd51572dcb1726_1a4e7952d8dfd3f62087cd51572dcb1726" kindref="member">bd_weights</ref></computeroutput> returns the coefficient <formula id="140">$c_l$</formula> for given <formula id="141">$l$</formula>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>Index of weight. </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.hpp" line="346" column="5" bodyfile="cntr/integration.hpp" bodystart="346" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="classintegration_1_1Integrator_a97f1c3f0fb959699cfe22744b5c40742_1a97f1c3f0fb959699cfe22744b5c40742" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int integration::Integrator&lt; T &gt;::get_k</definition>
+        <argsstring>(void) const</argsstring>
+        <name>get_k</name>
+        <qualifiedname>integration::Integrator::get_k</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para><bold> Returns the order <formula id="124">$k$</formula> of the integrator class. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+Returns the order <formula id="124">$k$</formula> of the integrator class. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.hpp" line="226" column="7" bodyfile="cntr/integration.hpp" bodystart="226" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="classintegration_1_1Integrator_a642b41b44970302037fe6626f6054b90_1a642b41b44970302037fe6626f6054b90" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T integration::Integrator&lt; T &gt;::gregory_omega</definition>
+        <argsstring>(int j) const</argsstring>
+        <name>gregory_omega</name>
+        <qualifiedname>integration::Integrator::gregory_omega</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns the Gregory weights at the integral boundaries (see <computeroutput><ref refid="classintegration_1_1Integrator_a0c816992e749eeeff0817b46ae502e3d_1a0c816992e749eeeff0817b46ae502e3d" kindref="member">gregory_weights</ref></computeroutput>). </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+Returns the weight <formula id="145">$\omega_j$</formula> needed close to the integral boundaries (see <computeroutput>gregory weights</computeroutput>).  <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>Index of the Gregory weight. </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.hpp" line="405" column="5" bodyfile="cntr/integration.hpp" bodystart="405" bodyend="405"/>
+      </memberdef>
+      <memberdef kind="function" id="classintegration_1_1Integrator_a0c816992e749eeeff0817b46ae502e3d_1a0c816992e749eeeff0817b46ae502e3d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T integration::Integrator&lt; T &gt;::gregory_weights</definition>
+        <argsstring>(int n, int j) const</argsstring>
+        <name>gregory_weights</name>
+        <qualifiedname>integration::Integrator::gregory_weights</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns the Gregory weights for integration. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+The Gregory integration formula of order <formula id="124">$k$</formula> is defined by</para>
+<para><formula id="142">\begin{align*}  \int^{x_m}_0 dx \, f(x) = \sum^{\mathrm{max}(k,m)}_{l=0} w_{m,l}\, f(x_l)
+\end{align*}</formula></para>
+<para>For <formula id="143">$m &gt; 2 k$</formula>, the weights have a simpler form:</para>
+<para><formula id="144">\begin{align*} w_{m,j} = \begin{cases} 
+ \omega_j &amp; : j \le k \\
+  1 &amp; : k &lt; j &lt; m-k \\
+ \omega_{m-j} &amp; : j \ge m-k
+ \end{cases}
+\end{align*}</formula></para>
+<para>Here, <formula id="145">$\omega_j$</formula> are tabulated weights for <formula id="146">$0 \le j \le k$</formula>.</para>
+<para><computeroutput><ref refid="classintegration_1_1Integrator_a0c816992e749eeeff0817b46ae502e3d_1a0c816992e749eeeff0817b46ae502e3d" kindref="member">gregory_weights</ref></computeroutput> returns <formula id="147">$w_{n,j}$</formula> for given <formula id="148">$n, j$</formula>. </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>Integration runs up to <formula id="149">$x_n$</formula>. </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of the Gregory weight.  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.hpp" line="382" column="5" bodyfile="cntr/integration.hpp" bodystart="382" bodyend="390"/>
+      </memberdef>
+      <memberdef kind="function" id="classintegration_1_1Integrator_a0111a0673a071608ce93e16fcf0e415f_1a0111a0673a071608ce93e16fcf0e415f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class M</type>
+          </param>
+        </templateparamlist>
+        <type>M</type>
+        <definition>M integration::Integrator&lt; T &gt;::integrate</definition>
+        <argsstring>(const std::vector&lt; M &gt; &amp;f, int n) const</argsstring>
+        <name>integrate</name>
+        <qualifiedname>integration::Integrator::integrate</qualifiedname>
+        <param>
+          <type>const std::vector&lt; M &gt; &amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para><bold> Integrates a function using Gregory quadrature. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+Computes the integral</para>
+<para><formula id="157">\begin{align*}  \int^{x_n}_0 dx \, f(x) = h\sum^{\mathrm{max}(k,m)}_{l=0} w_{n,l}\, f(x_l)
+\end{align*}</formula></para>
+<para>The function <formula id="100">$f$</formula> represents any class <computeroutput>M</computeroutput> for which <computeroutput>M=0</computeroutput> is defined.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>A standard vector of class <computeroutput>M</computeroutput> with at least lenght <computeroutput>n+1</computeroutput>. </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the upper integral bound.  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.hpp" line="474" column="17" bodyfile="cntr/integration.hpp" bodystart="474" bodyend="493"/>
+      </memberdef>
+      <memberdef kind="function" id="classintegration_1_1Integrator_af48607b631a43b59c09aedeb35b82df7_1af48607b631a43b59c09aedeb35b82df7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>integration::Integrator&lt; T &gt;::Integrator</definition>
+        <argsstring>(const Integrator &amp;I)</argsstring>
+        <name>Integrator</name>
+        <qualifiedname>integration::Integrator::Integrator</qualifiedname>
+        <param>
+          <type>const Integrator &amp;</type>
+          <declname>I</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.hpp" line="199" column="3" bodyfile="cntr/integration.hpp" bodystart="199" bodyend="216"/>
+        <references refid="namespaceintegration_ae19c84094b9ccb7aec5f47f4e80672ec_1ae19c84094b9ccb7aec5f47f4e80672ec" compoundref="integration_8hpp" startline="506" endline="514">integration::I</references>
+        <references refid="classintegration_1_1Integrator_a3d5b4a9f06cf626f055c7bb266c22b2f_1a3d5b4a9f06cf626f055c7bb266c22b2f" compoundref="integration_8hpp" startline="147" endline="164">integration::Integrator&lt; T &gt;::Integrator</references>
+      </memberdef>
+      <memberdef kind="function" id="classintegration_1_1Integrator_a3d5b4a9f06cf626f055c7bb266c22b2f_1a3d5b4a9f06cf626f055c7bb266c22b2f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>integration::Integrator&lt; T &gt;::Integrator</definition>
+        <argsstring>(int k=0)</argsstring>
+        <name>Integrator</name>
+        <qualifiedname>integration::Integrator::Integrator</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para><bold> Initializes the <computeroutput><ref refid="classintegration_1_1Integrator" kindref="compound">Integrator</ref></computeroutput> class for a given order k. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+Initializes the <computeroutput><ref refid="classintegration_1_1Integrator" kindref="compound">Integrator</ref></computeroutput> class for given order <formula id="124">$k$</formula> between 1 and 8. If <formula id="125">$k&gt;5$</formula>, Gregory integration up to order <formula id="124">$k$</formula> is used, while all other operations are limited to maximum order 5.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername><ref refid="classintegration_1_1Integrator_a8cbdf05e68a40aaddb1945e1efb5a31e_1a8cbdf05e68a40aaddb1945e1efb5a31e" kindref="member">k</ref></parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>The order of the weights. </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.hpp" line="147" column="3" bodyfile="cntr/integration.hpp" bodystart="147" bodyend="164"/>
+        <references refid="classintegration_1_1Integrator_a8cbdf05e68a40aaddb1945e1efb5a31e_1a8cbdf05e68a40aaddb1945e1efb5a31e" compoundref="integration_8hpp" startline="236" endline="236">integration::Integrator&lt; T &gt;::k</references>
+        <referencedby refid="classintegration_1_1Integrator_af48607b631a43b59c09aedeb35b82df7_1af48607b631a43b59c09aedeb35b82df7" compoundref="integration_8hpp" startline="199" endline="216">integration::Integrator&lt; T &gt;::Integrator</referencedby>
+        <referencedby refid="classintegration_1_1Integrator_ac223048aba8d7b915f1cce7c2bb7bda7_1ac223048aba8d7b915f1cce7c2bb7bda7" compoundref="integration_8hpp" startline="165" endline="190">integration::Integrator&lt; T &gt;::operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classintegration_1_1Integrator_a8cbdf05e68a40aaddb1945e1efb5a31e_1a8cbdf05e68a40aaddb1945e1efb5a31e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int integration::Integrator&lt; T &gt;::k</definition>
+        <argsstring>(void) const</argsstring>
+        <name>k</name>
+        <qualifiedname>integration::Integrator::k</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para><bold> Returns the order <formula id="124">$k$</formula> of the integrator class. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+Returns the order <formula id="124">$k$</formula> of the integrator class. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.hpp" line="236" column="7" bodyfile="cntr/integration.hpp" bodystart="236" bodyend="236"/>
+        <referencedby refid="classintegration_1_1Integrator_a3d5b4a9f06cf626f055c7bb266c22b2f_1a3d5b4a9f06cf626f055c7bb266c22b2f" compoundref="integration_8hpp" startline="147" endline="164">integration::Integrator&lt; T &gt;::Integrator</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classintegration_1_1Integrator_ac223048aba8d7b915f1cce7c2bb7bda7_1ac223048aba8d7b915f1cce7c2bb7bda7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classintegration_1_1Integrator_a3d5b4a9f06cf626f055c7bb266c22b2f_1a3d5b4a9f06cf626f055c7bb266c22b2f" kindref="member">Integrator</ref> &amp;</type>
+        <definition>Integrator &amp; integration::Integrator&lt; T &gt;::operator=</definition>
+        <argsstring>(const Integrator &amp;I)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>integration::Integrator::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classintegration_1_1Integrator_a3d5b4a9f06cf626f055c7bb266c22b2f_1a3d5b4a9f06cf626f055c7bb266c22b2f" kindref="member">Integrator</ref> &amp;</type>
+          <declname>I</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.hpp" line="165" column="14" bodyfile="cntr/integration.hpp" bodystart="165" bodyend="190"/>
+        <references refid="namespaceintegration_ae19c84094b9ccb7aec5f47f4e80672ec_1ae19c84094b9ccb7aec5f47f4e80672ec" compoundref="integration_8hpp" startline="506" endline="514">integration::I</references>
+        <references refid="classintegration_1_1Integrator_a3d5b4a9f06cf626f055c7bb266c22b2f_1a3d5b4a9f06cf626f055c7bb266c22b2f" compoundref="integration_8hpp" startline="147" endline="164">integration::Integrator&lt; T &gt;::Integrator</references>
+      </memberdef>
+      <memberdef kind="function" id="classintegration_1_1Integrator_a8737cc79dbcd9f53508c705ae8f09da8_1a8737cc79dbcd9f53508c705ae8f09da8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T integration::Integrator&lt; T &gt;::poly_differentiation</definition>
+        <argsstring>(int i, int l) const</argsstring>
+        <name>poly_differentiation</name>
+        <qualifiedname>integration::Integrator::poly_differentiation</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns the the weight needed for polynomial differentiation. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+Assuming the function <formula id="132">$f(x)$</formula> is given through points <formula id="127">$\{(x_l,f(x_l),l=0,\dots,k)\}$</formula>\ with <formula id="128">$x_{l+1}-x_{l}=h$</formula>, polynomial differentiation is defined by</para>
+<para><formula id="133">\begin{align*}  \frac{d}{dx}f(x)\big|_{x_i} = \frac{1}{h}\sum^k_{l=0} c_{i,l}\, f(x_l)
+\end{align*}</formula></para>
+<para><computeroutput><ref refid="classintegration_1_1Integrator_a8737cc79dbcd9f53508c705ae8f09da8_1a8737cc79dbcd9f53508c705ae8f09da8" kindref="member">poly_differentiation</ref></computeroutput> returns the coefficient <formula id="134">$c_{i,l}$</formula> for given indicies <formula id="135">$i,l$</formula>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>First index of coefficients. </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second index of coefficients.  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.hpp" line="290" column="5" bodyfile="cntr/integration.hpp" bodystart="290" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="classintegration_1_1Integrator_aa800dedbb904d7df69771da9bc20ba36_1aa800dedbb904d7df69771da9bc20ba36" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T integration::Integrator&lt; T &gt;::poly_integration</definition>
+        <argsstring>(int i, int j, int l) const</argsstring>
+        <name>poly_integration</name>
+        <qualifiedname>integration::Integrator::poly_integration</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns the the weight needed for polynomial integration. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+Assuming the function <formula id="132">$f(x)$</formula> is given through points <formula id="127">$\{(x_l,f(x_l),l=0,\dots,k)\}$</formula>, polynomial interpolation is defined by</para>
+<para><formula id="136">\begin{align*}  \int^{x_j}_{x_i}dx \, f(x) = h \sum^k_{l=0} w_{i,j,l}\, f(x_l)
+\end{align*}</formula></para>
+<para>This is needed for computing integrals over small intervals with less grid points than needed for Gregory quadrature. Polynomial integration is used for the polynomial collocation method for solving the Volterra integral equations.</para>
+<para><computeroutput> <ref refid="classintegration_1_1Integrator_aa800dedbb904d7df69771da9bc20ba36_1aa800dedbb904d7df69771da9bc20ba36" kindref="member">poly_integration</ref></computeroutput> returns the weight <formula id="137">$w_{i,j,l}$</formula> for given indices.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>Index of lower integral bound. </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of upper integral bound. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index of weight.  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.hpp" line="321" column="5" bodyfile="cntr/integration.hpp" bodystart="321" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="classintegration_1_1Integrator_a306e7e8d1bf3992f5c9a038420239bd6_1a306e7e8d1bf3992f5c9a038420239bd6" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T integration::Integrator&lt; T &gt;::poly_interpolation</definition>
+        <argsstring>(int alpha, int l) const</argsstring>
+        <name>poly_interpolation</name>
+        <qualifiedname>integration::Integrator::poly_interpolation</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns the the weight needed for polynomial interpolation. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+The <formula id="124">$k$</formula>-th order approximation polynomial <formula id="126">$P(x)$</formula> through function values <formula id="127">$\{(x_l,f(x_l),l=0,\dots,k)\}$</formula> with <formula id="128">$x_{l+1}-x_{l}=h$</formula> is given by</para>
+<para><formula id="129">\begin{align*}  P(x) = \sum^k_{\alpha=0}\sum^k_{l=0} c_{\alpha,l}\, \left(\frac{x}{h}\right)^\alpha  f(x_l)
+\end{align*}</formula></para>
+<para><computeroutput><ref refid="classintegration_1_1Integrator_a306e7e8d1bf3992f5c9a038420239bd6_1a306e7e8d1bf3992f5c9a038420239bd6" kindref="member">poly_interpolation</ref></computeroutput> returns the coeffient <formula id="130">$c_{\alpha,l}$</formula> for given indicies <formula id="131">$\alpha,l$</formula>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>First index of coefficients. </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Second index of coefficients.  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.hpp" line="262" column="5" bodyfile="cntr/integration.hpp" bodystart="262" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="classintegration_1_1Integrator_a521d1e7a46333f5688a83ac61a3e1f1e_1a521d1e7a46333f5688a83ac61a3e1f1e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T integration::Integrator&lt; T &gt;::rcorr</definition>
+        <argsstring>(int m, int j, int l) const</argsstring>
+        <name>rcorr</name>
+        <qualifiedname>integration::Integrator::rcorr</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+<para><bold> Returns the special quadrature weights for computing integrals on the Matsubara axis. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+For calculation integrals on the Matsubara axis of the type   <formula id="150">\begin{align*} R(\tau_m) = \int^{\tau_m}_0 d\tau\, A(\tau_m-\tau)B(\tau) \ ,
+\end{align*}</formula> Gregory quadrature can only be used for <formula id="151">$m \ge k$</formula>. For <formula id="152">$m &lt; k$</formula>, special weights are needed, since the Matsubara Green&apos;s functions can not contuinuously be continued to <formula id="153">$\tau &lt;0$</formula> and <formula id="154">$\tau &gt;\beta$</formula>. Using two-dimensional polynomial interpolation, one can represent the convolution integral by   <formula id="155">\begin{align*} R(\tau_m) = \Delta\tau\sum^k_{j,l=0} w_{m,j,l}\, A(\tau_j) B(\tau_l) \ .
+\end{align*}</formula> <computeroutput><ref refid="classintegration_1_1Integrator_a521d1e7a46333f5688a83ac61a3e1f1e_1a521d1e7a46333f5688a83ac61a3e1f1e" kindref="member">rcorr</ref></computeroutput> returns the quadrature weights <formula id="156">$w_{m,j,l}$</formula> for given indices.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><blockquote><para>The index of the upper integration bound. </para>
+</blockquote></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second indes of the weights. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second indes of the weights.  </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.hpp" line="439" column="5" bodyfile="cntr/integration.hpp" bodystart="439" bodyend="444"/>
+      </memberdef>
+      <memberdef kind="function" id="classintegration_1_1Integrator_a5cc70c50df405aa10f6bc6e4c7da90c7_1a5cc70c50df405aa10f6bc6e4c7da90c7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>integration::Integrator&lt; T &gt;::~Integrator</definition>
+        <argsstring>()</argsstring>
+        <name>~Integrator</name>
+        <qualifiedname>integration::Integrator::~Integrator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/integration.hpp" line="191" column="3" bodyfile="cntr/integration.hpp" bodystart="191" bodyend="198"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><bold> Class <computeroutput><ref refid="classintegration_1_1Integrator" kindref="compound">Integrator</ref></computeroutput> contains all kinds of weights for integration and differentiation of a function at equally spaced abscissae, up to a certain order k of accuray. </bold> </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+Class <computeroutput><ref refid="classintegration_1_1Integrator" kindref="compound">Integrator</ref></computeroutput> contains all kinds of weights for integration and differentiation of a function at equally spaced abscissae, up to a certain order k of accuray. In particular, the class contains coefficients for<itemizedlist>
+<listitem><para>Gregory quadrature</para>
+</listitem><listitem><para>polynomial quadrature</para>
+</listitem><listitem><para>polynomial interpolation</para>
+</listitem><listitem><para>polynomial differentiation</para>
+</listitem><listitem><para>coefficients for the backwards differencing formula (BDF) </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="cntr/integration.hpp" line="128" column="14" bodyfile="cntr/integration.hpp" bodystart="128" bodyend="504"/>
+    <listofallmembers>
+      <member refid="classintegration_1_1Integrator_a4e7952d8dfd3f62087cd51572dcb1726_1a4e7952d8dfd3f62087cd51572dcb1726" prot="public" virt="non-virtual"><scope>integration::Integrator</scope><name>bd_weights</name></member>
+      <member refid="classintegration_1_1Integrator_1ab6edd84376ecd7ccdf845d2ba2005d06" prot="private" virt="non-virtual"><scope>integration::Integrator</scope><name>bd_weights_</name></member>
+      <member refid="classintegration_1_1Integrator_a97f1c3f0fb959699cfe22744b5c40742_1a97f1c3f0fb959699cfe22744b5c40742" prot="public" virt="non-virtual"><scope>integration::Integrator</scope><name>get_k</name></member>
+      <member refid="classintegration_1_1Integrator_a642b41b44970302037fe6626f6054b90_1a642b41b44970302037fe6626f6054b90" prot="public" virt="non-virtual"><scope>integration::Integrator</scope><name>gregory_omega</name></member>
+      <member refid="classintegration_1_1Integrator_1a41798d55a920ae89f9c21579903ade5a" prot="private" virt="non-virtual"><scope>integration::Integrator</scope><name>gregory_omega_</name></member>
+      <member refid="classintegration_1_1Integrator_a0c816992e749eeeff0817b46ae502e3d_1a0c816992e749eeeff0817b46ae502e3d" prot="public" virt="non-virtual"><scope>integration::Integrator</scope><name>gregory_weights</name></member>
+      <member refid="classintegration_1_1Integrator_1a3ed5fa1b922dec48b4f6c17cc6cd8690" prot="private" virt="non-virtual"><scope>integration::Integrator</scope><name>gregory_weights_</name></member>
+      <member refid="classintegration_1_1Integrator_a0111a0673a071608ce93e16fcf0e415f_1a0111a0673a071608ce93e16fcf0e415f" prot="public" virt="non-virtual"><scope>integration::Integrator</scope><name>integrate</name></member>
+      <member refid="classintegration_1_1Integrator_a3d5b4a9f06cf626f055c7bb266c22b2f_1a3d5b4a9f06cf626f055c7bb266c22b2f" prot="public" virt="non-virtual"><scope>integration::Integrator</scope><name>Integrator</name></member>
+      <member refid="classintegration_1_1Integrator_af48607b631a43b59c09aedeb35b82df7_1af48607b631a43b59c09aedeb35b82df7" prot="public" virt="non-virtual"><scope>integration::Integrator</scope><name>Integrator</name></member>
+      <member refid="classintegration_1_1Integrator_a8cbdf05e68a40aaddb1945e1efb5a31e_1a8cbdf05e68a40aaddb1945e1efb5a31e" prot="public" virt="non-virtual"><scope>integration::Integrator</scope><name>k</name></member>
+      <member refid="classintegration_1_1Integrator_1a15d53572ac2eb7d3fb5eaf6c1147fcad" prot="private" virt="non-virtual"><scope>integration::Integrator</scope><name>k_</name></member>
+      <member refid="classintegration_1_1Integrator_ac223048aba8d7b915f1cce7c2bb7bda7_1ac223048aba8d7b915f1cce7c2bb7bda7" prot="public" virt="non-virtual"><scope>integration::Integrator</scope><name>operator=</name></member>
+      <member refid="classintegration_1_1Integrator_a8737cc79dbcd9f53508c705ae8f09da8_1a8737cc79dbcd9f53508c705ae8f09da8" prot="public" virt="non-virtual"><scope>integration::Integrator</scope><name>poly_differentiation</name></member>
+      <member refid="classintegration_1_1Integrator_1a4b0ac40654625fbfa3a5637c1743cf93" prot="private" virt="non-virtual"><scope>integration::Integrator</scope><name>poly_differentiation_</name></member>
+      <member refid="classintegration_1_1Integrator_aa800dedbb904d7df69771da9bc20ba36_1aa800dedbb904d7df69771da9bc20ba36" prot="public" virt="non-virtual"><scope>integration::Integrator</scope><name>poly_integration</name></member>
+      <member refid="classintegration_1_1Integrator_1a77c45a823cc80bfc2f3a7a95f3e13050" prot="private" virt="non-virtual"><scope>integration::Integrator</scope><name>poly_integration_</name></member>
+      <member refid="classintegration_1_1Integrator_a306e7e8d1bf3992f5c9a038420239bd6_1a306e7e8d1bf3992f5c9a038420239bd6" prot="public" virt="non-virtual"><scope>integration::Integrator</scope><name>poly_interpolation</name></member>
+      <member refid="classintegration_1_1Integrator_1a05aee81207ae65d25b47aceef94b70b7" prot="private" virt="non-virtual"><scope>integration::Integrator</scope><name>poly_interpolation_</name></member>
+      <member refid="classintegration_1_1Integrator_a521d1e7a46333f5688a83ac61a3e1f1e_1a521d1e7a46333f5688a83ac61a3e1f1e" prot="public" virt="non-virtual"><scope>integration::Integrator</scope><name>rcorr</name></member>
+      <member refid="classintegration_1_1Integrator_1a187f1f1965d56fe09b415126d06202eb" prot="private" virt="non-virtual"><scope>integration::Integrator</scope><name>rcorr_</name></member>
+      <member refid="classintegration_1_1Integrator_a5cc70c50df405aa10f6bc6e4c7da90c7_1a5cc70c50df405aa10f6bc6e4c7da90c7" prot="public" virt="non-virtual"><scope>integration::Integrator</scope><name>~Integrator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

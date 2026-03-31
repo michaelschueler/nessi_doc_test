@@ -1,0 +1,57 @@
+var namespaceness2 =
+[
+    [ "bethedos", "classness2_1_1bethedos.html", "classness2_1_1bethedos" ],
+    [ "fft_array", "classness2_1_1fft__array.html", "classness2_1_1fft__array" ],
+    [ "FFT_OMP_Manager", "classness2_1_1FFT__OMP__Manager.html", "classness2_1_1FFT__OMP__Manager" ],
+    [ "gauss", "classness2_1_1gauss.html", "classness2_1_1gauss" ],
+    [ "grid_info", "classness2_1_1grid__info.html", "classness2_1_1grid__info" ],
+    [ "herm_matrix_ness", "classness2_1_1herm__matrix__ness.html", "classness2_1_1herm__matrix__ness" ],
+    [ "cdouble", "namespaceness2_a76742c181e9d22bf9f3d16742670437e.html#a76742c181e9d22bf9f3d16742670437e", null ],
+    [ "cplx", "namespaceness2_afd4e1ebc14989f0be6d55840cfd5571b.html#afd4e1ebc14989f0be6d55840cfd5571b", null ],
+    [ "dyson_bath_type", "namespaceness2_a384022e4fa54faa358d00af720094f3a.html#a384022e4fa54faa358d00af720094f3a", [
+      [ "BATH_NONE", "namespaceness2_a384022e4fa54faa358d00af720094f3a.html#a384022e4fa54faa358d00af720094f3aa348c703624a79ac630f1378fb250a79e", null ],
+      [ "BATH_CONST", "namespaceness2_a384022e4fa54faa358d00af720094f3a.html#a384022e4fa54faa358d00af720094f3aaa090a991fc0fdf14d98803bb73bb519a", null ],
+      [ "BATH_GAUSS", "namespaceness2_a384022e4fa54faa358d00af720094f3a.html#a384022e4fa54faa358d00af720094f3aa44ae46961823eca881d98d0dee408494", null ],
+      [ "BATH_OHMIC", "namespaceness2_a384022e4fa54faa358d00af720094f3a.html#a384022e4fa54faa358d00af720094f3aa6b851dcb6085245f28ff621a41482655", null ]
+    ] ],
+    [ "fft_domain", "namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b.html#aa8a9a5c1e5f195af4c1134df5dbc242b", [
+      [ "time", "namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b.html#aa8a9a5c1e5f195af4c1134df5dbc242ba07cc694b9b3fc636710fa08b6922c42b", null ],
+      [ "freq", "namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b.html#aa8a9a5c1e5f195af4c1134df5dbc242bab0038f6cab2d16ebdcf2e36d1779d8ba", null ]
+    ] ],
+    [ "fft_integral_method", "namespaceness2_ad92d2a80687f622c86e0162cc967dc9d.html#ad92d2a80687f622c86e0162cc967dc9d", [
+      [ "FFT_TRAPEZ", "namespaceness2_ad92d2a80687f622c86e0162cc967dc9d.html#ad92d2a80687f622c86e0162cc967dc9da9942107d8b6d0644aa8ed27932d72afd", null ],
+      [ "FFT_CUBIC", "namespaceness2_ad92d2a80687f622c86e0162cc967dc9d.html#ad92d2a80687f622c86e0162cc967dc9da79bd1bf1fce3e3844e90fa37209e413b", null ],
+      [ "FFT_ADAPTIVE", "namespaceness2_ad92d2a80687f622c86e0162cc967dc9d.html#ad92d2a80687f622c86e0162cc967dc9da3284d2fd17b9114c9bd6122edbe84aaf", null ]
+    ] ],
+    [ "Bubble1_ness", "namespaceness2_a98e78bce977ac6cb70c3b33208e2593d.html#a98e78bce977ac6cb70c3b33208e2593d", null ],
+    [ "Bubble1_ness", "namespaceness2_aa646233b6c0779cfba079d64a5270ede.html#aa646233b6c0779cfba079d64a5270ede", null ],
+    [ "Bubble2_ness", "namespaceness2_ae8d005d95f8abd85ce790331b0cd2e52.html#ae8d005d95f8abd85ce790331b0cd2e52", null ],
+    [ "Bubble2_ness", "namespaceness2_a9d4d4b4c8d6ddd29e73148912c3acd10.html#a9d4d4b4c8d6ddd29e73148912c3acd10", null ],
+    [ "cntr2ness", "namespaceness2_a83d3e84c58d40593726bfd8d70da73db.html#a83d3e84c58d40593726bfd8d70da73db", null ],
+    [ "cntr2ness", "namespaceness2_afef87b86eb3bbb3023d80286cb90970f.html#afef87b86eb3bbb3023d80286cb90970f", null ],
+    [ "cntr2ness", "namespaceness2_ab5fb4500340661a61ec1e39f6083e431.html#ab5fb4500340661a61ec1e39f6083e431", null ],
+    [ "cntr2ness", "namespaceness2_adaaeabe296a9af1b1112fdf20bd9dfb2.html#adaaeabe296a9af1b1112fdf20bd9dfb2", null ],
+    [ "cntr2ness", "namespaceness2_aefa06eb8e7d1e29c1fb94983ac8470ee.html#aefa06eb8e7d1e29c1fb94983ac8470ee", null ],
+    [ "compute_lesser", "namespaceness2_a9ae52e2965c52a526b782e5afc35b0ab.html#a9ae52e2965c52a526b782e5afc35b0ab", null ],
+    [ "convolution_density_matrix", "namespaceness2_a465cc9d39bbd273a5f9181dd35eaaab0.html#a465cc9d39bbd273a5f9181dd35eaaab0", null ],
+    [ "density_matrix", "namespaceness2_aad0c0cb59123f7f79006dc907a65b61e.html#aad0c0cb59123f7f79006dc907a65b61e", null ],
+    [ "distance_norm2", "namespaceness2_ad8a4c6cf146cd434419e98928f688de5.html#ad8a4c6cf146cd434419e98928f688de5", null ],
+    [ "distance_norm2", "namespaceness2_a7627f40c4257c58d140827c085fc441c.html#a7627f40c4257c58d140827c085fc441c", null ],
+    [ "downsample", "namespaceness2_abafb242b4f7de9bc12503a852ed45b08.html#abafb242b4f7de9bc12503a852ed45b08", null ],
+    [ "downsample", "namespaceness2_a3ea46ed012de7b0fbea4b4e604d38871.html#a3ea46ed012de7b0fbea4b4e604d38871", null ],
+    [ "dyson", "namespaceness2_aeb50b23de8dea84f0fd5299c599cf124.html#aeb50b23de8dea84f0fd5299c599cf124", null ],
+    [ "dyson_fft", "namespaceness2_ae32bc91d01f0b0dcd580887f13126052.html#ae32bc91d01f0b0dcd580887f13126052", null ],
+    [ "green_equilibrium_ness", "namespaceness2_aadeef392bf48884aad9766e84c4bdb50.html#aadeef392bf48884aad9766e84c4bdb50", null ],
+    [ "green_equilibrium_ness_bose", "namespaceness2_a3fc04c6c94b6f4037f54206a319dff27.html#a3fc04c6c94b6f4037f54206a319dff27", null ],
+    [ "green_equilibrium_ness_fermi", "namespaceness2_a3a3ddda2ed9698ac30831954cb6f3248.html#a3a3ddda2ed9698ac30831954cb6f3248", null ],
+    [ "green_equilibrium_ret_ness_adaptive", "namespaceness2_ae4fd56058fa510f2f5fa1c8c49e4d6a8.html#ae4fd56058fa510f2f5fa1c8c49e4d6a8", null ],
+    [ "ness2cntr", "namespaceness2_a74cbbae7af8954fed49d4cd32ef99269.html#a74cbbae7af8954fed49d4cd32ef99269", null ],
+    [ "ness2cntr", "namespaceness2_a64c76b0d6c9a6d9fcbe63025501eadba.html#a64c76b0d6c9a6d9fcbe63025501eadba", null ],
+    [ "ness2cntr", "namespaceness2_a99f3efbd6662d6b78b597b5382f49d8a.html#a99f3efbd6662d6b78b597b5382f49d8a", null ],
+    [ "ness2cntr", "namespaceness2_ae074252525af1e45427413abd6adfc52.html#ae074252525af1e45427413abd6adfc52", null ],
+    [ "ness2cntr", "namespaceness2_a0d5475b724def9bed1a015eae6829169.html#a0d5475b724def9bed1a015eae6829169", null ],
+    [ "NESS_II", "namespaceness2_a1637bffaefd89e4f04c2fc2d8109db59.html#a1637bffaefd89e4f04c2fc2d8109db59", null ],
+    [ "resample", "namespaceness2_a96b405003dac2738605ce86855a2a78b.html#a96b405003dac2738605ce86855a2a78b", null ],
+    [ "sigma_bath", "namespaceness2_a417dbfceedbc4074032c6934cca44cd9.html#a417dbfceedbc4074032c6934cca44cd9", null ],
+    [ "upsample", "namespaceness2_a80d68205f1c485148403cbed3129c88c.html#a80d68205f1c485148403cbed3129c88c", null ]
+];

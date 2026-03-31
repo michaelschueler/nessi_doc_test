@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classness2_1_1bethedos" kind="class" language="C++" prot="public">
+    <compoundname>ness2::bethedos</compoundname>
+    <includes refid="ness2__equilibrium__decl_8hpp" local="no">ness2_equilibrium_decl.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classness2_1_1bethedos_a61929e302cc6ecbc2ce0fc5f998ff782_1a61929e302cc6ecbc2ce0fc5f998ff782" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ness2::bethedos::E0_</definition>
+        <argsstring></argsstring>
+        <name>E0_</name>
+        <qualifiedname>ness2::bethedos::E0_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_equilibrium_decl.hpp" line="92" column="12" bodyfile="cntr/ness2_equilibrium_decl.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classness2_1_1bethedos_a1f8fb21f8d5239df242889e89e68b17b_1a1f8fb21f8d5239df242889e89e68b17b" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ness2::bethedos::hi_</definition>
+        <argsstring></argsstring>
+        <name>hi_</name>
+        <qualifiedname>ness2::bethedos::hi_</qualifiedname>
+        <briefdescription>
+<para><bold> Higher edge of the density of states </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_equilibrium_decl.hpp" line="87" column="12" bodyfile="cntr/ness2_equilibrium_decl.hpp" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classness2_1_1bethedos_ad93ffb1ab9ff5fb68f249041428b4cf9_1ad93ffb1ab9ff5fb68f249041428b4cf9" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ness2::bethedos::lo_</definition>
+        <argsstring></argsstring>
+        <name>lo_</name>
+        <qualifiedname>ness2::bethedos::lo_</qualifiedname>
+        <briefdescription>
+<para><bold> Lower edge of the density of states </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_equilibrium_decl.hpp" line="89" column="12" bodyfile="cntr/ness2_equilibrium_decl.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classness2_1_1bethedos_a213203064a05d04b3c9b57e603478ea0_1a213203064a05d04b3c9b57e603478ea0" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ness2::bethedos::V_</definition>
+        <argsstring></argsstring>
+        <name>V_</name>
+        <qualifiedname>ness2::bethedos::V_</qualifiedname>
+        <briefdescription>
+<para><bold> 4V corresponds to the bandwidth </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_equilibrium_decl.hpp" line="91" column="12" bodyfile="cntr/ness2_equilibrium_decl.hpp" bodystart="91" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classness2_1_1bethedos_a5f571747238eadb0c9bab18222ec3289_1a5f571747238eadb0c9bab18222ec3289" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ness2::bethedos::bethedos</definition>
+        <argsstring>()</argsstring>
+        <name>bethedos</name>
+        <qualifiedname>ness2::bethedos::bethedos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_equilibrium_decl.hpp" line="93" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1bethedos_a1bc54f663fc404bf9802f2b930b84f94_1a1bc54f663fc404bf9802f2b930b84f94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ness2::bethedos::bethedos</definition>
+        <argsstring>(double a, double b)</argsstring>
+        <name>bethedos</name>
+        <qualifiedname>ness2::bethedos::bethedos</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para><bold> DOS between a and b, i.e. center = (a+b)/2, width=(b-a)</bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_equilibrium_decl.hpp" line="95" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1bethedos_aa40f121f815008e6ac61a17daa5162ac_1aa40f121f815008e6ac61a17daa5162ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ness2::bethedos::operator()</definition>
+        <argsstring>(double x)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>ness2::bethedos::operator()</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_equilibrium_decl.hpp" line="96" column="12"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><bold> Class <computeroutput>bethe</computeroutput> represent the semicircular density of states </bold> </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>This class contains the data structures for representing the density of states for a Bethe semicircular with the bandwidth 4V, centered around E0 </para>
+</blockquote></para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>double</label>
+      </node>
+      <node id="1">
+        <label>ness2::bethedos</label>
+        <link refid="classness2_1_1bethedos"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>E0_</edgelabel>
+          <edgelabel>V_</edgelabel>
+          <edgelabel>hi_</edgelabel>
+          <edgelabel>lo_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="cntr/ness2_equilibrium_decl.hpp" line="84" column="3" bodyfile="cntr/ness2_equilibrium_decl.hpp" bodystart="84" bodyend="97"/>
+    <listofallmembers>
+      <member refid="classness2_1_1bethedos_a5f571747238eadb0c9bab18222ec3289_1a5f571747238eadb0c9bab18222ec3289" prot="public" virt="non-virtual"><scope>ness2::bethedos</scope><name>bethedos</name></member>
+      <member refid="classness2_1_1bethedos_a1bc54f663fc404bf9802f2b930b84f94_1a1bc54f663fc404bf9802f2b930b84f94" prot="public" virt="non-virtual"><scope>ness2::bethedos</scope><name>bethedos</name></member>
+      <member refid="classness2_1_1bethedos_a61929e302cc6ecbc2ce0fc5f998ff782_1a61929e302cc6ecbc2ce0fc5f998ff782" prot="public" virt="non-virtual"><scope>ness2::bethedos</scope><name>E0_</name></member>
+      <member refid="classness2_1_1bethedos_a1f8fb21f8d5239df242889e89e68b17b_1a1f8fb21f8d5239df242889e89e68b17b" prot="public" virt="non-virtual"><scope>ness2::bethedos</scope><name>hi_</name></member>
+      <member refid="classness2_1_1bethedos_ad93ffb1ab9ff5fb68f249041428b4cf9_1ad93ffb1ab9ff5fb68f249041428b4cf9" prot="public" virt="non-virtual"><scope>ness2::bethedos</scope><name>lo_</name></member>
+      <member refid="classness2_1_1bethedos_aa40f121f815008e6ac61a17daa5162ac_1aa40f121f815008e6ac61a17daa5162ac" prot="public" virt="non-virtual"><scope>ness2::bethedos</scope><name>operator()</name></member>
+      <member refid="classness2_1_1bethedos_a213203064a05d04b3c9b57e603478ea0_1a213203064a05d04b3c9b57e603478ea0" prot="public" virt="non-virtual"><scope>ness2::bethedos</scope><name>V_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

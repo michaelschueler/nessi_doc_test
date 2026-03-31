@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classness2_1_1ohmic__sym" kind="class" language="C++" prot="private">
+    <compoundname>ness2::ohmic_sym</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classness2_1_1ohmic__sym_a4a6d6c2b675874b4d08c84f2583015d8_1a4a6d6c2b675874b4d08c84f2583015d8" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ness2::ohmic_sym::hi_</definition>
+        <argsstring></argsstring>
+        <name>hi_</name>
+        <qualifiedname>ness2::ohmic_sym::hi_</qualifiedname>
+        <briefdescription>
+<para><bold> Higher edge of the density of states </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_equilibrium_decl.hpp" line="142" column="12" bodyfile="cntr/ness2_equilibrium_decl.hpp" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classness2_1_1ohmic__sym_a37f7d05cb1036ca41ae3251e057b7930_1a37f7d05cb1036ca41ae3251e057b7930" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ness2::ohmic_sym::lo_</definition>
+        <argsstring></argsstring>
+        <name>lo_</name>
+        <qualifiedname>ness2::ohmic_sym::lo_</qualifiedname>
+        <briefdescription>
+<para><bold> Lower edge of the density of states </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_equilibrium_decl.hpp" line="144" column="12" bodyfile="cntr/ness2_equilibrium_decl.hpp" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classness2_1_1ohmic__sym_af67805f1e6365e8fe7ad58ef0f3bb9ff_1af67805f1e6365e8fe7ad58ef0f3bb9ff" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ness2::ohmic_sym::omegac_</definition>
+        <argsstring></argsstring>
+        <name>omegac_</name>
+        <qualifiedname>ness2::ohmic_sym::omegac_</qualifiedname>
+        <briefdescription>
+<para><bold> Cutoff </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_equilibrium_decl.hpp" line="146" column="12" bodyfile="cntr/ness2_equilibrium_decl.hpp" bodystart="146" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classness2_1_1ohmic__sym_a1130d71010d5a324bc4cbc14446e7f96_1a1130d71010d5a324bc4cbc14446e7f96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ness2::ohmic_sym::ohmic_sym</definition>
+        <argsstring>()</argsstring>
+        <name>ohmic_sym</name>
+        <qualifiedname>ness2::ohmic_sym::ohmic_sym</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_equilibrium_decl.hpp" line="147" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1ohmic__sym_ab65b95f9044bfad90dc16b17e1b5e0df_1ab65b95f9044bfad90dc16b17e1b5e0df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ness2::ohmic_sym::ohmic_sym</definition>
+        <argsstring>(double omegac)</argsstring>
+        <name>ohmic_sym</name>
+        <qualifiedname>ness2::ohmic_sym::ohmic_sym</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>omegac</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_equilibrium_decl.hpp" line="148" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1ohmic__sym_a5108f4d17be03784e1b31ea14357c093_1a5108f4d17be03784e1b31ea14357c093" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ness2::ohmic_sym::operator()</definition>
+        <argsstring>(double x)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>ness2::ohmic_sym::operator()</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_equilibrium_decl.hpp" line="149" column="12"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><bold> Class <computeroutput>ohmic</computeroutput> represents a symmetric ohmic bath x^2*exp(-x/x_c) density of states </bold> </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>This class contains the data structures for representing the density of states for an ohmic bath and includes a free parameter: the cutoff energy <formula id="182">$ \omega_c $</formula> and is adapted so the spectrum is antisymmetric (boson). </para>
+</blockquote></para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>double</label>
+      </node>
+      <node id="1">
+        <label>ness2::ohmic_sym</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>hi_</edgelabel>
+          <edgelabel>lo_</edgelabel>
+          <edgelabel>omegac_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="cntr/ness2_equilibrium_decl.hpp" line="139" column="3" bodyfile="cntr/ness2_equilibrium_decl.hpp" bodystart="139" bodyend="150"/>
+    <listofallmembers>
+      <member refid="classness2_1_1ohmic__sym_a4a6d6c2b675874b4d08c84f2583015d8_1a4a6d6c2b675874b4d08c84f2583015d8" prot="public" virt="non-virtual"><scope>ness2::ohmic_sym</scope><name>hi_</name></member>
+      <member refid="classness2_1_1ohmic__sym_a37f7d05cb1036ca41ae3251e057b7930_1a37f7d05cb1036ca41ae3251e057b7930" prot="public" virt="non-virtual"><scope>ness2::ohmic_sym</scope><name>lo_</name></member>
+      <member refid="classness2_1_1ohmic__sym_a1130d71010d5a324bc4cbc14446e7f96_1a1130d71010d5a324bc4cbc14446e7f96" prot="public" virt="non-virtual"><scope>ness2::ohmic_sym</scope><name>ohmic_sym</name></member>
+      <member refid="classness2_1_1ohmic__sym_ab65b95f9044bfad90dc16b17e1b5e0df_1ab65b95f9044bfad90dc16b17e1b5e0df" prot="public" virt="non-virtual"><scope>ness2::ohmic_sym</scope><name>ohmic_sym</name></member>
+      <member refid="classness2_1_1ohmic__sym_af67805f1e6365e8fe7ad58ef0f3bb9ff_1af67805f1e6365e8fe7ad58ef0f3bb9ff" prot="public" virt="non-virtual"><scope>ness2::ohmic_sym</scope><name>omegac_</name></member>
+      <member refid="classness2_1_1ohmic__sym_a5108f4d17be03784e1b31ea14357c093_1a5108f4d17be03784e1b31ea14357c093" prot="public" virt="non-virtual"><scope>ness2::ohmic_sym</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

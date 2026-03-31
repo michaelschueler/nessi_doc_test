@@ -1,0 +1,632 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classcntr_1_1distributed__array" kind="class" language="C++" prot="public">
+    <compoundname>cntr::distributed_array</compoundname>
+    <includes refid="cntr__distributed__array__decl_8hpp" local="no">cntr_distributed_array_decl.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcntr_1_1distributed__array_1a46ad0d0cbd8265354a13d1d15c44c661" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cntr::distributed_array&lt; T &gt;::blocksize_</definition>
+        <argsstring></argsstring>
+        <name>blocksize_</name>
+        <qualifiedname>cntr::distributed_array::blocksize_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Size of one element in the block. In combination with <ref refid="classcntr_1_1distributed__timestep__array" kindref="compound">distributed_timestep_array</ref> this number is changed with increasing timesteps. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_array_decl.hpp" line="71" column="7" bodyfile="cntr/cntr_distributed_array_decl.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1distributed__array_1aeb5c5e2b630a4d9a5f5b2660de46e471" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* cntr::distributed_array&lt; T &gt;::data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <qualifiedname>cntr::distributed_array::data_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to the contiguous data </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_array_decl.hpp" line="69" column="5" bodyfile="cntr/cntr_distributed_array_decl.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1distributed__array_1a4fd3aa5bcd368b3f760ee059f240adb4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cntr::distributed_array&lt; T &gt;::maxlen_</definition>
+        <argsstring></argsstring>
+        <name>maxlen_</name>
+        <qualifiedname>cntr::distributed_array::maxlen_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Size of one element in the block. In combination with <ref refid="classcntr_1_1distributed__timestep__array" kindref="compound">distributed_timestep_array</ref> this number is fixed to maximal length </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_array_decl.hpp" line="72" column="7" bodyfile="cntr/cntr_distributed_array_decl.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1distributed__array_1a40e1973419cc4c49235ad7bb70f0dd09" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cntr::distributed_array&lt; T &gt;::n_</definition>
+        <argsstring></argsstring>
+        <name>n_</name>
+        <qualifiedname>cntr::distributed_array::n_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of data blocks </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_array_decl.hpp" line="70" column="7" bodyfile="cntr/cntr_distributed_array_decl.hpp" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1distributed__array_1ab396d1252a896290ba8a95863c7febef" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cntr::distributed_array&lt; T &gt;::ntasks_</definition>
+        <argsstring></argsstring>
+        <name>ntasks_</name>
+        <qualifiedname>cntr::distributed_array::ntasks_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>mpi size if MPI is defined, else 1 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_array_decl.hpp" line="75" column="7" bodyfile="cntr/cntr_distributed_array_decl.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1distributed__array_1a44453a047cef77ee971d77e6ab7ba4ea" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cntr::distributed_array&lt; T &gt;::tid_</definition>
+        <argsstring></argsstring>
+        <name>tid_</name>
+        <qualifiedname>cntr::distributed_array::tid_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>mpi rank if MPI is defined, else 0 </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_array_decl.hpp" line="74" column="7" bodyfile="cntr/cntr_distributed_array_decl.hpp" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1distributed__array_1a1729838e6e6174659bbb29c2bf36372b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; cntr::distributed_array&lt; T &gt;::tid_map_</definition>
+        <argsstring></argsstring>
+        <name>tid_map_</name>
+        <qualifiedname>cntr::distributed_array::tid_map_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the rank owning block j <formula id="19">$ tid_map(j) = tid_$</formula>. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_array_decl.hpp" line="73" column="15" bodyfile="cntr/cntr_distributed_array_decl.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcntr_1_1distributed__array_a43c4b49df1bc317ccedb7be27df7d816_1a43c4b49df1bc317ccedb7be27df7d816" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * cntr::distributed_array&lt; T &gt;::block</definition>
+        <argsstring>(int j)</argsstring>
+        <name>block</name>
+        <qualifiedname>cntr::distributed_array::block</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_array_decl.hpp" line="42" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__array_a34a747dc2579f3de4ee52f42cf45f74d_1a34a747dc2579f3de4ee52f42cf45f74d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int cntr::distributed_array&lt; T &gt;::blocksize</definition>
+        <argsstring>(void) const</argsstring>
+        <name>blocksize</name>
+        <qualifiedname>cntr::distributed_array::blocksize</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_array_decl.hpp" line="49" column="7" bodyfile="cntr/cntr_distributed_array_decl.hpp" bodystart="49" bodyend="49"/>
+        <referencedby refid="classcntr_1_1distributed__array_ab7f9e5b38336cf333e8c3af195af91db_1ab7f9e5b38336cf333e8c3af195af91db">cntr::distributed_array&lt; T &gt;::reset_blocksize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__array_a2ecf6240b4ec9284e1f659ffa73770d1_1a2ecf6240b4ec9284e1f659ffa73770d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::distributed_array&lt; T &gt;::clear</definition>
+        <argsstring>(void)</argsstring>
+        <name>clear</name>
+        <qualifiedname>cntr::distributed_array::clear</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_array_decl.hpp" line="43" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__array_a96039e94e3424bb415ad9a90bfaee87d_1a96039e94e3424bb415ad9a90bfaee87d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T *</type>
+        <definition>T * cntr::distributed_array&lt; T &gt;::data</definition>
+        <argsstring>(void) const</argsstring>
+        <name>data</name>
+        <qualifiedname>cntr::distributed_array::data</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_array_decl.hpp" line="45" column="5" bodyfile="cntr/cntr_distributed_array_decl.hpp" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__array_a390e47f7983b6adc24610a9d4633dfc0_1a390e47f7983b6adc24610a9d4633dfc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cntr::distributed_array&lt; T &gt;::distributed_array</definition>
+        <argsstring>()</argsstring>
+        <name>distributed_array</name>
+        <qualifiedname>cntr::distributed_array::distributed_array</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_array_decl.hpp" line="33" column="3"/>
+        <referencedby refid="classcntr_1_1distributed__array_a0025a4c46c3075ac5e316075e6ad2040_1a0025a4c46c3075ac5e316075e6ad2040">cntr::distributed_array&lt; T &gt;::distributed_array</referencedby>
+        <referencedby refid="classcntr_1_1distributed__array_a7b4d7e88a281c7ac22f4467a9e46c4dd_1a7b4d7e88a281c7ac22f4467a9e46c4dd">cntr::distributed_array&lt; T &gt;::operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__array_a0025a4c46c3075ac5e316075e6ad2040_1a0025a4c46c3075ac5e316075e6ad2040" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cntr::distributed_array&lt; T &gt;::distributed_array</definition>
+        <argsstring>(const distributed_array &amp;g)</argsstring>
+        <name>distributed_array</name>
+        <qualifiedname>cntr::distributed_array::distributed_array</qualifiedname>
+        <param>
+          <type>const distributed_array &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_array_decl.hpp" line="35" column="3"/>
+        <references refid="classcntr_1_1distributed__array_a390e47f7983b6adc24610a9d4633dfc0_1a390e47f7983b6adc24610a9d4633dfc0">cntr::distributed_array&lt; T &gt;::distributed_array</references>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__array_aa9b20e6c2dd624bed2ed9dc15a7caf26_1aa9b20e6c2dd624bed2ed9dc15a7caf26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cntr::distributed_array&lt; T &gt;::distributed_array</definition>
+        <argsstring>(int n, int maxlen, bool mpi)</argsstring>
+        <name>distributed_array</name>
+        <qualifiedname>cntr::distributed_array::distributed_array</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxlen</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mpi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_array_decl.hpp" line="41" column="3"/>
+        <references refid="classcntr_1_1distributed__array_aeecf1ea7c600cde2e25f754bab96affb_1aeecf1ea7c600cde2e25f754bab96affb" compoundref="cntr__distributed__array__decl_8hpp" startline="50" endline="50">cntr::distributed_array&lt; T &gt;::maxlen</references>
+        <references refid="classcntr_1_1distributed__array_ab61714dc72c6c755d8c22380fb8404e3_1ab61714dc72c6c755d8c22380fb8404e3" compoundref="cntr__distributed__array__decl_8hpp" startline="46" endline="46">cntr::distributed_array&lt; T &gt;::n</references>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__array_a90278949493102a98d962e7c056a25ed_1a90278949493102a98d962e7c056a25ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int cntr::distributed_array&lt; T &gt;::firstblock_rank</definition>
+        <argsstring>(void)</argsstring>
+        <name>firstblock_rank</name>
+        <qualifiedname>cntr::distributed_array::firstblock_rank</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_array_decl.hpp" line="48" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__array_aeecf1ea7c600cde2e25f754bab96affb_1aeecf1ea7c600cde2e25f754bab96affb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int cntr::distributed_array&lt; T &gt;::maxlen</definition>
+        <argsstring>(void) const</argsstring>
+        <name>maxlen</name>
+        <qualifiedname>cntr::distributed_array::maxlen</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_array_decl.hpp" line="50" column="7" bodyfile="cntr/cntr_distributed_array_decl.hpp" bodystart="50" bodyend="50"/>
+        <referencedby refid="classcntr_1_1distributed__array_aa9b20e6c2dd624bed2ed9dc15a7caf26_1aa9b20e6c2dd624bed2ed9dc15a7caf26">cntr::distributed_array&lt; T &gt;::distributed_array</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__array_ab7b6bfaf6b06a5e4ac4d4ad8d41291e0_1ab7b6bfaf6b06a5e4ac4d4ad8d41291e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::distributed_array&lt; T &gt;::mpi_bcast_all</definition>
+        <argsstring>(void)</argsstring>
+        <name>mpi_bcast_all</name>
+        <qualifiedname>cntr::distributed_array::mpi_bcast_all</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_array_decl.hpp" line="66" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__array_ab7b6bfaf6b06a5e4ac4d4ad8d41291e0_1ab7b6bfaf6b06a5e4ac4d4ad8d41291e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::distributed_array&lt; T &gt;::mpi_bcast_all</definition>
+        <argsstring>(void)</argsstring>
+        <name>mpi_bcast_all</name>
+        <qualifiedname>cntr::distributed_array::mpi_bcast_all</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_array_decl.hpp" line="60" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__array_ae1af2a778c9ddf3e99746f84e94fc9d4_1ae1af2a778c9ddf3e99746f84e94fc9d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::distributed_array&lt; T &gt;::mpi_bcast_block</definition>
+        <argsstring>(int j)</argsstring>
+        <name>mpi_bcast_block</name>
+        <qualifiedname>cntr::distributed_array::mpi_bcast_block</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_array_decl.hpp" line="65" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__array_ae1af2a778c9ddf3e99746f84e94fc9d4_1ae1af2a778c9ddf3e99746f84e94fc9d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::distributed_array&lt; T &gt;::mpi_bcast_block</definition>
+        <argsstring>(int j)</argsstring>
+        <name>mpi_bcast_block</name>
+        <qualifiedname>cntr::distributed_array::mpi_bcast_block</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_array_decl.hpp" line="59" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__array_a30f822e37c80336014bc1efca4a71201_1a30f822e37c80336014bc1efca4a71201" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::distributed_array&lt; T &gt;::mpi_gather</definition>
+        <argsstring>(int dest)</argsstring>
+        <name>mpi_gather</name>
+        <qualifiedname>cntr::distributed_array::mpi_gather</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_array_decl.hpp" line="64" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__array_aab20de9c391504b53b944ba360c932f7_1aab20de9c391504b53b944ba360c932f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::distributed_array&lt; T &gt;::mpi_gather</definition>
+        <argsstring>(void)</argsstring>
+        <name>mpi_gather</name>
+        <qualifiedname>cntr::distributed_array::mpi_gather</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_array_decl.hpp" line="61" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__array_af88bafea34c400281bd6169726ac40b2_1af88bafea34c400281bd6169726ac40b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::distributed_array&lt; T &gt;::mpi_send_block</definition>
+        <argsstring>(int j, int dest)</argsstring>
+        <name>mpi_send_block</name>
+        <qualifiedname>cntr::distributed_array::mpi_send_block</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_array_decl.hpp" line="63" column="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__array_ab61714dc72c6c755d8c22380fb8404e3_1ab61714dc72c6c755d8c22380fb8404e3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int cntr::distributed_array&lt; T &gt;::n</definition>
+        <argsstring>(void) const</argsstring>
+        <name>n</name>
+        <qualifiedname>cntr::distributed_array::n</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_array_decl.hpp" line="46" column="7" bodyfile="cntr/cntr_distributed_array_decl.hpp" bodystart="46" bodyend="46"/>
+        <referencedby refid="classcntr_1_1distributed__array_aa9b20e6c2dd624bed2ed9dc15a7caf26_1aa9b20e6c2dd624bed2ed9dc15a7caf26">cntr::distributed_array&lt; T &gt;::distributed_array</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__array_af9a7f2358cc1642863217ec0b127bb93_1af9a7f2358cc1642863217ec0b127bb93" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int cntr::distributed_array&lt; T &gt;::ntasks</definition>
+        <argsstring>(void) const</argsstring>
+        <name>ntasks</name>
+        <qualifiedname>cntr::distributed_array::ntasks</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_array_decl.hpp" line="53" column="7" bodyfile="cntr/cntr_distributed_array_decl.hpp" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__array_ae4974b38de4f3b9945590fe1500959e1_1ae4974b38de4f3b9945590fe1500959e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int cntr::distributed_array&lt; T &gt;::numblock_rank</definition>
+        <argsstring>(void)</argsstring>
+        <name>numblock_rank</name>
+        <qualifiedname>cntr::distributed_array::numblock_rank</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_array_decl.hpp" line="47" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__array_a7b4d7e88a281c7ac22f4467a9e46c4dd_1a7b4d7e88a281c7ac22f4467a9e46c4dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcntr_1_1distributed__array_a390e47f7983b6adc24610a9d4633dfc0_1a390e47f7983b6adc24610a9d4633dfc0" kindref="member">distributed_array</ref> &amp;</type>
+        <definition>distributed_array &amp; cntr::distributed_array&lt; T &gt;::operator=</definition>
+        <argsstring>(const distributed_array &amp;g)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>cntr::distributed_array::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classcntr_1_1distributed__array_a390e47f7983b6adc24610a9d4633dfc0_1a390e47f7983b6adc24610a9d4633dfc0" kindref="member">distributed_array</ref> &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_array_decl.hpp" line="36" column="21"/>
+        <references refid="classcntr_1_1distributed__array_a390e47f7983b6adc24610a9d4633dfc0_1a390e47f7983b6adc24610a9d4633dfc0">cntr::distributed_array&lt; T &gt;::distributed_array</references>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__array_a37972d4827e36dcda711e7974d8117cc_1a37972d4827e36dcda711e7974d8117cc" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool cntr::distributed_array&lt; T &gt;::rank_owns</definition>
+        <argsstring>(int k) const</argsstring>
+        <name>rank_owns</name>
+        <qualifiedname>cntr::distributed_array::rank_owns</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_array_decl.hpp" line="54" column="8" bodyfile="cntr/cntr_distributed_array_decl.hpp" bodystart="54" bodyend="54"/>
+        <references refid="classcntr_1_1distributed__array_a52c8d4f0b99718b17eb77006c9b90956_1a52c8d4f0b99718b17eb77006c9b90956" compoundref="cntr__distributed__array__decl_8hpp" startline="52" endline="52">cntr::distributed_array&lt; T &gt;::tid</references>
+        <references refid="classcntr_1_1distributed__array_a645a191c19fa4fbd57f9747df109a315_1a645a191c19fa4fbd57f9747df109a315" compoundref="cntr__distributed__array__decl_8hpp" startline="51" endline="51">cntr::distributed_array&lt; T &gt;::tid_map</references>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__array_ab7f9e5b38336cf333e8c3af195af91db_1ab7f9e5b38336cf333e8c3af195af91db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::distributed_array&lt; T &gt;::reset_blocksize</definition>
+        <argsstring>(int blocksize)</argsstring>
+        <name>reset_blocksize</name>
+        <qualifiedname>cntr::distributed_array::reset_blocksize</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>blocksize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_array_decl.hpp" line="44" column="8"/>
+        <references refid="classcntr_1_1distributed__array_a34a747dc2579f3de4ee52f42cf45f74d_1a34a747dc2579f3de4ee52f42cf45f74d" compoundref="cntr__distributed__array__decl_8hpp" startline="49" endline="49">cntr::distributed_array&lt; T &gt;::blocksize</references>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__array_a52c8d4f0b99718b17eb77006c9b90956_1a52c8d4f0b99718b17eb77006c9b90956" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int cntr::distributed_array&lt; T &gt;::tid</definition>
+        <argsstring>(void) const</argsstring>
+        <name>tid</name>
+        <qualifiedname>cntr::distributed_array::tid</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_array_decl.hpp" line="52" column="7" bodyfile="cntr/cntr_distributed_array_decl.hpp" bodystart="52" bodyend="52"/>
+        <referencedby refid="classcntr_1_1distributed__array_a37972d4827e36dcda711e7974d8117cc_1a37972d4827e36dcda711e7974d8117cc" compoundref="cntr__distributed__array__decl_8hpp" startline="54" endline="54">cntr::distributed_array&lt; T &gt;::rank_owns</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__array_a645a191c19fa4fbd57f9747df109a315_1a645a191c19fa4fbd57f9747df109a315" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt; int &gt; cntr::distributed_array&lt; T &gt;::tid_map</definition>
+        <argsstring>(void) const</argsstring>
+        <name>tid_map</name>
+        <qualifiedname>cntr::distributed_array::tid_map</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_array_decl.hpp" line="51" column="15" bodyfile="cntr/cntr_distributed_array_decl.hpp" bodystart="51" bodyend="51"/>
+        <referencedby refid="classcntr_1_1distributed__array_a37972d4827e36dcda711e7974d8117cc_1a37972d4827e36dcda711e7974d8117cc" compoundref="cntr__distributed__array__decl_8hpp" startline="54" endline="54">cntr::distributed_array&lt; T &gt;::rank_owns</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1distributed__array_af7a9472f1b760d9bc360118c99b5cd33_1af7a9472f1b760d9bc360118c99b5cd33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cntr::distributed_array&lt; T &gt;::~distributed_array</definition>
+        <argsstring>()</argsstring>
+        <name>~distributed_array</name>
+        <qualifiedname>cntr::distributed_array::~distributed_array</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_distributed_array_decl.hpp" line="34" column="3"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><bold> Auxiliary data structure for handling set of data blocks and includes usual MPI processes on them.</bold> </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+Auxiliary data structure for handling of data blocks (total number is n_) , which are stored in contiguous form in member data_ and includes usual MPI routines. The class identity is marked by <computeroutput>tid_</computeroutput> <formula id="18">$ \in $</formula> <computeroutput>(0,...,ntasks_-1)</computeroutput> and the value of the tid_ is just the MPI rank or 0 if MPI is not defined. Each data block j is owned by precisely one process, which is given by <computeroutput><ref refid="classcntr_1_1distributed__array_a52c8d4f0b99718b17eb77006c9b90956_1a52c8d4f0b99718b17eb77006c9b90956" kindref="member">tid</ref></computeroutput> <computeroutput>_map(j) = tid_</computeroutput>. The member maxlen marks the maximum size reserved for the block. NOTE: even if the block is not owned by the process, the space for the data is allocated; the ownership plays a role when the data are manipulated </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>cntr::distributed_array&lt; T &gt;</label>
+        <link refid="classcntr_1_1distributed__array"/>
+      </node>
+      <node id="2">
+        <label>cntr::distributed_array&lt; std::complex&lt; T &gt; &gt;</label>
+        <link refid="classcntr_1_1distributed__array"/>
+        <childnode refid="1" relation="template-instance">
+          <edgelabel>&lt; std::complex&lt; T &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="cntr/cntr_distributed_array_decl.hpp" line="30" column="1" bodyfile="cntr/cntr_distributed_array_decl.hpp" bodystart="30" bodyend="76"/>
+    <listofallmembers>
+      <member refid="classcntr_1_1distributed__array_a43c4b49df1bc317ccedb7be27df7d816_1a43c4b49df1bc317ccedb7be27df7d816" prot="public" virt="non-virtual"><scope>cntr::distributed_array</scope><name>block</name></member>
+      <member refid="classcntr_1_1distributed__array_a34a747dc2579f3de4ee52f42cf45f74d_1a34a747dc2579f3de4ee52f42cf45f74d" prot="public" virt="non-virtual"><scope>cntr::distributed_array</scope><name>blocksize</name></member>
+      <member refid="classcntr_1_1distributed__array_1a46ad0d0cbd8265354a13d1d15c44c661" prot="private" virt="non-virtual"><scope>cntr::distributed_array</scope><name>blocksize_</name></member>
+      <member refid="classcntr_1_1distributed__array_a2ecf6240b4ec9284e1f659ffa73770d1_1a2ecf6240b4ec9284e1f659ffa73770d1" prot="public" virt="non-virtual"><scope>cntr::distributed_array</scope><name>clear</name></member>
+      <member refid="classcntr_1_1distributed__array_a96039e94e3424bb415ad9a90bfaee87d_1a96039e94e3424bb415ad9a90bfaee87d" prot="public" virt="non-virtual"><scope>cntr::distributed_array</scope><name>data</name></member>
+      <member refid="classcntr_1_1distributed__array_1aeb5c5e2b630a4d9a5f5b2660de46e471" prot="private" virt="non-virtual"><scope>cntr::distributed_array</scope><name>data_</name></member>
+      <member refid="classcntr_1_1distributed__array_a390e47f7983b6adc24610a9d4633dfc0_1a390e47f7983b6adc24610a9d4633dfc0" prot="public" virt="non-virtual"><scope>cntr::distributed_array</scope><name>distributed_array</name></member>
+      <member refid="classcntr_1_1distributed__array_a0025a4c46c3075ac5e316075e6ad2040_1a0025a4c46c3075ac5e316075e6ad2040" prot="public" virt="non-virtual"><scope>cntr::distributed_array</scope><name>distributed_array</name></member>
+      <member refid="classcntr_1_1distributed__array_aa9b20e6c2dd624bed2ed9dc15a7caf26_1aa9b20e6c2dd624bed2ed9dc15a7caf26" prot="public" virt="non-virtual"><scope>cntr::distributed_array</scope><name>distributed_array</name></member>
+      <member refid="classcntr_1_1distributed__array_a90278949493102a98d962e7c056a25ed_1a90278949493102a98d962e7c056a25ed" prot="public" virt="non-virtual"><scope>cntr::distributed_array</scope><name>firstblock_rank</name></member>
+      <member refid="classcntr_1_1distributed__array_aeecf1ea7c600cde2e25f754bab96affb_1aeecf1ea7c600cde2e25f754bab96affb" prot="public" virt="non-virtual"><scope>cntr::distributed_array</scope><name>maxlen</name></member>
+      <member refid="classcntr_1_1distributed__array_1a4fd3aa5bcd368b3f760ee059f240adb4" prot="private" virt="non-virtual"><scope>cntr::distributed_array</scope><name>maxlen_</name></member>
+      <member refid="classcntr_1_1distributed__array_ab7b6bfaf6b06a5e4ac4d4ad8d41291e0_1ab7b6bfaf6b06a5e4ac4d4ad8d41291e0" prot="public" virt="non-virtual"><scope>cntr::distributed_array</scope><name>mpi_bcast_all</name></member>
+      <member refid="classcntr_1_1distributed__array_ab7b6bfaf6b06a5e4ac4d4ad8d41291e0_1ab7b6bfaf6b06a5e4ac4d4ad8d41291e0" prot="public" virt="non-virtual"><scope>cntr::distributed_array</scope><name>mpi_bcast_all</name></member>
+      <member refid="classcntr_1_1distributed__array_ae1af2a778c9ddf3e99746f84e94fc9d4_1ae1af2a778c9ddf3e99746f84e94fc9d4" prot="public" virt="non-virtual"><scope>cntr::distributed_array</scope><name>mpi_bcast_block</name></member>
+      <member refid="classcntr_1_1distributed__array_ae1af2a778c9ddf3e99746f84e94fc9d4_1ae1af2a778c9ddf3e99746f84e94fc9d4" prot="public" virt="non-virtual"><scope>cntr::distributed_array</scope><name>mpi_bcast_block</name></member>
+      <member refid="classcntr_1_1distributed__array_aab20de9c391504b53b944ba360c932f7_1aab20de9c391504b53b944ba360c932f7" prot="public" virt="non-virtual"><scope>cntr::distributed_array</scope><name>mpi_gather</name></member>
+      <member refid="classcntr_1_1distributed__array_a30f822e37c80336014bc1efca4a71201_1a30f822e37c80336014bc1efca4a71201" prot="public" virt="non-virtual"><scope>cntr::distributed_array</scope><name>mpi_gather</name></member>
+      <member refid="classcntr_1_1distributed__array_af88bafea34c400281bd6169726ac40b2_1af88bafea34c400281bd6169726ac40b2" prot="public" virt="non-virtual"><scope>cntr::distributed_array</scope><name>mpi_send_block</name></member>
+      <member refid="classcntr_1_1distributed__array_ab61714dc72c6c755d8c22380fb8404e3_1ab61714dc72c6c755d8c22380fb8404e3" prot="public" virt="non-virtual"><scope>cntr::distributed_array</scope><name>n</name></member>
+      <member refid="classcntr_1_1distributed__array_1a40e1973419cc4c49235ad7bb70f0dd09" prot="private" virt="non-virtual"><scope>cntr::distributed_array</scope><name>n_</name></member>
+      <member refid="classcntr_1_1distributed__array_af9a7f2358cc1642863217ec0b127bb93_1af9a7f2358cc1642863217ec0b127bb93" prot="public" virt="non-virtual"><scope>cntr::distributed_array</scope><name>ntasks</name></member>
+      <member refid="classcntr_1_1distributed__array_1ab396d1252a896290ba8a95863c7febef" prot="private" virt="non-virtual"><scope>cntr::distributed_array</scope><name>ntasks_</name></member>
+      <member refid="classcntr_1_1distributed__array_ae4974b38de4f3b9945590fe1500959e1_1ae4974b38de4f3b9945590fe1500959e1" prot="public" virt="non-virtual"><scope>cntr::distributed_array</scope><name>numblock_rank</name></member>
+      <member refid="classcntr_1_1distributed__array_a7b4d7e88a281c7ac22f4467a9e46c4dd_1a7b4d7e88a281c7ac22f4467a9e46c4dd" prot="public" virt="non-virtual"><scope>cntr::distributed_array</scope><name>operator=</name></member>
+      <member refid="classcntr_1_1distributed__array_a37972d4827e36dcda711e7974d8117cc_1a37972d4827e36dcda711e7974d8117cc" prot="public" virt="non-virtual"><scope>cntr::distributed_array</scope><name>rank_owns</name></member>
+      <member refid="classcntr_1_1distributed__array_ab7f9e5b38336cf333e8c3af195af91db_1ab7f9e5b38336cf333e8c3af195af91db" prot="public" virt="non-virtual"><scope>cntr::distributed_array</scope><name>reset_blocksize</name></member>
+      <member refid="classcntr_1_1distributed__array_a52c8d4f0b99718b17eb77006c9b90956_1a52c8d4f0b99718b17eb77006c9b90956" prot="public" virt="non-virtual"><scope>cntr::distributed_array</scope><name>tid</name></member>
+      <member refid="classcntr_1_1distributed__array_1a44453a047cef77ee971d77e6ab7ba4ea" prot="private" virt="non-virtual"><scope>cntr::distributed_array</scope><name>tid_</name></member>
+      <member refid="classcntr_1_1distributed__array_a645a191c19fa4fbd57f9747df109a315_1a645a191c19fa4fbd57f9747df109a315" prot="public" virt="non-virtual"><scope>cntr::distributed_array</scope><name>tid_map</name></member>
+      <member refid="classcntr_1_1distributed__array_1a1729838e6e6174659bbb29c2bf36372b" prot="private" virt="non-virtual"><scope>cntr::distributed_array</scope><name>tid_map_</name></member>
+      <member refid="classcntr_1_1distributed__array_af7a9472f1b760d9bc360118c99b5cd33_1af7a9472f1b760d9bc360118c99b5cd33" prot="public" virt="non-virtual"><scope>cntr::distributed_array</scope><name>~distributed_array</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

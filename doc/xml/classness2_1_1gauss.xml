@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classness2_1_1gauss" kind="class" language="C++" prot="public">
+    <compoundname>ness2::gauss</compoundname>
+    <includes refid="ness2__equilibrium__decl_8hpp" local="no">ness2_equilibrium_decl.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classness2_1_1gauss_a5fca08472b5e53c3140a1b49033624d8_1a5fca08472b5e53c3140a1b49033624d8" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ness2::gauss::hi_</definition>
+        <argsstring></argsstring>
+        <name>hi_</name>
+        <qualifiedname>ness2::gauss::hi_</qualifiedname>
+        <briefdescription>
+<para><bold> Higher edge of the density of states </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_equilibrium_decl.hpp" line="113" column="12" bodyfile="cntr/ness2_equilibrium_decl.hpp" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classness2_1_1gauss_a176f74c398657f90179836a726b6fad7_1a176f74c398657f90179836a726b6fad7" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ness2::gauss::lo_</definition>
+        <argsstring></argsstring>
+        <name>lo_</name>
+        <qualifiedname>ness2::gauss::lo_</qualifiedname>
+        <briefdescription>
+<para><bold> Lower edge of the density of states </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_equilibrium_decl.hpp" line="115" column="12" bodyfile="cntr/ness2_equilibrium_decl.hpp" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classness2_1_1gauss_a9085546d1753eac99f59a8d0da8d8b64_1a9085546d1753eac99f59a8d0da8d8b64" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ness2::gauss::mu_</definition>
+        <argsstring></argsstring>
+        <name>mu_</name>
+        <qualifiedname>ness2::gauss::mu_</qualifiedname>
+        <briefdescription>
+<para><bold> Mean of gaussian </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_equilibrium_decl.hpp" line="117" column="12" bodyfile="cntr/ness2_equilibrium_decl.hpp" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classness2_1_1gauss_a10c5a97eb3ae7e6d04de337757b17dcd_1a10c5a97eb3ae7e6d04de337757b17dcd" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ness2::gauss::sigma_</definition>
+        <argsstring></argsstring>
+        <name>sigma_</name>
+        <qualifiedname>ness2::gauss::sigma_</qualifiedname>
+        <briefdescription>
+<para><bold> Standard deviation of gaussian </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_equilibrium_decl.hpp" line="119" column="12" bodyfile="cntr/ness2_equilibrium_decl.hpp" bodystart="119" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classness2_1_1gauss_ad758d7c93bbe6a26d03c8bb071cbfa44_1ad758d7c93bbe6a26d03c8bb071cbfa44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ness2::gauss::gauss</definition>
+        <argsstring>()</argsstring>
+        <name>gauss</name>
+        <qualifiedname>ness2::gauss::gauss</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_equilibrium_decl.hpp" line="120" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1gauss_a92e0fbb6ed75867f7263b2c9fc32d7c8_1a92e0fbb6ed75867f7263b2c9fc32d7c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ness2::gauss::gauss</definition>
+        <argsstring>(double mu, double sigma)</argsstring>
+        <name>gauss</name>
+        <qualifiedname>ness2::gauss::gauss</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>mu</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>sigma</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_equilibrium_decl.hpp" line="121" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1gauss_a800a0f6a02e83653cc814bf2dd49eb40_1a800a0f6a02e83653cc814bf2dd49eb40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ness2::gauss::operator()</definition>
+        <argsstring>(double x)</argsstring>
+        <name>operator()</name>
+        <qualifiedname>ness2::gauss::operator()</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_equilibrium_decl.hpp" line="122" column="12"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><bold> Class <computeroutput><ref refid="classness2_1_1gauss" kindref="compound">gauss</ref></computeroutput> represent the gaussian density of states </bold> </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>This class contains the data structures for representing the density of states for a gaussian with mean 0 and a standard deviation of 1. </para>
+</blockquote></para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>double</label>
+      </node>
+      <node id="1">
+        <label>ness2::gauss</label>
+        <link refid="classness2_1_1gauss"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>hi_</edgelabel>
+          <edgelabel>lo_</edgelabel>
+          <edgelabel>mu_</edgelabel>
+          <edgelabel>sigma_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="cntr/ness2_equilibrium_decl.hpp" line="110" column="3" bodyfile="cntr/ness2_equilibrium_decl.hpp" bodystart="110" bodyend="123"/>
+    <listofallmembers>
+      <member refid="classness2_1_1gauss_ad758d7c93bbe6a26d03c8bb071cbfa44_1ad758d7c93bbe6a26d03c8bb071cbfa44" prot="public" virt="non-virtual"><scope>ness2::gauss</scope><name>gauss</name></member>
+      <member refid="classness2_1_1gauss_a92e0fbb6ed75867f7263b2c9fc32d7c8_1a92e0fbb6ed75867f7263b2c9fc32d7c8" prot="public" virt="non-virtual"><scope>ness2::gauss</scope><name>gauss</name></member>
+      <member refid="classness2_1_1gauss_a5fca08472b5e53c3140a1b49033624d8_1a5fca08472b5e53c3140a1b49033624d8" prot="public" virt="non-virtual"><scope>ness2::gauss</scope><name>hi_</name></member>
+      <member refid="classness2_1_1gauss_a176f74c398657f90179836a726b6fad7_1a176f74c398657f90179836a726b6fad7" prot="public" virt="non-virtual"><scope>ness2::gauss</scope><name>lo_</name></member>
+      <member refid="classness2_1_1gauss_a9085546d1753eac99f59a8d0da8d8b64_1a9085546d1753eac99f59a8d0da8d8b64" prot="public" virt="non-virtual"><scope>ness2::gauss</scope><name>mu_</name></member>
+      <member refid="classness2_1_1gauss_a800a0f6a02e83653cc814bf2dd49eb40_1a800a0f6a02e83653cc814bf2dd49eb40" prot="public" virt="non-virtual"><scope>ness2::gauss</scope><name>operator()</name></member>
+      <member refid="classness2_1_1gauss_a10c5a97eb3ae7e6d04de337757b17dcd_1a10c5a97eb3ae7e6d04de337757b17dcd" prot="public" virt="non-virtual"><scope>ness2::gauss</scope><name>sigma_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

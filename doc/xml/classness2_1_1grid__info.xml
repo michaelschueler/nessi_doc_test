@@ -1,0 +1,301 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classness2_1_1grid__info" kind="class" language="C++" prot="public">
+    <compoundname>ness2::grid_info</compoundname>
+    <includes refid="ness2__fft__decl_8hpp" local="no">ness2_fft_decl.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classness2_1_1grid__info_ae7096656276fd854a5862ed56d2b60cf_1ae7096656276fd854a5862ed56d2b60cf" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ness2::grid_info::dw_</definition>
+        <argsstring></argsstring>
+        <name>dw_</name>
+        <qualifiedname>ness2::grid_info::dw_</qualifiedname>
+        <briefdescription>
+<para>frequency step </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="27" column="12" bodyfile="cntr/ness2_fft_decl.hpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classness2_1_1grid__info_a3718e03f5f27d955fbb85aafff80fe2e_1a3718e03f5f27d955fbb85aafff80fe2e" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ness2::grid_info::h_</definition>
+        <argsstring></argsstring>
+        <name>h_</name>
+        <qualifiedname>ness2::grid_info::h_</qualifiedname>
+        <briefdescription>
+<para>time step </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="26" column="12" bodyfile="cntr/ness2_fft_decl.hpp" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classness2_1_1grid__info_a7897d0d1ee6b8206d66338b10520d6ac_1a7897d0d1ee6b8206d66338b10520d6ac" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ness2::grid_info::Nft_</definition>
+        <argsstring></argsstring>
+        <name>Nft_</name>
+        <qualifiedname>ness2::grid_info::Nft_</qualifiedname>
+        <briefdescription>
+<para>total number of FFT grid points </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="25" column="9" bodyfile="cntr/ness2_fft_decl.hpp" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classness2_1_1grid__info_a60e4853c58c526398d560cfd12590aa2_1a60e4853c58c526398d560cfd12590aa2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ness2::grid_info::freq_at</definition>
+        <argsstring>(int k) const</argsstring>
+        <name>freq_at</name>
+        <qualifiedname>ness2::grid_info::freq_at</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+<para>Get frequency value <formula id="188">$ \omega $</formula> at grid index <formula id="189">$ k $</formula>:  <formula id="190">$ w = k \cdot dw \quad \text{for} \quad k=0\dots \frac{N_{ft}}{2}-1 \\
+w = (k - N_{ft}) \cdot dw \quad \text{for} \quad k=\frac{N_{ft}}{2} \dots N_{ft} - 1 $</formula>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>further indices are periodically wrapped</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>freqeuncy grid index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="69" column="12"/>
+        <referencedby refid="namespaceness2_a3fc04c6c94b6f4037f54206a319dff27_1a3fc04c6c94b6f4037f54206a319dff27" compoundref="ness2__equilibrium__decl_8hpp" startline="201" endline="239">ness2::green_equilibrium_ness_bose</referencedby>
+        <referencedby refid="namespaceness2_a3a3ddda2ed9698ac30831954cb6f3248_1a3a3ddda2ed9698ac30831954cb6f3248" compoundref="ness2__equilibrium__decl_8hpp" startline="156" endline="197">ness2::green_equilibrium_ness_fermi</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1grid__info_a3a3d543dd703c16feb5fb77dd49147c5_1a3a3d543dd703c16feb5fb77dd49147c5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; ness2::grid_info::freq_grid</definition>
+        <argsstring>() const</argsstring>
+        <name>freq_grid</name>
+        <qualifiedname>ness2::grid_info::freq_grid</qualifiedname>
+        <briefdescription>
+<para>Generate the full wrapped frequency grid. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>vector of frequency values (length <formula id="184">$ N_{ft} $</formula>) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="81" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1grid__info_a1f0dad51094cd1a0e9146924c767dbd0_1a1f0dad51094cd1a0e9146924c767dbd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ness2::grid_info::grid_info</definition>
+        <argsstring>(int Nft, double h)</argsstring>
+        <name>grid_info</name>
+        <qualifiedname>ness2::grid_info::grid_info</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>Nft</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+<para>Constructor to initialize grid with time step <formula id="172">$ h $</formula> and length <formula id="184">$ N_{ft} $</formula>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Nft</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of time points (must be positive) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>time step (must be positive) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="35" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1grid__info_a4ebe60c10b5917bea98f13519331eeb7_1a4ebe60c10b5917bea98f13519331eeb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness2::grid_info::set_dw</definition>
+        <argsstring>(double new_dw)</argsstring>
+        <name>set_dw</name>
+        <qualifiedname>ness2::grid_info::set_dw</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>new_dw</declname>
+        </param>
+        <briefdescription>
+<para>Update frequency step <formula id="183">$ d\omega $</formula> and adjust time step <formula id="172">$ h $</formula> accordingly. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>new_dw</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new frequency step (must be positive) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="49" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1grid__info_ac4541b0aac55cf76a2f265dc37c0421f_1ac4541b0aac55cf76a2f265dc37c0421f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness2::grid_info::set_h</definition>
+        <argsstring>(double new_h)</argsstring>
+        <name>set_h</name>
+        <qualifiedname>ness2::grid_info::set_h</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>new_h</declname>
+        </param>
+        <briefdescription>
+<para>Update time step <formula id="172">$ h $</formula> and adjust frequency step <formula id="183">$ d\omega $</formula> accordingly. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>new_h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new time step (must be positive) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="42" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1grid__info_ac83f26f2c899e36db23174e25179d521_1ac83f26f2c899e36db23174e25179d521" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ness2::grid_info::time_at</definition>
+        <argsstring>(int n) const</argsstring>
+        <name>time_at</name>
+        <qualifiedname>ness2::grid_info::time_at</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+<para>Get time value <formula id="186">$ t $</formula> at grid index <formula id="79">$ n $</formula>:  <formula id="187">$ t = n \cdot h \quad \text{for} \quad n=0 \dots \frac{N_{ft}}{2}-1 \\
+t = (n - N_{ft}) \cdot h \quad \text{for} \quad n = \frac{N_{ft}}{2} \dots N_{ft} - 1 $</formula>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>further indices are periodically wrapped</title><para></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>time grid index </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="59" column="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1grid__info_a4f859cabbf94aaadd31c9c19f7091b03_1a4f859cabbf94aaadd31c9c19f7091b03" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; ness2::grid_info::time_grid</definition>
+        <argsstring>() const</argsstring>
+        <name>time_grid</name>
+        <qualifiedname>ness2::grid_info::time_grid</qualifiedname>
+        <briefdescription>
+<para>Generate the full wrapped time grid. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>vector of time values (length <formula id="184">$ N_{ft} $</formula>) </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="75" column="17"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Grid information for time and frequency axes associated with FFT arrays. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class describes the time and frequency grids with steps <formula id="172">$ h $</formula> and <formula id="183">$ d\omega $</formula> and length <formula id="184">$ N_{ft} $</formula> used in <computeroutput><ref refid="classness2_1_1fft__array" kindref="compound">fft_array</ref></computeroutput> and <computeroutput><ref refid="classness2_1_1herm__matrix__ness" kindref="compound">herm_matrix_ness</ref></computeroutput>.</para>
+<para>Given:<itemizedlist>
+<listitem><para><computeroutput><ref refid="classness2_1_1grid__info_a3718e03f5f27d955fbb85aafff80fe2e_1a3718e03f5f27d955fbb85aafff80fe2e" kindref="member">h_</ref></computeroutput>: time step,</para>
+</listitem><listitem><para><computeroutput><ref refid="classness2_1_1grid__info_a7897d0d1ee6b8206d66338b10520d6ac_1a7897d0d1ee6b8206d66338b10520d6ac" kindref="member">Nft_</ref></computeroutput>: total FFT grid points,</para>
+</listitem><listitem><para><formula id="185">$ {\tt dw\_} = \frac{2\pi}{{\tt Nft\_} \cdot {\tt h\_}} $</formula>: frequency step. </para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>double</label>
+      </node>
+      <node id="2">
+        <label>int</label>
+      </node>
+      <node id="1">
+        <label>ness2::grid_info</label>
+        <link refid="classness2_1_1grid__info"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>Nft_</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>dw_</edgelabel>
+          <edgelabel>h_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="cntr/ness2_fft_decl.hpp" line="23" column="3" bodyfile="cntr/ness2_fft_decl.hpp" bodystart="23" bodyend="82"/>
+    <listofallmembers>
+      <member refid="classness2_1_1grid__info_ae7096656276fd854a5862ed56d2b60cf_1ae7096656276fd854a5862ed56d2b60cf" prot="public" virt="non-virtual"><scope>ness2::grid_info</scope><name>dw_</name></member>
+      <member refid="classness2_1_1grid__info_a60e4853c58c526398d560cfd12590aa2_1a60e4853c58c526398d560cfd12590aa2" prot="public" virt="non-virtual"><scope>ness2::grid_info</scope><name>freq_at</name></member>
+      <member refid="classness2_1_1grid__info_a3a3d543dd703c16feb5fb77dd49147c5_1a3a3d543dd703c16feb5fb77dd49147c5" prot="public" virt="non-virtual"><scope>ness2::grid_info</scope><name>freq_grid</name></member>
+      <member refid="classness2_1_1grid__info_a1f0dad51094cd1a0e9146924c767dbd0_1a1f0dad51094cd1a0e9146924c767dbd0" prot="public" virt="non-virtual"><scope>ness2::grid_info</scope><name>grid_info</name></member>
+      <member refid="classness2_1_1grid__info_a3718e03f5f27d955fbb85aafff80fe2e_1a3718e03f5f27d955fbb85aafff80fe2e" prot="public" virt="non-virtual"><scope>ness2::grid_info</scope><name>h_</name></member>
+      <member refid="classness2_1_1grid__info_a7897d0d1ee6b8206d66338b10520d6ac_1a7897d0d1ee6b8206d66338b10520d6ac" prot="public" virt="non-virtual"><scope>ness2::grid_info</scope><name>Nft_</name></member>
+      <member refid="classness2_1_1grid__info_a4ebe60c10b5917bea98f13519331eeb7_1a4ebe60c10b5917bea98f13519331eeb7" prot="public" virt="non-virtual"><scope>ness2::grid_info</scope><name>set_dw</name></member>
+      <member refid="classness2_1_1grid__info_ac4541b0aac55cf76a2f265dc37c0421f_1ac4541b0aac55cf76a2f265dc37c0421f" prot="public" virt="non-virtual"><scope>ness2::grid_info</scope><name>set_h</name></member>
+      <member refid="classness2_1_1grid__info_ac83f26f2c899e36db23174e25179d521_1ac83f26f2c899e36db23174e25179d521" prot="public" virt="non-virtual"><scope>ness2::grid_info</scope><name>time_at</name></member>
+      <member refid="classness2_1_1grid__info_a4f859cabbf94aaadd31c9c19f7091b03_1a4f859cabbf94aaadd31c9c19f7091b03" prot="public" virt="non-virtual"><scope>ness2::grid_info</scope><name>time_grid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

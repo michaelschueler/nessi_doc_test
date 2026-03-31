@@ -1,0 +1,598 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classcntr_1_1function__moving" kind="class" language="C++" prot="public">
+    <compoundname>cntr::function_moving</compoundname>
+    <includes refid="cntr__function__decl_8hpp" local="no">cntr_function_decl.hpp</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classcntr_1_1function__moving_a6af53b3275adf3ad1a82c1a7ab356782_1a6af53b3275adf3ad1a82c1a7ab356782" prot="public" static="no">
+        <type>std::complex&lt; T &gt;</type>
+        <definition>typedef std::complex&lt;T&gt; cntr::function_moving&lt; T &gt;::cplx</definition>
+        <argsstring></argsstring>
+        <name>cplx</name>
+        <qualifiedname>cntr::function_moving::cplx</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_function_decl.hpp" line="112" column="26" bodyfile="cntr/cntr_function_decl.hpp" bodystart="112" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classcntr_1_1function__moving_1a9dbefbb3c3efda28a830019538525043" prot="private" static="no" mutable="no">
+        <type><ref refid="classcntr_1_1function__moving_a6af53b3275adf3ad1a82c1a7ab356782_1a6af53b3275adf3ad1a82c1a7ab356782" kindref="member">cplx</ref> *</type>
+        <definition>cplx* cntr::function_moving&lt; T &gt;::data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <qualifiedname>cntr::function_moving::data_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_function_decl.hpp" line="141" column="10" bodyfile="cntr/cntr_function_decl.hpp" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1function__moving_1a76ed60ab953a006485d6c9ae93759955" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cntr::function_moving&lt; T &gt;::element_size_</definition>
+        <argsstring></argsstring>
+        <name>element_size_</name>
+        <qualifiedname>cntr::function_moving::element_size_</qualifiedname>
+        <briefdescription>
+<para><bold> Size of the Matrix form; size1*size2. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_function_decl.hpp" line="151" column="9" bodyfile="cntr/cntr_function_decl.hpp" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1function__moving_1ab10690cbacc2935239015c21a6498acd" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cntr::function_moving&lt; T &gt;::size1_</definition>
+        <argsstring></argsstring>
+        <name>size1_</name>
+        <qualifiedname>cntr::function_moving::size1_</qualifiedname>
+        <briefdescription>
+<para><bold> Number of the colums in the Matrix form.</bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_function_decl.hpp" line="146" column="9" bodyfile="cntr/cntr_function_decl.hpp" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1function__moving_1a86d3b0eb2fd6c80449e319d40bea30b3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cntr::function_moving&lt; T &gt;::size2_</definition>
+        <argsstring></argsstring>
+        <name>size2_</name>
+        <qualifiedname>cntr::function_moving::size2_</qualifiedname>
+        <briefdescription>
+<para><bold> Number of the rows in the Matrix form.</bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_function_decl.hpp" line="148" column="9" bodyfile="cntr/cntr_function_decl.hpp" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1function__moving_1afb01c62154a1aafe5e33939746797c84" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cntr::function_moving&lt; T &gt;::tc_</definition>
+        <argsstring></argsstring>
+        <name>tc_</name>
+        <qualifiedname>cntr::function_moving::tc_</qualifiedname>
+        <briefdescription>
+<para><bold> Cutoff time</bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_function_decl.hpp" line="144" column="9" bodyfile="cntr/cntr_function_decl.hpp" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classcntr_1_1function__moving_1a4fa2f00fa486b2e67543def57d83d2c9" prot="private" static="no" mutable="no">
+        <type><ref refid="classcntr_1_1function__moving_a6af53b3275adf3ad1a82c1a7ab356782_1a6af53b3275adf3ad1a82c1a7ab356782" kindref="member">cplx</ref> **</type>
+        <definition>cplx** cntr::function_moving&lt; T &gt;::value_</definition>
+        <argsstring></argsstring>
+        <name>value_</name>
+        <qualifiedname>cntr::function_moving::value_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_function_decl.hpp" line="142" column="10" bodyfile="cntr/cntr_function_decl.hpp" bodystart="142" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcntr_1_1function__moving_ac33b0232f18bc28445f5fa02dafce048_1ac33b0232f18bc28445f5fa02dafce048" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::function_moving&lt; T &gt;::clear</definition>
+        <argsstring>(void)</argsstring>
+        <name>clear</name>
+        <qualifiedname>cntr::function_moving::clear</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_function_decl.hpp" line="119" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1function__moving_ae9c39e1641bf8d763e0fdc98ca0b765d_1ae9c39e1641bf8d763e0fdc98ca0b765d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int cntr::function_moving&lt; T &gt;::element_size</definition>
+        <argsstring>(void) const</argsstring>
+        <name>element_size</name>
+        <qualifiedname>cntr::function_moving::element_size</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_function_decl.hpp" line="121" column="9" bodyfile="cntr/cntr_function_decl.hpp" bodystart="121" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1function__moving_a9176e887c1aeb02bb8a8171a4cba7da2_1a9176e887c1aeb02bb8a8171a4cba7da2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::function_moving&lt; T &gt;::forward</definition>
+        <argsstring>(void)</argsstring>
+        <name>forward</name>
+        <qualifiedname>cntr::function_moving::forward</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_function_decl.hpp" line="134" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1function__moving_a771df269ec95935ab5dba283db231131_1a771df269ec95935ab5dba283db231131" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cntr::function_moving&lt; T &gt;::function_moving</definition>
+        <argsstring>()</argsstring>
+        <name>function_moving</name>
+        <qualifiedname>cntr::function_moving::function_moving</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_function_decl.hpp" line="114" column="5"/>
+        <referencedby refid="classcntr_1_1function__moving_a82ed8a4463e8ed8e8c01a4599afe90e5_1a82ed8a4463e8ed8e8c01a4599afe90e5">cntr::function_moving&lt; T &gt;::function_moving</referencedby>
+        <referencedby refid="classcntr_1_1function__moving_a88563ab67fc926647073238e3b34c107_1a88563ab67fc926647073238e3b34c107">cntr::function_moving&lt; T &gt;::operator=</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1function__moving_a82ed8a4463e8ed8e8c01a4599afe90e5_1a82ed8a4463e8ed8e8c01a4599afe90e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cntr::function_moving&lt; T &gt;::function_moving</definition>
+        <argsstring>(const function_moving &amp;g)</argsstring>
+        <name>function_moving</name>
+        <qualifiedname>cntr::function_moving::function_moving</qualifiedname>
+        <param>
+          <type>const function_moving &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_function_decl.hpp" line="117" column="5"/>
+        <references refid="classcntr_1_1function__moving_a771df269ec95935ab5dba283db231131_1a771df269ec95935ab5dba283db231131">cntr::function_moving&lt; T &gt;::function_moving</references>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1function__moving_ab602add05629d5c46ad94bc87f9ac80c_1ab602add05629d5c46ad94bc87f9ac80c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cntr::function_moving&lt; T &gt;::function_moving</definition>
+        <argsstring>(int tc, int size1=1)</argsstring>
+        <name>function_moving</name>
+        <qualifiedname>cntr::function_moving::function_moving</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size1</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_function_decl.hpp" line="116" column="5"/>
+        <references refid="classcntr_1_1function__moving_a34ff4b89c2156ebf05201cef61354ad9_1a34ff4b89c2156ebf05201cef61354ad9" compoundref="cntr__function__decl_8hpp" startline="122" endline="122">cntr::function_moving&lt; T &gt;::size1</references>
+        <references refid="classcntr_1_1function__moving_aa3976694020a16c6c31ac9ae86ee65fb_1aa3976694020a16c6c31ac9ae86ee65fb" compoundref="cntr__function__decl_8hpp" startline="124" endline="124">cntr::function_moving&lt; T &gt;::tc</references>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1function__moving_a746aea5dca13c333751a1451b9a6bb6c_1a746aea5dca13c333751a1451b9a6bb6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class EigenMatrix</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cntr::function_moving&lt; T &gt;::get_value</definition>
+        <argsstring>(int i, EigenMatrix &amp;M)</argsstring>
+        <name>get_value</name>
+        <qualifiedname>cntr::function_moving::get_value</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>EigenMatrix &amp;</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_function_decl.hpp" line="129" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1function__moving_a88563ab67fc926647073238e3b34c107_1a88563ab67fc926647073238e3b34c107" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classcntr_1_1function__moving_a771df269ec95935ab5dba283db231131_1a771df269ec95935ab5dba283db231131" kindref="member">function_moving</ref> &amp;</type>
+        <definition>function_moving &amp; cntr::function_moving&lt; T &gt;::operator=</definition>
+        <argsstring>(const function_moving &amp;g)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>cntr::function_moving::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classcntr_1_1function__moving_a771df269ec95935ab5dba283db231131_1a771df269ec95935ab5dba283db231131" kindref="member">function_moving</ref> &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_function_decl.hpp" line="118" column="22"/>
+        <references refid="classcntr_1_1function__moving_a771df269ec95935ab5dba283db231131_1a771df269ec95935ab5dba283db231131">cntr::function_moving&lt; T &gt;::function_moving</references>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1function__moving_a444db533f2fe43e1ec68275d033a5d44_1a444db533f2fe43e1ec68275d033a5d44" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcntr_1_1function__moving_a6af53b3275adf3ad1a82c1a7ab356782_1a6af53b3275adf3ad1a82c1a7ab356782" kindref="member">cplx</ref> &amp;</type>
+        <definition>cplx &amp; cntr::function_moving&lt; T &gt;::operator[]</definition>
+        <argsstring>(int i)</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>cntr::function_moving::operator[]</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_function_decl.hpp" line="130" column="11" bodyfile="cntr/cntr_function_decl.hpp" bodystart="130" bodyend="130"/>
+        <references refid="classcntr_1_1function__moving_aff6516d296d038867e021ac1c6cce67b_1aff6516d296d038867e021ac1c6cce67b" compoundref="cntr__function__decl_8hpp" startline="125" endline="125">cntr::function_moving&lt; T &gt;::ptr</references>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1function__moving_a79a38968972f5595e727a7d3c246d70d_1a79a38968972f5595e727a7d3c246d70d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcntr_1_1function__moving_a6af53b3275adf3ad1a82c1a7ab356782_1a6af53b3275adf3ad1a82c1a7ab356782" kindref="member">cplx</ref> &amp;</type>
+        <definition>cplx &amp; cntr::function_moving&lt; T &gt;::operator[]</definition>
+        <argsstring>(int i) const</argsstring>
+        <name>operator[]</name>
+        <qualifiedname>cntr::function_moving::operator[]</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_function_decl.hpp" line="131" column="11" bodyfile="cntr/cntr_function_decl.hpp" bodystart="131" bodyend="131"/>
+        <references refid="classcntr_1_1function__moving_aff6516d296d038867e021ac1c6cce67b_1aff6516d296d038867e021ac1c6cce67b" compoundref="cntr__function__decl_8hpp" startline="125" endline="125">cntr::function_moving&lt; T &gt;::ptr</references>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1function__moving_a56f04a278645af01cfeec13f3e083a19_1a56f04a278645af01cfeec13f3e083a19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::function_moving&lt; T &gt;::print_to_file</definition>
+        <argsstring>(const char *file, int precision=16)</argsstring>
+        <name>print_to_file</name>
+        <qualifiedname>cntr::function_moving::print_to_file</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>precision</declname>
+          <defval>16</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_function_decl.hpp" line="132" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1function__moving_aff6516d296d038867e021ac1c6cce67b_1aff6516d296d038867e021ac1c6cce67b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classcntr_1_1function__moving_a6af53b3275adf3ad1a82c1a7ab356782_1a6af53b3275adf3ad1a82c1a7ab356782" kindref="member">cplx</ref> *</type>
+        <definition>cplx * cntr::function_moving&lt; T &gt;::ptr</definition>
+        <argsstring>(int i)</argsstring>
+        <name>ptr</name>
+        <qualifiedname>cntr::function_moving::ptr</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_function_decl.hpp" line="125" column="18" bodyfile="cntr/cntr_function_decl.hpp" bodystart="125" bodyend="125"/>
+        <referencedby refid="classcntr_1_1function__moving_a444db533f2fe43e1ec68275d033a5d44_1a444db533f2fe43e1ec68275d033a5d44" compoundref="cntr__function__decl_8hpp" startline="130" endline="130">cntr::function_moving&lt; T &gt;::operator[]</referencedby>
+        <referencedby refid="classcntr_1_1function__moving_a79a38968972f5595e727a7d3c246d70d_1a79a38968972f5595e727a7d3c246d70d" compoundref="cntr__function__decl_8hpp" startline="131" endline="131">cntr::function_moving&lt; T &gt;::operator[]</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1function__moving_a35aaacae6307153c50a4c0b9c52e5875_1a35aaacae6307153c50a4c0b9c52e5875" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::function_moving&lt; T &gt;::read_from_file</definition>
+        <argsstring>(const char *file)</argsstring>
+        <name>read_from_file</name>
+        <qualifiedname>cntr::function_moving::read_from_file</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_function_decl.hpp" line="133" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1function__moving_aaa5f3ccda3adaf1ad9fbd40375bce640_1aaa5f3ccda3adaf1ad9fbd40375bce640" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::function_moving&lt; T &gt;::resize</definition>
+        <argsstring>(int tc, int size1)</argsstring>
+        <name>resize</name>
+        <qualifiedname>cntr::function_moving::resize</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size1</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_function_decl.hpp" line="120" column="10"/>
+        <references refid="classcntr_1_1function__moving_a34ff4b89c2156ebf05201cef61354ad9_1a34ff4b89c2156ebf05201cef61354ad9" compoundref="cntr__function__decl_8hpp" startline="122" endline="122">cntr::function_moving&lt; T &gt;::size1</references>
+        <references refid="classcntr_1_1function__moving_aa3976694020a16c6c31ac9ae86ee65fb_1aa3976694020a16c6c31ac9ae86ee65fb" compoundref="cntr__function__decl_8hpp" startline="124" endline="124">cntr::function_moving&lt; T &gt;::tc</references>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1function__moving_aa990c5cceb2faf2d12219cfbc502210f_1aa990c5cceb2faf2d12219cfbc502210f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::function_moving&lt; T &gt;::set_from_function_backward</definition>
+        <argsstring>(function&lt; T &gt; &amp;f, int tstp)</argsstring>
+        <name>set_from_function_backward</name>
+        <qualifiedname>cntr::function_moving::set_from_function_backward</qualifiedname>
+        <param>
+          <type><ref refid="classcntr_1_1function" kindref="compound">function</ref>&lt; T &gt; &amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_function_decl.hpp" line="136" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1function__moving_a35dcb7fd6c08d266e7dcb6d9f90acefb_1a35dcb7fd6c08d266e7dcb6d9f90acefb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::function_moving&lt; T &gt;::set_from_function_backward</definition>
+        <argsstring>(int tstp, function&lt; T &gt; &amp;f)</argsstring>
+        <name>set_from_function_backward</name>
+        <qualifiedname>cntr::function_moving::set_from_function_backward</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type><ref refid="classcntr_1_1function" kindref="compound">function</ref>&lt; T &gt; &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_function_decl.hpp" line="137" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1function__moving_a189074b4eda842cbd31c941da952ecc0_1a189074b4eda842cbd31c941da952ecc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void cntr::function_moving&lt; T &gt;::set_from_function_forward</definition>
+        <argsstring>(int tstp, function&lt; T &gt; &amp;f)</argsstring>
+        <name>set_from_function_forward</name>
+        <qualifiedname>cntr::function_moving::set_from_function_forward</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>tstp</declname>
+        </param>
+        <param>
+          <type><ref refid="classcntr_1_1function" kindref="compound">function</ref>&lt; T &gt; &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_function_decl.hpp" line="138" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1function__moving_a51dabbf31097e949013385a6bd02f17d_1a51dabbf31097e949013385a6bd02f17d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class EigenMatrix</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void cntr::function_moving&lt; T &gt;::set_value</definition>
+        <argsstring>(int i, EigenMatrix &amp;M)</argsstring>
+        <name>set_value</name>
+        <qualifiedname>cntr::function_moving::set_value</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>EigenMatrix &amp;</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_function_decl.hpp" line="127" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1function__moving_a34ff4b89c2156ebf05201cef61354ad9_1a34ff4b89c2156ebf05201cef61354ad9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int cntr::function_moving&lt; T &gt;::size1</definition>
+        <argsstring>(void) const</argsstring>
+        <name>size1</name>
+        <qualifiedname>cntr::function_moving::size1</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_function_decl.hpp" line="122" column="9" bodyfile="cntr/cntr_function_decl.hpp" bodystart="122" bodyend="122"/>
+        <referencedby refid="classcntr_1_1function__moving_ab602add05629d5c46ad94bc87f9ac80c_1ab602add05629d5c46ad94bc87f9ac80c">cntr::function_moving&lt; T &gt;::function_moving</referencedby>
+        <referencedby refid="classcntr_1_1function__moving_aaa5f3ccda3adaf1ad9fbd40375bce640_1aaa5f3ccda3adaf1ad9fbd40375bce640">cntr::function_moving&lt; T &gt;::resize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1function__moving_a1e6ae93584e2b413c452227762714155_1a1e6ae93584e2b413c452227762714155" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int cntr::function_moving&lt; T &gt;::size2</definition>
+        <argsstring>(void) const</argsstring>
+        <name>size2</name>
+        <qualifiedname>cntr::function_moving::size2</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_function_decl.hpp" line="123" column="9" bodyfile="cntr/cntr_function_decl.hpp" bodystart="123" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1function__moving_aa3976694020a16c6c31ac9ae86ee65fb_1aa3976694020a16c6c31ac9ae86ee65fb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int cntr::function_moving&lt; T &gt;::tc</definition>
+        <argsstring>(void) const</argsstring>
+        <name>tc</name>
+        <qualifiedname>cntr::function_moving::tc</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_function_decl.hpp" line="124" column="9" bodyfile="cntr/cntr_function_decl.hpp" bodystart="124" bodyend="124"/>
+        <referencedby refid="classcntr_1_1function__moving_ab602add05629d5c46ad94bc87f9ac80c_1ab602add05629d5c46ad94bc87f9ac80c">cntr::function_moving&lt; T &gt;::function_moving</referencedby>
+        <referencedby refid="classcntr_1_1function__moving_aaa5f3ccda3adaf1ad9fbd40375bce640_1aaa5f3ccda3adaf1ad9fbd40375bce640">cntr::function_moving&lt; T &gt;::resize</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcntr_1_1function__moving_a05c7cef95200c66f30449c599c22b7df_1a05c7cef95200c66f30449c599c22b7df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>cntr::function_moving&lt; T &gt;::~function_moving</definition>
+        <argsstring>()</argsstring>
+        <name>~function_moving</name>
+        <qualifiedname>cntr::function_moving::~function_moving</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/cntr_function_decl.hpp" line="115" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="cntr/cntr_function_decl.hpp" line="110" column="3" bodyfile="cntr/cntr_function_decl.hpp" bodystart="110" bodyend="152"/>
+    <listofallmembers>
+      <member refid="classcntr_1_1function__moving_ac33b0232f18bc28445f5fa02dafce048_1ac33b0232f18bc28445f5fa02dafce048" prot="public" virt="non-virtual"><scope>cntr::function_moving</scope><name>clear</name></member>
+      <member refid="classcntr_1_1function__moving_a6af53b3275adf3ad1a82c1a7ab356782_1a6af53b3275adf3ad1a82c1a7ab356782" prot="public" virt="non-virtual"><scope>cntr::function_moving</scope><name>cplx</name></member>
+      <member refid="classcntr_1_1function__moving_1a9dbefbb3c3efda28a830019538525043" prot="private" virt="non-virtual"><scope>cntr::function_moving</scope><name>data_</name></member>
+      <member refid="classcntr_1_1function__moving_ae9c39e1641bf8d763e0fdc98ca0b765d_1ae9c39e1641bf8d763e0fdc98ca0b765d" prot="public" virt="non-virtual"><scope>cntr::function_moving</scope><name>element_size</name></member>
+      <member refid="classcntr_1_1function__moving_1a76ed60ab953a006485d6c9ae93759955" prot="private" virt="non-virtual"><scope>cntr::function_moving</scope><name>element_size_</name></member>
+      <member refid="classcntr_1_1function__moving_a9176e887c1aeb02bb8a8171a4cba7da2_1a9176e887c1aeb02bb8a8171a4cba7da2" prot="public" virt="non-virtual"><scope>cntr::function_moving</scope><name>forward</name></member>
+      <member refid="classcntr_1_1function__moving_a771df269ec95935ab5dba283db231131_1a771df269ec95935ab5dba283db231131" prot="public" virt="non-virtual"><scope>cntr::function_moving</scope><name>function_moving</name></member>
+      <member refid="classcntr_1_1function__moving_ab602add05629d5c46ad94bc87f9ac80c_1ab602add05629d5c46ad94bc87f9ac80c" prot="public" virt="non-virtual"><scope>cntr::function_moving</scope><name>function_moving</name></member>
+      <member refid="classcntr_1_1function__moving_a82ed8a4463e8ed8e8c01a4599afe90e5_1a82ed8a4463e8ed8e8c01a4599afe90e5" prot="public" virt="non-virtual"><scope>cntr::function_moving</scope><name>function_moving</name></member>
+      <member refid="classcntr_1_1function__moving_a746aea5dca13c333751a1451b9a6bb6c_1a746aea5dca13c333751a1451b9a6bb6c" prot="public" virt="non-virtual"><scope>cntr::function_moving</scope><name>get_value</name></member>
+      <member refid="classcntr_1_1function__moving_a88563ab67fc926647073238e3b34c107_1a88563ab67fc926647073238e3b34c107" prot="public" virt="non-virtual"><scope>cntr::function_moving</scope><name>operator=</name></member>
+      <member refid="classcntr_1_1function__moving_a444db533f2fe43e1ec68275d033a5d44_1a444db533f2fe43e1ec68275d033a5d44" prot="public" virt="non-virtual"><scope>cntr::function_moving</scope><name>operator[]</name></member>
+      <member refid="classcntr_1_1function__moving_a79a38968972f5595e727a7d3c246d70d_1a79a38968972f5595e727a7d3c246d70d" prot="public" virt="non-virtual"><scope>cntr::function_moving</scope><name>operator[]</name></member>
+      <member refid="classcntr_1_1function__moving_a56f04a278645af01cfeec13f3e083a19_1a56f04a278645af01cfeec13f3e083a19" prot="public" virt="non-virtual"><scope>cntr::function_moving</scope><name>print_to_file</name></member>
+      <member refid="classcntr_1_1function__moving_aff6516d296d038867e021ac1c6cce67b_1aff6516d296d038867e021ac1c6cce67b" prot="public" virt="non-virtual"><scope>cntr::function_moving</scope><name>ptr</name></member>
+      <member refid="classcntr_1_1function__moving_a35aaacae6307153c50a4c0b9c52e5875_1a35aaacae6307153c50a4c0b9c52e5875" prot="public" virt="non-virtual"><scope>cntr::function_moving</scope><name>read_from_file</name></member>
+      <member refid="classcntr_1_1function__moving_aaa5f3ccda3adaf1ad9fbd40375bce640_1aaa5f3ccda3adaf1ad9fbd40375bce640" prot="public" virt="non-virtual"><scope>cntr::function_moving</scope><name>resize</name></member>
+      <member refid="classcntr_1_1function__moving_aa990c5cceb2faf2d12219cfbc502210f_1aa990c5cceb2faf2d12219cfbc502210f" prot="public" virt="non-virtual"><scope>cntr::function_moving</scope><name>set_from_function_backward</name></member>
+      <member refid="classcntr_1_1function__moving_a35dcb7fd6c08d266e7dcb6d9f90acefb_1a35dcb7fd6c08d266e7dcb6d9f90acefb" prot="public" virt="non-virtual"><scope>cntr::function_moving</scope><name>set_from_function_backward</name></member>
+      <member refid="classcntr_1_1function__moving_a189074b4eda842cbd31c941da952ecc0_1a189074b4eda842cbd31c941da952ecc0" prot="public" virt="non-virtual"><scope>cntr::function_moving</scope><name>set_from_function_forward</name></member>
+      <member refid="classcntr_1_1function__moving_a51dabbf31097e949013385a6bd02f17d_1a51dabbf31097e949013385a6bd02f17d" prot="public" virt="non-virtual"><scope>cntr::function_moving</scope><name>set_value</name></member>
+      <member refid="classcntr_1_1function__moving_a34ff4b89c2156ebf05201cef61354ad9_1a34ff4b89c2156ebf05201cef61354ad9" prot="public" virt="non-virtual"><scope>cntr::function_moving</scope><name>size1</name></member>
+      <member refid="classcntr_1_1function__moving_1ab10690cbacc2935239015c21a6498acd" prot="private" virt="non-virtual"><scope>cntr::function_moving</scope><name>size1_</name></member>
+      <member refid="classcntr_1_1function__moving_a1e6ae93584e2b413c452227762714155_1a1e6ae93584e2b413c452227762714155" prot="public" virt="non-virtual"><scope>cntr::function_moving</scope><name>size2</name></member>
+      <member refid="classcntr_1_1function__moving_1a86d3b0eb2fd6c80449e319d40bea30b3" prot="private" virt="non-virtual"><scope>cntr::function_moving</scope><name>size2_</name></member>
+      <member refid="classcntr_1_1function__moving_aa3976694020a16c6c31ac9ae86ee65fb_1aa3976694020a16c6c31ac9ae86ee65fb" prot="public" virt="non-virtual"><scope>cntr::function_moving</scope><name>tc</name></member>
+      <member refid="classcntr_1_1function__moving_1afb01c62154a1aafe5e33939746797c84" prot="private" virt="non-virtual"><scope>cntr::function_moving</scope><name>tc_</name></member>
+      <member refid="classcntr_1_1function__moving_1a4fa2f00fa486b2e67543def57d83d2c9" prot="private" virt="non-virtual"><scope>cntr::function_moving</scope><name>value_</name></member>
+      <member refid="classcntr_1_1function__moving_a05c7cef95200c66f30449c599c22b7df_1a05c7cef95200c66f30449c599c22b7df" prot="public" virt="non-virtual"><scope>cntr::function_moving</scope><name>~function_moving</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

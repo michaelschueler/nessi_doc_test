@@ -1,0 +1,927 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classness_1_1GF" kind="class" language="C++" prot="public">
+    <compoundname>ness::GF</compoundname>
+    <includes refid="ness__GF__decl_8hpp" local="no">ness_GF_decl.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classness_1_1GF_ab6606acb00319e7139467bd89888aaec_1ab6606acb00319e7139467bd89888aaec" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double ness::GF::dgrid_</definition>
+        <argsstring></argsstring>
+        <name>dgrid_</name>
+        <qualifiedname>ness::GF::dgrid_</qualifiedname>
+        <briefdescription>
+<para><bold> Grid spacing </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="61" column="8" bodyfile="cntr/ness_GF_decl.hpp" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classness_1_1GF_a24768d4e7cb4eccc25e6588db357b73d_1a24768d4e7cb4eccc25e6588db357b73d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ness::GF::gf_type_</definition>
+        <argsstring></argsstring>
+        <name>gf_type_</name>
+        <qualifiedname>ness::GF::gf_type_</qualifiedname>
+        <briefdescription>
+<para><bold> Green&apos;s function type, 0: time, 1: frequency </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="69" column="5" bodyfile="cntr/ness_GF_decl.hpp" bodystart="69" bodyend="-1"/>
+        <referencedby refid="classness_1_1GF_a6ede0f207fed99a92bc841ee3e018ad8_1a6ede0f207fed99a92bc841ee3e018ad8" compoundref="ness__GF__decl_8hpp" startline="55" endline="55">gf_idx</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classness_1_1GF_ae8a6f6ebabdf7fc863687f986bb36c2a_1ae8a6f6ebabdf7fc863687f986bb36c2a" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; Eigen::Map&lt; Eigen::Matrix&lt; <ref refid="namespaceness_a2686f449ce9d3426ec0a03f236fb04b8_1a2686f449ce9d3426ec0a03f236fb04b8" kindref="member">cplx</ref>, Eigen::Dynamic, Eigen::Dynamic, Eigen::RowMajor &gt; &gt; &gt;</type>
+        <definition>std::vector&lt;Eigen::Map&lt;Eigen::Matrix&lt;cplx, Eigen::Dynamic, Eigen::Dynamic, Eigen::RowMajor&gt; &gt; &gt; ness::GF::Lesser</definition>
+        <argsstring></argsstring>
+        <name>Lesser</name>
+        <qualifiedname>ness::GF::Lesser</qualifiedname>
+        <briefdescription>
+<para><bold> Save raw data pointer in a nice eigen3 structure </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="86" column="22" bodyfile="cntr/ness_GF_decl.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classness_1_1GF_a8aa3de22d459380b4c5e1640ab4592f5_1a8aa3de22d459380b4c5e1640ab4592f5" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long ness::GF::ngrid_</definition>
+        <argsstring></argsstring>
+        <name>ngrid_</name>
+        <qualifiedname>ness::GF::ngrid_</qualifiedname>
+        <briefdescription>
+<para><bold> Number of grid points </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="63" column="6" bodyfile="cntr/ness_GF_decl.hpp" bodystart="63" bodyend="-1"/>
+        <referencedby refid="classness_1_1GF_a6ede0f207fed99a92bc841ee3e018ad8_1a6ede0f207fed99a92bc841ee3e018ad8" compoundref="ness__GF__decl_8hpp" startline="55" endline="55">gf_idx</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classness_1_1GF_a52b2d524670dcbce4d93a1b0dd350c96_1a52b2d524670dcbce4d93a1b0dd350c96" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; Eigen::Map&lt; Eigen::Matrix&lt; <ref refid="namespaceness_a2686f449ce9d3426ec0a03f236fb04b8_1a2686f449ce9d3426ec0a03f236fb04b8" kindref="member">cplx</ref>, Eigen::Dynamic, Eigen::Dynamic, Eigen::RowMajor &gt; &gt; &gt;</type>
+        <definition>std::vector&lt;Eigen::Map&lt;Eigen::Matrix&lt;cplx, Eigen::Dynamic, Eigen::Dynamic, Eigen::RowMajor&gt; &gt; &gt; ness::GF::Retarded</definition>
+        <argsstring></argsstring>
+        <name>Retarded</name>
+        <qualifiedname>ness::GF::Retarded</qualifiedname>
+        <briefdescription>
+<para><bold> Save raw data pointer in a nice eigen3 structure </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="86" column="13" bodyfile="cntr/ness_GF_decl.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classness_1_1GF_a5e9894431cf8c09b214908f6db59823b_1a5e9894431cf8c09b214908f6db59823b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ness::GF::sign_</definition>
+        <argsstring></argsstring>
+        <name>sign_</name>
+        <qualifiedname>ness::GF::sign_</qualifiedname>
+        <briefdescription>
+<para><bold> Sign +1 for bosons, -1 for fermions. </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="71" column="5" bodyfile="cntr/ness_GF_decl.hpp" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classness_1_1GF_ae7eb59c324f3f36028d140716ddd8daa_1ae7eb59c324f3f36028d140716ddd8daa" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ness::GF::size1_</definition>
+        <argsstring></argsstring>
+        <name>size1_</name>
+        <qualifiedname>ness::GF::size1_</qualifiedname>
+        <briefdescription>
+<para><bold> Orbital dimension 1 </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="65" column="5" bodyfile="cntr/ness_GF_decl.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classness_1_1GF_aa4ca8c20cd0e7b2daffa165a700d0d75_1aa4ca8c20cd0e7b2daffa165a700d0d75" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ness::GF::size2_</definition>
+        <argsstring></argsstring>
+        <name>size2_</name>
+        <qualifiedname>ness::GF::size2_</qualifiedname>
+        <briefdescription>
+<para><bold> Orbital dimension 2 </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="65" column="12" bodyfile="cntr/ness_GF_decl.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classness_1_1GF_1a8409ef9ecec461425acd9f04473b2c00" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ness::GF::data_size_</definition>
+        <argsstring></argsstring>
+        <name>data_size_</name>
+        <qualifiedname>ness::GF::data_size_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="67" column="14" bodyfile="cntr/ness_GF_decl.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classness_1_1GF_1a7e4c70adb7d6e9a328eee1a8bb4fe83a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ness::GF::el_size_</definition>
+        <argsstring></argsstring>
+        <name>el_size_</name>
+        <qualifiedname>ness::GF::el_size_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="67" column="5" bodyfile="cntr/ness_GF_decl.hpp" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classness_1_1GF_1a4e7e6a602f0f5775a06e1beffb38a11f" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceness_a2686f449ce9d3426ec0a03f236fb04b8_1a2686f449ce9d3426ec0a03f236fb04b8" kindref="member">cplx</ref> *</type>
+        <definition>cplx * ness::GF::g_les</definition>
+        <argsstring></argsstring>
+        <name>g_les</name>
+        <qualifiedname>ness::GF::g_les</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="84" column="12" bodyfile="cntr/ness_GF_decl.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classness_1_1GF_1a95d51ac32570bf74f0447bc7421efd8c" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceness_a2686f449ce9d3426ec0a03f236fb04b8_1a2686f449ce9d3426ec0a03f236fb04b8" kindref="member">cplx</ref> *</type>
+        <definition>cplx* ness::GF::g_ret</definition>
+        <argsstring></argsstring>
+        <name>g_ret</name>
+        <qualifiedname>ness::GF::g_ret</qualifiedname>
+        <briefdescription>
+<para><bold> Raw data pointers for Green&apos;s function </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="84" column="6" bodyfile="cntr/ness_GF_decl.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classness_1_1GF_1ae1dde8954379120c76a21fc2e8d51312" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* ness::GF::grid_</definition>
+        <argsstring></argsstring>
+        <name>grid_</name>
+        <qualifiedname>ness::GF::grid_</qualifiedname>
+        <briefdescription>
+<para><bold> Raw data pointer for grid </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="81" column="8" bodyfile="cntr/ness_GF_decl.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classness_1_1GF_acd0e5d0425ee7bcfb1b0950cc96879e4_1acd0e5d0425ee7bcfb1b0950cc96879e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ness::GF::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>ness::GF::clear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="40" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classness_1_1GF_a01eb0fe69e88503caf877b470decff30_1a01eb0fe69e88503caf877b470decff30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ness::GF::get_element</definition>
+        <argsstring>(int, int, const GF &amp;, int, int)</argsstring>
+        <name>get_element</name>
+        <qualifiedname>ness::GF::get_element</qualifiedname>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>const <ref refid="classness_1_1GF_a202da5b621640d08772d0c90a9e21afa_1a202da5b621640d08772d0c90a9e21afa" kindref="member">GF</ref> &amp;</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="48" column="9"/>
+        <references refid="classness_1_1GF_a202da5b621640d08772d0c90a9e21afa_1a202da5b621640d08772d0c90a9e21afa">GF</references>
+      </memberdef>
+      <memberdef kind="function" id="classness_1_1GF_ab91f63167a0b985dfd5e6058afeb1234_1ab91f63167a0b985dfd5e6058afeb1234" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ness::GF::get_element</definition>
+        <argsstring>(int, int, GF &amp;) const</argsstring>
+        <name>get_element</name>
+        <qualifiedname>ness::GF::get_element</qualifiedname>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type><ref refid="classness_1_1GF_a202da5b621640d08772d0c90a9e21afa_1a202da5b621640d08772d0c90a9e21afa" kindref="member">GF</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="47" column="5"/>
+        <references refid="classness_1_1GF_a202da5b621640d08772d0c90a9e21afa_1a202da5b621640d08772d0c90a9e21afa">GF</references>
+      </memberdef>
+      <memberdef kind="function" id="classness_1_1GF_aa4bd7ef392c98f246d0ac795a3526296_1aa4bd7ef392c98f246d0ac795a3526296" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ness::GF::get_submatrix</definition>
+        <argsstring>(const std::vector&lt; int &gt; &amp;, const std::vector&lt; int &gt; &amp;, const GF &amp;)</argsstring>
+        <name>get_submatrix</name>
+        <qualifiedname>ness::GF::get_submatrix</qualifiedname>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+        </param>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="classness_1_1GF_a202da5b621640d08772d0c90a9e21afa_1a202da5b621640d08772d0c90a9e21afa" kindref="member">GF</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="50" column="5"/>
+        <references refid="classness_1_1GF_a202da5b621640d08772d0c90a9e21afa_1a202da5b621640d08772d0c90a9e21afa">GF</references>
+      </memberdef>
+      <memberdef kind="function" id="classness_1_1GF_a202da5b621640d08772d0c90a9e21afa_1a202da5b621640d08772d0c90a9e21afa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ness::GF::GF</definition>
+        <argsstring>()</argsstring>
+        <name>GF</name>
+        <qualifiedname>ness::GF::GF</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="26" column="1"/>
+        <referencedby refid="classness_1_1GF_ac8c7c0404deaa6e74b846106e888d498_1ac8c7c0404deaa6e74b846106e888d498">dyson</referencedby>
+        <referencedby refid="classness_1_1GF_a17b2f1de91a4621f39c643f06d374c85_1a17b2f1de91a4621f39c643f06d374c85">dyson_from_inv</referencedby>
+        <referencedby refid="classness_1_1GF_a01eb0fe69e88503caf877b470decff30_1a01eb0fe69e88503caf877b470decff30">get_element</referencedby>
+        <referencedby refid="classness_1_1GF_ab91f63167a0b985dfd5e6058afeb1234_1ab91f63167a0b985dfd5e6058afeb1234">get_element</referencedby>
+        <referencedby refid="classness_1_1GF_aa4bd7ef392c98f246d0ac795a3526296_1aa4bd7ef392c98f246d0ac795a3526296">get_submatrix</referencedby>
+        <referencedby refid="classness_1_1GF_aef1461fe896c458454c43d52bba50f5d_1aef1461fe896c458454c43d52bba50f5d">GF</referencedby>
+        <referencedby refid="classness_1_1GF_ae82f4b114d4aa5c678b628443ddd9ec2_1ae82f4b114d4aa5c678b628443ddd9ec2">GF</referencedby>
+        <referencedby refid="classness_1_1GF_a253e491d4d6c6d662859f5784d12407c_1a253e491d4d6c6d662859f5784d12407c">incr</referencedby>
+        <referencedby refid="classness_1_1GF_a376fd6660ac6a1225f972890171c7d95_1a376fd6660ac6a1225f972890171c7d95">operator+</referencedby>
+        <referencedby refid="classness_1_1GF_ad0cf14615d91e2cd6d71a9e1d28f2aa0_1ad0cf14615d91e2cd6d71a9e1d28f2aa0">operator=</referencedby>
+        <referencedby refid="classness_1_1GF_abb0eaeef14bf16a6e8f800f7d4f122da_1abb0eaeef14bf16a6e8f800f7d4f122da">set_element</referencedby>
+        <referencedby refid="classness_1_1GF_a08c47f7f146e4ea10a24d5e710fb44ea_1a08c47f7f146e4ea10a24d5e710fb44ea">set_element</referencedby>
+        <referencedby refid="classness_1_1GF_adbc9a76d932183074a98ad792f1c570f_1adbc9a76d932183074a98ad792f1c570f">set_submatrix</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classness_1_1GF_aef1461fe896c458454c43d52bba50f5d_1aef1461fe896c458454c43d52bba50f5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ness::GF::GF</definition>
+        <argsstring>(const GF &amp;g)</argsstring>
+        <name>GF</name>
+        <qualifiedname>ness::GF::GF</qualifiedname>
+        <param>
+          <type>const GF &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="29" column="1"/>
+        <references refid="classness_1_1GF_a202da5b621640d08772d0c90a9e21afa_1a202da5b621640d08772d0c90a9e21afa">GF</references>
+      </memberdef>
+      <memberdef kind="function" id="classness_1_1GF_aa0104f101f714bf3519d9835c371ee20_1aa0104f101f714bf3519d9835c371ee20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ness::GF::GF</definition>
+        <argsstring>(double, int, int, int, int gf_type=freq_gf)</argsstring>
+        <name>GF</name>
+        <qualifiedname>ness::GF::GF</qualifiedname>
+        <param>
+          <type>double</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>gf_type</declname>
+          <defval><ref refid="namespaceness_aa79580a6fbe322d62634e8f2900bba9b_1aa79580a6fbe322d62634e8f2900bba9ba97746b2088cce1ad3bc5308ef40f7d4f" kindref="member">freq_gf</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="28" column="1"/>
+        <references refid="namespaceness_aa79580a6fbe322d62634e8f2900bba9b_1aa79580a6fbe322d62634e8f2900bba9ba97746b2088cce1ad3bc5308ef40f7d4f" compoundref="ness__GF__decl_8hpp" startline="8">ness::freq_gf</references>
+      </memberdef>
+      <memberdef kind="function" id="classness_1_1GF_a23de9a3b7d4b256ad2da1a39123254d4_1a23de9a3b7d4b256ad2da1a39123254d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ness::GF::GF</definition>
+        <argsstring>(double, int, int, int, int, int gf_type)</argsstring>
+        <name>GF</name>
+        <qualifiedname>ness::GF::GF</qualifiedname>
+        <param>
+          <type>double</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>gf_type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="27" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classness_1_1GF_ae82f4b114d4aa5c678b628443ddd9ec2_1ae82f4b114d4aa5c678b628443ddd9ec2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ness::GF::GF</definition>
+        <argsstring>(GF &amp;&amp;gf)</argsstring>
+        <name>GF</name>
+        <qualifiedname>ness::GF::GF</qualifiedname>
+        <param>
+          <type>GF &amp;&amp;</type>
+          <declname>gf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="31" column="1"/>
+        <references refid="classness_1_1GF_a202da5b621640d08772d0c90a9e21afa_1a202da5b621640d08772d0c90a9e21afa">GF</references>
+      </memberdef>
+      <memberdef kind="function" id="classness_1_1GF_a6ede0f207fed99a92bc841ee3e018ad8_1a6ede0f207fed99a92bc841ee3e018ad8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ness::GF::gf_idx</definition>
+        <argsstring>(int w)</argsstring>
+        <name>gf_idx</name>
+        <qualifiedname>ness::GF::gf_idx</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>w</declname>
+        </param>
+        <briefdescription>
+<para><bold> Return frequency, not stored in adcending order </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="55" column="5" bodyfile="cntr/ness_GF_decl.hpp" bodystart="55" bodyend="55"/>
+        <references refid="namespaceness_aa79580a6fbe322d62634e8f2900bba9b_1aa79580a6fbe322d62634e8f2900bba9ba97746b2088cce1ad3bc5308ef40f7d4f" compoundref="ness__GF__decl_8hpp" startline="8">ness::freq_gf</references>
+        <references refid="classness_1_1GF_a24768d4e7cb4eccc25e6588db357b73d_1a24768d4e7cb4eccc25e6588db357b73d" compoundref="ness__GF__decl_8hpp" startline="69">gf_type_</references>
+        <references refid="classness_1_1GF_a8aa3de22d459380b4c5e1640ab4592f5_1a8aa3de22d459380b4c5e1640ab4592f5" compoundref="ness__GF__decl_8hpp" startline="63">ngrid_</references>
+      </memberdef>
+      <memberdef kind="function" id="classness_1_1GF_a49b1c93784a0ae550d48912836bd59d0_1a49b1c93784a0ae550d48912836bd59d0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespaceness_a244be30cfc18ed5350dc3063666210a8_1a244be30cfc18ed5350dc3063666210a8" kindref="member">cdmatrix</ref></type>
+        <definition>cdmatrix ness::GF::Greater</definition>
+        <argsstring>(int) const</argsstring>
+        <name>Greater</name>
+        <qualifiedname>ness::GF::Greater</qualifiedname>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="58" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classness_1_1GF_a253e491d4d6c6d662859f5784d12407c_1a253e491d4d6c6d662859f5784d12407c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ness::GF::incr</definition>
+        <argsstring>(GF &amp;gf, cplx weight=1.0)</argsstring>
+        <name>incr</name>
+        <qualifiedname>ness::GF::incr</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF_a202da5b621640d08772d0c90a9e21afa_1a202da5b621640d08772d0c90a9e21afa" kindref="member">GF</ref> &amp;</type>
+          <declname>gf</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceness_a2686f449ce9d3426ec0a03f236fb04b8_1a2686f449ce9d3426ec0a03f236fb04b8" kindref="member">cplx</ref></type>
+          <declname>weight</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="38" column="5"/>
+        <references refid="classness_1_1GF_a202da5b621640d08772d0c90a9e21afa_1a202da5b621640d08772d0c90a9e21afa">GF</references>
+      </memberdef>
+      <memberdef kind="function" id="classness_1_1GF_af724b4ad52bb8bf7e54836e2eae0b461_1af724b4ad52bb8bf7e54836e2eae0b461" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ness::GF::left_multiply</definition>
+        <argsstring>(const cdmatrix &amp;mat)</argsstring>
+        <name>left_multiply</name>
+        <qualifiedname>ness::GF::left_multiply</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceness_a244be30cfc18ed5350dc3063666210a8_1a244be30cfc18ed5350dc3063666210a8" kindref="member">cdmatrix</ref> &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="42" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classness_1_1GF_a376fd6660ac6a1225f972890171c7d95_1a376fd6660ac6a1225f972890171c7d95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classness_1_1GF_a202da5b621640d08772d0c90a9e21afa_1a202da5b621640d08772d0c90a9e21afa" kindref="member">GF</ref></type>
+        <definition>GF ness::GF::operator+</definition>
+        <argsstring>(const GF &amp;g)</argsstring>
+        <name>operator+</name>
+        <qualifiedname>ness::GF::operator+</qualifiedname>
+        <param>
+          <type>const <ref refid="classness_1_1GF_a202da5b621640d08772d0c90a9e21afa_1a202da5b621640d08772d0c90a9e21afa" kindref="member">GF</ref> &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+<para><bold> Operator + for Green&apos;s functions </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="36" column="4"/>
+        <references refid="classness_1_1GF_a202da5b621640d08772d0c90a9e21afa_1a202da5b621640d08772d0c90a9e21afa">GF</references>
+      </memberdef>
+      <memberdef kind="function" id="classness_1_1GF_ad0cf14615d91e2cd6d71a9e1d28f2aa0_1ad0cf14615d91e2cd6d71a9e1d28f2aa0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classness_1_1GF_a202da5b621640d08772d0c90a9e21afa_1a202da5b621640d08772d0c90a9e21afa" kindref="member">GF</ref> &amp;</type>
+        <definition>GF &amp; ness::GF::operator=</definition>
+        <argsstring>(const GF &amp;g)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>ness::GF::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classness_1_1GF_a202da5b621640d08772d0c90a9e21afa_1a202da5b621640d08772d0c90a9e21afa" kindref="member">GF</ref> &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+<para><bold> Operator = for Green&apos;s functions </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="34" column="4"/>
+        <references refid="classness_1_1GF_a202da5b621640d08772d0c90a9e21afa_1a202da5b621640d08772d0c90a9e21afa">GF</references>
+      </memberdef>
+      <memberdef kind="function" id="classness_1_1GF_a52fcdd45038b616e10c99ed5c787fd51_1a52fcdd45038b616e10c99ed5c787fd51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ness::GF::reset_grid</definition>
+        <argsstring>(double dgrid)</argsstring>
+        <name>reset_grid</name>
+        <qualifiedname>ness::GF::reset_grid</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>dgrid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="56" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classness_1_1GF_ac3a6cfbfaf21b369925559de5f63d71e_1ac3a6cfbfaf21b369925559de5f63d71e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ness::GF::right_multiply</definition>
+        <argsstring>(const cdmatrix &amp;mat)</argsstring>
+        <name>right_multiply</name>
+        <qualifiedname>ness::GF::right_multiply</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceness_a244be30cfc18ed5350dc3063666210a8_1a244be30cfc18ed5350dc3063666210a8" kindref="member">cdmatrix</ref> &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="44" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classness_1_1GF_abb0eaeef14bf16a6e8f800f7d4f122da_1abb0eaeef14bf16a6e8f800f7d4f122da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ness::GF::set_element</definition>
+        <argsstring>(int, int, const GF &amp;)</argsstring>
+        <name>set_element</name>
+        <qualifiedname>ness::GF::set_element</qualifiedname>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>const <ref refid="classness_1_1GF_a202da5b621640d08772d0c90a9e21afa_1a202da5b621640d08772d0c90a9e21afa" kindref="member">GF</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="45" column="5"/>
+        <references refid="classness_1_1GF_a202da5b621640d08772d0c90a9e21afa_1a202da5b621640d08772d0c90a9e21afa">GF</references>
+      </memberdef>
+      <memberdef kind="function" id="classness_1_1GF_a08c47f7f146e4ea10a24d5e710fb44ea_1a08c47f7f146e4ea10a24d5e710fb44ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ness::GF::set_element</definition>
+        <argsstring>(int, int, const GF &amp;, int, int)</argsstring>
+        <name>set_element</name>
+        <qualifiedname>ness::GF::set_element</qualifiedname>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>const <ref refid="classness_1_1GF_a202da5b621640d08772d0c90a9e21afa_1a202da5b621640d08772d0c90a9e21afa" kindref="member">GF</ref> &amp;</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="46" column="5"/>
+        <references refid="classness_1_1GF_a202da5b621640d08772d0c90a9e21afa_1a202da5b621640d08772d0c90a9e21afa">GF</references>
+      </memberdef>
+      <memberdef kind="function" id="classness_1_1GF_ad19565b650263454926a11716e4cd23a_1ad19565b650263454926a11716e4cd23a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness::GF::set_shiftGF</definition>
+        <argsstring>(int shift)</argsstring>
+        <name>set_shiftGF</name>
+        <qualifiedname>ness::GF::set_shiftGF</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>shift</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="37" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classness_1_1GF_adbc9a76d932183074a98ad792f1c570f_1adbc9a76d932183074a98ad792f1c570f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ness::GF::set_submatrix</definition>
+        <argsstring>(const std::vector&lt; int &gt; &amp;, const std::vector&lt; int &gt; &amp;, const GF &amp;)</argsstring>
+        <name>set_submatrix</name>
+        <qualifiedname>ness::GF::set_submatrix</qualifiedname>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+        </param>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+        </param>
+        <param>
+          <type>const <ref refid="classness_1_1GF_a202da5b621640d08772d0c90a9e21afa_1a202da5b621640d08772d0c90a9e21afa" kindref="member">GF</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="49" column="5"/>
+        <references refid="classness_1_1GF_a202da5b621640d08772d0c90a9e21afa_1a202da5b621640d08772d0c90a9e21afa">GF</references>
+      </memberdef>
+      <memberdef kind="function" id="classness_1_1GF_a9884695def7941bddc689b42e9140b96_1a9884695def7941bddc689b42e9140b96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ness::GF::smul</definition>
+        <argsstring>(cplx weight=1.0)</argsstring>
+        <name>smul</name>
+        <qualifiedname>ness::GF::smul</qualifiedname>
+        <param>
+          <type><ref refid="namespaceness_a2686f449ce9d3426ec0a03f236fb04b8_1a2686f449ce9d3426ec0a03f236fb04b8" kindref="member">cplx</ref></type>
+          <declname>weight</declname>
+          <defval>1.0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="39" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classness_1_1GF_a9fb43f33a2e1fc9ab1b1566dec903078_1a9fb43f33a2e1fc9ab1b1566dec903078" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ness::GF::~GF</definition>
+        <argsstring>()</argsstring>
+        <name>~GF</name>
+        <qualifiedname>ness::GF::~GF</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="25" column="1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="classness_1_1GF_ac8c7c0404deaa6e74b846106e888d498_1ac8c7c0404deaa6e74b846106e888d498" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dyson</definition>
+        <argsstring>(GF &amp;invg0, GF &amp;self, GF &amp;g)</argsstring>
+        <name>dyson</name>
+        <qualifiedname>ness::GF::dyson</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF_a202da5b621640d08772d0c90a9e21afa_1a202da5b621640d08772d0c90a9e21afa" kindref="member">GF</ref> &amp;</type>
+          <declname>invg0</declname>
+        </param>
+        <param>
+          <type><ref refid="classness_1_1GF_a202da5b621640d08772d0c90a9e21afa_1a202da5b621640d08772d0c90a9e21afa" kindref="member">GF</ref> &amp;</type>
+          <declname>self</declname>
+        </param>
+        <param>
+          <type><ref refid="classness_1_1GF_a202da5b621640d08772d0c90a9e21afa_1a202da5b621640d08772d0c90a9e21afa" kindref="member">GF</ref> &amp;</type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="52" column="12"/>
+        <references refid="classness_1_1GF_a202da5b621640d08772d0c90a9e21afa_1a202da5b621640d08772d0c90a9e21afa">GF</references>
+      </memberdef>
+      <memberdef kind="friend" id="classness_1_1GF_a17b2f1de91a4621f39c643f06d374c85_1a17b2f1de91a4621f39c643f06d374c85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int dyson_from_inv</definition>
+        <argsstring>(GF &amp;g, GF &amp;self)</argsstring>
+        <name>dyson_from_inv</name>
+        <qualifiedname>ness::GF::dyson_from_inv</qualifiedname>
+        <param>
+          <type><ref refid="classness_1_1GF_a202da5b621640d08772d0c90a9e21afa_1a202da5b621640d08772d0c90a9e21afa" kindref="member">GF</ref> &amp;</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type><ref refid="classness_1_1GF_a202da5b621640d08772d0c90a9e21afa_1a202da5b621640d08772d0c90a9e21afa" kindref="member">GF</ref> &amp;</type>
+          <declname>self</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="53" column="12"/>
+        <references refid="classness_1_1GF_a202da5b621640d08772d0c90a9e21afa_1a202da5b621640d08772d0c90a9e21afa">GF</references>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classness_1_1GF_1a0fb34262c1008c09c71d218095d0448c" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceness_a2686f449ce9d3426ec0a03f236fb04b8_1a2686f449ce9d3426ec0a03f236fb04b8" kindref="member">cplx</ref> *</type>
+        <definition>cplx * ness::GF::p_les</definition>
+        <argsstring>(int w_idx, int i, int j) const</argsstring>
+        <name>p_les</name>
+        <qualifiedname>ness::GF::p_les</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>w_idx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para><bold> Return pointer to specific data in pointer for lesser component </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="77" column="6" bodyfile="cntr/ness_GF_decl.hpp" bodystart="77" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classness_1_1GF_1a9cdc957e8d2b816bc3de88e9290f1567" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceness_a2686f449ce9d3426ec0a03f236fb04b8_1a2686f449ce9d3426ec0a03f236fb04b8" kindref="member">cplx</ref> *</type>
+        <definition>cplx * ness::GF::p_ret</definition>
+        <argsstring>(int w_idx, int i, int j) const</argsstring>
+        <name>p_ret</name>
+        <qualifiedname>ness::GF::p_ret</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>w_idx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j</declname>
+        </param>
+        <briefdescription>
+<para><bold> Return pointer to specific data in pointer for retarded component </bold> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness_GF_decl.hpp" line="74" column="6" bodyfile="cntr/ness_GF_decl.hpp" bodystart="74" bodyend="74"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><bold> Class <computeroutput><ref refid="classness_1_1GF" kindref="compound">GF</ref></computeroutput> represents Green&apos;s functions in either time or frequency domain. </bold> </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Purpose</title><para></para>
+</simplesect>
+<blockquote><para>This class contains the data structures for representing complex matrix valued Green&apos;s functions on a time or frequency grid, stored in two data arrays for retarded and lesser component. </para>
+</blockquote></para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>Map&lt; Eigen::Matrix&lt; cplx, Eigen::Dynamic, Eigen::Dynamic, Eigen::RowMajor &gt; &gt;</label>
+      </node>
+      <node id="8">
+        <label>T</label>
+      </node>
+      <node id="2">
+        <label>double</label>
+      </node>
+      <node id="4">
+        <label>int</label>
+      </node>
+      <node id="3">
+        <label>long</label>
+      </node>
+      <node id="1">
+        <label>ness::GF</label>
+        <link refid="classness_1_1GF"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>dgrid_</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>ngrid_</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>gf_type_</edgelabel>
+          <edgelabel>sign_</edgelabel>
+          <edgelabel>size1_</edgelabel>
+          <edgelabel>size2_</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>Lesser</edgelabel>
+          <edgelabel>Retarded</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>std::vector&lt; T &gt;</label>
+        <childnode refid="8" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>std::vector&lt; Eigen::Map&lt; Eigen::Matrix&lt; cplx, Eigen::Dynamic, Eigen::Dynamic, Eigen::RowMajor &gt; &gt; &gt;</label>
+        <childnode refid="6" relation="usage">
+          <edgelabel>elements</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="template-instance">
+          <edgelabel>&lt; Eigen::Map&lt; Eigen::Matrix&lt; cplx, Eigen::Dynamic, Eigen::Dynamic, Eigen::RowMajor &gt; &gt; &gt;</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="cntr/ness_GF_decl.hpp" line="23" column="1" bodyfile="cntr/ness_GF_decl.hpp" bodystart="23" bodyend="88"/>
+    <listofallmembers>
+      <member refid="classness_1_1GF_acd0e5d0425ee7bcfb1b0950cc96879e4_1acd0e5d0425ee7bcfb1b0950cc96879e4" prot="public" virt="non-virtual"><scope>ness::GF</scope><name>clear</name></member>
+      <member refid="classness_1_1GF_1a8409ef9ecec461425acd9f04473b2c00" prot="private" virt="non-virtual"><scope>ness::GF</scope><name>data_size_</name></member>
+      <member refid="classness_1_1GF_ab6606acb00319e7139467bd89888aaec_1ab6606acb00319e7139467bd89888aaec" prot="public" virt="non-virtual"><scope>ness::GF</scope><name>dgrid_</name></member>
+      <member refid="classness_1_1GF_ac8c7c0404deaa6e74b846106e888d498_1ac8c7c0404deaa6e74b846106e888d498" prot="public" virt="non-virtual"><scope>ness::GF</scope><name>dyson</name></member>
+      <member refid="classness_1_1GF_a17b2f1de91a4621f39c643f06d374c85_1a17b2f1de91a4621f39c643f06d374c85" prot="public" virt="non-virtual"><scope>ness::GF</scope><name>dyson_from_inv</name></member>
+      <member refid="classness_1_1GF_1a7e4c70adb7d6e9a328eee1a8bb4fe83a" prot="private" virt="non-virtual"><scope>ness::GF</scope><name>el_size_</name></member>
+      <member refid="classness_1_1GF_1a4e7e6a602f0f5775a06e1beffb38a11f" prot="private" virt="non-virtual"><scope>ness::GF</scope><name>g_les</name></member>
+      <member refid="classness_1_1GF_1a95d51ac32570bf74f0447bc7421efd8c" prot="private" virt="non-virtual"><scope>ness::GF</scope><name>g_ret</name></member>
+      <member refid="classness_1_1GF_ab91f63167a0b985dfd5e6058afeb1234_1ab91f63167a0b985dfd5e6058afeb1234" prot="public" virt="non-virtual"><scope>ness::GF</scope><name>get_element</name></member>
+      <member refid="classness_1_1GF_a01eb0fe69e88503caf877b470decff30_1a01eb0fe69e88503caf877b470decff30" prot="public" virt="non-virtual"><scope>ness::GF</scope><name>get_element</name></member>
+      <member refid="classness_1_1GF_aa4bd7ef392c98f246d0ac795a3526296_1aa4bd7ef392c98f246d0ac795a3526296" prot="public" virt="non-virtual"><scope>ness::GF</scope><name>get_submatrix</name></member>
+      <member refid="classness_1_1GF_a202da5b621640d08772d0c90a9e21afa_1a202da5b621640d08772d0c90a9e21afa" prot="public" virt="non-virtual"><scope>ness::GF</scope><name>GF</name></member>
+      <member refid="classness_1_1GF_a23de9a3b7d4b256ad2da1a39123254d4_1a23de9a3b7d4b256ad2da1a39123254d4" prot="public" virt="non-virtual"><scope>ness::GF</scope><name>GF</name></member>
+      <member refid="classness_1_1GF_aa0104f101f714bf3519d9835c371ee20_1aa0104f101f714bf3519d9835c371ee20" prot="public" virt="non-virtual"><scope>ness::GF</scope><name>GF</name></member>
+      <member refid="classness_1_1GF_aef1461fe896c458454c43d52bba50f5d_1aef1461fe896c458454c43d52bba50f5d" prot="public" virt="non-virtual"><scope>ness::GF</scope><name>GF</name></member>
+      <member refid="classness_1_1GF_ae82f4b114d4aa5c678b628443ddd9ec2_1ae82f4b114d4aa5c678b628443ddd9ec2" prot="public" virt="non-virtual"><scope>ness::GF</scope><name>GF</name></member>
+      <member refid="classness_1_1GF_a6ede0f207fed99a92bc841ee3e018ad8_1a6ede0f207fed99a92bc841ee3e018ad8" prot="public" virt="non-virtual"><scope>ness::GF</scope><name>gf_idx</name></member>
+      <member refid="classness_1_1GF_a24768d4e7cb4eccc25e6588db357b73d_1a24768d4e7cb4eccc25e6588db357b73d" prot="public" virt="non-virtual"><scope>ness::GF</scope><name>gf_type_</name></member>
+      <member refid="classness_1_1GF_a49b1c93784a0ae550d48912836bd59d0_1a49b1c93784a0ae550d48912836bd59d0" prot="public" virt="non-virtual"><scope>ness::GF</scope><name>Greater</name></member>
+      <member refid="classness_1_1GF_1ae1dde8954379120c76a21fc2e8d51312" prot="private" virt="non-virtual"><scope>ness::GF</scope><name>grid_</name></member>
+      <member refid="classness_1_1GF_a253e491d4d6c6d662859f5784d12407c_1a253e491d4d6c6d662859f5784d12407c" prot="public" virt="non-virtual"><scope>ness::GF</scope><name>incr</name></member>
+      <member refid="classness_1_1GF_af724b4ad52bb8bf7e54836e2eae0b461_1af724b4ad52bb8bf7e54836e2eae0b461" prot="public" virt="non-virtual"><scope>ness::GF</scope><name>left_multiply</name></member>
+      <member refid="classness_1_1GF_ae8a6f6ebabdf7fc863687f986bb36c2a_1ae8a6f6ebabdf7fc863687f986bb36c2a" prot="public" virt="non-virtual"><scope>ness::GF</scope><name>Lesser</name></member>
+      <member refid="classness_1_1GF_a8aa3de22d459380b4c5e1640ab4592f5_1a8aa3de22d459380b4c5e1640ab4592f5" prot="public" virt="non-virtual"><scope>ness::GF</scope><name>ngrid_</name></member>
+      <member refid="classness_1_1GF_a376fd6660ac6a1225f972890171c7d95_1a376fd6660ac6a1225f972890171c7d95" prot="public" virt="non-virtual"><scope>ness::GF</scope><name>operator+</name></member>
+      <member refid="classness_1_1GF_ad0cf14615d91e2cd6d71a9e1d28f2aa0_1ad0cf14615d91e2cd6d71a9e1d28f2aa0" prot="public" virt="non-virtual"><scope>ness::GF</scope><name>operator=</name></member>
+      <member refid="classness_1_1GF_1a0fb34262c1008c09c71d218095d0448c" prot="private" virt="non-virtual"><scope>ness::GF</scope><name>p_les</name></member>
+      <member refid="classness_1_1GF_1a9cdc957e8d2b816bc3de88e9290f1567" prot="private" virt="non-virtual"><scope>ness::GF</scope><name>p_ret</name></member>
+      <member refid="classness_1_1GF_a52fcdd45038b616e10c99ed5c787fd51_1a52fcdd45038b616e10c99ed5c787fd51" prot="public" virt="non-virtual"><scope>ness::GF</scope><name>reset_grid</name></member>
+      <member refid="classness_1_1GF_a52b2d524670dcbce4d93a1b0dd350c96_1a52b2d524670dcbce4d93a1b0dd350c96" prot="public" virt="non-virtual"><scope>ness::GF</scope><name>Retarded</name></member>
+      <member refid="classness_1_1GF_ac3a6cfbfaf21b369925559de5f63d71e_1ac3a6cfbfaf21b369925559de5f63d71e" prot="public" virt="non-virtual"><scope>ness::GF</scope><name>right_multiply</name></member>
+      <member refid="classness_1_1GF_abb0eaeef14bf16a6e8f800f7d4f122da_1abb0eaeef14bf16a6e8f800f7d4f122da" prot="public" virt="non-virtual"><scope>ness::GF</scope><name>set_element</name></member>
+      <member refid="classness_1_1GF_a08c47f7f146e4ea10a24d5e710fb44ea_1a08c47f7f146e4ea10a24d5e710fb44ea" prot="public" virt="non-virtual"><scope>ness::GF</scope><name>set_element</name></member>
+      <member refid="classness_1_1GF_ad19565b650263454926a11716e4cd23a_1ad19565b650263454926a11716e4cd23a" prot="public" virt="non-virtual"><scope>ness::GF</scope><name>set_shiftGF</name></member>
+      <member refid="classness_1_1GF_adbc9a76d932183074a98ad792f1c570f_1adbc9a76d932183074a98ad792f1c570f" prot="public" virt="non-virtual"><scope>ness::GF</scope><name>set_submatrix</name></member>
+      <member refid="classness_1_1GF_a5e9894431cf8c09b214908f6db59823b_1a5e9894431cf8c09b214908f6db59823b" prot="public" virt="non-virtual"><scope>ness::GF</scope><name>sign_</name></member>
+      <member refid="classness_1_1GF_ae7eb59c324f3f36028d140716ddd8daa_1ae7eb59c324f3f36028d140716ddd8daa" prot="public" virt="non-virtual"><scope>ness::GF</scope><name>size1_</name></member>
+      <member refid="classness_1_1GF_aa4ca8c20cd0e7b2daffa165a700d0d75_1aa4ca8c20cd0e7b2daffa165a700d0d75" prot="public" virt="non-virtual"><scope>ness::GF</scope><name>size2_</name></member>
+      <member refid="classness_1_1GF_a9884695def7941bddc689b42e9140b96_1a9884695def7941bddc689b42e9140b96" prot="public" virt="non-virtual"><scope>ness::GF</scope><name>smul</name></member>
+      <member refid="classness_1_1GF_a9fb43f33a2e1fc9ab1b1566dec903078_1a9fb43f33a2e1fc9ab1b1566dec903078" prot="public" virt="non-virtual"><scope>ness::GF</scope><name>~GF</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

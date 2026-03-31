@@ -1,0 +1,1305 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classness2_1_1fft__array" kind="class" language="C++" prot="public">
+    <compoundname>ness2::fft_array</compoundname>
+    <includes refid="ness2__fft__decl_8hpp" local="no">ness2_fft_decl.hpp</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classness2_1_1fft__array_a39df121775ffbb96beee3a36c4ab2ed7_1a39df121775ffbb96beee3a36c4ab2ed7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ness2::fft_array::element_size_</definition>
+        <argsstring></argsstring>
+        <name>element_size_</name>
+        <qualifiedname>ness2::fft_array::element_size_</qualifiedname>
+        <briefdescription>
+<para>Stride for each transform (`size1_ * size1_). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="353" column="9" bodyfile="cntr/ness2_fft_decl.hpp" bodystart="353" bodyend="-1"/>
+        <referencedby refid="classness2_1_1fft__array_a2f68e6fa15e5c49aa992f8d517efea87_1a2f68e6fa15e5c49aa992f8d517efea87" compoundref="ness2__fft__decl_8hpp" startline="472" endline="488">get_element</referencedby>
+        <referencedby refid="classness2_1_1fft__array_a7351f6bcf1a75522c55124f87f699bcc_1a7351f6bcf1a75522c55124f87f699bcc" compoundref="ness2__fft__decl_8hpp" startline="365" endline="384">left_multiply</referencedby>
+        <referencedby refid="classness2_1_1fft__array_a04c650e51afd4c832d20b9ef1937369f_1a04c650e51afd4c832d20b9ef1937369f" compoundref="ness2__fft__decl_8hpp" startline="408" endline="427">left_multiply_hermconj</referencedby>
+        <referencedby refid="classness2_1_1fft__array_ad678d5b32ce905989b1141e158847920_1ad678d5b32ce905989b1141e158847920" compoundref="ness2__fft__decl_8hpp" startline="387" endline="405">right_multiply</referencedby>
+        <referencedby refid="classness2_1_1fft__array_a846e4102553e8f8f2ccdaf2cc00d6f6b_1a846e4102553e8f8f2ccdaf2cc00d6f6b" compoundref="ness2__fft__decl_8hpp" startline="430" endline="446">right_multiply_hermconj</referencedby>
+        <referencedby refid="classness2_1_1fft__array_aaecf397393a5c107c42d8d1a25b139ee_1aaecf397393a5c107c42d8d1a25b139ee" compoundref="ness2__fft__decl_8hpp" startline="451" endline="469">set_element</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classness2_1_1fft__array_ad26cdcc28bc2542c0d6bcec08c780ed3_1ad26cdcc28bc2542c0d6bcec08c780ed3" prot="public" static="no" mutable="no">
+        <type>fftw_complex *</type>
+        <definition>fftw_complex* ness2::fft_array::freq_</definition>
+        <argsstring></argsstring>
+        <name>freq_</name>
+        <qualifiedname>ness2::fft_array::freq_</qualifiedname>
+        <briefdescription>
+<para>Pointer to frequency-domain data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="350" column="18" bodyfile="cntr/ness2_fft_decl.hpp" bodystart="350" bodyend="-1"/>
+        <referencedby refid="classness2_1_1fft__array_a2f68e6fa15e5c49aa992f8d517efea87_1a2f68e6fa15e5c49aa992f8d517efea87" compoundref="ness2__fft__decl_8hpp" startline="472" endline="488">get_element</referencedby>
+        <referencedby refid="classness2_1_1fft__array_a7351f6bcf1a75522c55124f87f699bcc_1a7351f6bcf1a75522c55124f87f699bcc" compoundref="ness2__fft__decl_8hpp" startline="365" endline="384">left_multiply</referencedby>
+        <referencedby refid="classness2_1_1fft__array_a04c650e51afd4c832d20b9ef1937369f_1a04c650e51afd4c832d20b9ef1937369f" compoundref="ness2__fft__decl_8hpp" startline="408" endline="427">left_multiply_hermconj</referencedby>
+        <referencedby refid="classness2_1_1fft__array_ad678d5b32ce905989b1141e158847920_1ad678d5b32ce905989b1141e158847920" compoundref="ness2__fft__decl_8hpp" startline="387" endline="405">right_multiply</referencedby>
+        <referencedby refid="classness2_1_1fft__array_a846e4102553e8f8f2ccdaf2cc00d6f6b_1a846e4102553e8f8f2ccdaf2cc00d6f6b" compoundref="ness2__fft__decl_8hpp" startline="430" endline="446">right_multiply_hermconj</referencedby>
+        <referencedby refid="classness2_1_1fft__array_aaecf397393a5c107c42d8d1a25b139ee_1aaecf397393a5c107c42d8d1a25b139ee" compoundref="ness2__fft__decl_8hpp" startline="451" endline="469">set_element</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classness2_1_1fft__array_ad5a736d2b7936035493288b0cff5a3e2_1ad5a736d2b7936035493288b0cff5a3e2" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ness2::fft_array::Nft_</definition>
+        <argsstring></argsstring>
+        <name>Nft_</name>
+        <qualifiedname>ness2::fft_array::Nft_</qualifiedname>
+        <briefdescription>
+<para>Number of time samples per transform. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="351" column="9" bodyfile="cntr/ness2_fft_decl.hpp" bodystart="351" bodyend="-1"/>
+        <referencedby refid="namespaceness2_a9ae52e2965c52a526b782e5afc35b0ab_1a9ae52e2965c52a526b782e5afc35b0ab" compoundref="ness2__equilibrium__decl_8hpp" startline="285" endline="317">ness2::compute_lesser</referencedby>
+        <referencedby refid="classness2_1_1fft__array_a2f68e6fa15e5c49aa992f8d517efea87_1a2f68e6fa15e5c49aa992f8d517efea87" compoundref="ness2__fft__decl_8hpp" startline="472" endline="488">get_element</referencedby>
+        <referencedby refid="classness2_1_1fft__array_a7351f6bcf1a75522c55124f87f699bcc_1a7351f6bcf1a75522c55124f87f699bcc" compoundref="ness2__fft__decl_8hpp" startline="365" endline="384">left_multiply</referencedby>
+        <referencedby refid="classness2_1_1fft__array_a04c650e51afd4c832d20b9ef1937369f_1a04c650e51afd4c832d20b9ef1937369f" compoundref="ness2__fft__decl_8hpp" startline="408" endline="427">left_multiply_hermconj</referencedby>
+        <referencedby refid="classness2_1_1fft__array_ad678d5b32ce905989b1141e158847920_1ad678d5b32ce905989b1141e158847920" compoundref="ness2__fft__decl_8hpp" startline="387" endline="405">right_multiply</referencedby>
+        <referencedby refid="classness2_1_1fft__array_a846e4102553e8f8f2ccdaf2cc00d6f6b_1a846e4102553e8f8f2ccdaf2cc00d6f6b" compoundref="ness2__fft__decl_8hpp" startline="430" endline="446">right_multiply_hermconj</referencedby>
+        <referencedby refid="classness2_1_1fft__array_aaecf397393a5c107c42d8d1a25b139ee_1aaecf397393a5c107c42d8d1a25b139ee" compoundref="ness2__fft__decl_8hpp" startline="451" endline="469">set_element</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classness2_1_1fft__array_ac1ee36ea21977212d05ccc865813a38d_1ac1ee36ea21977212d05ccc865813a38d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int ness2::fft_array::size1_</definition>
+        <argsstring></argsstring>
+        <name>size1_</name>
+        <qualifiedname>ness2::fft_array::size1_</qualifiedname>
+        <briefdescription>
+<para>Logical size (<computeroutput>stride = <ref refid="classness2_1_1fft__array_ac1ee36ea21977212d05ccc865813a38d_1ac1ee36ea21977212d05ccc865813a38d" kindref="member">size1_</ref> * <ref refid="classness2_1_1fft__array_ac1ee36ea21977212d05ccc865813a38d_1ac1ee36ea21977212d05ccc865813a38d" kindref="member">size1_</ref></computeroutput>). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="352" column="9" bodyfile="cntr/ness2_fft_decl.hpp" bodystart="352" bodyend="-1"/>
+        <referencedby refid="namespaceness2_a9ae52e2965c52a526b782e5afc35b0ab_1a9ae52e2965c52a526b782e5afc35b0ab" compoundref="ness2__equilibrium__decl_8hpp" startline="285" endline="317">ness2::compute_lesser</referencedby>
+        <referencedby refid="classness2_1_1fft__array_a2f68e6fa15e5c49aa992f8d517efea87_1a2f68e6fa15e5c49aa992f8d517efea87" compoundref="ness2__fft__decl_8hpp" startline="472" endline="488">get_element</referencedby>
+        <referencedby refid="namespaceness2_ae4fd56058fa510f2f5fa1c8c49e4d6a8_1ae4fd56058fa510f2f5fa1c8c49e4d6a8" compoundref="ness2__equilibrium__decl_8hpp" startline="255" endline="281">ness2::green_equilibrium_ret_ness_adaptive</referencedby>
+        <referencedby refid="classness2_1_1fft__array_a7351f6bcf1a75522c55124f87f699bcc_1a7351f6bcf1a75522c55124f87f699bcc" compoundref="ness2__fft__decl_8hpp" startline="365" endline="384">left_multiply</referencedby>
+        <referencedby refid="classness2_1_1fft__array_a04c650e51afd4c832d20b9ef1937369f_1a04c650e51afd4c832d20b9ef1937369f" compoundref="ness2__fft__decl_8hpp" startline="408" endline="427">left_multiply_hermconj</referencedby>
+        <referencedby refid="classness2_1_1fft__array_ad678d5b32ce905989b1141e158847920_1ad678d5b32ce905989b1141e158847920" compoundref="ness2__fft__decl_8hpp" startline="387" endline="405">right_multiply</referencedby>
+        <referencedby refid="classness2_1_1fft__array_a846e4102553e8f8f2ccdaf2cc00d6f6b_1a846e4102553e8f8f2ccdaf2cc00d6f6b" compoundref="ness2__fft__decl_8hpp" startline="430" endline="446">right_multiply_hermconj</referencedby>
+        <referencedby refid="classness2_1_1fft__array_aaecf397393a5c107c42d8d1a25b139ee_1aaecf397393a5c107c42d8d1a25b139ee" compoundref="ness2__fft__decl_8hpp" startline="451" endline="469">set_element</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classness2_1_1fft__array_adff298fd9e5883bc8459bbce97c7ee3e_1adff298fd9e5883bc8459bbce97c7ee3e" prot="public" static="no" mutable="no">
+        <type>fftw_complex *</type>
+        <definition>fftw_complex* ness2::fft_array::time_</definition>
+        <argsstring></argsstring>
+        <name>time_</name>
+        <qualifiedname>ness2::fft_array::time_</qualifiedname>
+        <briefdescription>
+<para>Pointer to time-domain data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="349" column="18" bodyfile="cntr/ness2_fft_decl.hpp" bodystart="349" bodyend="-1"/>
+        <referencedby refid="classness2_1_1fft__array_a2f68e6fa15e5c49aa992f8d517efea87_1a2f68e6fa15e5c49aa992f8d517efea87" compoundref="ness2__fft__decl_8hpp" startline="472" endline="488">get_element</referencedby>
+        <referencedby refid="classness2_1_1fft__array_a7351f6bcf1a75522c55124f87f699bcc_1a7351f6bcf1a75522c55124f87f699bcc" compoundref="ness2__fft__decl_8hpp" startline="365" endline="384">left_multiply</referencedby>
+        <referencedby refid="classness2_1_1fft__array_a04c650e51afd4c832d20b9ef1937369f_1a04c650e51afd4c832d20b9ef1937369f" compoundref="ness2__fft__decl_8hpp" startline="408" endline="427">left_multiply_hermconj</referencedby>
+        <referencedby refid="classness2_1_1fft__array_ad678d5b32ce905989b1141e158847920_1ad678d5b32ce905989b1141e158847920" compoundref="ness2__fft__decl_8hpp" startline="387" endline="405">right_multiply</referencedby>
+        <referencedby refid="classness2_1_1fft__array_a846e4102553e8f8f2ccdaf2cc00d6f6b_1a846e4102553e8f8f2ccdaf2cc00d6f6b" compoundref="ness2__fft__decl_8hpp" startline="430" endline="446">right_multiply_hermconj</referencedby>
+        <referencedby refid="classness2_1_1fft__array_aaecf397393a5c107c42d8d1a25b139ee_1aaecf397393a5c107c42d8d1a25b139ee" compoundref="ness2__fft__decl_8hpp" startline="451" endline="469">set_element</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classness2_1_1fft__array_1a10bf55f1a00b297a319fa1071740cf12" prot="private" static="no" mutable="no">
+        <type>fftw_plan</type>
+        <definition>fftw_plan ness2::fft_array::plan_back_</definition>
+        <argsstring></argsstring>
+        <name>plan_back_</name>
+        <qualifiedname>ness2::fft_array::plan_back_</qualifiedname>
+        <briefdescription>
+<para>FFTW backward plan. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="357" column="15" bodyfile="cntr/ness2_fft_decl.hpp" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classness2_1_1fft__array_1a102cf338c73203047dec823cd3c5b99c" prot="private" static="no" mutable="no">
+        <type>fftw_plan</type>
+        <definition>fftw_plan ness2::fft_array::plan_for_</definition>
+        <argsstring></argsstring>
+        <name>plan_for_</name>
+        <qualifiedname>ness2::fft_array::plan_for_</qualifiedname>
+        <briefdescription>
+<para>FFTW forward plan. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="356" column="15" bodyfile="cntr/ness2_fft_decl.hpp" bodystart="356" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classness2_1_1fft__array_a933effe78eda3385ece3f07d831880a0_1a933effe78eda3385ece3f07d831880a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ness2::fft_array::fft_array</definition>
+        <argsstring>(const fft_array &amp;other)</argsstring>
+        <name>fft_array</name>
+        <qualifiedname>ness2::fft_array::fft_array</qualifiedname>
+        <param>
+          <type>const fft_array &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="131" column="5"/>
+        <references refid="classness2_1_1fft__array_a7e9fbcb1474c1d4bfa237d5427a516b7_1a7e9fbcb1474c1d4bfa237d5427a516b7">fft_array</references>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1fft__array_a7e9fbcb1474c1d4bfa237d5427a516b7_1a7e9fbcb1474c1d4bfa237d5427a516b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ness2::fft_array::fft_array</definition>
+        <argsstring>(int Nft, int size, unsigned FFTW_FLAG=FFTW_ESTIMATE)</argsstring>
+        <name>fft_array</name>
+        <qualifiedname>ness2::fft_array::fft_array</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>Nft</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>FFTW_FLAG</declname>
+          <defval>FFTW_ESTIMATE</defval>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>Nft</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>FFT length </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Logical size (<computeroutput>stride = size x size</computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FFTW_FLAG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>FFTW planning flag (e.g., <computeroutput>FFTW_ESTIMATE</computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="124" column="5"/>
+        <referencedby refid="classness2_1_1fft__array_a933effe78eda3385ece3f07d831880a0_1a933effe78eda3385ece3f07d831880a0">fft_array</referencedby>
+        <referencedby refid="classness2_1_1fft__array_adf1fe60dc10b52b32c0ffaac7cbdd764_1adf1fe60dc10b52b32c0ffaac7cbdd764">incr</referencedby>
+        <referencedby refid="classness2_1_1fft__array_a2e9a6e1893f3ad9ab8745d366e6c2b26_1a2e9a6e1893f3ad9ab8745d366e6c2b26">operator=</referencedby>
+        <referencedby refid="classness2_1_1fft__array_aa2daa53489f830eb07ddd897a6968551_1aa2daa53489f830eb07ddd897a6968551">set_matrixelement</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1fft__array_a98906ec6e7dbeb1837e548709b7b8d73_1a98906ec6e7dbeb1837e548709b7b8d73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness2::fft_array::fft_to_freq</definition>
+        <argsstring>()</argsstring>
+        <name>fft_to_freq</name>
+        <qualifiedname>ness2::fft_array::fft_to_freq</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Performs a forward FFT (time domain → frequency domain). This is because <computeroutput>plan_back_</computeroutput> was created with <computeroutput>FFTW_FORWARD</computeroutput>.</para>
+<para><formula id="192">$ X[k] = \sum_{n=0}^{N_{ft}-1} x[n] \cdot \exp(-2\pi i \cdot k \cdot n / N_{ft}) $</formula></para>
+<para>Note: This is the standard DFT definition (no scaling). </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="157" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1fft__array_ae0a401364d3dbb7bc43c4ce3b269f4a1_1ae0a401364d3dbb7bc43c4ce3b269f4a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness2::fft_array::fft_to_time</definition>
+        <argsstring>()</argsstring>
+        <name>fft_to_time</name>
+        <qualifiedname>ness2::fft_array::fft_to_time</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Performs an inverse FFT (frequency domain → time domain). This is because <computeroutput>plan_for_</computeroutput> was created with <computeroutput>FFTW_BACKWARD</computeroutput>.</para>
+<para><formula id="193">$ x[n] = \sum_{k=0}^{N_{ft}-1} X[k] \cdot \exp(+2\pi i \cdot k \cdot n / N_{ft}) $</formula></para>
+<para>Note: FFTW does NOT normalize this, so the result will be scaled by <formula id="184">$ N_{ft} $</formula> . You may need to manually divide by <formula id="184">$ N_{ft} $</formula> if you want the exact inverse. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="168" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1fft__array_afa0d888f43f2621dd420b16dd266a788_1afa0d888f43f2621dd420b16dd266a788" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness2::fft_array::get_element</definition>
+        <argsstring>(int t, cplx &amp;val, fft_domain type) const</argsstring>
+        <name>get_element</name>
+        <qualifiedname>ness2::fft_array::get_element</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceness2_afd4e1ebc14989f0be6d55840cfd5571b_1afd4e1ebc14989f0be6d55840cfd5571b" kindref="member">cplx</ref> &amp;</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242b" kindref="member">fft_domain</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Get <formula id="215">$ {\tt val} = A(t) $</formula> from this <computeroutput><ref refid="classness2_1_1fft__array" kindref="compound">fft_array</ref></computeroutput> <formula id="194">$ A $</formula> at time or frequency index <formula id="186">$ t $</formula> (with periodic wrapping). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Only valid when <formula id="214">$ \text{size1}\_ = 1 $</formula> (scalar case). If <formula id="208">$ t &lt; 0 $</formula> or <formula id="209">$ t \geq N_{ft} $</formula>, it is automatically wrapped periodically: <formula id="210">$ t \equiv t \bmod N_{ft} $</formula> in <formula id="211">$ [0, N_{ft} - 1] $</formula>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time index (wrapped periodically). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Complex scalar to retrieve. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to read from time or frequency array (<computeroutput><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242ba07cc694b9b3fc636710fa08b6922c42b" kindref="member">fft_domain::time</ref></computeroutput> or <computeroutput><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242bab0038f6cab2d16ebdcf2e36d1779d8ba" kindref="member">fft_domain::freq</ref></computeroutput>). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="298" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1fft__array_a2f68e6fa15e5c49aa992f8d517efea87_1a2f68e6fa15e5c49aa992f8d517efea87" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename MatrixType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ness2::fft_array::get_element</definition>
+        <argsstring>(int t, MatrixType &amp;M, fft_domain type) const</argsstring>
+        <name>get_element</name>
+        <qualifiedname>ness2::fft_array::get_element</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>MatrixType &amp;</type>
+          <declname>M</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242b" kindref="member">fft_domain</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Get <formula id="212">$ M = A(t) $</formula> from this <computeroutput><ref refid="classness2_1_1fft__array" kindref="compound">fft_array</ref></computeroutput> <formula id="194">$ A $</formula> at or frequency time index <formula id="186">$ t $</formula> (with periodic wrapping). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <formula id="208">$ t &lt; 0 $</formula> or <formula id="209">$ t \geq N_{ft} $</formula>, it is automatically wrapped periodically: <formula id="210">$ t \equiv t \bmod N_{ft} $</formula> in <formula id="211">$ [0, N_{ft} - 1] $</formula>.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>MatrixType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any Eigen-compatible complex matrix type. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time index (wrapped periodically). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>M</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Matrix to fill with the values at time index <formula id="186">$ t $</formula>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to read from time or frequency array (<computeroutput><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242ba07cc694b9b3fc636710fa08b6922c42b" kindref="member">fft_domain::time</ref></computeroutput> or <computeroutput><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242bab0038f6cab2d16ebdcf2e36d1779d8ba" kindref="member">fft_domain::freq</ref></computeroutput>). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="272" column="10" bodyfile="cntr/ness2_fft_decl.hpp" bodystart="472" bodyend="488"/>
+        <references refid="classness2_1_1fft__array_a39df121775ffbb96beee3a36c4ab2ed7_1a39df121775ffbb96beee3a36c4ab2ed7" compoundref="ness2__fft__decl_8hpp" startline="353">element_size_</references>
+        <references refid="classness2_1_1fft__array_ad26cdcc28bc2542c0d6bcec08c780ed3_1ad26cdcc28bc2542c0d6bcec08c780ed3" compoundref="ness2__fft__decl_8hpp" startline="350">freq_</references>
+        <references refid="classness2_1_1fft__array_ad5a736d2b7936035493288b0cff5a3e2_1ad5a736d2b7936035493288b0cff5a3e2" compoundref="ness2__fft__decl_8hpp" startline="351">Nft_</references>
+        <references refid="classness2_1_1fft__array_ac1ee36ea21977212d05ccc865813a38d_1ac1ee36ea21977212d05ccc865813a38d" compoundref="ness2__fft__decl_8hpp" startline="352">size1_</references>
+        <references refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242ba07cc694b9b3fc636710fa08b6922c42b" compoundref="ness2__global__settings_8hpp" startline="26">ness2::time</references>
+        <references refid="classness2_1_1fft__array_adff298fd9e5883bc8459bbce97c7ee3e_1adff298fd9e5883bc8459bbce97c7ee3e" compoundref="ness2__fft__decl_8hpp" startline="349">time_</references>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1fft__array_adf1fe60dc10b52b32c0ffaac7cbdd764_1adf1fe60dc10b52b32c0ffaac7cbdd764" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness2::fft_array::incr</definition>
+        <argsstring>(const fft_array &amp;B, std::complex&lt; double &gt; alpha, fft_domain type)</argsstring>
+        <name>incr</name>
+        <qualifiedname>ness2::fft_array::incr</qualifiedname>
+        <param>
+          <type>const <ref refid="classness2_1_1fft__array_a7e9fbcb1474c1d4bfa237d5427a516b7_1a7e9fbcb1474c1d4bfa237d5427a516b7" kindref="member">fft_array</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>std::complex&lt; double &gt;</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242b" kindref="member">fft_domain</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Increment this <computeroutput><ref refid="classness2_1_1fft__array" kindref="compound">fft_array</ref></computeroutput> <formula id="194">$ A $</formula> by another scaled array <formula id="195">$ B $</formula>: <formula id="196">$ A  \to A +  \alpha \cdot B $</formula>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Another <ref refid="classness2_1_1fft__array" kindref="compound">fft_array</ref> with matching dimensions. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Complex scaling factor. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to operate on time or frequency arrays (<computeroutput><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242ba07cc694b9b3fc636710fa08b6922c42b" kindref="member">fft_domain::time</ref></computeroutput> or <computeroutput><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242bab0038f6cab2d16ebdcf2e36d1779d8ba" kindref="member">fft_domain::freq</ref></computeroutput>). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="177" column="10"/>
+        <references refid="classness2_1_1fft__array_a7e9fbcb1474c1d4bfa237d5427a516b7_1a7e9fbcb1474c1d4bfa237d5427a516b7">fft_array</references>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1fft__array_a7351f6bcf1a75522c55124f87f699bcc_1a7351f6bcf1a75522c55124f87f699bcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename MatrixType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ness2::fft_array::left_multiply</definition>
+        <argsstring>(const MatrixType &amp;M, fft_domain type)</argsstring>
+        <name>left_multiply</name>
+        <qualifiedname>ness2::fft_array::left_multiply</qualifiedname>
+        <param>
+          <type>const MatrixType &amp;</type>
+          <declname>M</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242b" kindref="member">fft_domain</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Multiply each time/frequency matrix of this <computeroutput><ref refid="classness2_1_1fft__array" kindref="compound">fft_array</ref></computeroutput> <formula id="194">$ A $</formula> from the left by a complex matrix <formula id="202">$ M $</formula>: <formula id="203">$ A(t) \to M \cdot A(t) $</formula>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>definitions of templated member functions:</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>MatrixType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any Eigen-compatible complex matrix type. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>M</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The matrix to left-multiply with (must be <computeroutput><ref refid="classness2_1_1fft__array_ac1ee36ea21977212d05ccc865813a38d_1ac1ee36ea21977212d05ccc865813a38d" kindref="member">size1_</ref> × <ref refid="classness2_1_1fft__array_ac1ee36ea21977212d05ccc865813a38d_1ac1ee36ea21977212d05ccc865813a38d" kindref="member">size1_</ref></computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to apply to time or frequency domain data (<computeroutput><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242ba07cc694b9b3fc636710fa08b6922c42b" kindref="member">fft_domain::time</ref></computeroutput> or <computeroutput><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242bab0038f6cab2d16ebdcf2e36d1779d8ba" kindref="member">fft_domain::freq</ref></computeroutput>). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="214" column="10" bodyfile="cntr/ness2_fft_decl.hpp" bodystart="365" bodyend="384"/>
+        <references refid="classness2_1_1fft__array_a39df121775ffbb96beee3a36c4ab2ed7_1a39df121775ffbb96beee3a36c4ab2ed7" compoundref="ness2__fft__decl_8hpp" startline="353">element_size_</references>
+        <references refid="classness2_1_1fft__array_ad26cdcc28bc2542c0d6bcec08c780ed3_1ad26cdcc28bc2542c0d6bcec08c780ed3" compoundref="ness2__fft__decl_8hpp" startline="350">freq_</references>
+        <references refid="classness2_1_1fft__array_ad5a736d2b7936035493288b0cff5a3e2_1ad5a736d2b7936035493288b0cff5a3e2" compoundref="ness2__fft__decl_8hpp" startline="351">Nft_</references>
+        <references refid="classness2_1_1fft__array_ac1ee36ea21977212d05ccc865813a38d_1ac1ee36ea21977212d05ccc865813a38d" compoundref="ness2__fft__decl_8hpp" startline="352">size1_</references>
+        <references refid="classness2_1_1fft__array_a423be32519d46cb726147cffab32b2e6_1a423be32519d46cb726147cffab32b2e6">smul</references>
+        <references refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242ba07cc694b9b3fc636710fa08b6922c42b" compoundref="ness2__global__settings_8hpp" startline="26">ness2::time</references>
+        <references refid="classness2_1_1fft__array_adff298fd9e5883bc8459bbce97c7ee3e_1adff298fd9e5883bc8459bbce97c7ee3e" compoundref="ness2__fft__decl_8hpp" startline="349">time_</references>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1fft__array_a04c650e51afd4c832d20b9ef1937369f_1a04c650e51afd4c832d20b9ef1937369f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename MatrixType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ness2::fft_array::left_multiply_hermconj</definition>
+        <argsstring>(const MatrixType &amp;M, fft_domain type)</argsstring>
+        <name>left_multiply_hermconj</name>
+        <qualifiedname>ness2::fft_array::left_multiply_hermconj</qualifiedname>
+        <param>
+          <type>const MatrixType &amp;</type>
+          <declname>M</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242b" kindref="member">fft_domain</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Multiply each time/frequency matrix of this <computeroutput><ref refid="classness2_1_1fft__array" kindref="compound">fft_array</ref></computeroutput> <formula id="194">$ A $</formula> from the left by the hermitian conjugate of a complex matrix <formula id="202">$ M $</formula>: <formula id="205">$ A(t) \to M^\dagger \cdot A(t) $</formula>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>MatrixType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any Eigen-compatible complex matrix type. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>M</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The matrix to left-multiply with (must be <computeroutput><ref refid="classness2_1_1fft__array_ac1ee36ea21977212d05ccc865813a38d_1ac1ee36ea21977212d05ccc865813a38d" kindref="member">size1_</ref> × <ref refid="classness2_1_1fft__array_ac1ee36ea21977212d05ccc865813a38d_1ac1ee36ea21977212d05ccc865813a38d" kindref="member">size1_</ref></computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to apply to time or frequency domain data (<computeroutput><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242ba07cc694b9b3fc636710fa08b6922c42b" kindref="member">fft_domain::time</ref></computeroutput> or <computeroutput><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242bab0038f6cab2d16ebdcf2e36d1779d8ba" kindref="member">fft_domain::freq</ref></computeroutput>). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="234" column="10" bodyfile="cntr/ness2_fft_decl.hpp" bodystart="408" bodyend="427"/>
+        <references refid="classness2_1_1fft__array_a39df121775ffbb96beee3a36c4ab2ed7_1a39df121775ffbb96beee3a36c4ab2ed7" compoundref="ness2__fft__decl_8hpp" startline="353">element_size_</references>
+        <references refid="classness2_1_1fft__array_ad26cdcc28bc2542c0d6bcec08c780ed3_1ad26cdcc28bc2542c0d6bcec08c780ed3" compoundref="ness2__fft__decl_8hpp" startline="350">freq_</references>
+        <references refid="classness2_1_1fft__array_ad5a736d2b7936035493288b0cff5a3e2_1ad5a736d2b7936035493288b0cff5a3e2" compoundref="ness2__fft__decl_8hpp" startline="351">Nft_</references>
+        <references refid="classness2_1_1fft__array_ac1ee36ea21977212d05ccc865813a38d_1ac1ee36ea21977212d05ccc865813a38d" compoundref="ness2__fft__decl_8hpp" startline="352">size1_</references>
+        <references refid="classness2_1_1fft__array_a423be32519d46cb726147cffab32b2e6_1a423be32519d46cb726147cffab32b2e6">smul</references>
+        <references refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242ba07cc694b9b3fc636710fa08b6922c42b" compoundref="ness2__global__settings_8hpp" startline="26">ness2::time</references>
+        <references refid="classness2_1_1fft__array_adff298fd9e5883bc8459bbce97c7ee3e_1adff298fd9e5883bc8459bbce97c7ee3e" compoundref="ness2__fft__decl_8hpp" startline="349">time_</references>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1fft__array_a2e9a6e1893f3ad9ab8745d366e6c2b26_1a2e9a6e1893f3ad9ab8745d366e6c2b26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classness2_1_1fft__array_a7e9fbcb1474c1d4bfa237d5427a516b7_1a7e9fbcb1474c1d4bfa237d5427a516b7" kindref="member">fft_array</ref> &amp;</type>
+        <definition>fft_array &amp; ness2::fft_array::operator=</definition>
+        <argsstring>(const fft_array &amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>ness2::fft_array::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classness2_1_1fft__array_a7e9fbcb1474c1d4bfa237d5427a516b7_1a7e9fbcb1474c1d4bfa237d5427a516b7" kindref="member">fft_array</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Copy assignment operator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="134" column="15"/>
+        <references refid="classness2_1_1fft__array_a7e9fbcb1474c1d4bfa237d5427a516b7_1a7e9fbcb1474c1d4bfa237d5427a516b7">fft_array</references>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1fft__array_a97a55904aad3a54234f49cfa00884dec_1a97a55904aad3a54234f49cfa00884dec" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness2::fft_array::print_to_file</definition>
+        <argsstring>(const std::string &amp;filename, int precision=12) const</argsstring>
+        <name>print_to_file</name>
+        <qualifiedname>ness2::fft_array::print_to_file</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>precision</declname>
+          <defval>12</defval>
+        </param>
+        <briefdescription>
+<para>Print the time and frequency arrays to a plain text file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Outputs:<itemizedlist>
+<listitem><para>Header: # <computeroutput>Nft</computeroutput> <computeroutput><ref refid="classness2_1_1fft__array_ac1ee36ea21977212d05ccc865813a38d_1ac1ee36ea21977212d05ccc865813a38d" kindref="member">size1_</ref></computeroutput> <computeroutput>precision</computeroutput></para>
+</listitem><listitem><para>Blocks: time and frequency (each with one line per <formula id="186">$ t $</formula>).</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to the text file. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>precision</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of digits for real/imaginary part (default: 12). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="311" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1fft__array_aa38d69bf562bf9667b927bd5072217ce_1aa38d69bf562bf9667b927bd5072217ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness2::fft_array::read_from_file</definition>
+        <argsstring>(const std::string &amp;filename, unsigned FFTW_FLAG=FFTW_ESTIMATE)</argsstring>
+        <name>read_from_file</name>
+        <qualifiedname>ness2::fft_array::read_from_file</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>FFTW_FLAG</declname>
+          <defval>FFTW_ESTIMATE</defval>
+        </param>
+        <briefdescription>
+<para>Read the time and frequency arrays from a plain text file written with <computeroutput><ref refid="classness2_1_1fft__array_a97a55904aad3a54234f49cfa00884dec_1a97a55904aad3a54234f49cfa00884dec" kindref="member">print_to_file</ref></computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Resizes internal arrays if needed using the provided <computeroutput>FFTW_FLAG</computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path to the text file. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FFTW_FLAG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>FFTW planning flag to use if resizing (default: <computeroutput>FFTW_ESTIMATE</computeroutput>). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="321" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1fft__array_a6ceb8cc3a0d1bd805a38b7aa16720be7_1a6ceb8cc3a0d1bd805a38b7aa16720be7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness2::fft_array::read_from_hdf5</definition>
+        <argsstring>(hid_t group_id, unsigned FFTW_FLAG=FFTW_ESTIMATE)</argsstring>
+        <name>read_from_hdf5</name>
+        <qualifiedname>ness2::fft_array::read_from_hdf5</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>group_id</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>FFTW_FLAG</declname>
+          <defval>FFTW_ESTIMATE</defval>
+        </param>
+        <briefdescription>
+<para>Read the <computeroutput><ref refid="classness2_1_1fft__array" kindref="compound">fft_array</ref></computeroutput> data (time and frequency arrays) from an HDF5 group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the stored array dimensions differ from the current object, automatically resizes the object using the provided <computeroutput>FFTW_FLAG</computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>group_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HDF5 group identifier. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FFTW_FLAG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>FFTW planning flag to use if resizing (default: <computeroutput>FFTW_ESTIMATE</computeroutput>). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="345" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1fft__array_a7f65ff7874d396045da8639f2984b30a_1a7f65ff7874d396045da8639f2984b30a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness2::fft_array::resize</definition>
+        <argsstring>(int new_Nft, int new_size1, unsigned FFTW_FLAG=FFTW_ESTIMATE)</argsstring>
+        <name>resize</name>
+        <qualifiedname>ness2::fft_array::resize</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>new_Nft</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>new_size1</declname>
+        </param>
+        <param>
+          <type>unsigned</type>
+          <declname>FFTW_FLAG</declname>
+          <defval>FFTW_ESTIMATE</defval>
+        </param>
+        <briefdescription>
+<para>Resize the <computeroutput><ref refid="classness2_1_1fft__array" kindref="compound">fft_array</ref></computeroutput> and rebuild FFTW plans. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Frees any existing memory and FFTW plans, then allocates new arrays and creates new FFTW plans for the given sizes. After calling, the array is reset and ready for use.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>new_Nft</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New number of time samples per transform. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>new_size1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New matrix dimension (<computeroutput>new_size1 × new_size1</computeroutput>). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>FFTW_FLAG</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>FFTW planning flag (default: <computeroutput>FFTW_ESTIMATE</computeroutput>). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="147" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1fft__array_ad678d5b32ce905989b1141e158847920_1ad678d5b32ce905989b1141e158847920" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename MatrixType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ness2::fft_array::right_multiply</definition>
+        <argsstring>(const MatrixType &amp;M, fft_domain type)</argsstring>
+        <name>right_multiply</name>
+        <qualifiedname>ness2::fft_array::right_multiply</qualifiedname>
+        <param>
+          <type>const MatrixType &amp;</type>
+          <declname>M</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242b" kindref="member">fft_domain</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Multiply each time/frequency matrix of this <computeroutput><ref refid="classness2_1_1fft__array" kindref="compound">fft_array</ref></computeroutput> <formula id="194">$ A $</formula> from the right by a complex matrix <formula id="202">$ M $</formula>: <formula id="204">$ A(t) \to A(t) \cdot  M $</formula>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>MatrixType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any Eigen-compatible complex matrix type. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>M</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The matrix to right-multiply with (must be <computeroutput><ref refid="classness2_1_1fft__array_ac1ee36ea21977212d05ccc865813a38d_1ac1ee36ea21977212d05ccc865813a38d" kindref="member">size1_</ref> xsize1_</computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to apply to time or frequency domain data (<computeroutput><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242ba07cc694b9b3fc636710fa08b6922c42b" kindref="member">fft_domain::time</ref></computeroutput> or <computeroutput><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242bab0038f6cab2d16ebdcf2e36d1779d8ba" kindref="member">fft_domain::freq</ref></computeroutput>). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="224" column="10" bodyfile="cntr/ness2_fft_decl.hpp" bodystart="387" bodyend="405"/>
+        <references refid="classness2_1_1fft__array_a39df121775ffbb96beee3a36c4ab2ed7_1a39df121775ffbb96beee3a36c4ab2ed7" compoundref="ness2__fft__decl_8hpp" startline="353">element_size_</references>
+        <references refid="classness2_1_1fft__array_ad26cdcc28bc2542c0d6bcec08c780ed3_1ad26cdcc28bc2542c0d6bcec08c780ed3" compoundref="ness2__fft__decl_8hpp" startline="350">freq_</references>
+        <references refid="classness2_1_1fft__array_ad5a736d2b7936035493288b0cff5a3e2_1ad5a736d2b7936035493288b0cff5a3e2" compoundref="ness2__fft__decl_8hpp" startline="351">Nft_</references>
+        <references refid="classness2_1_1fft__array_ac1ee36ea21977212d05ccc865813a38d_1ac1ee36ea21977212d05ccc865813a38d" compoundref="ness2__fft__decl_8hpp" startline="352">size1_</references>
+        <references refid="classness2_1_1fft__array_a423be32519d46cb726147cffab32b2e6_1a423be32519d46cb726147cffab32b2e6">smul</references>
+        <references refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242ba07cc694b9b3fc636710fa08b6922c42b" compoundref="ness2__global__settings_8hpp" startline="26">ness2::time</references>
+        <references refid="classness2_1_1fft__array_adff298fd9e5883bc8459bbce97c7ee3e_1adff298fd9e5883bc8459bbce97c7ee3e" compoundref="ness2__fft__decl_8hpp" startline="349">time_</references>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1fft__array_a846e4102553e8f8f2ccdaf2cc00d6f6b_1a846e4102553e8f8f2ccdaf2cc00d6f6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename MatrixType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ness2::fft_array::right_multiply_hermconj</definition>
+        <argsstring>(const MatrixType &amp;M, fft_domain type)</argsstring>
+        <name>right_multiply_hermconj</name>
+        <qualifiedname>ness2::fft_array::right_multiply_hermconj</qualifiedname>
+        <param>
+          <type>const MatrixType &amp;</type>
+          <declname>M</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242b" kindref="member">fft_domain</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Multiply each time/frequency matrix of this <computeroutput><ref refid="classness2_1_1fft__array" kindref="compound">fft_array</ref></computeroutput> <formula id="194">$ A $</formula> from the right by the hermitian conjugate of a complex matrix <formula id="202">$ M $</formula>: <formula id="206">$ A(t) \to A(t)  \cdot  M^\dagger  $</formula>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>MatrixType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any Eigen-compatible complex matrix type. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>M</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The matrix to left-multiply with (must be <computeroutput><ref refid="classness2_1_1fft__array_ac1ee36ea21977212d05ccc865813a38d_1ac1ee36ea21977212d05ccc865813a38d" kindref="member">size1_</ref> × <ref refid="classness2_1_1fft__array_ac1ee36ea21977212d05ccc865813a38d_1ac1ee36ea21977212d05ccc865813a38d" kindref="member">size1_</ref></computeroutput>) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to apply to time or frequency domain data (<computeroutput><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242ba07cc694b9b3fc636710fa08b6922c42b" kindref="member">fft_domain::time</ref></computeroutput> or <computeroutput><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242bab0038f6cab2d16ebdcf2e36d1779d8ba" kindref="member">fft_domain::freq</ref></computeroutput>). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="244" column="10" bodyfile="cntr/ness2_fft_decl.hpp" bodystart="430" bodyend="446"/>
+        <references refid="classness2_1_1fft__array_a39df121775ffbb96beee3a36c4ab2ed7_1a39df121775ffbb96beee3a36c4ab2ed7" compoundref="ness2__fft__decl_8hpp" startline="353">element_size_</references>
+        <references refid="classness2_1_1fft__array_ad26cdcc28bc2542c0d6bcec08c780ed3_1ad26cdcc28bc2542c0d6bcec08c780ed3" compoundref="ness2__fft__decl_8hpp" startline="350">freq_</references>
+        <references refid="classness2_1_1fft__array_ad5a736d2b7936035493288b0cff5a3e2_1ad5a736d2b7936035493288b0cff5a3e2" compoundref="ness2__fft__decl_8hpp" startline="351">Nft_</references>
+        <references refid="classness2_1_1fft__array_ac1ee36ea21977212d05ccc865813a38d_1ac1ee36ea21977212d05ccc865813a38d" compoundref="ness2__fft__decl_8hpp" startline="352">size1_</references>
+        <references refid="classness2_1_1fft__array_a423be32519d46cb726147cffab32b2e6_1a423be32519d46cb726147cffab32b2e6">smul</references>
+        <references refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242ba07cc694b9b3fc636710fa08b6922c42b" compoundref="ness2__global__settings_8hpp" startline="26">ness2::time</references>
+        <references refid="classness2_1_1fft__array_adff298fd9e5883bc8459bbce97c7ee3e_1adff298fd9e5883bc8459bbce97c7ee3e" compoundref="ness2__fft__decl_8hpp" startline="349">time_</references>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1fft__array_aaecf397393a5c107c42d8d1a25b139ee_1aaecf397393a5c107c42d8d1a25b139ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename MatrixType</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void ness2::fft_array::set_element</definition>
+        <argsstring>(int t, const MatrixType &amp;M, fft_domain type)</argsstring>
+        <name>set_element</name>
+        <qualifiedname>ness2::fft_array::set_element</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>const MatrixType &amp;</type>
+          <declname>M</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242b" kindref="member">fft_domain</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Set this <computeroutput><ref refid="classness2_1_1fft__array" kindref="compound">fft_array</ref></computeroutput> <formula id="194">$ A $</formula> to <formula id="207">$ A(t) $</formula> = <formula id="202">$ M $</formula> at time or frequency index <formula id="186">$ t $</formula> (with periodic wrapping). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If <formula id="208">$ t &lt; 0 $</formula> or <formula id="209">$ t \geq N_{ft} $</formula>, it is automatically wrapped periodically: <formula id="210">$ t \equiv t \bmod N_{ft} $</formula> in <formula id="211">$ [0, N_{ft} - 1] $</formula>.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>MatrixType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Any Eigen-compatible complex matrix type. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time index (wrapped periodically). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>M</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Matrix to assign. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to apply to time or frequency array (<computeroutput><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242ba07cc694b9b3fc636710fa08b6922c42b" kindref="member">fft_domain::time</ref></computeroutput> or <computeroutput><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242bab0038f6cab2d16ebdcf2e36d1779d8ba" kindref="member">fft_domain::freq</ref></computeroutput>). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="258" column="10" bodyfile="cntr/ness2_fft_decl.hpp" bodystart="451" bodyend="469"/>
+        <references refid="classness2_1_1fft__array_a39df121775ffbb96beee3a36c4ab2ed7_1a39df121775ffbb96beee3a36c4ab2ed7" compoundref="ness2__fft__decl_8hpp" startline="353">element_size_</references>
+        <references refid="classness2_1_1fft__array_ad26cdcc28bc2542c0d6bcec08c780ed3_1ad26cdcc28bc2542c0d6bcec08c780ed3" compoundref="ness2__fft__decl_8hpp" startline="350">freq_</references>
+        <references refid="classness2_1_1fft__array_ad5a736d2b7936035493288b0cff5a3e2_1ad5a736d2b7936035493288b0cff5a3e2" compoundref="ness2__fft__decl_8hpp" startline="351">Nft_</references>
+        <references refid="classness2_1_1fft__array_ac1ee36ea21977212d05ccc865813a38d_1ac1ee36ea21977212d05ccc865813a38d" compoundref="ness2__fft__decl_8hpp" startline="352">size1_</references>
+        <references refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242ba07cc694b9b3fc636710fa08b6922c42b" compoundref="ness2__global__settings_8hpp" startline="26">ness2::time</references>
+        <references refid="classness2_1_1fft__array_adff298fd9e5883bc8459bbce97c7ee3e_1adff298fd9e5883bc8459bbce97c7ee3e" compoundref="ness2__fft__decl_8hpp" startline="349">time_</references>
+        <referencedby refid="namespaceness2_a9ae52e2965c52a526b782e5afc35b0ab_1a9ae52e2965c52a526b782e5afc35b0ab" compoundref="ness2__equilibrium__decl_8hpp" startline="285" endline="317">ness2::compute_lesser</referencedby>
+        <referencedby refid="namespaceness2_ae4fd56058fa510f2f5fa1c8c49e4d6a8_1ae4fd56058fa510f2f5fa1c8c49e4d6a8" compoundref="ness2__equilibrium__decl_8hpp" startline="255" endline="281">ness2::green_equilibrium_ret_ness_adaptive</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1fft__array_aee629c1407e366ba9587042654c11ca9_1aee629c1407e366ba9587042654c11ca9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness2::fft_array::set_element</definition>
+        <argsstring>(int t, cplx val, fft_domain type)</argsstring>
+        <name>set_element</name>
+        <qualifiedname>ness2::fft_array::set_element</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceness2_afd4e1ebc14989f0be6d55840cfd5571b_1afd4e1ebc14989f0be6d55840cfd5571b" kindref="member">cplx</ref></type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242b" kindref="member">fft_domain</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Set this <computeroutput><ref refid="classness2_1_1fft__array" kindref="compound">fft_array</ref></computeroutput> <formula id="194">$ A $</formula> to <formula id="213">$ A(t) = \tt{val} $</formula> at time or frequency index <formula id="186">$ t $</formula> (with periodic wrapping). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Only valid when <formula id="214">$ \text{size1}\_ = 1 $</formula> (scalar case). If <formula id="208">$ t &lt; 0 $</formula> or <formula id="209">$ t \geq N_{ft} $</formula>, it is automatically wrapped periodically: <formula id="210">$ t \equiv t \bmod N_{ft} $</formula> in <formula id="211">$ [0, N_{ft} - 1] $</formula>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Time index (wrapped periodically). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Complex scalar to assign. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to apply to time or frequency array (<computeroutput><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242ba07cc694b9b3fc636710fa08b6922c42b" kindref="member">fft_domain::time</ref></computeroutput> or <computeroutput><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242bab0038f6cab2d16ebdcf2e36d1779d8ba" kindref="member">fft_domain::freq</ref></computeroutput>). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="285" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1fft__array_aa2daa53489f830eb07ddd897a6968551_1aa2daa53489f830eb07ddd897a6968551" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness2::fft_array::set_matrixelement</definition>
+        <argsstring>(int i1, int i2, const fft_array &amp;B, int j1, int j2, fft_domain type)</argsstring>
+        <name>set_matrixelement</name>
+        <qualifiedname>ness2::fft_array::set_matrixelement</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i2</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classness2_1_1fft__array_a7e9fbcb1474c1d4bfa237d5427a516b7_1a7e9fbcb1474c1d4bfa237d5427a516b7" kindref="member">fft_array</ref> &amp;</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>j2</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242b" kindref="member">fft_domain</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Set one matrix element&apos;s time or frequency series of this <computeroutput><ref refid="classness2_1_1fft__array" kindref="compound">fft_array</ref></computeroutput> <formula id="194">$ A $</formula> from another <computeroutput><ref refid="classness2_1_1fft__array" kindref="compound">fft_array</ref></computeroutput> <formula id="195">$ B $</formula>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This sets <formula id="199">$ A(i_1, i_2)(t) = B(j_1, j_2)(t) $</formula> across all times or frequencies.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Row index in <formula id="200">$ A(i_1, i_2) $</formula>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Column index in <formula id="200">$ A(i_1, i_2) $</formula>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source <ref refid="classness2_1_1fft__array" kindref="compound">fft_array</ref>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Row index in <formula id="201">$ B(j_1, j_2) $</formula>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>j2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Column index in <formula id="201">$ B(j_1, j_2) $</formula>. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to operate on time or frequency arrays (<computeroutput><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242ba07cc694b9b3fc636710fa08b6922c42b" kindref="member">fft_domain::time</ref></computeroutput> or <computeroutput><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242bab0038f6cab2d16ebdcf2e36d1779d8ba" kindref="member">fft_domain::freq</ref></computeroutput>). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="198" column="10"/>
+        <references refid="classness2_1_1fft__array_a7e9fbcb1474c1d4bfa237d5427a516b7_1a7e9fbcb1474c1d4bfa237d5427a516b7">fft_array</references>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1fft__array_a40396087c4af731bee88c21c87769495_1a40396087c4af731bee88c21c87769495" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness2::fft_array::set_zero</definition>
+        <argsstring>(fft_domain type)</argsstring>
+        <name>set_zero</name>
+        <qualifiedname>ness2::fft_array::set_zero</qualifiedname>
+        <param>
+          <type><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242b" kindref="member">fft_domain</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Set all elements of either the time or frequency array to zero. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indicates whether to clear the time or frequency array. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="204" column="10"/>
+        <referencedby refid="namespaceness2_a9ae52e2965c52a526b782e5afc35b0ab_1a9ae52e2965c52a526b782e5afc35b0ab" compoundref="ness2__equilibrium__decl_8hpp" startline="285" endline="317">ness2::compute_lesser</referencedby>
+        <referencedby refid="namespaceness2_a3fc04c6c94b6f4037f54206a319dff27_1a3fc04c6c94b6f4037f54206a319dff27" compoundref="ness2__equilibrium__decl_8hpp" startline="201" endline="239">ness2::green_equilibrium_ness_bose</referencedby>
+        <referencedby refid="namespaceness2_a3a3ddda2ed9698ac30831954cb6f3248_1a3a3ddda2ed9698ac30831954cb6f3248" compoundref="ness2__equilibrium__decl_8hpp" startline="156" endline="197">ness2::green_equilibrium_ness_fermi</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1fft__array_a423be32519d46cb726147cffab32b2e6_1a423be32519d46cb726147cffab32b2e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness2::fft_array::smul</definition>
+        <argsstring>(std::complex&lt; double &gt; alpha, fft_domain type)</argsstring>
+        <name>smul</name>
+        <qualifiedname>ness2::fft_array::smul</qualifiedname>
+        <param>
+          <type>std::complex&lt; double &gt;</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242b" kindref="member">fft_domain</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Scale this <computeroutput><ref refid="classness2_1_1fft__array" kindref="compound">fft_array</ref></computeroutput> <formula id="194">$ A $</formula> in-place by a complex scalar <formula id="197">$ \alpha $</formula>: <formula id="198">$ A  \to  \alpha \cdot A $</formula>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Complex scaling factor. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Indicates whether to scale time or frequency array (<computeroutput><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242ba07cc694b9b3fc636710fa08b6922c42b" kindref="member">fft_domain::time</ref></computeroutput> or <computeroutput><ref refid="namespaceness2_aa8a9a5c1e5f195af4c1134df5dbc242b_1aa8a9a5c1e5f195af4c1134df5dbc242bab0038f6cab2d16ebdcf2e36d1779d8ba" kindref="member">fft_domain::freq</ref></computeroutput>). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="184" column="10"/>
+        <referencedby refid="classness2_1_1fft__array_a7351f6bcf1a75522c55124f87f699bcc_1a7351f6bcf1a75522c55124f87f699bcc" compoundref="ness2__fft__decl_8hpp" startline="365" endline="384">left_multiply</referencedby>
+        <referencedby refid="classness2_1_1fft__array_a04c650e51afd4c832d20b9ef1937369f_1a04c650e51afd4c832d20b9ef1937369f" compoundref="ness2__fft__decl_8hpp" startline="408" endline="427">left_multiply_hermconj</referencedby>
+        <referencedby refid="classness2_1_1fft__array_ad678d5b32ce905989b1141e158847920_1ad678d5b32ce905989b1141e158847920" compoundref="ness2__fft__decl_8hpp" startline="387" endline="405">right_multiply</referencedby>
+        <referencedby refid="classness2_1_1fft__array_a846e4102553e8f8f2ccdaf2cc00d6f6b_1a846e4102553e8f8f2ccdaf2cc00d6f6b" compoundref="ness2__fft__decl_8hpp" startline="430" endline="446">right_multiply_hermconj</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1fft__array_a3730b1759ce81ffe10decc4872e4d055_1a3730b1759ce81ffe10decc4872e4d055" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ness2::fft_array::write_to_hdf5</definition>
+        <argsstring>(hid_t group_id) const</argsstring>
+        <name>write_to_hdf5</name>
+        <qualifiedname>ness2::fft_array::write_to_hdf5</qualifiedname>
+        <param>
+          <type>hid_t</type>
+          <declname>group_id</declname>
+        </param>
+        <briefdescription>
+<para>Write the <computeroutput><ref refid="classness2_1_1fft__array" kindref="compound">fft_array</ref></computeroutput> data (time and frequency arrays) to an HDF5 group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Stores attributes for <computeroutput><ref refid="classness2_1_1fft__array_ad5a736d2b7936035493288b0cff5a3e2_1ad5a736d2b7936035493288b0cff5a3e2" kindref="member">Nft_</ref></computeroutput>, <computeroutput><ref refid="classness2_1_1fft__array_ac1ee36ea21977212d05ccc865813a38d_1ac1ee36ea21977212d05ccc865813a38d" kindref="member">size1_</ref></computeroutput>, and <computeroutput><ref refid="classness2_1_1fft__array_a39df121775ffbb96beee3a36c4ab2ed7_1a39df121775ffbb96beee3a36c4ab2ed7" kindref="member">element_size_</ref></computeroutput>, and datasets for the <computeroutput><ref refid="classness2_1_1fft__array_adff298fd9e5883bc8459bbce97c7ee3e_1adff298fd9e5883bc8459bbce97c7ee3e" kindref="member">time_</ref></computeroutput> and <computeroutput><ref refid="classness2_1_1fft__array_ad26cdcc28bc2542c0d6bcec08c780ed3_1ad26cdcc28bc2542c0d6bcec08c780ed3" kindref="member">freq_</ref></computeroutput> arrays as 3D arrays of shape <computeroutput>[<ref refid="classness2_1_1fft__array_ad5a736d2b7936035493288b0cff5a3e2_1ad5a736d2b7936035493288b0cff5a3e2" kindref="member">Nft_</ref>, <ref refid="classness2_1_1fft__array_ac1ee36ea21977212d05ccc865813a38d_1ac1ee36ea21977212d05ccc865813a38d" kindref="member">size1_</ref>, <ref refid="classness2_1_1fft__array_ac1ee36ea21977212d05ccc865813a38d_1ac1ee36ea21977212d05ccc865813a38d" kindref="member">size1_</ref>]</computeroutput>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>group_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HDF5 group identifier. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="334" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classness2_1_1fft__array_ab965215976dfb9b648f0ee49d6eba3f4_1ab965215976dfb9b648f0ee49d6eba3f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ness2::fft_array::~fft_array</definition>
+        <argsstring>()</argsstring>
+        <name>~fft_array</name>
+        <qualifiedname>ness2::fft_array::~fft_array</qualifiedname>
+        <briefdescription>
+<para>Destructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="cntr/ness2_fft_decl.hpp" line="128" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A class that manages multiple strided FFTs using FFTW. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>The data is arranged such that each FFT has stride <computeroutput><ref refid="classness2_1_1fft__array_a39df121775ffbb96beee3a36c4ab2ed7_1a39df121775ffbb96beee3a36c4ab2ed7" kindref="member">element_size_</ref> = <ref refid="classness2_1_1fft__array_ac1ee36ea21977212d05ccc865813a38d_1ac1ee36ea21977212d05ccc865813a38d" kindref="member">size1_</ref> * <ref refid="classness2_1_1fft__array_ac1ee36ea21977212d05ccc865813a38d_1ac1ee36ea21977212d05ccc865813a38d" kindref="member">size1_</ref></computeroutput>, and is of length <computeroutput>Nft</computeroutput>. Forward and backward plans are created once and reused. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>fftw_complex *</label>
+      </node>
+      <node id="3">
+        <label>int</label>
+      </node>
+      <node id="1">
+        <label>ness2::fft_array</label>
+        <link refid="classness2_1_1fft__array"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>freq_</edgelabel>
+          <edgelabel>time_</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>Nft_</edgelabel>
+          <edgelabel>element_size_</edgelabel>
+          <edgelabel>size1_</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="cntr/ness2_fft_decl.hpp" line="116" column="3" bodyfile="cntr/ness2_fft_decl.hpp" bodystart="116" bodyend="358"/>
+    <listofallmembers>
+      <member refid="classness2_1_1fft__array_a39df121775ffbb96beee3a36c4ab2ed7_1a39df121775ffbb96beee3a36c4ab2ed7" prot="public" virt="non-virtual"><scope>ness2::fft_array</scope><name>element_size_</name></member>
+      <member refid="classness2_1_1fft__array_a7e9fbcb1474c1d4bfa237d5427a516b7_1a7e9fbcb1474c1d4bfa237d5427a516b7" prot="public" virt="non-virtual"><scope>ness2::fft_array</scope><name>fft_array</name></member>
+      <member refid="classness2_1_1fft__array_a933effe78eda3385ece3f07d831880a0_1a933effe78eda3385ece3f07d831880a0" prot="public" virt="non-virtual"><scope>ness2::fft_array</scope><name>fft_array</name></member>
+      <member refid="classness2_1_1fft__array_a98906ec6e7dbeb1837e548709b7b8d73_1a98906ec6e7dbeb1837e548709b7b8d73" prot="public" virt="non-virtual"><scope>ness2::fft_array</scope><name>fft_to_freq</name></member>
+      <member refid="classness2_1_1fft__array_ae0a401364d3dbb7bc43c4ce3b269f4a1_1ae0a401364d3dbb7bc43c4ce3b269f4a1" prot="public" virt="non-virtual"><scope>ness2::fft_array</scope><name>fft_to_time</name></member>
+      <member refid="classness2_1_1fft__array_ad26cdcc28bc2542c0d6bcec08c780ed3_1ad26cdcc28bc2542c0d6bcec08c780ed3" prot="public" virt="non-virtual"><scope>ness2::fft_array</scope><name>freq_</name></member>
+      <member refid="classness2_1_1fft__array_a2f68e6fa15e5c49aa992f8d517efea87_1a2f68e6fa15e5c49aa992f8d517efea87" prot="public" virt="non-virtual"><scope>ness2::fft_array</scope><name>get_element</name></member>
+      <member refid="classness2_1_1fft__array_afa0d888f43f2621dd420b16dd266a788_1afa0d888f43f2621dd420b16dd266a788" prot="public" virt="non-virtual"><scope>ness2::fft_array</scope><name>get_element</name></member>
+      <member refid="classness2_1_1fft__array_adf1fe60dc10b52b32c0ffaac7cbdd764_1adf1fe60dc10b52b32c0ffaac7cbdd764" prot="public" virt="non-virtual"><scope>ness2::fft_array</scope><name>incr</name></member>
+      <member refid="classness2_1_1fft__array_a7351f6bcf1a75522c55124f87f699bcc_1a7351f6bcf1a75522c55124f87f699bcc" prot="public" virt="non-virtual"><scope>ness2::fft_array</scope><name>left_multiply</name></member>
+      <member refid="classness2_1_1fft__array_a04c650e51afd4c832d20b9ef1937369f_1a04c650e51afd4c832d20b9ef1937369f" prot="public" virt="non-virtual"><scope>ness2::fft_array</scope><name>left_multiply_hermconj</name></member>
+      <member refid="classness2_1_1fft__array_ad5a736d2b7936035493288b0cff5a3e2_1ad5a736d2b7936035493288b0cff5a3e2" prot="public" virt="non-virtual"><scope>ness2::fft_array</scope><name>Nft_</name></member>
+      <member refid="classness2_1_1fft__array_a2e9a6e1893f3ad9ab8745d366e6c2b26_1a2e9a6e1893f3ad9ab8745d366e6c2b26" prot="public" virt="non-virtual"><scope>ness2::fft_array</scope><name>operator=</name></member>
+      <member refid="classness2_1_1fft__array_1a10bf55f1a00b297a319fa1071740cf12" prot="private" virt="non-virtual"><scope>ness2::fft_array</scope><name>plan_back_</name></member>
+      <member refid="classness2_1_1fft__array_1a102cf338c73203047dec823cd3c5b99c" prot="private" virt="non-virtual"><scope>ness2::fft_array</scope><name>plan_for_</name></member>
+      <member refid="classness2_1_1fft__array_a97a55904aad3a54234f49cfa00884dec_1a97a55904aad3a54234f49cfa00884dec" prot="public" virt="non-virtual"><scope>ness2::fft_array</scope><name>print_to_file</name></member>
+      <member refid="classness2_1_1fft__array_aa38d69bf562bf9667b927bd5072217ce_1aa38d69bf562bf9667b927bd5072217ce" prot="public" virt="non-virtual"><scope>ness2::fft_array</scope><name>read_from_file</name></member>
+      <member refid="classness2_1_1fft__array_a6ceb8cc3a0d1bd805a38b7aa16720be7_1a6ceb8cc3a0d1bd805a38b7aa16720be7" prot="public" virt="non-virtual"><scope>ness2::fft_array</scope><name>read_from_hdf5</name></member>
+      <member refid="classness2_1_1fft__array_a7f65ff7874d396045da8639f2984b30a_1a7f65ff7874d396045da8639f2984b30a" prot="public" virt="non-virtual"><scope>ness2::fft_array</scope><name>resize</name></member>
+      <member refid="classness2_1_1fft__array_ad678d5b32ce905989b1141e158847920_1ad678d5b32ce905989b1141e158847920" prot="public" virt="non-virtual"><scope>ness2::fft_array</scope><name>right_multiply</name></member>
+      <member refid="classness2_1_1fft__array_a846e4102553e8f8f2ccdaf2cc00d6f6b_1a846e4102553e8f8f2ccdaf2cc00d6f6b" prot="public" virt="non-virtual"><scope>ness2::fft_array</scope><name>right_multiply_hermconj</name></member>
+      <member refid="classness2_1_1fft__array_aaecf397393a5c107c42d8d1a25b139ee_1aaecf397393a5c107c42d8d1a25b139ee" prot="public" virt="non-virtual"><scope>ness2::fft_array</scope><name>set_element</name></member>
+      <member refid="classness2_1_1fft__array_aee629c1407e366ba9587042654c11ca9_1aee629c1407e366ba9587042654c11ca9" prot="public" virt="non-virtual"><scope>ness2::fft_array</scope><name>set_element</name></member>
+      <member refid="classness2_1_1fft__array_aa2daa53489f830eb07ddd897a6968551_1aa2daa53489f830eb07ddd897a6968551" prot="public" virt="non-virtual"><scope>ness2::fft_array</scope><name>set_matrixelement</name></member>
+      <member refid="classness2_1_1fft__array_a40396087c4af731bee88c21c87769495_1a40396087c4af731bee88c21c87769495" prot="public" virt="non-virtual"><scope>ness2::fft_array</scope><name>set_zero</name></member>
+      <member refid="classness2_1_1fft__array_ac1ee36ea21977212d05ccc865813a38d_1ac1ee36ea21977212d05ccc865813a38d" prot="public" virt="non-virtual"><scope>ness2::fft_array</scope><name>size1_</name></member>
+      <member refid="classness2_1_1fft__array_a423be32519d46cb726147cffab32b2e6_1a423be32519d46cb726147cffab32b2e6" prot="public" virt="non-virtual"><scope>ness2::fft_array</scope><name>smul</name></member>
+      <member refid="classness2_1_1fft__array_adff298fd9e5883bc8459bbce97c7ee3e_1adff298fd9e5883bc8459bbce97c7ee3e" prot="public" virt="non-virtual"><scope>ness2::fft_array</scope><name>time_</name></member>
+      <member refid="classness2_1_1fft__array_a3730b1759ce81ffe10decc4872e4d055_1a3730b1759ce81ffe10decc4872e4d055" prot="public" virt="non-virtual"><scope>ness2::fft_array</scope><name>write_to_hdf5</name></member>
+      <member refid="classness2_1_1fft__array_ab965215976dfb9b648f0ee49d6eba3f4_1ab965215976dfb9b648f0ee49d6eba3f4" prot="public" virt="non-virtual"><scope>ness2::fft_array</scope><name>~fft_array</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
